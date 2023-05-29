@@ -1,0 +1,1197 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"collectorItems\" which hides the field declared at line 25.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<CollectorItem> collectorItems = new ArrayList<>();
+red_line===
+collectorItems
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+List<CollectorItem> collectorItems = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private List<Product> products = new ArrayList();
+red_line===
+ArrayList
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+private List<Product> products = new ArrayList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Product1\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+List<BuildingBlockMetricSummary> buildingBlockMetricSummaries = metricsService.getPortfolioMetricProducts(MetricType.SCM_COMMITS,"Product1","LOB");
+red_line===
+"Product1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+List<BuildingBlockMetricSummary> buildingBlockMetricSummaries = metricsService.getPortfolioMetricProducts(MetricType.SCM_COMMITS,"Product1","LOB");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"portfolio1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(portfolioResponse.getName(),"portfolio1");
+red_line===
+"portfolio1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+Assert.assertEquals(portfolioResponse.getName(),"portfolio1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Product1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Product product = new Product(Stream.of(makeEnvironment()).collect(Collectors.toList()),"Product1","LOB");
+red_line===
+"Product1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+Product product = new Product(Stream.of(makeEnvironment()).collect(Collectors.toList()),"Product1","LOB");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"metricCount\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+MetricCount metricCount = new MetricCount(map,666);
+red_line===
+new MetricCount(map,666)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+MetricCount metricCount = new MetricCount(map,666);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"product1\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(portfolioService.getPortfolioProduct("test", "LOB","product1")).thenReturn(TestUtils.makeBuildingBlockMetricSummary());
+red_line===
+"product1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+when(portfolioService.getPortfolioProduct("test", "LOB","product1")).thenReturn(TestUtils.makeBuildingBlockMetricSummary());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> list = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+<> list = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"testDB\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+MongoDatabase testDB = client.getDatabase(databaseName);
+red_line===
+client.getDatabase(databaseName)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+MongoDatabase testDB = client.getDatabase(databaseName);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"client\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+MongoClient client = new MongoClient(serverAddr, Collections.singletonList(mongoCredential));
+red_line===
+new MongoClient(serverAddr, Collections.singletonList(mongoCredential))
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+MongoClient client = new MongoClient(serverAddr, Collections.singletonList(mongoCredential));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"executiveSummaryList\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+List<ExecutiveSummaryList> executiveSummaryList = new ArrayList<>();
+red_line===
+= new ArrayList<>()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty map instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+if ((collectorType == null) || (sparkSession == null) || (javaSparkContext == null)) { return null; }
+red_line===
+null
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+if ((collectorType == null) || (sparkSession == null) || (javaSparkContext == null)) { return null; }
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make name a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String name;
+red_line===
+name
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String name ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make dashboardId a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String dashboardId;
+red_line===
+dashboardId
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String dashboardId ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make productDashboardIds a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String productDashboardIds;
+red_line===
+productDashboardIds
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String productDashboardIds ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make readUriUserName a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String readUriUserName;
+red_line===
+readUriUserName
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String readUriUserName ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make readUriPassword a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String readUriPassword;
+red_line===
+readUriPassword
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String readUriPassword ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make readUriDatabase a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String readUriDatabase;
+red_line===
+readUriDatabase
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String readUriDatabase ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make readUriPrefix a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String readUriPrefix;
+red_line===
+readUriPrefix
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String readUriPrefix ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make readUri a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String readUri;
+red_line===
+readUri
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String readUri ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make writeUri a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String writeUri;
+red_line===
+writeUri
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String writeUri ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make readDatabase a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String readDatabase;
+red_line===
+readDatabase
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String readDatabase ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make writeDatabase a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String writeDatabase;
+red_line===
+writeDatabase
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String writeDatabase ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make pipelineEnvName a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public List<String> pipelineEnvName;
+red_line===
+pipelineEnvName
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final List < String > pipelineEnvName ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Map auditMap = new HashMap();
+red_line===
+Map
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+private Map auditMap = new HashMap();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"auditTypeStatus\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String auditTypeStatus = row.getAs("auditTypeStatus");
+red_line===
+"auditTypeStatus"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+String auditTypeStatus = row.getAs("auditTypeStatus");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \" ; Owner Dept \u003d \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+LOGGER.debug("Portfolio Name = " + pName + " ; Owner Dept = " + lob);
+red_line===
+" ; Owner Dept = "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+LOGGER.debug("Portfolio Name = " + pName + " ; Owner Dept = " + lob);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"productName\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+productRows.groupBy("businessOwner", "productName");
+red_line===
+"productName"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+productRows.groupBy("businessOwner", "productName");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"componentName\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+environment.setCommonName((String) optErow.getAs("componentName"));
+red_line===
+"componentName"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+environment.setCommonName((String) optErow.getAs("componentName"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ownerDept\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+lobRows.groupBy( "ownerDept");
+red_line===
+"ownerDept"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+lobRows.groupBy( "ownerDept");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"appServiceOwner\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+product.addOwner(new PeopleRoleRelation(getPeople(productRow.getAs("appServiceOwner"), "appServiceOwner"), RoleRelationShipType.AppServiceOwner));
+red_line===
+"appServiceOwner"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+product.addOwner(new PeopleRoleRelation(getPeople(productRow.getAs("appServiceOwner"), "appServiceOwner"), RoleRelationShipType.AppServiceOwner));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"developmentOwner\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+product.addOwner(new PeopleRoleRelation(getPeople(productRow.getAs("developmentOwner"), "developmentOwner"), RoleRelationShipType.DevelopmentOwner));
+red_line===
+"developmentOwner"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+product.addOwner(new PeopleRoleRelation(getPeople(productRow.getAs("developmentOwner"), "developmentOwner"), RoleRelationShipType.DevelopmentOwner));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"configurationItem\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+environmentRows.groupBy("configurationItem");
+red_line===
+"configurationItem"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+environmentRows.groupBy("configurationItem");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"supportOwner\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+product.addOwner(new PeopleRoleRelation(getPeople(productRow.getAs("supportOwner"), "supportOwner"), RoleRelationShipType.SupportOwner));
+red_line===
+"supportOwner"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+product.addOwner(new PeopleRoleRelation(getPeople(productRow.getAs("supportOwner"), "supportOwner"), RoleRelationShipType.SupportOwner));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+return new ArrayList();
+red_line===
+ArrayList
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+return new ArrayList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make timestamp a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public long timestamp;
+red_line===
+timestamp
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final long timestamp ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+return new ArrayList();
+red_line===
+ArrayList
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+return new ArrayList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List<ExecutiveSummaryList> executiveSummaryList = new ArrayList();
+red_line===
+ArrayList
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+List<ExecutiveSummaryList> executiveSummaryList = new ArrayList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"executiveSummaryList\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+List<ExecutiveSummaryList> executiveSummaryList = new ArrayList();
+red_line===
+= new ArrayList()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List<String> eids = new ArrayList();
+red_line===
+ArrayList
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+List<String> eids = new ArrayList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private List<Product> products = new ArrayList();
+red_line===
+ArrayList
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+private List<Product> products = new ArrayList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"errorCode\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+private int errorCode = 0;
+red_line===
+errorCode
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+private final int errorCode = 0 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Product1\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(portfolioResponse.getProductList().get(0).getName(),"Product1");
+red_line===
+"Product1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+Assert.assertEquals(portfolioResponse.getProductList().get(0).getName(),"Product1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace Charset.forName() call with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+public static final MediaType APPLICATION_JSON_UTF8 = new MediaType(APPLICATION_JSON.getType(), APPLICATION_JSON.getSubtype(), Charset.forName("utf8"));
+red_line===
+Charset.forName("utf8")
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ public static final MediaType APPLICATION_JSON_UTF8 = new MediaType(APPLICATION_JSON.getType(), APPLICATION_JSON.getSubtype(), Charset.forName("utf8")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"product1\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(metricsService.getProductMetricDetail(MetricType.SCM_COMMITS,"portfolio1", "lob","product1")).thenReturn(TestUtils.makeProductMetricDetail());
+red_line===
+"product1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+when(metricsService.getProductMetricDetail(MetricType.SCM_COMMITS,"portfolio1", "lob","product1")).thenReturn(TestUtils.makeProductMetricDetail());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"portfolio1\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(metricsService.getPortfolioMetricSummary(MetricType.SCM_COMMITS,"portfolio1", "lob")).thenReturn(TestUtils.makeProductMetricDetail());
+red_line===
+"portfolio1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+when(metricsService.getPortfolioMetricSummary(MetricType.SCM_COMMITS,"portfolio1", "lob")).thenReturn(TestUtils.makeProductMetricDetail());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"product1\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+verify(metricsService).getProductMetricDetail(null,"portfolio1", "lob","product1");
+red_line===
+"product1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+verify(metricsService).getProductMetricDetail(null,"portfolio1", "lob","product1");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Null is returned but a \"Boolean\" is expected.
+scn.ruleId===
+2447
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this \"return\" statement or make it conditional.
+scn.ruleId===
+1751
+scn.suspCodeStr===
+return false;
+red_line===
+return
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ retlse; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Exception occured : \" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+LOG.info("Exception occured : " + e);
+red_line===
+"Exception occured : "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+LOG.info("Exception occured : " + e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+public PingController() {}
+red_line===
+PingController
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public PingController() {}
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+\"getDashboardId\" returns a string, there\u0027s no need to call \"toString()\".
+scn.ruleId===
+1858
+scn.suspCodeStr===
+String collectorItemId = dList.getDashboardId().toString();
+red_line===
+getDashboardId
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+String collectorItemId = dList.getDashboardId().toString();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"auditType\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String auditType = row.getAs("auditType");
+red_line===
+"auditType"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+String auditType = row.getAs("auditType");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027STR_AUDIT_STATUS\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+auditMap.put("auditStatus", auditStatus);
+red_line===
+"auditStatus"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+auditMap.put("auditStatus", auditStatus);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"auditTypeStatus\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+auditMap.put("auditTypeStatus", auditTypeStatus);
+red_line===
+"auditTypeStatus"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+auditMap.put("auditTypeStatus", auditTypeStatus);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"productName\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String productName = productRow.getAs("productName");
+red_line===
+"productName"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+String productName = productRow.getAs("productName");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"businessOwner\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String pName = productRow.getAs("businessOwner");
+red_line===
+"businessOwner"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+String pName = productRow.getAs("businessOwner");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ownerDept\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String lob = productRow.getAs("ownerDept");
+red_line===
+"ownerDept"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+String lob = productRow.getAs("ownerDept");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"configurationItem\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+componentRows.groupBy("configurationItem");
+red_line===
+"configurationItem"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+componentRows.groupBy("configurationItem");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ldapTemplate\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+ldapTemplate.afterPropertiesSet();
+red_line===
+ldapTemplate.afterPropertiesSet
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ldapTemplate.afterPropertiesSet();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"pipeline-lead-time\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+MetricCount mc = getMetricCount("", value, "pipeline-lead-time");
+red_line===
+"pipeline-lead-time"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+MetricCount mc = getMetricCount("", value, "pipeline-lead-time");
+isFixed===
+false
+==================

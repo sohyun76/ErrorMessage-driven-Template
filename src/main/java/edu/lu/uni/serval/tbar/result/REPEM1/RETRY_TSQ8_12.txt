@@ -1,0 +1,1843 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private static final Class SIZE_T_CLASS;
+red_line===
+Class
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final String __gmp_version;
+red_line===
+__gmp_version
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"mpzMemory\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+private final MpzMemory mpzMemory = new MpzMemory();
+red_line===
+mpzMemory
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"finalize\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+super.finalize();
+red_line===
+finalize
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"finalize\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+super.finalize();
+red_line===
+finalize
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"modulus must be positive\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new ArithmeticException("modulus must be positive");
+red_line===
+"modulus must be positive"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"val not invertible\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new ArithmeticException("val not invertible");
+red_line===
+"val not invertible"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"finalize\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+super.finalize();
+red_line===
+finalize
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Don\u0027t try to be smarter than the JVM, remove this call to run the garbage collector.
+scn.ruleId===
+1215
+scn.suspCodeStr===
+System.gc();
+red_line===
+gc
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Testing " + count + " " + bits + "-bit private rsa's Java");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(count + " " + bits + "-bit private rsa's in " + durationSecs + "s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(perSecond + " ops/s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Testing " + count + " " + bits + "-bit private rsa's NativeInsecure");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(count + " " + bits + "-bit private rsa's in " + durationSecs + "s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(perSecond + " ops/s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Testing " + count + " " + bits + "-bit private rsa's NativeSecure");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(count + " " + bits + "-bit private rsa's in " + durationSecs + "s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(perSecond + " ops/s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Don\u0027t try to be smarter than the JVM, remove this call to run the garbage collector.
+scn.ruleId===
+1215
+scn.suspCodeStr===
+System.gc();
+red_line===
+gc
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"finalize\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+super.finalize();
+red_line===
+finalize
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Don\u0027t try to be smarter than the JVM, remove this call to run the garbage collector.
+scn.ruleId===
+1215
+scn.suspCodeStr===
+System.gc();
+red_line===
+gc
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Don\u0027t try to be smarter than the JVM, remove this call to run the garbage collector.
+scn.ruleId===
+1215
+scn.suspCodeStr===
+Random rnd = new Random();
+red_line===
+d 
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Save and re-use this \"Random\".
+scn.ruleId===
+2119
+scn.suspCodeStr===
+Random rnd = new Random();
+red_line===
+Random
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Save and re-use this \"Random\".
+scn.ruleId===
+2119
+scn.suspCodeStr===
+Random rnd = new Random();
+red_line===
+Random
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ArithmeticException expected\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+fail("ArithmeticException expected");
+red_line===
+"ArithmeticException expected"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ArithmeticException expected\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private static final Random RANDOM = new Random();
+red_line===
+tatic final Random RANDOM = ne
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"p\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+public final BigInteger message, p, dp, pResult, q, dq, qResult;
+red_line===
+p
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print('"');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println('"');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print("    + \"");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print(hex.substring(i, end));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print('"');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("new TestVector(");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(");");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("TestVector(");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(");");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- OLD CONSTANTS ----");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("const TestVector VECTOR1  = ");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("const TestVector VECTOR2  = ");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("const TestVector VECTOR3  = ");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----------------------");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- NEW CONSTANTS ----");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("public static final TestVector VECTOR" + suffix + " = ");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print('"');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println('"');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print("    + \"");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print(hex.substring(i, end));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print('"');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("new TestVector(");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(',');
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(");");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- NEW CONSTANTS ----");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"priv\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+RSAPrivateCrtKeyParameters priv = (RSAPrivateCrtKeyParameters) pair.getPrivate();
+red_line===
+= (RSAPrivateCrtKeyParameters) pair.getPrivate()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("public static final TestVector VECTOR" + suffix + " = ");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Testing " + count + " " + bits + "-bit public rsa's Java");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(count + " " + bits + "-bit public rsa's in " + durationSecs + "s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(perSecond + " ops/s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Testing " + count + " " + bits + "-bit private rsa's Java");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(count + " " + bits + "-bit private rsa's in " + durationSecs + "s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(perSecond + " ops/s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Testing " + count + " " + bits + "-bit public rsa's NativeInsecure");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(count + " " + bits + "-bit public rsa's in " + durationSecs + "s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(perSecond + " ops/s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Testing " + count + " " + bits + "-bit private rsa's NativeSecure");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(count + " " + bits + "-bit private rsa's in " + durationSecs + "s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(perSecond + " ops/s");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"mQ\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+BigInteger mP, mQ, h, m;
+red_line===
+mQ
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"input too large for RSA cipher.\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new DataLengthException("input too large for RSA cipher.");
+red_line===
+"input too large for RSA cipher."
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================

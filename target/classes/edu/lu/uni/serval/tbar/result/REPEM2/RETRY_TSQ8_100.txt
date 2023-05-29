@@ -1,0 +1,1349 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this empty statement.
+scn.ruleId===
+1116
+scn.suspCodeStr===
+Config config = buildReader().readValue(reader, Config.class);
+red_line===
+;
+start_offset===
+66
+end_offset===
+67
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+Map<String, String> record = parser.next();
+red_line===
+record
+start_offset===
+26
+end_offset===
+32
+Python OUTPUT===
+Map<String, String> record = parser.next();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Map<String, String>> results = new ArrayList<Map<String, String>>();
+red_line===
+<Map<String, String>>
+start_offset===
+53
+end_offset===
+74
+Python OUTPUT===
+<> = new ArrayList < Map < String , String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"a line with some {text} and {text}\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addValue("entry1", 1, "a line with some {text} and {text}");
+red_line===
+"a line with some {text} and {text}"
+start_offset===
+26
+end_offset===
+62
+Python OUTPUT===
+addValue("entry1", 1, "a line with some {text} and {text}");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"(\\\\S*)\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addSearch("text", "(\\S*)");
+red_line===
+"(\\S*)"
+start_offset===
+22
+end_offset===
+30
+Python OUTPUT===
+addSearch("text", "(\\S*)");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"entry2\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addValue("entry2", 2, "a line with some {text} and {text}");
+red_line===
+"entry2"
+start_offset===
+13
+end_offset===
+21
+Python OUTPUT===
+addValue("entry2", 2, "a line with some {text} and {text}");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"field\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addValue("field", "field: (\\d*)");
+red_line===
+"field"
+start_offset===
+13
+end_offset===
+20
+Python OUTPUT===
+addValue("field", "field: (\\d*)");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"header\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addHeaderValue("header", "header value: {text}");
+red_line===
+"header"
+start_offset===
+19
+end_offset===
+27
+Python OUTPUT===
+addHeaderValue("header", "header value: {text}");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+Map<String, String> record = config.buildRecord("this is a value 123 hello");
+red_line===
+record
+start_offset===
+24
+end_offset===
+30
+Python OUTPUT===
+Map<String, String> record = config.buildRecord("this is a value 123 hello");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+Map<String, String> record = config.buildHeader("this is a value 123 hello");
+red_line===
+record
+start_offset===
+24
+end_offset===
+30
+Python OUTPUT===
+Map<String, String> record = config.buildHeader("this is a value 123 hello");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"(\\\\d*)\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addSearch("number", "(\\d*)");
+red_line===
+"(\\d*)"
+start_offset===
+24
+end_offset===
+32
+Python OUTPUT===
+addSearch("number", "(\\d*)");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"number\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addSearch("number", "\\d*");
+red_line===
+"number"
+start_offset===
+14
+end_offset===
+22
+Python OUTPUT===
+addSearch("number", "\\d*");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"DELIM\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addDelimiter("DELIM");
+red_line===
+"DELIM"
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+addDelimiter("DELIM");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"value\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addValue("value", "{number}");
+red_line===
+"value"
+start_offset===
+13
+end_offset===
+20
+Python OUTPUT===
+addValue("value", "{number}");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"a line\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(delimiter.matches("a line"));
+red_line===
+"a line"
+start_offset===
+33
+end_offset===
+41
+Python OUTPUT===
+assertTrue(delimiter.matches("a line"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"header\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+addHeaderValue("header", "a header {number}");
+red_line===
+"header"
+start_offset===
+19
+end_offset===
+27
+Python OUTPUT===
+addHeaderValue("header", "a header {number}");
+isFixed===
+false
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Disable access to external entities in XML parsing.
+scn.ruleId===
+2755
+scn.suspCodeStr===
+TransformerFactory tFactory = TransformerFactory.newInstance();
+red_line===
+newInstance
+start_offset===
+53
+end_offset===
+64
+Python OUTPUT===
+TransformerFactory tFactory = TransformerFactory.newInstance();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Map<String, String>> mapList = new ArrayList<Map<String, String>>();
+red_line===
+<Map<String, String>>
+start_offset===
+57
+end_offset===
+78
+Python OUTPUT===
+<> = new ArrayList < Map < String , String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> map = new TreeMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+45
+end_offset===
+61
+Python OUTPUT===
+<> map = new TreeMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<List<String>> expected = new ArrayList<List<String>>();
+red_line===
+<List<String>>
+start_offset===
+51
+end_offset===
+65
+Python OUTPUT===
+<> = new ArrayList < List < String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<List<String>> observed = new ArrayList<List<String>>();
+red_line===
+<List<String>>
+start_offset===
+51
+end_offset===
+65
+Python OUTPUT===
+<> = new ArrayList < List < String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"config.xml\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("config.xml", config.getPathToConfig());
+red_line===
+"config.xml"
+start_offset===
+21
+end_offset===
+33
+Python OUTPUT===
+assertEquals("config.xml", config.getPathToConfig());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"config.xml\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File testFile = File.createTempFile("testFile", ".tmp");
+red_line===
+ = File.crea
+start_offset===
+21
+end_offset===
+33
+Python OUTPUT===
+File testFile = File.createTempFile("testFile", ".tmp");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"config.xml\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("routerId record field incorrect", "192.0.2.70", result.get("routerId"));
+red_line===
+"routerId re
+start_offset===
+21
+end_offset===
+33
+Python OUTPUT===
+assertEquals("routerId record field incorrect", "192.0.2.70", result.get("routerId"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"config.xml\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("remoteIp record field incorrect", "192.0.2.77", result.get("remoteIp"));
+red_line===
+"remoteIp re
+start_offset===
+21
+end_offset===
+33
+Python OUTPUT===
+assertEquals("remoteIp record field incorrect", "192.0.2.77", result.get("remoteIp"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+maps = new ArrayList<Map<String, String>>();
+red_line===
+<Map<String, String>>
+start_offset===
+28
+end_offset===
+49
+Python OUTPUT===
+<> String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+maps.add(new TreeMap<String, String>());
+red_line===
+<String, String>
+start_offset===
+28
+end_offset===
+44
+Python OUTPUT===
+<> < String , String > ( ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+Map<String, String> record = parser.next();
+red_line===
+record
+start_offset===
+28
+end_offset===
+34
+Python OUTPUT===
+Map<String, String> record = parser.next();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Map<String, String>> observedValues = new ArrayList<Map<String, String>>();
+red_line===
+<Map<String, String>>
+start_offset===
+60
+end_offset===
+81
+Python OUTPUT===
+<> = new ArrayList < Map < String , String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"routerId\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("routerId", "192.0.2.70");
+red_line===
+"routerId"
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+put("routerId", "192.0.2.70");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"model\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("model", "WS-C4948-10GE");
+red_line===
+"model"
+start_offset===
+12
+end_offset===
+19
+Python OUTPUT===
+put("model", "WS-C4948-10GE");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"receivedV6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("receivedV6", "0");
+red_line===
+"receivedV6"
+start_offset===
+12
+end_offset===
+24
+Python OUTPUT===
+put("receivedV6", "0");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"status\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("status", "1");
+red_line===
+"status"
+start_offset===
+12
+end_offset===
+20
+Python OUTPUT===
+put("status", "1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"receivedV4\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("receivedV4", "5");
+red_line===
+"receivedV4"
+start_offset===
+12
+end_offset===
+24
+Python OUTPUT===
+put("receivedV4", "5");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"9.1S3.5\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("junosOsBoot", "9.1S3.5");
+red_line===
+"9.1S3.5"
+start_offset===
+27
+end_offset===
+36
+Python OUTPUT===
+put("junosOsBoot", "9.1S3.5");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"remoteIp\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteIp", "192.0.2.77");
+red_line===
+"remoteIp"
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+put("remoteIp", "192.0.2.77");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"65551\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteAS", "65551");
+red_line===
+"65551"
+start_offset===
+24
+end_offset===
+31
+Python OUTPUT===
+put("remoteAS", "65551");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"activeV6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("activeV6", "0");
+red_line===
+"activeV6"
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+put("activeV6", "0");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"activeV4\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("activeV4", "4");
+red_line===
+"activeV4"
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+put("activeV4", "4");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"192.0.2.1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("routerId", "192.0.2.1");
+red_line===
+"192.0.2.1"
+start_offset===
+24
+end_offset===
+35
+Python OUTPUT===
+put("routerId", "192.0.2.1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"delimiter\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+String delimiter;
+red_line===
+delimiter
+start_offset===
+9
+end_offset===
+18
+Python OUTPUT===
+String delimiter;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"interface\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("interface", "lo0");
+red_line===
+"interface"
+start_offset===
+12
+end_offset===
+23
+Python OUTPUT===
+put("interface", "lo0");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"uptime\" 9 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("uptime", "3 days, 13 hours, 53 minutes");
+red_line===
+"uptime"
+start_offset===
+12
+end_offset===
+20
+Python OUTPUT===
+put("uptime", "3 days, 13 hours, 53 minutes");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V4\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("accepted_V4", "1");
+red_line===
+"accepted_V4"
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("accepted_V4", "1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"localAS\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("localAS", "65550");
+red_line===
+"localAS"
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+put("localAS", "65550");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("accepted_V6", "0");
+red_line===
+"accepted_V6"
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("accepted_V6", "0");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteIp", "192.0.2.78");
+red_line===
+"remoteIp", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("remoteIp", "192.0.2.78");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("routerId", "192.0.2.70");
+red_line===
+"routerId", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("routerId", "192.0.2.70");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteIp", "10.10.10.10");
+red_line===
+"remoteIp", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("remoteIp", "10.10.10.10");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteIp", "10.10.100.1");
+red_line===
+"remoteIp", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("remoteIp", "10.10.100.1");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("routerId", "192.0.2.1");
+red_line===
+"routerId", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("routerId", "192.0.2.1");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteIp", "10.100.10.9");
+red_line===
+"remoteIp", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("remoteIp", "10.100.10.9");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("routerId", "192.0.2.1");
+red_line===
+"routerId", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("routerId", "192.0.2.1");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("software", "7.7.1.1");
+red_line===
+"software", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("software", "7.7.1.1");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteIp", "10.247.68.182");
+red_line===
+"remoteIp", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("remoteIp", "10.247.68.182");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteIp", "10.254.166.246");
+red_line===
+"remoteIp", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("remoteIp", "10.254.166.246");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("remoteIp", "192.0.2.100");
+red_line===
+"remoteIp", "
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("remoteIp", "192.0.2.100");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("inet6", "2001:db8::3615:9eff:fe27:45e3");
+red_line===
+"inet6", "200
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("inet6", "2001:db8::3615:9eff:fe27:45e3");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"accepted_V6\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+put("inet4", "192.0.2.215");
+red_line===
+"inet4", "192
+start_offset===
+12
+end_offset===
+25
+Python OUTPUT===
+put("inet4", "192.0.2.215");
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> result = new TreeMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+46
+end_offset===
+62
+Python OUTPUT===
+<> result = new TreeMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Problem reading source", e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("Problem reading source", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty map instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+Map<String, String> record = config.buildRecord(rawRecord);
+red_line===
+record
+start_offset===
+26
+end_offset===
+32
+Python OUTPUT===
+Map<String, String> record = config.buildRecord(rawRecord);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+commonRecord = new TreeMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+<> , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+PrintStream target = System.out;
+red_line===
+System.out
+start_offset===
+29
+end_offset===
+39
+Python OUTPUT===
+ PrintStream target = System.out; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Map<String, String>> mapList = new ArrayList<Map<String, String>>();
+red_line===
+<Map<String, String>>
+start_offset===
+57
+end_offset===
+78
+Python OUTPUT===
+<> = new ArrayList < Map < String , String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Map<String, String>> mapList = new ArrayList<Map<String, String>>();
+red_line===
+<Map<String, String>>
+start_offset===
+57
+end_offset===
+78
+Python OUTPUT===
+<> = new ArrayList < Map < String , String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> values = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+47
+end_offset===
+55
+Python OUTPUT===
+<> values = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Set<String> CSV_HEADERS = new TreeSet<>();
+red_line===
+CSV_HEADERS
+start_offset===
+20
+end_offset===
+31
+Python OUTPUT===
+Set<String> CSV_HEADERS = new TreeSet<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"jsonOutput\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+String jsonOutput = gsonBuilder.setPrettyPrinting().create().toJson(mapList);
+red_line===
+gsonBuilder.setPrettyPrinting().create().toJson(mapList)
+start_offset===
+28
+end_offset===
+84
+Python OUTPUT===
+String jsonOutput = gsonBuilder.setPrettyPrinting().create().toJson(mapList);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"results\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Parser results = Parser.parse(parserConfig, reader);
+red_line===
+Parser.parse(parserConfig, reader)
+start_offset===
+25
+end_offset===
+59
+Python OUTPUT===
+Parser results = Parser.parse(parserConfig, reader);
+isFixed===
+false
+==================

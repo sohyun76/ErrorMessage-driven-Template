@@ -1,0 +1,9500 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"char\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int codePoint = Character.toCodePoint((char) c, (char) str.charAt(i));
+red_line===
+char
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"buffered\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+byte[] buffered = session.toByteArray();
+red_line===
+buffered
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"offset\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int limit = buffer.length, offset = lb.offset, i = 0;
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert rb != lb;
+red_line===
+assert rb != lb;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int lastSize = session.size, len = str.length(), withIntOffset = lb.offset + 2;
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"withIntOffset\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int lastSize = session.size, withIntOffset = lb.offset + 1;
+red_line===
+withIntOffset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"offset\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int lastSize = session.size, offset = lb.offset, withIntOffset = offset + expectedSize;
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"o\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int existingOffset = offset, o = ++offset;
+red_line===
+o
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final byte pad = (byte) '=';
+red_line===
+pad
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = pad;
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b0 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = pad;
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b1 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"stop\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+final int remaining = inLen % 3, stop = inOffset + (inLen - remaining);
+red_line===
+stop
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = pad;
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b0 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = pad;
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b1 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"stop\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+final int remaining = inLen % 3, stop = inOffset + (inLen - remaining);
+red_line===
+stop
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b0 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b1 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"remaining\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset = lb.offset, remaining = inLen % 3, chunks = available / 4;
+red_line===
+remaining
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert (output.length - outOffset) >= outLen;
+red_line===
+assert (output.length - outOffset) >= outLen;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b0 << 2 | b1 >>> 4);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b1 << 4 | b2 >>> 2);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2, b3;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b0 << 2 | b1 >>> 4);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b1 << 4 | b2 >>> 2);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2, b3;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert (output.length - outOffset) >= outLen;
+red_line===
+assert (output.length - outOffset) >= outLen;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b0 << 2 | b1 >>> 4);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b1 << 4 | b2 >>> 2);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2, b3;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"should not happen\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new IllegalStateException("should not happen");
+red_line===
+"should not happen"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b2 << 6 | b3);
+red_line===
+b3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b2 << 6 | b3);
+red_line===
+b3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b2 << 6 | b3);
+red_line===
+b3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract this nested ternary operation into an independent statement.
+scn.ruleId===
+3358
+scn.suspCodeStr===
+return (a < b) ? -1 : ((a > b) ? 1 : 0);
+red_line===
+(a > b) ? 1 : 0
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int max_safe_pos = maxSafeDigits[radix] - 1;
+red_line===
+max_safe_pos
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+int digit = Character.digit(buffer[offset++], radix);
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+int digit = Character.digit(buffer[offset++], radix);
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"r\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int q, r;
+red_line===
+r
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"char\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int codePoint = Character.toCodePoint((char) c, (char) str.charAt(i));
+red_line===
+char
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"char\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int codePoint = Character.toCodePoint((char) c, (char) str.charAt(i));
+red_line===
+char
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset = lb.offset, limit = lb.buffer.length;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+final int lastSize = session.size, len = str.length(), withIntOffset = lb.offset + 2;
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"offset\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int lastSize = session.size, offset = lb.offset, withIntOffset = offset + expectedSize;
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+result = new String(nonNullValue, offset, len, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+return nonNullValue.getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch = (int) buffer[offset + i] & 0xff;
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch = (int) buffer[offset + i] & 0xff;
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch2 = (int) buffer[offset + i - 1];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch2 = (int) buffer[offset + i - 2];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch3 = (int) buffer[offset + i - 1];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch2 = (int) buffer[offset + i - 3];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch3 = (int) buffer[offset + i - 2];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch4 = (int) buffer[offset + i - 1];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 0) & 0x3F));
+red_line===
+>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((codePoint >> 0) & 0x3F));
+red_line===
+>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 0) & 0x3F));
+red_line===
+>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0xC0 | ((c >> 6) & 0x1F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 0) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+adjustableLimit += 3;
+red_line===
+adjustableLimit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0xF0 | ((codePoint >> 18) & 0x07));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((codePoint >> 12) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((codePoint >> 6) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((codePoint >> 0) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+adjustableLimit += 2;
+red_line===
+adjustableLimit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0xE0 | ((c >> 12) & 0x0F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 6) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 0) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert start >= 0;
+red_line===
+assert start >= 0;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int contentSize = 0, len;
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int contentSize = 0, len;
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"targetMessage\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+public final Object targetMessage;
+red_line===
+targetMessage
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(charsetName + " not supported?", e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"h2\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+final int h1 = bs.hash, h2 = other.hash;
+red_line===
+h2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bytes\" which hides the field declared at line 110.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final byte[] bytes = this.bytes;
+red_line===
+bytes
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+return new String(bytes.getBytes("ISO-8859-1"), "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.ISO_8859_1
+scn.ruleId===
+4719
+scn.suspCodeStr===
+return bytes.getBytes("ISO-8859-1");
+red_line===
+"ISO-8859-1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert out != null;
+red_line===
+assert out != null;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset = 0, len;
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] b64Encoded = B64Code.encode(str.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] decodedFromString = B64Code.decode(new String(b64Encoded, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"lenB\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int lenB = b.length();
+red_line===
+= b.length()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"lenA\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int lenA = a.length();
+red_line===
+= a.length()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"x\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+boolean x = a.equals(b);
+red_line===
+= a.equals(b)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] b64Encoded = B64Code.encode(str.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] decodedFromString = B64Code.decode(new String(b64Encoded, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] b64Encoded = B64Code.encode(str.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String encodedString = new String(b64Encoded, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+verifyRoundTrip(str.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"tail\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+tail = B64Code.encode(data, 0, data.length, session, tail);
+red_line===
+= B64Code.encode(data, 0, data.length, session, tail)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1234567\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+testStream("1234567", new LinkedBuffer(12));
+red_line===
+"1234567"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Integer> a = new ArrayList<Integer>();
+red_line===
+<Integer>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Malformed varint.");
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String three_byte_utf8 = "\u1234\u8000\uF800\u0800";
+red_line===
+three_byte_utf8
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String two_byte_utf8 = "\u07FF\341\210\264";
+red_line===
+two_byte_utf8
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String alphabet = "abcdefghijklmnopqrstuvwyxz";
+red_line===
+alphabet
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String alphabet_to_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+red_line===
+alphabet_to_upper
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String surrogatePairs = "\uD83C\uDFE0\uD83C\uDF4E\uD83D\uDCA9";
+red_line===
+surrogatePairs
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String numeric = "0123456789";
+red_line===
+numeric
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String whitespace = "\r\n\t";
+red_line===
+whitespace
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String foo = alphabet + three_byte_utf8 + numeric + two_byte_utf8 + whitespace + surrogatePairs;
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String str_len_130 = "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+red_line===
+str_len_130
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+assertEquals(surrogatePairs, new String(nativeSurrogatePairsSerialized, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"buffered\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+buffered = session.toByteArray();
+red_line===
+= session.toByteArray()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"dinResult\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String dinResult = din.readUTF();
+red_line===
+= din.readUTF()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+OutputStreamWriter writer = new OutputStreamWriter(out, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] array = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] builtin = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.US_ASCII
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuiltin = new String(builtin, "ASCII");
+red_line===
+"ASCII"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.US_ASCII
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuffered = new String(buffered, "ASCII");
+red_line===
+"ASCII"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] builtin = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuiltin = new String(builtin, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuffered = new String(buffered, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract the assignment out of this expression.
+scn.ruleId===
+1121
+scn.suspCodeStr===
+result |= (tmp = buffer[offset++]) << 28;
+red_line===
+=
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_grow = session2.toByteArray();
+red_line===
+buffered_needed_to_grow
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_grow = session2.toByteArray();
+red_line===
+buffered_needed_to_grow
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_grow = session2.toByteArray();
+red_line===
+buffered_needed_to_grow
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_grow = session2.toByteArray();
+red_line===
+buffered_needed_to_grow
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+assertEquals(surrogatePairs, new String(nativeSurrogatePairsSerialized, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"buffered\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+byte[] buffered = session.toByteArray();
+red_line===
+= session.toByteArray()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+OutputStreamWriter writer = new OutputStreamWriter(bout, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String s1 = new String(b1, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String s2 = new String(b2, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] builtin = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.US_ASCII
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuiltin = new String(builtin, "ASCII");
+red_line===
+"ASCII"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.US_ASCII
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuffered = new String(buffered, "ASCII");
+red_line===
+"ASCII"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] builtin = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuiltin = new String(builtin, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuffered = new String(buffered, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_flush = out2.toByteArray();
+red_line===
+buffered_needed_to_flush
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_flush = out2.toByteArray();
+red_line===
+buffered_needed_to_flush
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_flush = out2.toByteArray();
+red_line===
+buffered_needed_to_flush
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_flush = out2.toByteArray();
+red_line===
+buffered_needed_to_flush
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final HashMap<String, Integer> fieldMap = new HashMap<String, Integer>();
+red_line===
+<String, Integer>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"data\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+byte[] data = out.toByteArray();
+red_line===
+out.toByteArray()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"data\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+byte[] data = output.toByteArray();
+red_line===
+output.toByteArray()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<String> strings = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<String> strings = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset, limit;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"read\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int toRead = len - existing, read = 0;
+red_line===
+read
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"read\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int toRead = size - (limit - offset), read = 0;
+red_line===
+read
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset, limit;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Inner\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Message requestInner = request.getNestedMessage("Inner");
+red_line===
+"Inner"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Deeper\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Message requestDeeper = requestInner.getNestedMessage("Deeper");
+red_line===
+"Deeper"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"inner2\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("inner2", request) == fooInner);
+red_line===
+"inner2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"inner3\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("inner3", request) == jpFooInner);
+red_line===
+"inner3"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper1\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("deeper1", request) == fooDeeper);
+red_line===
+"deeper1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper2\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("deeper2", request) == fooDeeper);
+red_line===
+"deeper2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"inner1\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("inner1", request) == fooInner);
+red_line===
+"inner1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper3\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("deeper3", request) == jpFooDeeper);
+red_line===
+"deeper3"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Config\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Annotation messageConfig = test.getAnnotation("Config");
+red_line===
+"Config"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"default\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(test.getField("default").number == 31);
+red_line===
+"default"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"optional\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(test.getField("optional").number == 1);
+red_line===
+"optional"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"option\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(test.getField("option").number == 33);
+red_line===
+"option"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Inner\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Message requestInner = request.getNestedMessage("Inner");
+red_line===
+"Inner"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Deeper\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Message requestDeeper = requestInner.getNestedMessage("Deeper");
+red_line===
+"Deeper"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"fooBarBaz\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("fooBarBaz", toCamelCase("foo_bar_baz").toString());
+red_line===
+"fooBarBaz"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"FooBarBaz\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("fooBarBaz", toCamelCase("FooBarBaz").toString());
+red_line===
+"FooBarBaz"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"____Foo____Bar___Baz____\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("fooBarBaz", toCamelCase("____Foo____Bar___Baz____").toString());
+red_line===
+"____Foo____Bar___Baz____"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+assertEquals(new String(bar_some_string.defaultValue.getBytes(TextFormat.ISO_8859_1), "UTF-8"), "\u1234");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int32 foo_some_int = (Field.Int32) foo.getField("some_int");
+red_line===
+foo_some_int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.String foo_some_string = (Field.String) foo.getField("some_string");
+red_line===
+foo_some_string
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+MessageField foo_bar = (MessageField) foo.getField("bar");
+red_line===
+foo_bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+EnumField foo_some_enum = (EnumField) foo.getField("some_enum");
+red_line===
+foo_some_enum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bytes foo_some_bytes = (Field.Bytes) foo.getField("some_bytes");
+red_line===
+foo_some_bytes
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bool foo_some_boolean = (Field.Bool) foo.getField("some_boolean");
+red_line===
+foo_some_boolean
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Float foo_some_float = (Field.Float) foo.getField("some_float");
+red_line===
+foo_some_float
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Double foo_some_double = (Field.Double) foo.getField("some_double");
+red_line===
+foo_some_double
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int64 foo_some_long = (Field.Int64) foo.getField("some_long");
+red_line===
+foo_some_long
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int32 bar_some_int = (Field.Int32) bar.getField("some_int");
+red_line===
+bar_some_int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.String bar_some_string = (Field.String) bar.getField("some_string");
+red_line===
+bar_some_string
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+MessageField bar_baz = (MessageField) bar.getField("baz");
+red_line===
+bar_baz
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+EnumField bar_some_enum = (EnumField) bar.getField("some_enum");
+red_line===
+bar_some_enum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bytes bar_some_bytes = (Field.Bytes) bar.getField("some_bytes");
+red_line===
+bar_some_bytes
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bool bar_some_boolean = (Field.Bool) bar.getField("some_boolean");
+red_line===
+bar_some_boolean
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Float bar_some_float = (Field.Float) bar.getField("some_float");
+red_line===
+bar_some_float
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Double bar_some_double = (Field.Double) bar.getField("some_double");
+red_line===
+bar_some_double
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int64 bar_some_long = (Field.Int64) bar.getField("some_long");
+red_line===
+bar_some_long
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int64 baz_id = (Field.Int64) baz.getField("id");
+red_line===
+baz_id
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.String baz_name = (Field.String) baz.getField("name");
+red_line===
+baz_name
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int64 baz_timestamp = (Field.Int64) baz.getField("timestamp");
+red_line===
+baz_timestamp
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bytes baz_data = (Field.Bytes) baz.getField("data");
+red_line===
+baz_data
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int32 import_message_d = (Field.Int32) importMessage.getField("d");
+red_line===
+import_message_d
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Message tnmhb_nestedMessage = testNestedMessageHasBits.getNestedMessage("NestedMessage");
+red_line===
+tnmhb_nestedMessage
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"bar_some_double\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(bar_some_double.defaultValue, Double.valueOf(45.123));
+red_line===
+bar_some_double.defaultValue
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"data\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertTrue((data[0] & 0xFF) == 0xFA);
+red_line===
+data
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"baz_data\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+byte[] data = baz_data.getDefaultValue();
+red_line===
+baz_data.getDefaultValue
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"bar_some_float\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(bar_some_float.defaultValue, Float.valueOf(127.0f));
+red_line===
+bar_some_float.defaultValue
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"value\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("MALE", defaultGender.getValue("value"));
+red_line===
+"value"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"fqcn_message\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(fqcn.getValue("fqcn_message") == listRequest);
+red_line===
+"fqcn_message"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"imported_message\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(imported.getValue("imported_message") == person);
+red_line===
+"imported_message"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"imported_enum\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(imported.getValue("imported_enum") == importedGender);
+red_line===
+"imported_enum"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(local.getValue("deeper") == tire);
+red_line===
+"deeper"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"fqcn_enum\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(fqcn.getValue("fqcn_enum") == importedGender);
+red_line===
+"fqcn_enum"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"local_enum\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(local.getValue("local_enum") == localGender);
+red_line===
+"local_enum"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"nested\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(local.getValue("nested") == part);
+red_line===
+"nested"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"nested_enum\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(local.getValue("nested_enum") == condition);
+red_line===
+"nested_enum"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Field<?>> fields = new LinkedHashMap<String, Field<?>>();
+red_line===
+<String, Field<?>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> standardOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> extraOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"defaultValueConstant\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+java.lang.String name, defaultValueConstant;
+red_line===
+defaultValueConstant
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final ArrayList<String> docs = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"proto\" which hides the field declared at line 40.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Proto proto = getProto();
+red_line===
+proto
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Value> values = new LinkedHashMap<String, Value>();
+red_line===
+<String, Value>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final ArrayList<Value> sortedValues = new ArrayList<Value>();
+red_line===
+<Value>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> standardOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> extraOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+uniqueSortedValues = new ArrayList<Value>();
+red_line===
+<Value>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("warn: " + path + " not found.");
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"importerFile\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+File protoFile, importerFile = importer.getFile();
+red_line===
+importerFile
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private static final ArrayList<File> __protoLoadDirs = new ArrayList<File>();
+red_line===
+<File>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(msg);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+out[i++] = (byte) ((right & 0x0F) | (left << 4 & 0xF0));
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> refs = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"offset\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int limit = buffer.length, offset = lb.offset, i = 0;
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> params = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"last\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+private T current, last;
+red_line===
+last
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"ISO_8859_1\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+static final Charset UTF8 = Charset.forName("UTF-8"), ISO_8859_1 = Charset.forName("ISO-8859-1");
+red_line===
+ISO_8859_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"withIntOffset\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int lastSize = session.size, withIntOffset = lb.offset + 1;
+red_line===
+withIntOffset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"o\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int existingOffset = offset, o = ++offset;
+red_line===
+o
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final byte pad = (byte) '=';
+red_line===
+pad
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int pos = 0, len = input.length();
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+++i;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+++i;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = pad;
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b0 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = pad;
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b1 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"stop\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+final int remaining = inLen % 3, stop = inOffset + (inLen - remaining);
+red_line===
+stop
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = pad;
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b0 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = pad;
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b1 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"stop\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+final int remaining = inLen % 3, stop = inOffset + (inLen - remaining);
+red_line===
+stop
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b0 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"inOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+b1 = input[inOffset++];
+red_line===
+inOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"remaining\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset = lb.offset, remaining = inLen % 3, chunks = available / 4;
+red_line===
+remaining
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert (output.length - outOffset) >= outLen;
+red_line===
+assert (output.length - outOffset) >= outLen;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b0 << 2 | b1 >>> 4);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b1 << 4 | b2 >>> 2);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2, b3;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b0 << 2 | b1 >>> 4);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b1 << 4 | b2 >>> 2);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert (output.length - outOffset) >= outLen;
+red_line===
+assert (output.length - outOffset) >= outLen;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int withoutPaddingLen = inLen, limit = inOffset + inLen;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b0 << 2 | b1 >>> 4);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"outOffset\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+output[outOffset++] = (byte) (b1 << 4 | b2 >>> 2);
+red_line===
+outOffset++
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"b1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+byte b0, b1, b2, b3;
+red_line===
+b1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"should not happen\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new IllegalStateException("should not happen");
+red_line===
+"should not happen"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int max_safe_pos = maxSafeDigits[radix] - 1;
+red_line===
+max_safe_pos
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+int digit = Character.digit(buffer[offset++], radix);
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"r\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int q, r;
+red_line===
+r
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"char\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int codePoint = Character.toCodePoint((char) c, (char) str.charAt(i));
+red_line===
+char
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset = lb.offset, limit = lb.buffer.length;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"offset\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int lastSize = session.size, offset = lb.offset, withIntOffset = offset + expectedSize;
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+result = new String(nonNullValue, offset, len, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch = (int) buffer[offset + i] & 0xff;
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch2 = (int) buffer[offset + i - 1];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch3 = (int) buffer[offset + i - 1];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch2 = (int) buffer[offset + i - 3];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch3 = (int) buffer[offset + i - 2];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int ch4 = (int) buffer[offset + i - 1];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 0) & 0x3F));
+red_line===
+>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((codePoint >> 0) & 0x3F));
+red_line===
+>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 0) & 0x3F));
+red_line===
+>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0xC0 | ((c >> 6) & 0x1F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+adjustableLimit += 3;
+red_line===
+adjustableLimit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((codePoint >> 12) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((codePoint >> 0) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+adjustableLimit += 2;
+red_line===
+adjustableLimit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0xE0 | ((c >> 12) & 0x0F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 6) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+buffer[offset++] = (byte) (0x80 | ((c >> 0) & 0x3F));
+red_line===
+offset
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert start >= 0;
+red_line===
+assert start >= 0;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int contentSize = 0, len;
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"targetMessage\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+public final Object targetMessage;
+red_line===
+targetMessage
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(charsetName + " not supported?", e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bytes\" which hides the field declared at line 110.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final byte[] bytes = this.bytes;
+red_line===
+bytes
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.ISO_8859_1
+scn.ruleId===
+4719
+scn.suspCodeStr===
+return bytes.getBytes("ISO-8859-1");
+red_line===
+"ISO-8859-1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert out != null;
+red_line===
+assert out != null;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset = 0, len;
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] b64Encoded = B64Code.encode(str.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] decodedFromString = B64Code.decode(new String(b64Encoded, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"lenB\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int lenB = b.length();
+red_line===
+= b.length()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"lenA\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int lenA = a.length();
+red_line===
+= a.length()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"x\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+boolean x = a.equals(b);
+red_line===
+= a.equals(b)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] b64Encoded = B64Code.encode(str.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] decodedFromString = B64Code.decode(new String(b64Encoded, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] b64Encoded = B64Code.encode(str.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String encodedString = new String(b64Encoded, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+verifyRoundTrip(str.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"tail\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+tail = B64Code.encode(data, 0, data.length, session, tail);
+red_line===
+= B64Code.encode(data, 0, data.length, session, tail)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1234567\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+testStream("1234567", new LinkedBuffer(12));
+red_line===
+"1234567"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Integer> a = new ArrayList<Integer>();
+red_line===
+<Integer>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Malformed varint.");
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String three_byte_utf8 = "\u1234\u8000\uF800\u0800";
+red_line===
+three_byte_utf8
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String two_byte_utf8 = "\u07FF\341\210\264";
+red_line===
+two_byte_utf8
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String alphabet = "abcdefghijklmnopqrstuvwyxz";
+red_line===
+alphabet
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String alphabet_to_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+red_line===
+alphabet_to_upper
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String surrogatePairs = "\uD83C\uDFE0\uD83C\uDF4E\uD83D\uDCA9";
+red_line===
+surrogatePairs
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String numeric = "0123456789";
+red_line===
+numeric
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String whitespace = "\r\n\t";
+red_line===
+whitespace
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String foo = alphabet + three_byte_utf8 + numeric + two_byte_utf8 + whitespace + surrogatePairs;
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String str_len_130 = "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+red_line===
+str_len_130
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+assertEquals(surrogatePairs, new String(nativeSurrogatePairsSerialized, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"dinResult\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+String dinResult = din.readUTF();
+red_line===
+dinResult
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+OutputStreamWriter writer = new OutputStreamWriter(out, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] array = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] builtin = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.US_ASCII
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuiltin = new String(builtin, "ASCII");
+red_line===
+"ASCII"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.US_ASCII
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuffered = new String(buffered, "ASCII");
+red_line===
+"ASCII"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] builtin = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuiltin = new String(builtin, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuffered = new String(buffered, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract the assignment out of this expression.
+scn.ruleId===
+1121
+scn.suspCodeStr===
+result |= (tmp = buffer[offset++]) << 28;
+red_line===
+=
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_grow = session2.toByteArray();
+red_line===
+buffered_needed_to_grow
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_grow = session2.toByteArray();
+red_line===
+buffered_needed_to_grow
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_grow = session2.toByteArray();
+red_line===
+buffered_needed_to_grow
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"buffered\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+byte[] buffered = session.toByteArray();
+red_line===
+= session.toByteArray()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+OutputStreamWriter writer = new OutputStreamWriter(bout, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String s1 = new String(b1, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String s2 = new String(b2, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] builtin = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.US_ASCII
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuiltin = new String(builtin, "ASCII");
+red_line===
+"ASCII"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] builtin = str.toString().getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuiltin = new String(builtin, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String strBuffered = new String(buffered, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_flush = out2.toByteArray();
+red_line===
+buffered_needed_to_flush
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_flush = out2.toByteArray();
+red_line===
+buffered_needed_to_flush
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+byte[] buffered_needed_to_flush = out2.toByteArray();
+red_line===
+buffered_needed_to_flush
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final HashMap<String, Integer> fieldMap = new HashMap<String, Integer>();
+red_line===
+<String, Integer>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"foo\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Foo foo = new Foo();
+red_line===
+foo
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bar\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Bar bar = new Bar();
+red_line===
+bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<Bar> bars = new ArrayList<Bar>();
+red_line===
+<Bar>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset, limit;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"read\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int toRead = size - (limit - offset), read = 0;
+red_line===
+read
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"limit\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int offset, limit;
+red_line===
+limit
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Prevent \"int\" promotion by adding \"\u0026 0xff\" to this expression.
+scn.ruleId===
+3034
+scn.suspCodeStr===
+final int size = buffer[offset++] | (buffer[offset++] << 8);
+red_line===
+buffer[offset++]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"inner2\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("inner2", request) == fooInner);
+red_line===
+"inner2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper1\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("deeper1", request) == fooDeeper);
+red_line===
+"deeper1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper2\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("deeper2", request) == fooDeeper);
+red_line===
+"deeper2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"inner1\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("inner1", request) == fooInner);
+red_line===
+"inner1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper3\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(getMessageField("deeper3", request) == jpFooDeeper);
+red_line===
+"deeper3"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Config\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Annotation messageConfig = test.getAnnotation("Config");
+red_line===
+"Config"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"default\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(test.getField("default").number == 31);
+red_line===
+"default"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"optional\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(test.getField("optional").number == 1);
+red_line===
+"optional"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"option\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(test.getField("option").number == 33);
+red_line===
+"option"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Inner\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Message requestInner = request.getNestedMessage("Inner");
+red_line===
+"Inner"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Deeper\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Message requestDeeper = requestInner.getNestedMessage("Deeper");
+red_line===
+"Deeper"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"FooBarBaz\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("fooBarBaz", toCamelCase("FooBarBaz").toString());
+red_line===
+"FooBarBaz"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"____Foo____Bar___Baz____\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("fooBarBaz", toCamelCase("____Foo____Bar___Baz____").toString());
+red_line===
+"____Foo____Bar___Baz____"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+assertEquals(new String(bar_some_string.defaultValue.getBytes(TextFormat.ISO_8859_1), "UTF-8"), "\u1234");
+red_line===
+"UTF-8"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int32 foo_some_int = (Field.Int32) foo.getField("some_int");
+red_line===
+foo_some_int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.String foo_some_string = (Field.String) foo.getField("some_string");
+red_line===
+foo_some_string
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+MessageField foo_bar = (MessageField) foo.getField("bar");
+red_line===
+foo_bar
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+EnumField foo_some_enum = (EnumField) foo.getField("some_enum");
+red_line===
+foo_some_enum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bytes foo_some_bytes = (Field.Bytes) foo.getField("some_bytes");
+red_line===
+foo_some_bytes
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Float foo_some_float = (Field.Float) foo.getField("some_float");
+red_line===
+foo_some_float
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int64 foo_some_long = (Field.Int64) foo.getField("some_long");
+red_line===
+foo_some_long
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.String bar_some_string = (Field.String) bar.getField("some_string");
+red_line===
+bar_some_string
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+MessageField bar_baz = (MessageField) bar.getField("baz");
+red_line===
+bar_baz
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+EnumField bar_some_enum = (EnumField) bar.getField("some_enum");
+red_line===
+bar_some_enum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bytes bar_some_bytes = (Field.Bytes) bar.getField("some_bytes");
+red_line===
+bar_some_bytes
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bool bar_some_boolean = (Field.Bool) bar.getField("some_boolean");
+red_line===
+bar_some_boolean
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Float bar_some_float = (Field.Float) bar.getField("some_float");
+red_line===
+bar_some_float
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Double bar_some_double = (Field.Double) bar.getField("some_double");
+red_line===
+bar_some_double
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int64 bar_some_long = (Field.Int64) bar.getField("some_long");
+red_line===
+bar_some_long
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int64 baz_id = (Field.Int64) baz.getField("id");
+red_line===
+baz_id
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.String baz_name = (Field.String) baz.getField("name");
+red_line===
+baz_name
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int64 baz_timestamp = (Field.Int64) baz.getField("timestamp");
+red_line===
+baz_timestamp
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Bytes baz_data = (Field.Bytes) baz.getField("data");
+red_line===
+baz_data
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Field.Int32 import_message_d = (Field.Int32) importMessage.getField("d");
+red_line===
+import_message_d
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Message tnmhb_nestedMessage = testNestedMessageHasBits.getNestedMessage("NestedMessage");
+red_line===
+tnmhb_nestedMessage
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"data\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertTrue((data[0] & 0xFF) == 0xFA);
+red_line===
+data
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"baz_data\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+byte[] data = baz_data.getDefaultValue();
+red_line===
+baz_data.getDefaultValue
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"fqcn_message\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(fqcn.getValue("fqcn_message") == listRequest);
+red_line===
+"fqcn_message"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"imported_enum\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(imported.getValue("imported_enum") == importedGender);
+red_line===
+"imported_enum"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(local.getValue("deeper") == tire);
+red_line===
+"deeper"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"fqcn_enum\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(fqcn.getValue("fqcn_enum") == importedGender);
+red_line===
+"fqcn_enum"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"local_enum\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(local.getValue("local_enum") == localGender);
+red_line===
+"local_enum"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"nested\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(local.getValue("nested") == part);
+red_line===
+"nested"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Field<?>> fields = new LinkedHashMap<String, Field<?>>();
+red_line===
+<String, Field<?>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> standardOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> extraOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final ArrayList<String> docs = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"proto\" which hides the field declared at line 40.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Proto proto = getProto();
+red_line===
+proto
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Value> values = new LinkedHashMap<String, Value>();
+red_line===
+<String, Value>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final ArrayList<Value> sortedValues = new ArrayList<Value>();
+red_line===
+<Value>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> standardOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> extraOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+uniqueSortedValues = new ArrayList<Value>();
+red_line===
+<Value>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"importerFile\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+File protoFile, importerFile = importer.getFile();
+red_line===
+importerFile
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+out[i++] = (byte) ((right & 0x0F) | (left << 4 & 0xF0));
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> refs = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> params = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"last\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+private T current, last;
+red_line===
+last
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"ISO_8859_1\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+static final Charset UTF8 = Charset.forName("UTF-8"), ISO_8859_1 = Charset.forName("ISO-8859-1");
+red_line===
+ISO_8859_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"len\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int pos = 0, len = input.length();
+red_line===
+len
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+++i;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+++i;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+++i;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+++i;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+++i;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"repeatedFieldPresent\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+boolean bytesFieldPresent, repeatedFieldPresent, requiredFieldPresent;
+red_line===
+repeatedFieldPresent
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"repeatedFieldCount\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int requiredFieldCount, repeatedFieldCount, singularFieldCount;
+red_line===
+repeatedFieldCount
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"repeatedMessageFieldCount\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int requiredMessageFieldCount, repeatedMessageFieldCount, singularMessageFieldCount;
+red_line===
+repeatedMessageFieldCount
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"repeatedEnumFieldCount\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int requiredEnumFieldCount, repeatedEnumFieldCount, singularEnumFieldCount;
+red_line===
+repeatedEnumFieldCount
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"repeatedBytesFieldCount\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int requiredBytesFieldCount, repeatedBytesFieldCount, singularBytesFieldCount;
+red_line===
+repeatedBytesFieldCount
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"repeatedStringFieldCount\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int requiredStringFieldCount, repeatedStringFieldCount, singularStringFieldCount;
+red_line===
+repeatedStringFieldCount
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"proto\" which hides the field declared at line 34.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Proto proto = getProto();
+red_line===
+proto
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"proto\" which hides the field declared at line 34.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Proto proto = getProto();
+red_line===
+proto
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Message> nestedMessages = new LinkedHashMap<String, Message>();
+red_line===
+<String, Message>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, EnumGroup> nestedEnumGroups = new LinkedHashMap<String, EnumGroup>();
+red_line===
+<String, EnumGroup>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Service> nestedServices = new LinkedHashMap<String, Service>();
+red_line===
+<String, Service>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Field<?>> fields = new LinkedHashMap<String, Field<?>>();
+red_line===
+<String, Field<?>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final ArrayList<Extension> nestedExtensions = new ArrayList<Extension>();
+red_line===
+<Extension>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final ArrayList<Field<?>> sortedFields = new ArrayList<Field<?>>();
+red_line===
+<Field<?>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final ArrayList<int[]> extensionRanges = new ArrayList<int[]>();
+red_line===
+<int[]>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<Integer, Field<?>> extensions = new LinkedHashMap<Integer, Field<?>>();
+red_line===
+<Integer, Field<?>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> standardOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final LinkedHashMap<String, Object> extraOptions = new LinkedHashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================

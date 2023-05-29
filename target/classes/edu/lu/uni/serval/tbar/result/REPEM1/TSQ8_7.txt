@@ -1,0 +1,837 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Convert this Map to an EnumMap.
+scn.ruleId===
+1640
+scn.suspCodeStr===
+private static Map<PosixFilePermission, Integer> posixPermissionToInteger = new HashMap<>();
+red_line===
+new HashMap<>()
+start_offset===
+77
+end_offset===
+92
+Python OUTPUT===
+ private static Map<PosixFilePermission, Integer> posixPermissionToInteger = new HashMap<>(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+ throw new RuntimeException(e); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final boolean isPosix = FileSystems.getDefault().supportedFileAttributeViews().contains("posix");
+red_line===
+isPosix
+start_offset===
+30
+end_offset===
+37
+Python OUTPUT===
+ private static final boolean isPosix = FileSystems.getDefault().supportedFileAttributeViews().contains("posix"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer tmp = new StringBuffer(s);
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder tmp = new StringBuilder ( s ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+public StringBuffer name;
+red_line===
+StringBuffer
+start_offset===
+8
+end_offset===
+20
+Python OUTPUT===
+public StringBuilder name ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Date\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+return new Date(header.modTime * 1000);
+red_line===
+Date
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+ return new Dheader.modTime * 1000); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+public StringBuffer magic;
+red_line===
+StringBuffer
+start_offset===
+8
+end_offset===
+20
+Python OUTPUT===
+public StringBuilder magic ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+assertEquals("gTzyuQjfhrnyX9cTBSy", new String(data, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+55
+end_offset===
+62
+Python OUTPUT===
+ assertEquals("gTzyuQjfhrnyX9cTBSy", new String(data, "UTF-8")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"src/test/resources/tartest.tar\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File zf = new File("src/test/resources/tartest.tar");
+red_line===
+"src/test/resources/tartest.tar"
+start_offset===
+21
+end_offset===
+53
+Python OUTPUT===
+ File zf = new File("src/test/resources/tartest.tar"); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"RandomAccessFile\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+RandomAccessFile rif = new RandomAccessFile(zf, "r");
+red_line===
+new RandomAccessFile(zf, "r")
+start_offset===
+25
+end_offset===
+54
+Python OUTPUT===
+ RandomAccessFile rif = new RandomAccessFile(zf, "r"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this \"for\" loop with a \"while\" loop.
+scn.ruleId===
+1264
+scn.suspCodeStr===
+for (; offset < outbuf.length;)
+			outbuf[offset++] = 0;
+red_line===
+for
+start_offset===
+2
+end_offset===
+5
+Python OUTPUT===
+while ( ; offset < outbuf.length ; ) outbuf [ offset ++ ] = 0 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make linkFlag a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public byte linkFlag;
+red_line===
+linkFlag
+start_offset===
+13
+end_offset===
+21
+Python OUTPUT===
+public static final byte linkFlag ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make checkSum a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int checkSum;
+red_line===
+checkSum
+start_offset===
+12
+end_offset===
+20
+Python OUTPUT===
+public static final int checkSum ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make mode a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int mode;
+red_line===
+mode
+start_offset===
+12
+end_offset===
+16
+Python OUTPUT===
+public static final int mode ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make namePrefix a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public StringBuffer namePrefix;
+red_line===
+namePrefix
+start_offset===
+21
+end_offset===
+31
+Python OUTPUT===
+public static final StringBuffer namePrefix ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer result = new StringBuffer(length);
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder result = new StringBuilder ( length ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make size a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public long size;
+red_line===
+size
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+public static final long size ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make name a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public StringBuffer name;
+red_line===
+name
+start_offset===
+21
+end_offset===
+25
+Python OUTPUT===
+public static final StringBuffer name ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+public StringBuffer userName;
+red_line===
+StringBuffer
+start_offset===
+8
+end_offset===
+20
+Python OUTPUT===
+public StringBuilder userName ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make devMajor a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int devMajor;
+red_line===
+devMajor
+start_offset===
+12
+end_offset===
+20
+Python OUTPUT===
+public static final int devMajor ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make magic a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public StringBuffer magic;
+red_line===
+magic
+start_offset===
+21
+end_offset===
+26
+Python OUTPUT===
+public static final StringBuffer magic ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make userName a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public StringBuffer userName;
+red_line===
+userName
+start_offset===
+21
+end_offset===
+29
+Python OUTPUT===
+public static final StringBuffer userName ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make groupName a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public StringBuffer groupName;
+red_line===
+groupName
+start_offset===
+21
+end_offset===
+30
+Python OUTPUT===
+public static final StringBuffer groupName ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make groupId a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int groupId;
+red_line===
+groupId
+start_offset===
+12
+end_offset===
+19
+Python OUTPUT===
+public static final int groupId ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+val = val >> 3;
+red_line===
+val
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+ val = val >> 3; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"gTzyuQjfhrnyX9cTBSy\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+TestUtils.writeStringToFile("gTzyuQjfhrnyX9cTBSy", new File(tartest, "two"));
+red_line===
+"gTzyuQjfhrnyX9cTBSy"
+start_offset===
+30
+end_offset===
+51
+Python OUTPUT===
+ TestUtils.writeStringToFile("gTzyuQjfhrnyX9cTBSy", new File(tartest, "two")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"gTzyuQjfhrnyX9cTBSy\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+dir = Files.createTempDirectory("tartest").toFile();
+red_line===
+ory("tartest").toFile
+start_offset===
+30
+end_offset===
+51
+Python OUTPUT===
+ dir = Files.createTempDirectory("tartest").toFile(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Extracting: " + entry.getName());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Extracting: " + entry.getName()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+byte data[] = new byte[BUFFER];
+red_line===
+[]
+start_offset===
+12
+end_offset===
+14
+Python OUTPUT===
+ byte data[] = new byte[BUFFER]; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+new File(destFolder + "/" + entry.getName()).mkdirs();
+red_line===
+"/"
+start_offset===
+26
+end_offset===
+29
+Python OUTPUT===
+ new File(destFolder + " / "entry.getName()).mkdirs(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+new File(destFolder + "/" + entry.getName().substring(0, di)).mkdirs();
+red_line===
+"/"
+start_offset===
+27
+end_offset===
+30
+Python OUTPUT===
+ new File(destFolder + " / " ntry.getName().substring(0, di)).mkdirs(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+String files[] = f.list();
+red_line===
+[]
+start_offset===
+14
+end_offset===
+16
+Python OUTPUT===
+ String files[] = f.list(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract this nested ternary operation into an independent statement.
+scn.ruleId===
+3358
+scn.suspCodeStr===
+parent = ((parent == null) ? (f.isFile()) ? "" : f.getName() + "/" : parent + f.getName() + "/");
+red_line===
+(f.isFile()) ? "" : f.getName() + "/"
+start_offset===
+31
+end_offset===
+68
+Python OUTPUT===
+ parent = ((parent == null) ? (f.isFile()) ? "" : f.getName() + "/" : parent + f.getName() + "/"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Adding: " + files[i]);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Adding: " + files[i]); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+byte data[] = new byte[BUFFER];
+red_line===
+[]
+start_offset===
+12
+end_offset===
+14
+Python OUTPUT===
+ byte data[] = new byte[BUFFER]; 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+origin = new BufferedInputStream(fi);
+red_line===
+new BufferedInputStream(fi)
+start_offset===
+12
+end_offset===
+39
+Python OUTPUT===
+ origin = new BufferedInputStream(fi); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedOutputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+dest = new BufferedOutputStream(fos);
+red_line===
+new BufferedOutputStream(fos)
+start_offset===
+10
+end_offset===
+39
+Python OUTPUT===
+ dest = new BufferedOutputStream(fos); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+public StringBuffer linkName;
+red_line===
+StringBuffer
+start_offset===
+8
+end_offset===
+20
+Python OUTPUT===
+public StringBuilder linkName ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+public StringBuffer namePrefix;
+red_line===
+StringBuffer
+start_offset===
+8
+end_offset===
+20
+Python OUTPUT===
+public StringBuilder namePrefix ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make userId a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int userId;
+red_line===
+userId
+start_offset===
+12
+end_offset===
+18
+Python OUTPUT===
+public static final int userId ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make modTime a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public long modTime;
+red_line===
+modTime
+start_offset===
+13
+end_offset===
+20
+Python OUTPUT===
+public static final long modTime ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make linkName a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public StringBuffer linkName;
+red_line===
+linkName
+start_offset===
+21
+end_offset===
+29
+Python OUTPUT===
+public static final StringBuffer linkName ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make devMinor a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int devMinor;
+red_line===
+devMinor
+start_offset===
+12
+end_offset===
+20
+Python OUTPUT===
+public static final int devMinor ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+public StringBuffer groupName;
+red_line===
+StringBuffer
+start_offset===
+8
+end_offset===
+20
+Python OUTPUT===
+public StringBuilder groupName ;
+isFixed===
+true
+==================

@@ -1,0 +1,3363 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"rate\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final MisjudgmentRate rate;
+red_line===
+rate
+start_offset===
+34
+end_offset===
+38
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static Logger logger = SdsLoggerFactory.getDefaultLogger();
+red_line===
+logger
+start_offset===
+26
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+path = path + "/";
+red_line===
+"/"
+start_offset===
+26
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+rootEntryPath = rootEntryPath + "/";
+red_line===
+"/"
+start_offset===
+44
+end_offset===
+47
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(System.nanoTime() - t2);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(System.nanoTime() - t2); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<E> list = new ArrayList<E>(elements.length);
+red_line===
+<E>
+start_offset===
+41
+end_offset===
+44
+Python OUTPUT===
+<> list = new ArrayList < E > ( elements.length ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new ArrayList<T>();
+red_line===
+<T>
+start_offset===
+28
+end_offset===
+31
+Python OUTPUT===
+<> T > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+classDefine.setFullName(className.replaceAll("/", "."));
+red_line===
+replaceAll
+start_offset===
+42
+end_offset===
+52
+Python OUTPUT===
+classDefine.setFullName ( className.replaceAll ( " / " , "." ) ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+++i;
+red_line===
+i
+start_offset===
+22
+end_offset===
+23
+Python OUTPUT===
+++i;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static SdsDowngradeExceptionService downgradeExceptionService = new SdsDowngradeExceptionService();
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final SdsDowngradeExceptionService downgradeExceptionService = new SdsDowngradeExceptionService ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private static volatile SdsHeartBeatService instance = null;
+red_line===
+volatile SdsHeartBeatService
+start_offset===
+19
+end_offset===
+47
+Python OUTPUT===
+private static volatile SdsHeartBeatService instance = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static List<String> SERVER_UPLOAD_URL_LIST = new ArrayList<>();
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final List < String > SERVER_UPLOAD_URL_LIST = new ArrayList < > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static List<String> SERVER_PULL_URL_LIST = new ArrayList<>();
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final List < String > SERVER_PULL_URL_LIST = new ArrayList < > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String UPLOAD_HEARTBEAT_PATH = "sds/heartbeat/add";
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final String UPLOAD_HEARTBEAT_PATH = " sds/heartbeat/add " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String PULL_POINT_STRATEGY_PATH = "sds/heartbeat/pullstrategy";
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final String PULL_POINT_STRATEGY_PATH = " sds/heartbeat/pullstrategy " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static SdsStrategyService strategyService = new SdsStrategyService();
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final SdsStrategyService strategyService = new SdsStrategyService ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static CopyOnWriteArrayList<AbstractCycleData> allCycleTimeData = new CopyOnWriteArrayList<>();
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final CopyOnWriteArrayList < AbstractCycleData > allCycleTimeData = new CopyOnWriteArrayList < > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static ScheduledExecutorService cleanAndUploadExecutor;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final ScheduledExecutorService cleanAndUploadExecutor ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"transient\" modifier from this field.
+scn.ruleId===
+2065
+scn.suspCodeStr===
+private transient AtomicLong expireTime = new AtomicLong();
+red_line===
+transient
+start_offset===
+16
+end_offset===
+25
+Python OUTPUT===
+ private transieLong expireTime = new AtomicLong(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"transient\" modifier from this field.
+scn.ruleId===
+2065
+scn.suspCodeStr===
+private transient AtomicLong currRetryTimes = new AtomicLong();
+red_line===
+transient
+start_offset===
+16
+end_offset===
+25
+Python OUTPUT===
+ private transieLong currRetryTimes = new AtomicLong(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new HashMap<String, Boolean>();
+red_line===
+<String, Boolean>
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+<> > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this \"Map.get()\" and condition with a call to \"Map.computeIfAbsent()\".
+scn.ruleId===
+3824
+scn.suspCodeStr===
+Boolean value = pointMap.get(point);
+red_line===
+pointMap.get(point)
+start_offset===
+24
+end_offset===
+43
+Python OUTPUT===
+Boolean value = pointMap.get ( point ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static CopyOnWriteArrayList<DowngradeActionListener> listeners = new CopyOnWriteArrayList<>();
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final CopyOnWriteArrayList < DowngradeActionListener > listeners = new CopyOnWriteArrayList < > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"generatedTokensInSecond\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Integer generatedTokensInSecond = -1;
+red_line===
+generatedTokensInSecond
+start_offset===
+20
+end_offset===
+43
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile Semaphore concurrentLimit;
+red_line===
+volatile Semaphore
+start_offset===
+12
+end_offset===
+30
+Python OUTPUT===
+private volatile Semaphore concurrentLimit;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"cycleNum\" which hides the field declared at line 25.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+int cycleNum = switchIndex(bucketIndex - cycleBucketNum) / cycleBucketNum;
+red_line===
+cycleNum
+start_offset===
+12
+end_offset===
+20
+Python OUTPUT===
+int cycleNum = switchIndex(bucketIndex - cycleBucketNum) / cycleBucketNum;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"cycleNum\" which hides the field declared at line 25.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+int cycleNum = switchIndex(curBucketIndex + cycleBucketNum) / cycleBucketNum;
+red_line===
+cycleNum
+start_offset===
+12
+end_offset===
+20
+Python OUTPUT===
+int cycleNum = switchIndex(curBucketIndex + cycleBucketNum) / cycleBucketNum;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static Logger logger = SdsLoggerFactory.getDefaultLogger();
+red_line===
+logger
+start_offset===
+26
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private ThreadLocal<Long> downgradeStartTime = new ThreadLocal<Long>();
+red_line===
+<Long>
+start_offset===
+66
+end_offset===
+72
+Python OUTPUT===
+<> > downgradeStartTime = new ThreadLocal < Long > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"code\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+private int code = DOWNGRADE.getCode();
+red_line===
+code
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+private final int code = DOWNGRADE . getCode ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"msg\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+private String msg = DOWNGRADE.getMsg();
+red_line===
+msg
+start_offset===
+19
+end_offset===
+22
+Python OUTPUT===
+private final String msg = DOWNGRADE . getMsg ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile static AbstractSdsClient instance = null;
+red_line===
+volatile static AbstractSdsClient
+start_offset===
+12
+end_offset===
+45
+Python OUTPUT===
+private volatile static AbstractSdsClient instance = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int TOKEN_BUCKET_GENERATED_TOKENS_IN_SECOND = 15;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final int TOKEN_BUCKET_GENERATED_TOKENS_IN_SECOND = 15 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int TOKEN_BUCKET_SIZE = 20;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final int TOKEN_BUCKET_SIZE = 20 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static long EXCEPTION_THRESHOLD = 5;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final long EXCEPTION_THRESHOLD = 5 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int CONCURRENT_THRESHOLD = 2;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final int CONCURRENT_THRESHOLD = 2 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static long TIMEOUT_COUNT_THRESHOLD = 5L;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final long TIMEOUT_COUNT_THRESHOLD = 5 L ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"response\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Response response =  chain.proceed(request);
+red_line===
+chain.proceed(request)
+start_offset===
+33
+end_offset===
+55
+Python OUTPUT===
+Response response =  chain.proceed(request);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"password\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private String password;
+red_line===
+password
+start_offset===
+19
+end_offset===
+27
+Python OUTPUT===
+ private String pas
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"username\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String username;
+red_line===
+username
+start_offset===
+19
+end_offset===
+27
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String INFLUXDB_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final String INFLUXDB_DATE_FORMAT = " yyyy-MM-dd'T'HH:mm:ss.SSS'Z' " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String line = System.lineSeparator();
+red_line===
+line
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("位数太大溢出了，请降低误判率或者降低数据大小");
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("位数太大溢出了，请降低误判率或者降低数据大小");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"请求参数错误，请联系程序猿\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(SdsCode.PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+red_line===
+"请求参数错误，请联系程序猿"
+start_offset===
+66
+end_offset===
+81
+Python OUTPUT===
+return new SdsResponse(SdsCode.PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static Logger logger = SdsLoggerFactory.getDefaultLogger();
+red_line===
+logger
+start_offset===
+26
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"请求参数错误，请联系程序猿\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+red_line===
+"请求参数错误，请联系程序猿"
+start_offset===
+58
+end_offset===
+73
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"应用名称不能为空\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用名称不能为空");
+red_line===
+"应用名称不能为空"
+start_offset===
+58
+end_offset===
+68
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用名称不能为空");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"pointDictDO\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return new SdsResponse(Lists.transform(list, (pointDictDO) -> pointDictDO.getPoint()));
+red_line===
+(
+start_offset===
+53
+end_offset===
+54
+Python OUTPUT===
+ return new SdsResponse(Lists.transform(list,(pointDictDO) ->.getPoint()));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"请求参数错误，请联系程序猿\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+red_line===
+"请求参数错误，请联系程序猿"
+start_offset===
+58
+end_offset===
+73
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"应用组名称不能为空\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用组名称不能为空");
+red_line===
+"应用组名称不能为空"
+start_offset===
+58
+end_offset===
+69
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用组名称不能为空");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"降级预案名称不能为空\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "降级预案名称不能为空");
+red_line===
+"降级预案名称不能为空"
+start_offset===
+58
+end_offset===
+70
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "降级预案名称不能为空");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"应用组名称不能为空\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用组名称不能为空");
+red_line===
+"应用组名称不能为空"
+start_offset===
+58
+end_offset===
+69
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用组名称不能为空");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final long TWO_HOUR = 2 * 3600 * 1000;
+red_line===
+TWO_HOUR
+start_offset===
+23
+end_offset===
+31
+Python OUTPUT===
+private static final long TWO_HOUR = 2 * 3600 * 1000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final long ONE_DAY = 12 * TWO_HOUR;
+red_line===
+ONE_DAY
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+private static final long ONE_DAY = 12 * TWO_HOUR ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final long TWO_DAY = 2 * ONE_DAY;
+red_line===
+TWO_DAY
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+private static final long TWO_DAY = 2 * ONE_DAY ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"hostname\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String hostname = heartBeatRequest.getHostname();
+red_line===
+= heartBeatRequest.getHostname()
+start_offset===
+24
+end_offset===
+56
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make sure \"cycleNum\" can\u0027t be zero before doing this division.
+scn.ruleId===
+3518
+scn.suspCodeStr===
+showHeartbeatBO.setVisitNum(showHeartbeatBO.getVisitNum() / cycleNum);
+red_line===
+cycleNum
+start_offset===
+72
+end_offset===
+80
+Python OUTPUT===
+final showHeartbeatBO . setVisitNum ( showHeartbeatBO . getVisitNum ( ) cycleNum ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Logger logger = LoggerFactory.getLogger(PointDictServiceImpl.class);
+red_line===
+logger
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(sdsSchemeDao.deleteSdsScheme("BikeBusinessDepartment", "bh-order", "FIRST_GROUP"));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(sdsSchemeDao.deleteSdsScheme("BikeBusinessDepartment", "bh-order", "FIRST_GROUP")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"manzhizhen@didichuxing.com\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+sdsSchemeDO.setCreatorEmail("manzhizhen@didichuxing.com");
+red_line===
+"manzhizhen@didichuxing.com"
+start_offset===
+36
+end_offset===
+64
+Python OUTPUT===
+sdsSchemeDO.setCreatorEmail("manzhizhen@didichuxing.com");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"FIRST_GROUP\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+sdsSchemeDO.setSdsSchemeName("FIRST_GROUP");
+red_line===
+"FIRST_GROUP"
+start_offset===
+37
+end_offset===
+50
+Python OUTPUT===
+sdsSchemeDO.setSdsSchemeName("FIRST_GROUP");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"testPoint\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+pointReturnValueDO.setPoint("testPoint");
+red_line===
+"testPoint"
+start_offset===
+36
+end_offset===
+47
+Python OUTPUT===
+pointReturnValueDO.setPoint("testPoint");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"manzhizhen@didichuxing.com\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+pointReturnValueDO.setOperatorEmail("manzhizhen@didichuxing.com");
+red_line===
+"manzhizhen@didichuxing.com"
+start_offset===
+44
+end_offset===
+72
+Python OUTPUT===
+pointReturnValueDO.setOperatorEmail("manzhizhen@didichuxing.com");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"manzhizhen\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+pointReturnValueDO.setOperatorName("manzhizhen");
+red_line===
+"manzhizhen"
+start_offset===
+43
+end_offset===
+55
+Python OUTPUT===
+pointReturnValueDO.setOperatorName("manzhizhen");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(appInfoDao.queryAppInfo("BikeBusinessDepartment", "bh-order"));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(appInfoDao.queryAppInfo("BikeBusinessDepartment", "bh-order")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(appInfoDao.queryAppInfoByPage(null, null, 1, 10));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(appInfoDao.queryAppInfoByPage(null, null, 1, 10)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"BikeBusinessDepartment\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+heartbeatDO.setAppGroupName("BikeBusinessDepartment");
+red_line===
+"BikeBusinessDepartment"
+start_offset===
+36
+end_offset===
+60
+Python OUTPUT===
+heartbeatDO.setAppGroupName("BikeBusinessDepartment");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"htw-order\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+heartbeatDO.setAppName("htw-order");
+red_line===
+"htw-order"
+start_offset===
+31
+end_offset===
+42
+Python OUTPUT===
+heartbeatDO.setAppName("htw-order");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(JSON.toJSONString(appGroupDao.queryAllAppGroup()));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(JSON.toJSONString(appGroupDao.queryAllAppGroup())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(appGroupDao.queryByGroupName("黑马1"));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(appGroupDao.queryByGroupName("黑马1")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(appGroupDao.queryAppGroupByPage("    ", 1, 10));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(appGroupDao.queryAppGroupByPage(" ", 1, 10)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(pointStrategyDao.addPointStrategy(strategyDO));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(pointStrategyDao.addPointStrategy(strategyDO)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(pointStrategyDao.updatePointStrategy(pointStrategyDO));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(pointStrategyDao.updatePointStrategy(pointStrategyDO)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(pointStrategyDao.queryPointStrategyByPage("BikeBusinessDepartment", "order", "testPoint", null, 0, 10));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(pointStrategyDao.queryPointStrategyByPage("BikeBusinessDepartment", "order", "testPoint", null, 0, 10)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+    e.prin
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+    e.prin
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+    e.prin
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"manzhizhen@didichuxing.com\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+strategyDO.setCreatorEmail("manzhizhen@didichuxing.com");
+red_line===
+"manzhizhen@didichuxing.com"
+start_offset===
+35
+end_offset===
+63
+Python OUTPUT===
+strategyDO.setCreatorEmail("manzhizhen@didichuxing.com");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"FIRST_GROUP\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+strategyDO.setSdsSchemeName("FIRST_GROUP");
+red_line===
+"FIRST_GROUP"
+start_offset===
+36
+end_offset===
+49
+Python OUTPUT===
+strategyDO.setSdsSchemeName("FIRST_GROUP");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(list);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(list); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("新创建的订单id:" + orderId);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("新创建的订单id:" + orderId); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("新创建的订单id:" + orderId);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("新创建的订单id:" + orderId); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String CREATE_ORDER_POINT_1 = "createOrderPoint1";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String CREATE_ORDER_POINT_1 = " createOrderPoint1 " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String CREATE_ORDER_POINT = "createOrderPoint";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String CREATE_ORDER_POINT = " createOrderPoint " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("createOrder新创建的订单id:" + orderId);
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("createOrder新创建的订单id:" + orderId); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("createOrder此次调用已经被降级！");
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("createOrder此次调用已经被降级！"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("createOrder1新创建的订单id:" + orderId);
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("createOrder1新创建的订单id:" + orderId); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("createOrder1此次调用已经被降级！");
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("createOrder1此次调用已经被降级！"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("新创建的订单id:" + orderId);
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("新创建的订单id:" + orderId); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("此次调用已经被降级！");
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("此次调用已经被降级！"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String CREATE_ORDER_POINT = "createOrderPoint";
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final String CREATE_ORDER_POINT = " createOrderPoint " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format("方法被降级处理了，userId 是 {%d}，address 是 {%s}，发生的异常是 {%s}", userId, address, e.getMsg()));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(String.format("方法被降级处理了，userId 是 {%d}，address 是 {%s}，发生的异常是 {%s}", userId, address, e.getMsg())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format("方法被降级处理了，userId 是 {%d}，address 是 {%s}，发生了限流异常", userId, address));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(String.format("方法被降级处理了，userId 是 {%d}，address 是 {%s}，发生了限流异常", userId, address)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"sdsClient\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static SdsClient sdsClient = SdsClientFactory.getOrCreateSdsClient("BikeBusinessDepartment", "order", SERVER_URL);
+red_line===
+sdsClient
+start_offset===
+29
+end_offset===
+38
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("新创建的订单id:" + orderId);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("新创建的订单id:" + orderId); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(helloService.hello("abc"));
+red_line===
+System.out
+start_offset===
+24
+end_offset===
+34
+Python OUTPUT===
+ System.out.println(helloService.hello("abc")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("心累");
+red_line===
+System.out
+start_offset===
+20
+end_offset===
+30
+Python OUTPUT===
+ System.out.println("心累"); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+tackTrace(
+start_offset===
+20
+end_offset===
+30
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(future.get());
+red_line===
+System.out
+start_offset===
+24
+end_offset===
+34
+Python OUTPUT===
+ System.out.println(future.get()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1,10));
+red_line===
+ONDS.sleep
+start_offset===
+24
+end_offset===
+34
+Python OUTPUT===
+ TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1,10)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private volatile static SdsClient client = null;
+red_line===
+static
+start_offset===
+21
+end_offset===
+27
+Python OUTPUT===
+private static final volatile SdsClient client = null ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(date);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println(date); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("哈哈");
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("哈哈"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+strategyExecutorChain.setAccessible(true);
+red_line===
+strategyExecutorChain.setAccessible(true)
+start_offset===
+8
+end_offset===
+49
+Python OUTPUT===
+strategyExecutorChain.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int EXCEPTION_RATE_THRESHOLD = 50;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final int EXCEPTION_RATE_THRESHOLD = 50 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static long EXCEPTION_RATE_THRESHOLD_START = 5;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final long EXCEPTION_RATE_THRESHOLD_START = 5 ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Call \"remove()\" on \"startTimeThreadLocal\".
+scn.ruleId===
+5164
+scn.suspCodeStr===
+private static ThreadLocal<Long> startTimeThreadLocal = new ThreadLocal<>();
+red_line===
+startTimeThreadLocal
+start_offset===
+37
+end_offset===
+57
+Python OUTPUT===
+private static ThreadLocal<Long> startTimeThreadLocal = new ThreadLocal<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static SdsPowerfulCounterService counterService = new SdsPowerfulCounterService();
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final SdsPowerfulCounterService counterService = new SdsPowerfulCounterService ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+OutputStreamWriter osr = new OutputStreamWriter(os, CHARSET_NAME);
+red_line===
+CHARSET_NAME
+start_offset===
+60
+end_offset===
+72
+Python OUTPUT===
+ OutputStreamWriter osr = new OutputStreamWriter(os, CHARSET_NAME); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+InputStreamReader isr = new InputStreamReader(is, CHARSET_NAME);
+red_line===
+CHARSET_NAME
+start_offset===
+58
+end_offset===
+70
+Python OUTPUT===
+ InputStreamReader isr = new InputStreamReader(is, CHARSET_NAME); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader br = new BufferedReader(isr);
+red_line===
+new BufferedReader(isr)
+start_offset===
+28
+end_offset===
+51
+Python OUTPUT===
+BufferedReader br = new BufferedReader(isr);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(System.currentTimeMillis() - t1);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(System.currentTimeMillis() - t1); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"t1\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+long t1 = System.currentTimeMillis();
+red_line===
+= System.currentTimeMillis()
+start_offset===
+16
+end_offset===
+44
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new ArrayList<E>();
+red_line===
+<E>
+start_offset===
+32
+end_offset===
+35
+Python OUTPUT===
+<> E > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"className\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String className = readUTF8(bytes, items, classDefineRefIndex, buf);
+red_line===
+= readUTF8(bytes, items, classDefineRefIndex, buf)
+start_offset===
+25
+end_offset===
+75
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"classDefine\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+SdsClassDefine classDefine = new SdsClassDefine();
+red_line===
+new SdsClassDefine()
+start_offset===
+37
+end_offset===
+57
+Python OUTPUT===
+SdsClassDefine classDefine = new SdsClassDefine();
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"returnValue\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private Object returnValue;
+red_line===
+returnValue
+start_offset===
+23
+end_offset===
+34
+Python OUTPUT===
+private Object returnValue;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Fully initialize \"instance\" before assigning it.
+scn.ruleId===
+3064
+scn.suspCodeStr===
+instance = new SdsHeartBeatService(appGroupName, appName, serverAddrList);
+red_line===
+instance = new SdsHeartBeatService(appGroupName, appName, serverAddrList)
+start_offset===
+20
+end_offset===
+93
+Python OUTPUT===
+instance = new SdsHeartBeatService(appGroupName, appName, serverAddrList);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static ScheduledExecutorService pullPointStrategyExecutor;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final ScheduledExecutorService pullPointStrategyExecutor ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static SdsDowngradeDelayService downgradeDelayService = new SdsDowngradeDelayService();
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final SdsDowngradeDelayService downgradeDelayService = new SdsDowngradeDelayService ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"transient\" modifier from this field.
+scn.ruleId===
+2065
+scn.suspCodeStr===
+private transient AtomicLong retryExpireTime = new AtomicLong();
+red_line===
+transient
+start_offset===
+16
+end_offset===
+25
+Python OUTPUT===
+ private transieLong retryExpireTime = new AtomicLong(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this \"Map.get()\" and condition with a call to \"Map.computeIfAbsent()\".
+scn.ruleId===
+3824
+scn.suspCodeStr===
+Boolean value = pointMap.get(point);
+red_line===
+pointMap.get(point)
+start_offset===
+24
+end_offset===
+43
+Python OUTPUT===
+Boolean value = pointMap.get ( point ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"降级点不能为空！\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+AssertUtil.notBlack(point, "降级点不能为空！");
+red_line===
+"降级点不能为空！"
+start_offset===
+35
+end_offset===
+45
+Python OUTPUT===
+AssertUtil.notBlack(point, "降级点不能为空！");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"bucketSize\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Integer bucketSize = -1;
+red_line===
+bucketSize
+start_offset===
+20
+end_offset===
+30
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"curBucketIndex\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int curBucketIndex = getBucketIndexByTime(time);
+red_line===
+= getBucketIndexByTime(time)
+start_offset===
+27
+end_offset===
+55
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"originMethod\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+SdsDowngradeMethod sdsDowngradeMethodAnnotation = originMethod.getAnnotation(SdsDowngradeMethod.class);
+red_line===
+originMethod.getAnnotation
+start_offset===
+58
+end_offset===
+84
+Python OUTPUT===
+SdsDowngradeMethod sdsDowngradeMethodAnnotation = originMethod.getAnnotation(SdsDowngradeMethod.class);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+long bitSize = rate.seeds.length * dataCount;
+red_line===
+*
+start_offset===
+41
+end_offset===
+42
+Python OUTPUT===
+ long bitSize = rate.seeds.length * dataCount;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile AbstractStrategyExecutor strategyExecutorChain;
+red_line===
+volatile AbstractStrategyExecutor
+start_offset===
+12
+end_offset===
+45
+Python OUTPUT===
+private volatile AbstractStrategyExecutor strategyExecutorChain;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+needDowngrade = ThreadLocalRandom.current().nextInt(100) < strategy.getDowngradeRate();
+red_line===
+needDowngrade = ThreadLocalRandom
+start_offset===
+12
+end_offset===
+45
+Python OUTPUT===
+needDowngrade = ThreadLocalRandom.current().nextInt(100) < strategy.getDowngradeRate();
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"point\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+private String point;
+red_line===
+point
+start_offset===
+19
+end_offset===
+24
+Python OUTPUT===
+private final String point ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static long VISITT_HRESHOLD = 5L;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final long VISITT_HRESHOLD = 5 L ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static long TIMEOUT_THRESHOLD = 940L;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final long TIMEOUT_THRESHOLD = 940 L ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String STRATEGY_TEMPLATE = "提示：应用组：%s，应用：%s 当前所使用的降级预案是【%s】（注意，不属于该降级预案的降级点策略将对该应用不生效）";
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final String STRATEGY_TEMPLATE = " 提示：应用组：%s，应用：%s 当前所使用的降级预案是【%s】（注意，不属于该降级预案的降级点策略将对该应用不生效） " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"请求参数错误，请联系程序猿\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+red_line===
+"请求参数错误，请联系程序猿"
+start_offset===
+58
+end_offset===
+73
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"应用组名称不能为空\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用组名称不能为空");
+red_line===
+"应用组名称不能为空"
+start_offset===
+58
+end_offset===
+69
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用组名称不能为空");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"appInfoRequest\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+Integer page = appInfoRequest.getPage();
+red_line===
+appInfoRequest.getPage
+start_offset===
+23
+end_offset===
+45
+Python OUTPUT===
+Integer page = appInfoRequest.getPage();
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"client\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+heartbeatRequest = JSONObject.parseObject(request.getParameter("client"), HeartbeatRequest.class);
+red_line===
+"client"
+start_offset===
+75
+end_offset===
+83
+Python OUTPUT===
+heartbeatRequest = JSONObject.parseObject(request.getParameter("client"), HeartbeatRequest.class);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"appGroupRequest\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+String appGroupName = appGroupRequest.getAppGroupName();
+red_line===
+appGroupRequest.getAppGroupName
+start_offset===
+30
+end_offset===
+61
+Python OUTPUT===
+String appGroupName = appGroupRequest.getAppGroupName();
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"请求参数错误，请联系程序猿\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+red_line===
+"请求参数错误，请联系程序猿"
+start_offset===
+58
+end_offset===
+73
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "请求参数错误，请联系程序猿");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"应用名称不能为空\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用名称不能为空");
+red_line===
+"应用名称不能为空"
+start_offset===
+58
+end_offset===
+68
+Python OUTPUT===
+return new SdsResponse(PARAM_ERROR.getCode(), "应用名称不能为空");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(JSON.toJSONString(sdsSchemeDao.queryAllSdsScheme("BikeBusinessDepartment", "order")));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(JSON.toJSONString(sdsSchemeDao.queryAllSdsScheme("BikeBusinessDepartment", "order"))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(sdsSchemeDao.queryByGroupName("BikeBusinessDepartment", "bh-order", "FIRST_GROUP"));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(sdsSchemeDao.queryByGroupName("BikeBusinessDepartment", "bh-order", "FIRST_GROUP")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"BikeBusinessDepartment\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+sdsSchemeDO.setAppGroupName("BikeBusinessDepartment");
+red_line===
+"BikeBusinessDepartment"
+start_offset===
+36
+end_offset===
+60
+Python OUTPUT===
+sdsSchemeDO.setAppGroupName("BikeBusinessDepartment");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"bh-order\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+sdsSchemeDO.setAppName("bh-order");
+red_line===
+"bh-order"
+start_offset===
+31
+end_offset===
+41
+Python OUTPUT===
+sdsSchemeDO.setAppName("bh-order");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"bh-order\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+appInfoDO.setAppName("bh-order");
+red_line===
+"bh-order"
+start_offset===
+29
+end_offset===
+39
+Python OUTPUT===
+appInfoDO.setAppName("bh-order");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"bh-order\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+heartbeatDO.setAppName("bh-order");
+red_line===
+"bh-order"
+start_offset===
+31
+end_offset===
+41
+Python OUTPUT===
+heartbeatDO.setAppName("bh-order");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"visitPoint\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+heartbeatDO.setPoint("visitPoint");
+red_line===
+"visitPoint"
+start_offset===
+29
+end_offset===
+41
+Python OUTPUT===
+heartbeatDO.setPoint("visitPoint");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"visitPoint\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+heartbeatDO.setAppIp("10.2.2.9");
+red_line===
+"10.2.2.9");
+start_offset===
+29
+end_offset===
+41
+Python OUTPUT===
+heartbeatDO.setAppIp("10.2.2.9");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"BikeBusinessDepartment\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+strategyDO.setAppGroupName("BikeBusinessDepartment");
+red_line===
+"BikeBusinessDepartment"
+start_offset===
+35
+end_offset===
+59
+Python OUTPUT===
+strategyDO.setAppGroupName("BikeBusinessDepartment");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(pointStrategyDao.addPointStrategy(strategyDO));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(pointStrategyDao.addPointStrategy(strategyDO)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"orderId\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+Long orderId = createOrder(12345L, "杭州西湖区西溪谷G座");
+red_line===
+= createOrder(12345L, "杭州西湖区西溪谷G座")
+start_offset===
+25
+end_offset===
+60
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"orderId\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+return ThreadLocalRandom.current().nextLong(0, 10000000);
+red_line===
+LocalRandom.current().nextLong(0, 1
+start_offset===
+25
+end_offset===
+60
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"orderId\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+return ThreadLocalRandom.current().nextLong(0, 10000000);
+red_line===
+LocalRandom.current().nextLong(0, 1
+start_offset===
+25
+end_offset===
+60
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"orderId\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+Long orderId = createOrder(12345L, "杭州西湖区西溪谷G座");
+red_line===
+= createOrder(12345L, "杭州西湖区西溪谷G座")
+start_offset===
+25
+end_offset===
+60
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("您的业务方法已经执行，userId:" + userId + ", address:" + address); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+return ThreadLocalRandom.current().nextLong(0, 10000000);
+red_line===
+return Thr
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ return ThreadLocalRandom.current().nextLong(0, 10000000); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+return ThreadLocalRandom.current().nextLong(0, 10000000);
+red_line===
+return Thr
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ return ThreadLocalRandom.current().nextLong(0, 10000000); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"orderId\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+orderId = orderManageService.createOrder(12345L, "杭州西湖区西溪谷G座");
+red_line===
+= orderManageService.createOrder(12345L, "杭州西湖区西溪谷G座")
+start_offset===
+24
+end_offset===
+78
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Long orderId = null;
+red_line===
+orderId
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Long orderId = null;
+red_line===
+orderId
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"orderId\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+orderId = orderManageService.createOrder(12345L, "杭州西湖区西溪谷G座");
+red_line===
+= orderManageService.createOrder(12345L, "杭州西湖区西溪谷G座")
+start_offset===
+24
+end_offset===
+78
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Long orderId = null;
+red_line===
+orderId
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+return ThreadLocalRandom.current().nextLong(0, 10000000);
+red_line===
+readLoc
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+return ThreadLocalRandom.current().nextLong(0, 10000000);
+red_line===
+readLoc
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+return ThreadLocalRandom.current().nextLong(0, 10000000);
+red_line===
+readLoc
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+return ThreadLocalRandom.current().nextLong(0, 10000000);
+red_line===
+readLoc
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+       
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this unused \"orderId\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+       
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"future\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+CompletableFuture<String> future = helloService.asyncHello("abc");
+red_line===
+future
+start_offset===
+50
+end_offset===
+56
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"future\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1,10));
+red_line===
+Random
+start_offset===
+50
+end_offset===
+56
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Call \"remove()\" on \"traceIdService\".
+scn.ruleId===
+5164
+scn.suspCodeStr===
+private ThreadLocal<String> traceIdService = ThreadLocal.withInitial(() -> "古墓丽影");
+red_line===
+traceIdService
+start_offset===
+32
+end_offset===
+46
+Python OUTPUT===
+private ThreadLocal<String> traceIdService = ThreadLocal.withInitial(() -> "古墓丽影");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"date\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+Date date = new Date();
+red_line===
+= new Date()
+start_offset===
+18
+end_offset===
+30
+Python OUTPUT===
+ 
+isFixed===
+true
+==================

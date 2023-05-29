@@ -1,0 +1,266 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return 3;
+red_line===
+3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+r
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return 4;
+red_line===
+4
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor this code to use the more specialised Functional Interface \u0027BiPredicate\u003cInteger, Integer\u003e\u0027
+scn.ruleId===
+4276
+scn.suspCodeStr===
+@SuppressWarnings("unchecked") final BiFunction<Integer, Integer, Boolean> comparator = mock(BiFunction.class);
+red_line===
+BiFunction<Integer, Integer, Boolean>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("throw an exception");
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return 3;
+red_line===
+3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return 4;
+red_line===
+4
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"experiment\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Experiment experiment;
+red_line===
+experiment
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor this code to not throw exceptions in finally blocks.
+scn.ruleId===
+1163
+scn.suspCodeStr===
+throw ex.get();
+red_line===
+throw ex.get();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+void record(Runnable runnable);
+red_line===
+record
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Result<T> result = new Result<T>(this, controlObservation, candidateObservation, context);
+red_line===
+<T>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"candidate\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+candidateTimer = getMetricsProvider().timer(NAMESPACE_PREFIX, this.name, "candidate");
+red_line===
+"candidate"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"control\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+controlTimer = getMetricsProvider().timer(NAMESPACE_PREFIX, this.name, "control");
+red_line===
+"control"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================

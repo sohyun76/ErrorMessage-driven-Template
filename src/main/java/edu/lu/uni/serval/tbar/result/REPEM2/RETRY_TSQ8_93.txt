@@ -1,0 +1,5624 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed with first try and no remaining retry", ex);
+red_line===
+RuntimeException
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+throw new RuntimeException("Failed with first try and no remaining retry", ex);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(msg, previousException);
+red_line===
+RuntimeException
+start_offset===
+14
+end_offset===
+30
+Python OUTPUT===
+throw new RuntimeException(msg, previousException);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+private Random random = new Random();
+red_line===
+om random = new 
+start_offset===
+14
+end_offset===
+30
+Python OUTPUT===
+private Random random = new Random();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(System.currentTimeMillis() + " " + prefix + msg);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(System.currentTimeMillis() + " " + prefix + msg); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("[WARNING] " + System.currentTimeMillis() + " " + prefix + msg);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("[WARNING] " + System.currentTimeMillis() + " " + prefix + msg); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+ex.printStackTrace();
+red_line===
+ex.printSt
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ ex.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("[WARNING] " + System.currentTimeMillis() + " " + prefix + msg + " " + ExceptionUtils.getStackTrace(ex));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("[WARNING] " + System.currentTimeMillis() + " " + prefix + msg + " " + ExceptionUtils.getStackTrace(ex)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+executionException.printStackTrace();
+red_line===
+executionE
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ executionException.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(log);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(log); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(log);
+red_line===
+System.err
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.err.println(log); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Does not support values more than " + ARGUMENT_VALUE_COUNT_LIMIT);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Does not support values more than " + ARGUMENT_VALUE_COUNT_LIMIT);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int ARGUMENT_VALUE_COUNT_LIMIT = 10000;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final int ARGUMENT_VALUE_COUNT_LIMIT = 10000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(isSparkProcess(null));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(isSparkProcess(null)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+continue;
+red_line===
+continue;
+start_offset===
+20
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+i = endIndex;
+red_line===
+i
+start_offset===
+12
+end_offset===
+13
+Python OUTPUT===
+i = endIndex;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ConcurrentHashMap<Stacktrace, AtomicLong> metrics = new ConcurrentHashMap<>();
+red_line===
+volatile ConcurrentHashMap<Stacktrace, AtomicLong>
+start_offset===
+12
+end_offset===
+62
+Python OUTPUT===
+private volatile ConcurrentHashMap<Stacktrace, AtomicLong> metrics = new ConcurrentHashMap<>();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ConcurrentHashMap<ClassAndMethodMetricKey, Histogram> metrics = new ConcurrentHashMap<>();
+red_line===
+volatile ConcurrentHashMap<ClassAndMethodMetricKey, Histogram>
+start_offset===
+12
+end_offset===
+74
+Python OUTPUT===
+private volatile ConcurrentHashMap<ClassAndMethodMetricKey, Histogram> metrics = new ConcurrentHashMap<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(String.format("Failed to serialize %s (%s)", obj, obj.getClass()), e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(String.format("Failed to serialize %s (%s)", obj, obj.getClass()), e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(getLocalHostName());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(getLocalHostName()); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ConcurrentHashMap<ClassAndMethodMetricKey, AtomicLong> metrics = new ConcurrentHashMap<>();
+red_line===
+volatile ConcurrentHashMap<ClassAndMethodMetricKey, AtomicLong>
+start_offset===
+12
+end_offset===
+75
+Python OUTPUT===
+private volatile ConcurrentHashMap<ClassAndMethodMetricKey, AtomicLong> metrics = new ConcurrentHashMap<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+continue;
+red_line===
+continue;
+start_offset===
+20
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Failed to read file \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.warn("Failed to read file " + filePath, ex);
+red_line===
+"Failed to read file "
+start_offset===
+24
+end_offset===
+46
+Python OUTPUT===
+logger.warn("Failed to read file " + filePath, ex);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(getCurrentProcessName());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(getCurrentProcessName()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(isSparkExecutor(null));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(isSparkExecutor(null)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(isSparkDriver(null));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(isSparkDriver(null)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(String.format("Failed to get class for %s", implementaionClass), e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(String.format("Failed to get class for %s", implementaionClass), e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(String.format("Invalid class %s, please make sure it is an implementation of %s", clazz, interfaceClass.getName()));
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(String.format("Invalid class %s, please make sure it is an implementation of %s", clazz, interfaceClass.getName()));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(String.format("Failed to get constructor for %s", clazz.getName()), e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(String.format("Failed to get constructor for %s", clazz.getName()), e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(String.format("Failed to create %s instance for interface %s", implementaionClass, interfaceClass), e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(String.format("Failed to create %s instance for interface %s", implementaionClass, interfaceClass), e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Class clazz = Class.forName(className);
+red_line===
+Class
+start_offset===
+8
+end_offset===
+13
+Python OUTPUT===
+Class clazz = Class.forName(className);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"constructor\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Constructor<T> constructor = concretelass.getConstructor();
+red_line===
+concretelass.getConstructor()
+start_offset===
+41
+end_offset===
+70
+Python OUTPUT===
+Constructor<T> constructor = concretelass.getConstructor();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String ATTRIBUTE_NAME_ProcessCpuLoad = "ProcessCpuLoad";
+red_line===
+ATTRIBUTE_NAME_ProcessCpuLoad
+start_offset===
+32
+end_offset===
+61
+Python OUTPUT===
+private static final String ATTRIBUTE_NAME_ProcessCpuLoad = "ProcessCpuLoad";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final int ATTRIBUTE_INDEX_ProcessCpuLoad = 0;
+red_line===
+ATTRIBUTE_INDEX_ProcessCpuLoad
+start_offset===
+29
+end_offset===
+59
+Python OUTPUT===
+private static final int ATTRIBUTE_INDEX_ProcessCpuLoad = 0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String ATTRIBUTE_NAME_SystemCpuLoad = "SystemCpuLoad";
+red_line===
+ATTRIBUTE_NAME_SystemCpuLoad
+start_offset===
+32
+end_offset===
+60
+Python OUTPUT===
+private static final String ATTRIBUTE_NAME_SystemCpuLoad = "SystemCpuLoad";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final int ATTRIBUTE_INDEX_SystemCpuLoad = 1;
+red_line===
+ATTRIBUTE_INDEX_SystemCpuLoad
+start_offset===
+29
+end_offset===
+58
+Python OUTPUT===
+private static final int ATTRIBUTE_INDEX_SystemCpuLoad = 1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String ATTRIBUTE_NAME_ProcessCpuTime = "ProcessCpuTime";
+red_line===
+ATTRIBUTE_NAME_ProcessCpuTime
+start_offset===
+32
+end_offset===
+61
+Python OUTPUT===
+private static final String ATTRIBUTE_NAME_ProcessCpuTime = "ProcessCpuTime";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final int ATTRIBUTE_INDEX_ProcessCpuTime = 2;
+red_line===
+ATTRIBUTE_INDEX_ProcessCpuTime
+start_offset===
+29
+end_offset===
+59
+Python OUTPUT===
+private static final int ATTRIBUTE_INDEX_ProcessCpuTime = 2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String PROFILER_NAME = "CpuAndMemory";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String PROFILER_NAME = " CpuAndMemory " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+heapMemoryTotalUsed = new Double(memoryUsage.getUsed());
+red_line===
+Double
+start_offset===
+38
+end_offset===
+44
+Python OUTPUT===
+ heapMemoryTotalUsed = new Double(memo.getUsed()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+heapMemoryCommitted = new Double(memoryUsage.getCommitted());
+red_line===
+Double
+start_offset===
+38
+end_offset===
+44
+Python OUTPUT===
+ heapMemoryCommitted = new Double(memo.getCommitted()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+heapMemoryMax =  new Double(memoryUsage.getMax());
+red_line===
+Double
+start_offset===
+33
+end_offset===
+39
+Python OUTPUT===
+ heapMemoryMax = new Double(memor.getMax()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+nonHeapMemoryTotalUsed = new Double(memoryUsage.getUsed());
+red_line===
+Double
+start_offset===
+41
+end_offset===
+47
+Python OUTPUT===
+ nonHeapMemoryTotalUsed = new Double(memo.getUsed()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+nonHeapMemoryCommitted = new Double(memoryUsage.getCommitted());
+red_line===
+Double
+start_offset===
+41
+end_offset===
+47
+Python OUTPUT===
+ nonHeapMemoryCommitted = new Double(memo.getCommitted()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+nonHeapMemoryMax =  new Double(memoryUsage.getMax());
+red_line===
+Double
+start_offset===
+36
+end_offset===
+42
+Python OUTPUT===
+ nonHeapMemoryMax = new Double(memor.getMax()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+gcMap.put("collectionCount", new Long(gcMXBean.getCollectionCount()));
+red_line===
+Long
+start_offset===
+49
+end_offset===
+53
+Python OUTPUT===
+ gcMap.put("collectionCount", new Long(gcMXBean.gllectionCount())); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+gcMap.put("collectionTime", new Long(gcMXBean.getCollectionTime()));
+red_line===
+Long
+start_offset===
+48
+end_offset===
+52
+Python OUTPUT===
+ gcMap.put("collectionTime", new Long(gcMXBean.gllectionTime())); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+bufferPoolMap.put("count", new Long(pool.getCount()));
+red_line===
+Long
+start_offset===
+47
+end_offset===
+51
+Python OUTPUT===
+ bufferPoolMap.put("count", new Long(pool.getCo))); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+bufferPoolMap.put("memoryUsed", new Long(pool.getMemoryUsed()));
+red_line===
+Long
+start_offset===
+52
+end_offset===
+56
+Python OUTPUT===
+ bufferPoolMap.put("memoryUsed", new Long(pool.getMeUsed())); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+bufferPoolMap.put("totalCapacity", new Long(pool.getTotalCapacity()));
+red_line===
+Long
+start_offset===
+55
+end_offset===
+59
+Python OUTPUT===
+ bufferPoolMap.put("totalCapacity", new Long(pool.getToapacity())); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty collection instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> map = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+45
+end_offset===
+61
+Python OUTPUT===
+<> = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String PROFILER_NAME = "IO";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String PROFILER_NAME = " IO " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> map = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+45
+end_offset===
+61
+Python OUTPUT===
+<> = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> selfMap = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+49
+end_offset===
+65
+Python OUTPUT===
+<> = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> ioMap = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+47
+end_offset===
+63
+Python OUTPUT===
+<> = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Long read_bytes = ProcFileUtils.getBytesValue(procMap, "read_bytes");
+red_line===
+read_bytes
+start_offset===
+13
+end_offset===
+23
+Python OUTPUT===
+Long read_bytes = ProcFileUtils.getBytesValue(procMap, "read_bytes");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Long write_bytes = ProcFileUtils.getBytesValue(procMap, "write_bytes");
+red_line===
+write_bytes
+start_offset===
+13
+end_offset===
+24
+Python OUTPUT===
+Long write_bytes = ProcFileUtils.getBytesValue(procMap, "write_bytes");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String PROFILER_NAME = "ProcessInfo";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String PROFILER_NAME = " ProcessInfo " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final AgentLogger logger = AgentLogger.getLogger(ProcessInfoProfiler.class.getName());
+red_line===
+logger
+start_offset===
+37
+end_offset===
+43
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> map = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+45
+end_offset===
+61
+Python OUTPUT===
+<> = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> fragmentMap = new HashMap<String, Object>(copyFrom);
+red_line===
+<String, Object>
+start_offset===
+53
+end_offset===
+69
+Python OUTPUT===
+<> = new HashMap < String , Object > ( copyFrom ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"jvmInputArguments\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+map.put("jvmInputArguments", jvmInputArgumentsToReport);
+red_line===
+"jvmInputArguments"
+start_offset===
+20
+end_offset===
+39
+Python OUTPUT===
+map.put("jvmInputArguments", jvmInputArgumentsToReport);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"jvmClassPath\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+map.put("jvmClassPath", jvmClassPathToReport);
+red_line===
+"jvmClassPath"
+start_offset===
+20
+end_offset===
+34
+Python OUTPUT===
+map.put("jvmClassPath", jvmClassPathToReport);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"cmdline\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+map.put("cmdline", cmdline);
+red_line===
+"cmdline"
+start_offset===
+20
+end_offset===
+29
+Python OUTPUT===
+map.put("cmdline", cmdline);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this addition operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+long fragmentCount = jvmInputArgumentsFragements.size() + jvmClassPathFragements.size() + cmdlineFragements.size();
+red_line===
++
+start_offset===
+100
+end_offset===
+101
+Python OUTPUT===
+ long fragmentCount = jvmInputArgumentsFragements.size() + jvmClassPathFragements.size() + cmdlineFragements.size();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String PROFILER_NAME = "ThreadInfo";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String PROFILER_NAME = " ThreadInfo " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static AgentLogger logger = AgentLogger.getLogger(ThreadInfoProfiler.class.getName());
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final AgentLogger logger = AgentLogger . getLogger ( ThreadInfoProfiler . class . getName ( ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"metricName\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+metricMap.put("metricName", entry.getKey().getMetricName() + ".count");
+red_line===
+"metricName"
+start_offset===
+30
+end_offset===
+42
+Python OUTPUT===
+metricMap.put("metricName", entry.getKey().getMetricName() + ".count");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"metricValue\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+metricMap.put("metricValue", (double) entry.getValue().getCount());
+red_line===
+"metricValue"
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+metricMap.put("metricValue", (double) entry.getValue().getCount());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static long DEFAULT_METRIC_INTERVAL = 60000;
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final long DEFAULT_METRIC_INTERVAL = 60000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String EXECUTOR_ROLE = "executor";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String EXECUTOR_ROLE = " executor " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String DRIVER_ROLE = "driver";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String DRIVER_ROLE = " driver " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed response from url: " + url + ", response code: " + statusCode);
+red_line===
+RuntimeException
+start_offset===
+34
+end_offset===
+50
+Python OUTPUT===
+throw new RuntimeException("Failed response from url: " + url + ", response code: " + statusCode);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed getting url: " + url, ex);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Failed getting url: " + url, ex);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map yamlMap = (Map)yamlObj;
+red_line===
+Map
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+Map yamlMap = (Map)yamlObj;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map overrideMap = null;
+red_line===
+Map
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+Map overrideMap = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Java Agent " + AgentImpl.VERSION + " premain args: " + args);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Java Agent " + AgentImpl.VERSION + " premain args: " + args); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to create directory: " + path, e);
+red_line===
+RuntimeException
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+throw new RuntimeException("Failed to create directory: " + path, e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(String.format("Cannot set directory to %s because it is already has value %s", directory, this.directory));
+red_line===
+RuntimeException
+start_offset===
+26
+end_offset===
+42
+Python OUTPUT===
+throw new RuntimeException(String.format("Cannot set directory to %s because it is already has value %s", directory, this.directory));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to create file writer: " + path, e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Failed to create file writer: " + path, e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_OUTPUT_DIR = "outputDir";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_OUTPUT_DIR = " outputDir " ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+ntStac
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+final e . printStackTrace ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+.print
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+final e . printStackTrace ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+directory = Files.createTempDirectory("jvm_profiler_").toString();
+red_line===
+   dir
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+final directory = Files . createTempDirectory ( " jvm_profiler_ " ) . toString ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+   e.p
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+final e . printStackTrace ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027this::createFileWriter\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+return fileWriters.computeIfAbsent(profilerName, t -> createFileWriter(t));
+red_line===
+->
+start_offset===
+59
+end_offset===
+61
+Python OUTPUT===
+ return fileWriters.computeIfAbsent(profilerName, t -> createFileWriter(t)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format("ConsoleOutputReporter - %s: %s", profilerName, JsonUtils.serialize(metrics)));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(String.format("ConsoleOutputReporter - %s: %s", profilerName, JsonUtils.serialize(metrics))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Set whiteList = new HashSet();
+red_line===
+Set
+start_offset===
+10
+end_offset===
+13
+Python OUTPUT===
+private Set whiteList = new HashSet();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List listValue = (List) value;
+red_line===
+List
+start_offset===
+10
+end_offset===
+14
+Python OUTPUT===
+List listValue = (List) value;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"List\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+List<String> metricList = (List<String>) listValue;
+red_line===
+List<String>
+start_offset===
+35
+end_offset===
+47
+Python OUTPUT===
+ List<String> metricList = ( <String>) listValue;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+26
+end_offset===
+42
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_BROKER_LIST = "brokerList";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_BROKER_LIST = " brokerList " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_SYNC_MODE = "syncMode";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_SYNC_MODE = " syncMode " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_TOPIC_PREFIX = "topicPrefix";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_TOPIC_PREFIX = " topicPrefix " ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+.print
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+final e . printStackTrace ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Metric interval too short, must be at least " + Arguments.MIN_INTERVAL_MILLIS);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Metric interval too short, must be at least " + Arguments.MIN_INTERVAL_MILLIS);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Sample interval too short, must be 0 (disable sampling) or at least " + Arguments.MIN_INTERVAL_MILLIS);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Sample interval too short, must be 0 (disable sampling) or at least " + Arguments.MIN_INTERVAL_MILLIS);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(String.format("Failed to create reporter instance %s", reporterConstructor.getDeclaringClass()), e);
+red_line===
+RuntimeException
+start_offset===
+26
+end_offset===
+42
+Python OUTPUT===
+throw new RuntimeException(String.format("Failed to create reporter instance %s", reporterConstructor.getDeclaringClass()), e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Argument configFile is empty, cannot use " + configProvider.getClass());
+red_line===
+RuntimeException
+start_offset===
+34
+end_offset===
+50
+Python OUTPUT===
+throw new RuntimeException("Argument configFile is empty, cannot use " + configProvider.getClass());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(String.format("Failed to create config provider instance %s", configProviderConstructor.getDeclaringClass()), e);
+red_line===
+RuntimeException
+start_offset===
+26
+end_offset===
+42
+Python OUTPUT===
+throw new RuntimeException(String.format("Failed to create config provider instance %s", configProviderConstructor.getDeclaringClass()), e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String DEFAULT_APP_ID_REGEX = "application_[\\w_]+";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String DEFAULT_APP_ID_REGEX = " application_[\\w_]+ " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static long DEFAULT_METRIC_INTERVAL = 60000;
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final long DEFAULT_METRIC_INTERVAL = 60000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static long DEFAULT_SAMPLE_INTERVAL = 100;
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final long DEFAULT_SAMPLE_INTERVAL = 100 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_NOOP = "noop";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_NOOP = " noop " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_REPORTER = "reporter";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_REPORTER = " reporter " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_CONFIG_PROVIDER = "configProvider";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_CONFIG_PROVIDER = " configProvider " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_CONFIG_FILE = "configFile";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_CONFIG_FILE = " configFile " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_METRIC_INTERVAL = "metricInterval";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_METRIC_INTERVAL = " metricInterval " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_SAMPLE_INTERVAL = "sampleInterval";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_SAMPLE_INTERVAL = " sampleInterval " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_TAG = "tag";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_TAG = " tag " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_CLUSTER = "cluster";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_CLUSTER = " cluster " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_APP_ID_VARIABLE = "appIdVariable";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_APP_ID_VARIABLE = " appIdVariable " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_APP_ID_REGEX = "appIdRegex";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_APP_ID_REGEX = " appIdRegex " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_THREAD_PROFILING = "threadProfiling";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_THREAD_PROFILING = " threadProfiling " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_DURATION_PROFILING = "durationProfiling";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_DURATION_PROFILING = " durationProfiling " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_ARGUMENT_PROFILING = "argumentProfiling";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_ARGUMENT_PROFILING = " argumentProfiling " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+public final static String ARG_IO_PROFILING = "ioProfiling";
+red_line===
+static
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+public static final String ARG_IO_PROFILING = " ioProfiling " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Invalid argument value: \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new IllegalArgumentException("Invalid argument value: " + str);
+red_line===
+"Invalid argument value: "
+start_offset===
+55
+end_offset===
+81
+Python OUTPUT===
+throw new IllegalArgumentException("Invalid argument value: " + str);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this \"Map.get()\" and condition with a call to \"Map.computeIfAbsent()\".
+scn.ruleId===
+3824
+scn.suspCodeStr===
+List<String> list = map.get(key);
+red_line===
+map.get(key)
+start_offset===
+32
+end_offset===
+44
+Python OUTPUT===
+List < String > list = map.get ( key ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Interval too short for profiler: " + profiler + ", must be at least " + Arguments.MIN_INTERVAL_MILLIS);
+red_line===
+RuntimeException
+start_offset===
+26
+end_offset===
+42
+Python OUTPUT===
+throw new RuntimeException("Interval too short for profiler: " + profiler + ", must be at least " + Arguments.MIN_INTERVAL_MILLIS);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(log);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(log); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(log);
+red_line===
+System.err
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.err.println(log); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Hello World " + System.currentTimeMillis());
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("Hello World " + System.currentTimeMillis()); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+long totalRunningMillis = 1 * 60 * 1000;
+red_line===
+*
+start_offset===
+41
+end_offset===
+42
+Python OUTPUT===
+ long totalRunningMillis = 1 * 60 * 1000;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+23
+end_offset===
+27
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String normalizedClassName = className.replaceAll("/", ".");
+red_line===
+replaceAll
+start_offset===
+47
+end_offset===
+57
+Python OUTPUT===
+String normalizedClassName = className.replaceAll ( " / " , "." ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+ex.printStackTrace();
+red_line===
+tSta
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ex.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+ex.printStackTrace();
+red_line===
+tSta
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ex.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+ex.printStackTrace();
+red_line===
+tSta
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ex.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+ex.printStackTrace();
+red_line===
+tSta
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ex.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Directly append the argument of String.valueOf().
+scn.ruleId===
+1153
+scn.suspCodeStr===
+String argument = "arg." + argIndex + "." + String.valueOf(argValue);
+red_line===
+String.valueOf(argValue)
+start_offset===
+56
+end_offset===
+80
+Python OUTPUT===
+String argument = "arg." + argIndex + "." + String.valueOf(argValue);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to execute sql: " + sql, e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("Failed to execute sql: " + sql, e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Invalid result (empty result) from sql: " + sql);
+red_line===
+RuntimeException
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+throw new RuntimeException("Invalid result (empty result) from sql: " + sql);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to create object from class " + clazz);
+red_line===
+RuntimeException
+start_offset===
+20
+end_offset===
+36
+Python OUTPUT===
+throw new RuntimeException("Failed to create object from class " + clazz);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Date\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+Date day = new Date(DateTimeUtils.truncateToDay(startDayInclusive.getTime()));
+red_line===
+Date
+start_offset===
+21
+end_offset===
+25
+Python OUTPUT===
+ Date day = new (DateTimeUtils.truncateToDay(startDayInclusive.getTime()));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"Object\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+entity = (T) clazz.getConstructor().newInstance();
+red_line===
+T
+start_offset===
+20
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<List<Object>> result = new ArrayList<List<Object>>();
+red_line===
+<List<Object>>
+start_offset===
+47
+end_offset===
+61
+Python OUTPUT===
+<> = new ArrayList < List < Object >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Finished sql: \" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.info("Finished sql: " + sql);
+red_line===
+"Finished sql: "
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+logger.info("Finished sql: " + sql);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Running sql: \" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.info("Running sql: " + sql);
+red_line===
+"Running sql: "
+start_offset===
+18
+end_offset===
+33
+Python OUTPUT===
+logger.info("Running sql: " + sql);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"totalDeleteCount\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+long totalDeleteCount = executeUpdate(sql);
+red_line===
+executeUpdate(sql)
+start_offset===
+30
+end_offset===
+48
+Python OUTPUT===
+long totalDeleteCount = executeUpdate(sql);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+PreparedStatement stmt = con.prepareStatement(sql);
+red_line===
+con.prepareStatement(sql)
+start_offset===
+31
+end_offset===
+56
+Python OUTPUT===
+PreparedStatement stmt = con.prepareStatement(sql);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to find JDBC class " + jdbcDriverClass, e);
+red_line===
+RuntimeException
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+throw new RuntimeException("Failed to find JDBC class " + jdbcDriverClass, e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to create JDBC connection: " + connectionString, e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Failed to create JDBC connection: " + connectionString, e);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile static Connection connection;
+red_line===
+volatile static Connection
+start_offset===
+12
+end_offset===
+38
+Python OUTPUT===
+private volatile static Connection connection;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+connection = DriverManager.getConnection(connectionString);
+red_line===
+connection
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+final connection = DriverManager . getConnection ( connectionString ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+connection = null;
+red_line===
+connection
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+final connection = null ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+connection = null;
+red_line===
+connection
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+final connection = null ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"MYSQL_JDBC_DRIVER_CLASS\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final String MYSQL_JDBC_DRIVER_CLASS = "com.mysql.jdbc.Driver";
+red_line===
+MYSQL_JDBC_DRIVER_CLASS
+start_offset===
+32
+end_offset===
+55
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to parse date time: " + str, e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("Failed to parse date time: " + str, e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Failed to parse date time %s with exception %s, will try another format\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.debug(String.format("Failed to parse date time %s with exception %s, will try another format", str, e));
+red_line===
+"Failed to parse date time %s with exception %s, will try another format"
+start_offset===
+33
+end_offset===
+106
+Python OUTPUT===
+logger.debug(String.format("Failed to parse date time %s with exception %s, will try another format", str, e));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"calendar\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Calendar calendar = Calendar.getInstance(timeZone);
+red_line===
+Calendar.getInstance(timeZone)
+start_offset===
+24
+end_offset===
+54
+Python OUTPUT===
+Calendar calendar = Calendar.getInstance(timeZone);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"day\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+int day = cal.get(Calendar.DAY_OF_MONTH);
+red_line===
+cal.get(Calendar.DAY_OF_MONTH)
+start_offset===
+14
+end_offset===
+44
+Python OUTPUT===
+int day = cal.get(Calendar.DAY_OF_MONTH);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+long millisPerDay = 1000 * 60 * 60 * 24;
+red_line===
+*
+start_offset===
+39
+end_offset===
+40
+Python OUTPUT===
+ long millisPerDay = 1000 * 60 * 60 * 24;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+long millisPerDay = 1000 * 60 * 60 * 24;
+red_line===
+*
+start_offset===
+39
+end_offset===
+40
+Python OUTPUT===
+ long millisPerDay = 1000 * 60 * 60 * 24;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Did not find matching property for primary key: " + key);
+red_line===
+RuntimeException
+start_offset===
+20
+end_offset===
+36
+Python OUTPUT===
+throw new RuntimeException("Did not find matching property for primary key: " + key);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Unsupported output object: " + object);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("Unsupported output object: " + object);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Not support empty json or json with all values being null");
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("Not support empty json or json with all values being null");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to parse json object: " + json, e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("Failed to parse json object: " + json, e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Failed to print sql result\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.warn("Failed to print sql result", e);
+red_line===
+"Failed to print sql result"
+start_offset===
+18
+end_offset===
+46
+Python OUTPUT===
+logger.warn("Failed to print sql result", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map map = new HashMap();
+red_line===
+Map
+start_offset===
+4
+end_offset===
+7
+Python OUTPUT===
+Map map = new HashMap();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this member \"protected\".
+scn.ruleId===
+2386
+scn.suspCodeStr===
+public static final String[] PRIMARY_KEYS = new String[] {"epochMillis", "name", "host", "processUuid", "appId"};
+red_line===
+PRIMARY_KEYS
+start_offset===
+31
+end_offset===
+43
+Python OUTPUT===
+protected static final String [ ] PRIMARY_KEYS = new String [ ] { " epochMillis " , " name " , " host " , " processUuid " , " appId " } ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this member \"protected\".
+scn.ruleId===
+2386
+scn.suspCodeStr===
+public static final String[] INDEX_COLUMNS = new String[] {"epochMillis", "name", "host", "processUuid", "appId"};
+red_line===
+INDEX_COLUMNS
+start_offset===
+31
+end_offset===
+44
+Python OUTPUT===
+protected static final String [ ] INDEX_COLUMNS = new String [ ] { " epochMillis " , " name " , " host " , " processUuid " , " appId " } ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this member \"protected\".
+scn.ruleId===
+2386
+scn.suspCodeStr===
+public static final String[] DATETIME_COLUMNS = new String[] {"epochMillis"};
+red_line===
+DATETIME_COLUMNS
+start_offset===
+31
+end_offset===
+47
+Python OUTPUT===
+protected static final String [ ] DATETIME_COLUMNS = new String [ ] { " epochMillis " } ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Date\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+Date expiredDataDate = DateTimeUtils.addDays(new Date(DateTimeUtils.truncateToDay(currentTime)), -dataRetentionDays);
+red_line===
+Date
+start_offset===
+73
+end_offset===
+77
+Python OUTPUT===
+ Date expiredDataDate = DateTimeUtils.addDays(new ( DateTimeUtils.truncateToDay(currentTime)), -dataRetentionDays);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List listValue = (List) value;
+red_line===
+List
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+List listValue = (List) value;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private String password = "admin";
+red_line===
+ng p
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+private String password = "admin";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"num\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+num++;
+red_line===
+num++
+start_offset===
+24
+end_offset===
+29
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"List\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+List<String> metricList = (List<String>) listValue;
+red_line===
+List<String>
+start_offset===
+47
+end_offset===
+59
+Python OUTPUT===
+ List<String> metricList = ( <String>) listValue;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"List\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+List<Map<String, Object>> metricList = (List<Map<String, Object>>) listValue;
+red_line===
+List<Map<String, Object>>
+start_offset===
+60
+end_offset===
+85
+Python OUTPUT===
+ List<Map<String, Object>> metricList = ( <Map<String, Object>>) listValue;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method1\" 24 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(0, filter.matchMethod("class1", "method1").size());
+red_line===
+"method1"
+start_offset===
+60
+end_offset===
+69
+Python OUTPUT===
+Assert.assertEquals(0, filter.matchMethod("class1", "method1").size());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"package22.class2\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(1, filter.matchMethod("package22.class2", "method2").size());
+red_line===
+"package22.class2"
+start_offset===
+50
+end_offset===
+68
+Python OUTPUT===
+Assert.assertEquals(1, filter.matchMethod("package22.class2", "method2").size());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"class2\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+filter = new ClassMethodArgumentFilter(Arrays.asList(new ClassMethodArgument("class2", "method1", 1)));
+red_line===
+"class2"
+start_offset===
+85
+end_offset===
+93
+Python OUTPUT===
+filter = new ClassMethodArgumentFilter(Arrays.asList(new ClassMethodArgument("class2", "method1", 1)));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method1\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+buffer.appendValue("class1", "method1", "metric1", 11);
+red_line===
+"method1"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+buffer.appendValue("class1", "method1", "metric1", 11);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method2\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+buffer.appendValue("class1", "method2", "metric1", 22);
+red_line===
+"method2"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+buffer.appendValue("class1", "method2", "metric1", 22);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String[] methodNames = new String[]{"method1", "method2", "method1", "method3", "method101"};
+red_line===
+"method3"
+start_offset===
+77
+end_offset===
+86
+Python OUTPUT===
+String[] methodNames = new String[]{"method1", "method2", "method1", "method3", "method101"};
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"duration\" 13 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+buffer.appendValue(classNames[index], methodNames[index], "duration", values[index]);
+red_line===
+"duration"
+start_offset===
+78
+end_offset===
+88
+Python OUTPUT===
+buffer.appendValue(classNames[index], methodNames[index], "duration", values[index]);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"class2\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+buffer.appendValue("class2", "method2", "metric1", 1001);
+red_line===
+"class2"
+start_offset===
+27
+end_offset===
+35
+Python OUTPUT===
+buffer.appendValue("class2", "method2", "metric1", 1001);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return "hello";
+red_line===
+"hello"
+start_offset===
+19
+end_offset===
+26
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+StackTr
+start_offset===
+19
+end_offset===
+26
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method1\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+stacktrace.setStack(new ClassAndMethod[] {new ClassAndMethod("class1", "method1")});
+red_line===
+"method1"
+start_offset===
+83
+end_offset===
+92
+Python OUTPUT===
+stacktrace.setStack(new ClassAndMethod[] {new ClassAndMethod("class1", "method1")});
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method2\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+stacktrace.setStack(new ClassAndMethod[] {new ClassAndMethod("class1", "method2")});
+red_line===
+"method2"
+start_offset===
+83
+end_offset===
+92
+Python OUTPUT===
+stacktrace.setStack(new ClassAndMethod[] {new ClassAndMethod("class1", "method2")});
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method11\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+stacktrace.setStack(new ClassAndMethod[] {new ClassAndMethod("class11", "method11"), new ClassAndMethod("class11", "method12")});
+red_line===
+"method11"
+start_offset===
+84
+end_offset===
+94
+Python OUTPUT===
+stacktrace.setStack(new ClassAndMethod[] {new ClassAndMethod("class11", "method11"), new ClassAndMethod("class11", "method12")});
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"RUNNING\" 11 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+stacktrace.setThreadState("RUNNING");
+red_line===
+"RUNNING"
+start_offset===
+38
+end_offset===
+47
+Python OUTPUT===
+stacktrace.setThreadState("RUNNING");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread1\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+stacktrace.setThreadName("thread1");
+red_line===
+"thread1"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+stacktrace.setThreadName("thread1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread2\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+stacktrace.setThreadName("thread2");
+red_line===
+"thread2"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+stacktrace.setThreadName("thread2");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+stacktrace.setThreadName("thread3");
+red_line===
+"thread3"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+stacktrace.setThreadName("thread3");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+le("test"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+mpFile("t
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+le("test"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"thread3\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+le("test"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"VmRSS\" 15 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("676 kB", result.get("VmRSS"));
+red_line===
+"VmRSS"
+start_offset===
+49
+end_offset===
+56
+Python OUTPUT===
+Assert.assertEquals("676 kB", result.get("VmRSS"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"iowait\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(1569550L, cpuTimes.get(0).get("iowait"));
+red_line===
+"iowait"
+start_offset===
+62
+end_offset===
+70
+Python OUTPUT===
+Assert.assertEquals(1569550L, cpuTimes.get(0).get("iowait"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"system\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(468234436L, cpuTimes.get(0).get("system"));
+red_line===
+"system"
+start_offset===
+64
+end_offset===
+72
+Python OUTPUT===
+Assert.assertEquals(468234436L, cpuTimes.get(0).get("system"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"com.foo.jobs.Abc\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("com.foo.jobs.Abc", StringUtils.getArgumentValue("--class com.foo.jobs.Abc", "--class"));
+red_line===
+"com.foo.jobs.Abc"
+start_offset===
+28
+end_offset===
+46
+Python OUTPUT===
+Assert.assertEquals("com.foo.jobs.Abc", StringUtils.getArgumentValue("--class com.foo.jobs.Abc", "--class"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method1\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+buffer.appendValue("class1", "method1", "arg1");
+red_line===
+"method1"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+buffer.appendValue("class1", "method1", "arg1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method2\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+buffer.appendValue("class1", "method2", "arg1");
+red_line===
+"method2"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+buffer.appendValue("class1", "method2", "arg1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"class2\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+buffer.appendValue("class2", "method2", "arg1");
+red_line===
+"class2"
+start_offset===
+27
+end_offset===
+35
+Python OUTPUT===
+buffer.appendValue("class2", "method2", "arg1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method1\" 20 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertFalse(filter.matchMethod("class1", "method1"));
+red_line===
+"method1"
+start_offset===
+56
+end_offset===
+65
+Python OUTPUT===
+Assert.assertFalse(filter.matchMethod("class1", "method1"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"class2\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+filter = new ClassAndMethodFilter(Arrays.asList(new ClassAndMethod("class2", "method1")));
+red_line===
+"class2"
+start_offset===
+75
+end_offset===
+83
+Python OUTPUT===
+filter = new ClassAndMethodFilter(Arrays.asList(new ClassAndMethod("class2", "method1")));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use isEmpty() to check whether the collection is empty or not.
+scn.ruleId===
+1155
+scn.suspCodeStr===
+Assert.assertTrue(gcMetrics.size() >= 1);
+red_line===
+gcMetrics.size() >= 1
+start_offset===
+26
+end_offset===
+47
+Python OUTPUT===
+Assert.assertTrue(gcMetrics.size() >= 1);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method1\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+collector.collectLongMetric("class1", "method1", "metric1", 111);
+red_line===
+"method1"
+start_offset===
+46
+end_offset===
+55
+Python OUTPUT===
+collector.collectLongMetric("class1", "method1", "metric1", 111);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method2\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+collector.collectLongMetric("class2", "method2", "metric2", 222);
+red_line===
+"method2"
+start_offset===
+46
+end_offset===
+55
+Python OUTPUT===
+collector.collectLongMetric("class2", "method2", "metric2", 222);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"metricValue\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(2.0, (Double) metricsToCheck.get(0).get("metricValue"), 0.01);
+red_line===
+"metricValue"
+start_offset===
+68
+end_offset===
+81
+Python OUTPUT===
+Assert.assertEquals(2.0, (Double) metricsToCheck.get(0).get("metricValue"), 0.01);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"testDummySleepThread\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+thread.setName("testDummySleepThread");
+red_line===
+"testDummySleepThread"
+start_offset===
+23
+end_offset===
+45
+Python OUTPUT===
+thread.setName("testDummySleepThread");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+Thread.sleep(1000 * 60);
+red_line===
+*
+start_offset===
+34
+end_offset===
+35
+Python OUTPUT===
+ Thread.sleep(1000 * 60);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+Thread.sleep(1000 * 60);
+red_line===
+*
+start_offset===
+34
+end_offset===
+35
+Python OUTPUT===
+ Thread.sleep(1000 * 60);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+Thread.sleep(1000 * 60);
+red_line===
+*
+start_offset===
+34
+end_offset===
+35
+Python OUTPUT===
+ Thread.sleep(1000 * 60);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Metric list:");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Metric list:"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(metricList);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(metricList); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"jvmClassPath\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertTrue(metricList.get(0).containsKey("jvmClassPath"));
+red_line===
+"jvmClassPath"
+start_offset===
+56
+end_offset===
+70
+Python OUTPUT===
+Assert.assertTrue(metricList.get(0).containsKey("jvmClassPath"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"jvmInputArguments\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertTrue(metricList.get(0).containsKey("jvmInputArguments"));
+red_line===
+"jvmInputArguments"
+start_offset===
+56
+end_offset===
+75
+Python OUTPUT===
+Assert.assertTrue(metricList.get(0).containsKey("jvmInputArguments"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"cmdline\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertTrue(metricList.get(0).containsKey("cmdline"));
+red_line===
+"cmdline"
+start_offset===
+56
+end_offset===
+65
+Python OUTPUT===
+Assert.assertTrue(metricList.get(0).containsKey("cmdline"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"endEpoch\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertTrue((long)map.get("endEpoch") >= epochMillis1);
+red_line===
+"endEpoch"
+start_offset===
+40
+end_offset===
+50
+Python OUTPUT===
+Assert.assertTrue((long)map.get("endEpoch") >= epochMillis1);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Stacktrace\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("Stacktrace", nameList.get(0));
+red_line===
+"Stacktrace"
+start_offset===
+28
+end_offset===
+40
+Python OUTPUT===
+Assert.assertEquals("Stacktrace", nameList.get(0));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"startEpoch\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertTrue((long)map.get("startEpoch") >= epochMillis1);
+red_line===
+"startEpoch"
+start_offset===
+40
+end_offset===
+52
+Python OUTPUT===
+Assert.assertTrue((long)map.get("startEpoch") >= epochMillis1);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+collector.collectMetric("class1", "method1", "arg1");
+red_line===
+"method1"
+start_offset===
+42
+end_offset===
+51
+Python OUTPUT===
+collector.collectMetric("class1", "method1", "arg1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map<String, Object> directBufferPoolsMap = new HashMap();
+red_line===
+HashMap
+start_offset===
+51
+end_offset===
+58
+Python OUTPUT===
+Map<String, Object> directBufferPoolsMap = new HashMap();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map<String, Object> mappedBufferPoolsMap = new HashMap();
+red_line===
+HashMap
+start_offset===
+51
+end_offset===
+58
+Python OUTPUT===
+Map<String, Object> mappedBufferPoolsMap = new HashMap();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map map = parseMap(mapString);
+red_line===
+Map
+start_offset===
+4
+end_offset===
+7
+Python OUTPUT===
+Map map = parseMap(mapString);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map expected = new HashMap();
+red_line===
+Map
+start_offset===
+4
+end_offset===
+7
+Python OUTPUT===
+Map expected = new HashMap();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map result = new HashMap<>();
+red_line===
+Map
+start_offset===
+4
+end_offset===
+7
+Python OUTPUT===
+Map result = new HashMap<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"count\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+metrics.put("count", 1L);
+red_line===
+"count"
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+metrics.put("count", 1L);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Heap memory\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+expectedMetrics.put("memoryPools.PSEdenSpace.type", "Heap memory");
+red_line===
+"Heap memory"
+start_offset===
+56
+end_offset===
+69
+Python OUTPUT===
+expectedMetrics.put("memoryPools.PSEdenSpace.type", "Heap memory");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Non-heap memory\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+expectedMetrics.put("memoryPools.CodeCache.type", "Non-heap memory");
+red_line===
+"Non-heap memory"
+start_offset===
+54
+end_offset===
+71
+Python OUTPUT===
+expectedMetrics.put("memoryPools.CodeCache.type", "Non-heap memory");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"method1\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+MethodProfilerStaticProxy.collectMethodArgument("class1", "method1", 1, null);
+red_line===
+"method1"
+start_offset===
+66
+end_offset===
+75
+Python OUTPUT===
+MethodProfilerStaticProxy.collectMethodArgument("class1", "method1", 1, null);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ab.c.d\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(new ClassAndMethod("ab.c.d", "test"), arguments.getDurationProfiling().get(1));
+red_line===
+"ab.c.d"
+start_offset===
+47
+end_offset===
+55
+Python OUTPUT===
+Assert.assertEquals(new ClassAndMethod("ab.c.d", "test"), arguments.getDurationProfiling().get(1));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"metricInterval\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+argMap.put("metricInterval", Arrays.asList("9000"));
+red_line===
+"metricInterval"
+start_offset===
+23
+end_offset===
+39
+Python OUTPUT===
+argMap.put("metricInterval", Arrays.asList("9000"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ioProfiling\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+argMap.put("ioProfiling", Arrays.asList("false"));
+red_line===
+"ioProfiling"
+start_offset===
+23
+end_offset===
+36
+Python OUTPUT===
+argMap.put("ioProfiling", Arrays.asList("false"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"durationProfiling\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+argMap.put("durationProfiling", Arrays.asList("package.c900.m900", "package.c901.m901"));
+red_line===
+"durationProfiling"
+start_offset===
+23
+end_offset===
+42
+Python OUTPUT===
+argMap.put("durationProfiling", Arrays.asList("package.c900.m900", "package.c901.m901"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"durationProfiling\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+ File.createTempFil
+start_offset===
+23
+end_offset===
+42
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"durationProfiling\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("test", "test");
+red_line===
+ File.createTempFil
+start_offset===
+23
+end_offset===
+42
+Python OUTPUT===
+File file = File.createTempFile("test", "test");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"durationProfiling\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Path path = Files.createTempFile("jvm-profiler_", ".yaml");
+red_line===
+es.createTempFile("
+start_offset===
+23
+end_offset===
+42
+Python OUTPUT===
+Path path = Files.createTempFile("jvm-profiler_", ".yaml");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"key3.key3a\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(Arrays.asList("value3a"), rootConfig.get("key3.key3a"));
+red_line===
+"key3.key3a"
+start_offset===
+73
+end_offset===
+85
+Python OUTPUT===
+Assert.assertEquals(Arrays.asList("value3a"), rootConfig.get("key3.key3a"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+34
+end_offset===
+50
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString();
+red_line===
+reateTempDirecto
+start_offset===
+34
+end_offset===
+50
+Python OUTPUT===
+String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("outputDir: " + outputDir);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("outputDir: " + outputDir); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027File::getName\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+List<String> fileNames = Arrays.asList(files).stream().map(t->t.getName()).sorted().collect(Collectors.toList());
+red_line===
+->
+start_offset===
+68
+end_offset===
+70
+Python OUTPUT===
+ List<String> fileNames = Arrays.asList(files).stream().map(t->t.getName()).sorted().collect(Collectors.toList()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----CpuAndMemory-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----CpuAndMemory-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonCpuAndMemory);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonCpuAndMemory); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----IO-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----IO-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonProcFileSystem);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonProcFileSystem); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----MethodArgument-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----MethodArgument-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonMethodArgument);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonMethodArgument); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----MethodDuration-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----MethodDuration-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonMethodDuration);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonMethodDuration); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----ProcessInfo-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----ProcessInfo-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonProcessInfo);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonProcessInfo); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString();
+red_line===
+String out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("outputDir: " + outputDir);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("outputDir: " + outputDir); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString();
+red_line===
+String out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("outputDir: " + outputDir);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("outputDir: " + outputDir); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString();
+red_line===
+String out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("outputDir: " + outputDir);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("outputDir: " + outputDir); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027File::getName\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+List<String> fileNames = Arrays.asList(files).stream().map(t->t.getName()).sorted().collect(Collectors.toList());
+red_line===
+->
+start_offset===
+68
+end_offset===
+70
+Python OUTPUT===
+ List<String> fileNames = Arrays.asList(files).stream().map(t->t.getName()).sorted().collect(Collectors.toList()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----CpuAndMemory-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----CpuAndMemory-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonCpuAndMemory);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonCpuAndMemory); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----MethodArgument-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----MethodArgument-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonMethodArgument);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonMethodArgument); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----MethodDuration-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----MethodDuration-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonMethodDuration);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonMethodDuration); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----ProcessInfo-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----ProcessInfo-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonProcessInfo);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonProcessInfo); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString();
+red_line===
+String out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ String outputDir = Files.createTempDirectory("jvm_profiler_test_output").toString(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("outputDir: " + outputDir);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("outputDir: " + outputDir); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027File::getName\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+List<String> fileNames = Arrays.asList(files).stream().map(t->t.getName()).sorted().collect(Collectors.toList());
+red_line===
+->
+start_offset===
+68
+end_offset===
+70
+Python OUTPUT===
+ List<String> fileNames = Arrays.asList(files).stream().map(t->t.getName()).sorted().collect(Collectors.toList()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----CpuAndMemory-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----CpuAndMemory-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonCpuAndMemory);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonCpuAndMemory); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----ProcessInfo-----");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----ProcessInfo-----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(jsonProcessInfo);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(jsonProcessInfo); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("agentJar: " + agentJar);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("agentJar: " + agentJar); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"java.home\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String javaHome = System.getProperty("java.home");
+red_line===
+"java.home"
+start_offset===
+45
+end_offset===
+56
+Python OUTPUT===
+String javaHome = System.getProperty("java.home");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"bin/java\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String javaBin = Paths.get(javaHome, "bin/java").toAbsolutePath().toString();
+red_line===
+"bin/java"
+start_offset===
+45
+end_offset===
+55
+Python OUTPUT===
+String javaBin = Paths.get(javaHome, "bin/java").toAbsolutePath().toString();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ProcessInfo.json\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("ProcessInfo.json", fileNames.get(4));
+red_line===
+"ProcessInfo.json"
+start_offset===
+28
+end_offset===
+46
+Python OUTPUT===
+Assert.assertEquals("ProcessInfo.json", fileNames.get(4));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"TEST_APP_ID_123_ABC\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+pb.environment().put("APP_ID", "TEST_APP_ID_123_ABC");
+red_line===
+"TEST_APP_ID_123_ABC"
+start_offset===
+39
+end_offset===
+60
+Python OUTPUT===
+pb.environment().put("APP_ID", "TEST_APP_ID_123_ABC");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"CpuAndMemory.json\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("CpuAndMemory.json", fileNames.get(0));
+red_line===
+"CpuAndMemory.json"
+start_offset===
+28
+end_offset===
+47
+Python OUTPUT===
+Assert.assertEquals("CpuAndMemory.json", fileNames.get(0));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"CpuAndMemory.json\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("h2dbfile", ".db");
+red_line===
+empFile("h2dbfile",
+start_offset===
+28
+end_offset===
+47
+Python OUTPUT===
+File file = File.createTempFile("h2dbfile", ".db");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"CpuAndMemory.json\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File file = File.createTempFile("h2dbfile", ".db");
+red_line===
+empFile("h2dbfile",
+start_offset===
+28
+end_offset===
+47
+Python OUTPUT===
+File file = File.createTempFile("h2dbfile", ".db");
+isFixed===
+false
+==================

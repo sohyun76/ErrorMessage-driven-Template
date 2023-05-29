@@ -1,0 +1,2052 @@
+RuleType===
+
+scn.errorMessage===
+
+scn.ruleId===
+
+scn.suspCodeStr===
+Enumeration<? extends ZipEntry> enu = zf.entries();
+red_line===
+
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+Enumeration<? extends ZipEntry> enu = zf.entries();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility bypass should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.set(obj, convert(type, dataValue, field.getType()));
+red_line===
+field.set(obj, convert(type, dataValue, field.getType()))
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+field.set(obj, convert(type, dataValue, field.getType()));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility bypass should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.set(obj, parseSetOf(dataValue, getElementType(field)));
+red_line===
+field.set(obj, parseSetOf(dataValue, getElementType(field)))
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+field.set(obj, parseSetOf(dataValue, getElementType(field)));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+continue;
+red_line===
+continue;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+continue;
+red_line===
+continue;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Unknown tagging mode: " + mTagging);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+throw new RuntimeException("Unknown tagging mode: " + mTagging);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"packageId\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private int packageId;
+red_line===
+packageId
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"name\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String name;
+red_line===
+name
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"attributes\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private final Attribute[] attributes;
+red_line===
+attributes
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+private final Attribute[] attributes;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int kSHA1DigestOutputLen = kSHA1DigestLen * 2 + 1;
+red_line===
+kSHA1DigestOutputLen
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int kSHA1DigestOutputLen = kSHA1DigestLen * 2 + 1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+private byte signature[];
+red_line===
+[]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+private byte signature[];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_PRIVATE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_PRIVATE = 0x2;
+red_line===
+ACC_PRIVATE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_PRIVATE = 0x2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_STATIC\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_STATIC = 0x8;
+red_line===
+ACC_STATIC
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_STATIC = 0x8;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_FINAL\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_FINAL = 0x10;
+red_line===
+ACC_FINAL
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_FINAL = 0x10;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_SYNCHRONIZED\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_SYNCHRONIZED = 0x20;
+red_line===
+ACC_SYNCHRONIZED
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_SYNCHRONIZED = 0x20;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_VOLATILE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_VOLATILE = 0x40;
+red_line===
+ACC_VOLATILE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_VOLATILE = 0x40;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_BRIDGE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_BRIDGE = 0x40;
+red_line===
+ACC_BRIDGE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_BRIDGE = 0x40;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_TRANSIENT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_TRANSIENT = 0x80;
+red_line===
+ACC_TRANSIENT
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_TRANSIENT = 0x80;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_PUBLIC\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_PUBLIC = 0x1;
+red_line===
+ACC_PUBLIC
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_PUBLIC = 0x1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_PROTECTED\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_PROTECTED = 0x4;
+red_line===
+ACC_PROTECTED
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_PROTECTED = 0x4;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_PRIVATE a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_PRIVATE = 0x2;
+red_line===
+ACC_PRIVATE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_PRIVATE = 0x2 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_STATIC a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_STATIC = 0x8;
+red_line===
+ACC_STATIC
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_STATIC = 0x8 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_FINAL a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_FINAL = 0x10;
+red_line===
+ACC_FINAL
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_FINAL = 0x10 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_SYNCHRONIZED a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_SYNCHRONIZED = 0x20;
+red_line===
+ACC_SYNCHRONIZED
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_SYNCHRONIZED = 0x20 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_VOLATILE a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_VOLATILE = 0x40;
+red_line===
+ACC_VOLATILE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_VOLATILE = 0x40 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_BRIDGE a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_BRIDGE = 0x40;
+red_line===
+ACC_BRIDGE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_BRIDGE = 0x40 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_TRANSIENT a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_TRANSIENT = 0x80;
+red_line===
+ACC_TRANSIENT
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_TRANSIENT = 0x80 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_NATIVE a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_NATIVE = 0x100;
+red_line===
+ACC_NATIVE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_NATIVE = 0x100 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_NATIVE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_NATIVE = 0x100;
+red_line===
+ACC_NATIVE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_NATIVE = 0x100;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_ABSTRACT a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_ABSTRACT = 0x400;
+red_line===
+ACC_ABSTRACT
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_ABSTRACT = 0x400 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_ABSTRACT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_ABSTRACT = 0x400;
+red_line===
+ACC_ABSTRACT
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_ABSTRACT = 0x400;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_VARARGS\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_VARARGS = 0x80;
+red_line===
+ACC_VARARGS
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_VARARGS = 0x80;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_INTERFACE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_INTERFACE = 0x200;
+red_line===
+ACC_INTERFACE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_INTERFACE = 0x200;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_STRICT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_STRICT = 0x800;
+red_line===
+ACC_STRICT
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_STRICT = 0x800;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_SYNTHETIC\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_SYNTHETIC = 0x1000;
+red_line===
+ACC_SYNTHETIC
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_SYNTHETIC = 0x1000;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_ANNOTATION\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_ANNOTATION = 0x2000;
+red_line===
+ACC_ANNOTATION
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_ANNOTATION = 0x2000;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_ENUM\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_ENUM = 0x4000;
+red_line===
+ACC_ENUM
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_ENUM = 0x4000;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_CONSTRUCTOR\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_CONSTRUCTOR = 0x10000;
+red_line===
+ACC_CONSTRUCTOR
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_CONSTRUCTOR = 0x10000;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ACC_DECLARED_SYNCHRONIZED\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static int ACC_DECLARED_SYNCHRONIZED = 0x20000;
+red_line===
+ACC_DECLARED_SYNCHRONIZED
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static int ACC_DECLARED_SYNCHRONIZED = 0x20000;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"public static ACC_VARARGS\" field final
+scn.ruleId===
+1444
+scn.suspCodeStr===
+public static int ACC_VARARGS = 0x80;
+red_line===
+ACC_VARARGS
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_VARARGS = 0x80 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"public static ACC_INTERFACE\" field final
+scn.ruleId===
+1444
+scn.suspCodeStr===
+public static int ACC_INTERFACE = 0x200;
+red_line===
+ACC_INTERFACE
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_INTERFACE = 0x200 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_STRICT a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_STRICT = 0x800;
+red_line===
+ACC_STRICT
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_STRICT = 0x800 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_SYNTHETIC a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_SYNTHETIC = 0x1000;
+red_line===
+ACC_SYNTHETIC
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_SYNTHETIC = 0x1000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_ANNOTATION a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_ANNOTATION = 0x2000;
+red_line===
+ACC_ANNOTATION
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_ANNOTATION = 0x2000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"public static ACC_ENUM\" field final
+scn.ruleId===
+1444
+scn.suspCodeStr===
+public static int ACC_ENUM = 0x4000;
+red_line===
+ACC_ENUM
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_ENUM = 0x4000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_CONSTRUCTOR a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_CONSTRUCTOR = 0x10000;
+red_line===
+ACC_CONSTRUCTOR
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_CONSTRUCTOR = 0x10000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_DECLARED_SYNCHRONIZED a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_DECLARED_SYNCHRONIZED = 0x20000;
+red_line===
+ACC_DECLARED_SYNCHRONIZED
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_DECLARED_SYNCHRONIZED = 0x20000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final short RADIX_16p7 = 1;
+red_line===
+RADIX_16p7
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final short RADIX_16p7 = 1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final short RADIX_0p23 = 3;
+red_line===
+RADIX_0p23
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final short RADIX_0p23 = 3;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int _longest = 0;
+red_line===
+_longest
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+int _longest = 0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(ioe);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+throw new RuntimeException(ioe);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"trailling\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int trailling = Buffers.readUByte(buffer);
+red_line===
+trailling
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"strLen\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int strLen = readLen(buffer);
+red_line===
+= readLen(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"trailling\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int trailling = Buffers.readUShort(buffer);
+red_line===
+trailling
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"sorted\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+boolean sorted = (stringPoolHeader.getFlags() & StringPoolHeader.SORTED_FLAG) != 0;
+red_line===
+sorted
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"res0\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+short res0 = Buffers.readUByte(buffer);
+red_line===
+= Buffers.readUByte(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"size\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int size = Buffers.readUShort(buffer);
+red_line===
+= Buffers.readUShort(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format("%s=%d", pair.getRight(), pair.getLeft()));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(String.format("%s=%d", pair.getRight(), pair.getLeft())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("code area not found");
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.err.println("code area not found"); 
+isFixed===
+false
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Disable access to external entities in XML parsing.
+scn.ruleId===
+2755
+scn.suspCodeStr===
+SAXParserFactory factory = SAXParserFactory.newInstance();
+red_line===
+newInstance
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+SAXParserFactory factory = SAXParserFactory.newInstance();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"xmlNodeEndTag\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+XmlNodeEndTag xmlNodeEndTag = readXmlNodeEndTag();
+red_line===
+= readXmlNodeEndTag()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"xmlCData\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+XmlCData xmlCData = readXmlCData();
+red_line===
+= readXmlCData()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"styleIndex\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int styleIndex = Buffers.readUShort(buffer);
+red_line===
+= Buffers.readUShort(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"classIndex\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int classIndex = Buffers.readUShort(buffer);
+red_line===
+= Buffers.readUShort(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"idIndex\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int idIndex = Buffers.readUShort(buffer);
+red_line===
+= Buffers.readUShort(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"attributeSize\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int attributeSize = Buffers.readUShort(buffer);
+red_line===
+= Buffers.readUShort(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"attributeStart\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int attributeStart = Buffers.readUShort(buffer);
+red_line===
+= Buffers.readUShort(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e.getMessage());
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+throw new RuntimeException(e.getMessage());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+String magic = new String(Buffers.readBytes(buffer, 8));
+red_line===
+String
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String magic = new (Buffers.readBytes(buffer, 8));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+long offsets[] = new long[stringIdsSize];
+red_line===
+[]
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+long offsets[] = new long[stringIdsSize];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"entry\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+LibraryEntry entry = new LibraryEntry(packageId, name);
+red_line===
+= new LibraryEntry(packageId, name)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"publicKeyData\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+ByteBuffer publicKeyData = readLenPrefixData(buffer);
+red_line===
+= readLenPrefixData(buffer)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"id\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int id = attributeData.getInt();
+red_line===
+= attributeData.getInt()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"PSS_SHA_256\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final int PSS_SHA_256 = 0x0101;
+red_line===
+PSS_SHA_256
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"PSS_SHA_512\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final int PSS_SHA_512 = 0x0102;
+red_line===
+PSS_SHA_512
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"PKCS1_SHA_256\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final int PKCS1_SHA_256 = 0x0103;
+red_line===
+PKCS1_SHA_256
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"PKCS1_SHA_512\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final int PKCS1_SHA_512 = 0x0104;
+red_line===
+PKCS1_SHA_512
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"ECDSA_SHA_256\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final int ECDSA_SHA_256 = 0x0201;
+red_line===
+ECDSA_SHA_256
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"ECDSA_SHA_512\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final int ECDSA_SHA_512 = 0x0202;
+red_line===
+ECDSA_SHA_512
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"DSA_SHA_256\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final int DSA_SHA_256 = 0x0301;
+red_line===
+DSA_SHA_256
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(apkFile.getApkMeta());
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(apkFile.getApkMeta()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(apkFile.getManifestXml());
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(apkFile.getManifestXml()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(apkFile.getApkSingers());
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(apkFile.getApkSingers()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility bypass should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.set(obj, convert(type, dataValue, field.getType()));
+red_line===
+field.set(obj, convert(type, dataValue, field.getType()))
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+field.set(obj, convert(type, dataValue, field.getType()));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"public static sysStyle\" field final
+scn.ruleId===
+1444
+scn.suspCodeStr===
+public static Map<Integer, String> sysStyle = ResourceLoader.loadSystemStyles();
+red_line===
+sysStyle
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final Map < Integer , String > sysStyle = ResourceLoader . loadSystemStyles ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use String.format( \"%02X\", ...) instead.
+scn.ruleId===
+4425
+scn.suspCodeStr===
+sb.append(Integer.toHexString((value >> i * 8) & 0xff));
+red_line===
+Integer.toHexString
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+sb.append(Integer.toHexString((value >> i * 8) & 0xff));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int kSHA1DigestLen = 20;
+red_line===
+kSHA1DigestLen
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int kSHA1DigestLen = 20;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ACC_PUBLIC a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static int ACC_PUBLIC = 0x1;
+red_line===
+ACC_PUBLIC
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_PUBLIC = 0x1 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"public static ACCACC_PROTECTED0x4\" field final
+scn.ruleId===
+1444
+scn.suspCodeStr===
+public static int ACC_PROTECTED = 0x4;
+red_line===
+CC_PROTECTED = 0x4;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int ACC_PROTECTED = 0x4 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final short RADIX_23p0 = 0;
+red_line===
+RADIX_23p0
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final short RADIX_23p0 = 0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final short RADIX_8p15 = 2;
+red_line===
+RADIX_8p15
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final short RADIX_8p15 = 2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int _shortest = Integer.MAX_VALUE;
+red_line===
+_shortest
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+int _shortest = Integer.MAX_VALUE;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace Charset.forName() call with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+public static Charset charsetUTF8 = Charset.forName("UTF-8");
+red_line===
+Charset.forName("UTF-8")
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ public static Charset charsetUTF8 = Charset.forName("UTF-8"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make charsetUTF8 a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static Charset charsetUTF8 = Charset.forName("UTF-8");
+red_line===
+charsetUTF8
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final Charset charsetUTF8 = Charset . forName ( " UTF-8 " ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(line);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(line); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"xmlNodeStartTag\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+XmlNodeStartTag xmlNodeStartTag = readXmlNodeStartTag();
+red_line===
+= readXmlNodeStartTag()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+config.setLanguage(new String(Buffers.readBytes(buffer, 2)).replace("\0", ""));
+red_line===
+String
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ config.setLanguage(new String(.readBytes(buffer, 2)).replace("\0", "")); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+config.setCountry(new String(Buffers.readBytes(buffer, 2)).replace("\0", ""));
+red_line===
+String
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ config.setCountry(new String(.readBytes(buffer, 2)).replace("\0", "")); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make xmlStreamers a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public XmlStreamer[] xmlStreamers;
+red_line===
+xmlStreamers
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final XmlStreamer [ ] xmlStreamers ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this if-then-else statement by a single return statement.
+scn.ruleId===
+1126
+scn.suspCodeStr===
+if (uri != null && !uri.equals(namespace.uri)) return false;
+red_line===
+if
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ if (uri != null && !uri.equals(namespace.uri)) return false; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"count\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int count;
+red_line===
+count
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"apkFile\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private File apkFile;
+red_line===
+apkFile
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+private File apkFile;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+fileChannel = new FileInputStream(apkFile).getChannel();
+red_line===
+new FileInputStream(apkFile)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+fileChannel = new FileInputStream(apkFile).getChannel();
+isFixed===
+false
+==================

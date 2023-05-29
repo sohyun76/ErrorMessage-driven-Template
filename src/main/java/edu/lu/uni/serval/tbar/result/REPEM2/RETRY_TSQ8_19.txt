@@ -1,0 +1,1235 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+commands = new HashSet<Command>();
+red_line===
+<Command>
+start_offset===
+27
+end_offset===
+36
+Python OUTPUT===
+<> < Command > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private static final Set<Command> EMPTY_SET = new HashSet<Command>();
+red_line===
+<Command>
+start_offset===
+58
+end_offset===
+67
+Python OUTPUT===
+<> < Command > EMPTY_SET = new HashSet < Command > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Class targetList;
+red_line===
+Class
+start_offset===
+9
+end_offset===
+14
+Python OUTPUT===
+private Class targetList;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Class targetSet;
+red_line===
+Class
+start_offset===
+12
+end_offset===
+17
+Python OUTPUT===
+private Class targetSet;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"commands\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+commands.add( command );
+red_line===
+commands.add
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+commands.add( command );
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+modelFieldCommands = new HashMap<ModelField,Set<Command>>();
+red_line===
+<ModelField,Set<Command>>
+start_offset===
+34
+end_offset===
+59
+Python OUTPUT===
+<> Command >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"policies\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+policies.add((BlueprintPolicy) policy);
+red_line===
+policies.add
+start_offset===
+12
+end_offset===
+24
+Python OUTPUT===
+policies.add((BlueprintPolicy) policy);
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"policies\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+policies.add((FieldPolicy) policy);
+red_line===
+policies.add
+start_offset===
+12
+end_offset===
+24
+Python OUTPUT===
+policies.add((FieldPolicy) policy);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"spareTire\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+SpareTire spareTire = new SpareTire("spare tire name");
+red_line===
+new SpareTire("spare tire name")
+start_offset===
+34
+end_offset===
+66
+Python OUTPUT===
+SpareTire spareTire = new SpareTire("spare tire name");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"emails\" which hides the field declared at line 43.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<String> emails = new ArrayList();
+red_line===
+emails
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+List<String> emails = new ArrayList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<Class, List<BlueprintPolicy>> blueprintPolicies = new HashMap<Class, List<BlueprintPolicy>>();
+red_line===
+<Class, List<BlueprintPolicy>>
+start_offset===
+77
+end_offset===
+107
+Python OUTPUT===
+<> = new HashMap < Class , List < BlueprintPolicy >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"email\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+emails.add("email" + UUID.randomUUID() + "@test.net");
+red_line===
+"email"
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+emails.add("email" + UUID.randomUUID() + "@test.net");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<Class, Erector> erectors = new HashMap<Class, Erector>();
+red_line===
+<Class, Erector>
+start_offset===
+54
+end_offset===
+70
+Python OUTPUT===
+<> erectors = new HashMap < Class , Erector > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Map status;
+red_line===
+Map
+start_offset===
+12
+end_offset===
+15
+Python OUTPUT===
+private Map status;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List<Class> blueprintClasses = new ArrayList<Class>();
+red_line===
+Class
+start_offset===
+13
+end_offset===
+18
+Python OUTPUT===
+List<Class> blueprintClasses = new ArrayList<Class>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"modelField\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+ModelField modelField = erector.getModelField("mileage");
+red_line===
+= erector.getModelField("mileage")
+start_offset===
+30
+end_offset===
+64
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Float\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+assertEquals(new Float(123.456), val);
+red_line===
+Float
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+ assertEquals(new Float(16), val); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"val\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+Float val = (Float) erector.getTemplate().get(car, "mileage");
+red_line===
+= (Float) erector.getTemplate().get(car, "mileage")
+start_offset===
+18
+end_offset===
+69
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List blueprints = new ArrayList();
+red_line===
+List
+start_offset===
+8
+end_offset===
+12
+Python OUTPUT===
+List blueprints = new ArrayList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Float\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+assertEquals(new Float(100.1), modelField.getValue());
+red_line===
+Float
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+ assertEquals(new Float(1, modelField.getValue()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Class target;
+red_line===
+Class
+start_offset===
+9
+end_offset===
+14
+Python OUTPUT===
+private Class target;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Class fieldClass;
+red_line===
+Class
+start_offset===
+9
+end_offset===
+14
+Python OUTPUT===
+private Class fieldClass;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Class target;
+red_line===
+Class
+start_offset===
+9
+end_offset===
+14
+Python OUTPUT===
+private Class target;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this if-then-else statement by a single return statement.
+scn.ruleId===
+1126
+scn.suspCodeStr===
+if (!targetList.equals(that.targetList)) return false;
+red_line===
+if
+start_offset===
+8
+end_offset===
+10
+Python OUTPUT===
+ if (!targetList.equals(that.targetList)) return false; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this if-then-else statement by a single return statement.
+scn.ruleId===
+1126
+scn.suspCodeStr===
+if (!targetSet.equals(that.targetSet)) return false;
+red_line===
+if
+start_offset===
+8
+end_offset===
+10
+Python OUTPUT===
+ if (!targetSet.equals(that.targetSet)) return false; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<ModelField,Set<Command>> modelFieldCommands = new HashMap<ModelField,Set<Command>>();
+red_line===
+<ModelField,Set<Command>>
+start_offset===
+63
+end_offset===
+88
+Python OUTPUT===
+<> = new HashMap < ModelField , Set < Command >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Class singletonClass;
+red_line===
+Class
+start_offset===
+9
+end_offset===
+14
+Python OUTPUT===
+private Class singletonClass;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Class target;
+red_line===
+Class
+start_offset===
+9
+end_offset===
+14
+Python OUTPUT===
+private Class target;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"command\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private final String command;
+red_line===
+command
+start_offset===
+22
+end_offset===
+29
+Python OUTPUT===
+private final String command;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<ModelField,Set<Command>> modelFieldCommands = new HashMap<ModelField,Set<Command>>();
+red_line===
+<ModelField,Set<Command>>
+start_offset===
+70
+end_offset===
+95
+Python OUTPUT===
+<> modelFieldCommands = new HashMap < ModelField , Set < Command >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+erectors = new HashMap<Class, Erector>();
+red_line===
+Class
+start_offset===
+31
+end_offset===
+36
+Python OUTPUT===
+erectors = new HashMap<Class, Erector>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.setAccessible(true);
+red_line===
+field.setAccessible(true)
+start_offset===
+12
+end_offset===
+37
+Python OUTPUT===
+field.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make name a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String name;
+red_line===
+name
+start_offset===
+18
+end_offset===
+22
+Python OUTPUT===
+public static final String name ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"wheel\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Wheel wheel = new Wheel("tire name");
+red_line===
+new Wheel("tire name")
+start_offset===
+26
+end_offset===
+48
+Python OUTPUT===
+Wheel wheel = new Wheel("tire name");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+public Map status = new HashMap();
+red_line===
+Map
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+public Map status = new HashMap();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List<Class> blueprintClasses = new ArrayList<Class>();
+red_line===
+Class
+start_offset===
+13
+end_offset===
+18
+Python OUTPUT===
+List<Class> blueprintClasses = new ArrayList<Class>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Float\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+assertEquals(new Float(100.1), val);
+red_line===
+Float
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+ assertEquals(new Float(1, val); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Float\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+assertEquals(new Float(0.0), val);
+red_line===
+Float
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+ assertEquals(new Float(0val); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Float\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+car.setMileage(new Float(123.456));
+red_line===
+Float
+start_offset===
+27
+end_offset===
+32
+Python OUTPUT===
+ car.setMileage(new Float(16)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Float\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+assertEquals(new Float(0.0), new Float(car.getMileage()));
+red_line===
+Float
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+ assertEquals(new Float(0.0),new (car.getMileage()));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Class beanClass = springBlueprint.beanClass();
+red_line===
+Class
+start_offset===
+12
+end_offset===
+17
+Python OUTPUT===
+Class beanClass = springBlueprint.beanClass();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make erector a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public Erector erector;
+red_line===
+erector
+start_offset===
+19
+end_offset===
+26
+Python OUTPUT===
+public static final Erector erector ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make defaultField a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public DefaultField defaultField;
+red_line===
+defaultField
+start_offset===
+24
+end_offset===
+36
+Python OUTPUT===
+public static final DefaultField defaultField ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make carBlueprint a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public CarBlueprint carBlueprint = new CarBlueprint();
+red_line===
+carBlueprint
+start_offset===
+24
+end_offset===
+36
+Python OUTPUT===
+public static final CarBlueprint carBlueprint = new CarBlueprint ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.setAccessible(true);
+red_line===
+field.setAccessible(true)
+start_offset===
+12
+end_offset===
+37
+Python OUTPUT===
+field.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<Class, List<FieldPolicy>> fieldPolicies = new HashMap<Class, List<FieldPolicy>>();
+red_line===
+<Class, List<FieldPolicy>>
+start_offset===
+69
+end_offset===
+95
+Python OUTPUT===
+<> = new HashMap < Class , List < FieldPolicy >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"newInstance\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+blueprint = clazz.newInstance();
+red_line===
+newInstance
+start_offset===
+30
+end_offset===
+41
+Python OUTPUT===
+ blueprint = clazz.newInstance
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<ModelField> modelFields = new ArrayList<ModelField>();
+red_line===
+<ModelField>
+start_offset===
+52
+end_offset===
+64
+Python OUTPUT===
+<> modelFields = new ArrayList < ModelField > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String,Field> fieldsMap = new HashMap<String,Field>();
+red_line===
+<String,Field>
+start_offset===
+49
+end_offset===
+63
+Python OUTPUT===
+<> fieldsMap = new HashMap < String , Field > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Set referenceModelSet = null;
+red_line===
+Set
+start_offset===
+20
+end_offset===
+23
+Python OUTPUT===
+Set referenceModelSet = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Class superClazz = clazz.getSuperclass();
+red_line===
+Class
+start_offset===
+8
+end_offset===
+13
+Python OUTPUT===
+Class superClazz = clazz.getSuperclass();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Callback> afterCreateCallbacks = new ArrayList<Callback>();
+red_line===
+<Callback>
+start_offset===
+59
+end_offset===
+69
+Python OUTPUT===
+<> afterCreateCallbacks = new ArrayList < Callback > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+blueprints = new ArrayList<Object>();
+red_line===
+<Object>
+start_offset===
+34
+end_offset===
+42
+Python OUTPUT===
+<> < Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+policies = new ArrayList<FieldPolicy>();
+red_line===
+<FieldPolicy>
+start_offset===
+40
+end_offset===
+53
+Python OUTPUT===
+<> < FieldPolicy > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"referenceModel\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+logger.error("Invalid AfterCreateCallback registered for {}", referenceModel.getClass() );
+red_line===
+referenceModel.getClass
+start_offset===
+82
+end_offset===
+105
+Python OUTPUT===
+logger.error("Invalid AfterCreateCallback registered for {}", referenceModel.getClass() );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Class target = blueprintAnnotation.value();
+red_line===
+Class
+start_offset===
+8
+end_offset===
+13
+Python OUTPUT===
+Class target = blueprintAnnotation.value();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+commands = new HashSet<Command>();
+red_line===
+<Command>
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+<> < Command > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+callbacks = new HashMap<String,List<Callback>>();
+red_line===
+<String,List<Callback>>
+start_offset===
+31
+end_offset===
+54
+Python OUTPUT===
+<> Callback >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+modelFields = new HashMap<String,ModelField>();
+red_line===
+<String,ModelField>
+start_offset===
+33
+end_offset===
+52
+Python OUTPUT===
+<> , ModelField > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"blueprintPolicies\" which hides the field declared at line 67.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<BlueprintPolicy> blueprintPolicies = this.getBlueprintPolicies().get(erector.getTarget());
+red_line===
+blueprintPolicies
+start_offset===
+34
+end_offset===
+51
+Python OUTPUT===
+List<BlueprintPolicy> blueprintPolicies = this.getBlueprintPolicies().get(erector.getTarget());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+policies = new ArrayList<BlueprintPolicy>();
+red_line===
+<BlueprintPolicy>
+start_offset===
+40
+end_offset===
+57
+Python OUTPUT===
+<> < BlueprintPolicy > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List modelList = null;
+red_line===
+List
+start_offset===
+20
+end_offset===
+24
+Python OUTPUT===
+List modelList = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Class templateClass = blueprintAnnotation.template();
+red_line===
+Class
+start_offset===
+8
+end_offset===
+13
+Python OUTPUT===
+Class templateClass = blueprintAnnotation.template();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+erector = new Erector();
+red_line===
+erector
+start_offset===
+8
+end_offset===
+15
+Python OUTPUT===
+final erector = new Erector ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+defaultField = new DefaultField();
+red_line===
+defaultField
+start_offset===
+8
+end_offset===
+20
+Python OUTPUT===
+final defaultField = new DefaultField ( ) ;
+isFixed===
+true
+==================

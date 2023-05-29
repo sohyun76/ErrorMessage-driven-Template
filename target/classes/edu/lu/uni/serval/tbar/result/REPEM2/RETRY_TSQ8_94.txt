@@ -1,0 +1,4921 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"lorURI\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+LorURL lorURI = new LorURL(mainURI, failurl10);
+red_line===
+lorURI
+start_offset===
+13
+end_offset===
+19
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"section\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+params.put("section", section);
+red_line===
+"section"
+start_offset===
+17
+end_offset===
+26
+Python OUTPUT===
+params.put("section", section);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static Logger logger = LoggerFactory.getLogger(TopicController.class);
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final Logger logger = LoggerFactory . getLogger ( TopicController . class ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"user\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+topicListDto.setUserId(user.getId());
+red_line===
+user.getId
+start_offset===
+27
+end_offset===
+37
+Python OUTPUT===
+topicListDto.setUserId(user.getId());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"section\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+title = "Неподтвержденные: "+section.getName();
+red_line===
+section.getName
+start_offset===
+37
+end_offset===
+52
+Python OUTPUT===
+title = "Неподтвержденные: "+section.getName();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"commit\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+mv.getModel().put("commit", true);
+red_line===
+"commit"
+start_offset===
+22
+end_offset===
+30
+Python OUTPUT===
+mv.getModel().put("commit", true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Not authorized\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new AccessViolationException("Not authorized");
+red_line===
+"Not authorized"
+start_offset===
+41
+end_offset===
+57
+Python OUTPUT===
+throw new AccessViolationException("Not authorized");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryTopicsIdByTime = "SELECT id FROM topics WHERE postdate>=? AND postdate<?";
+red_line===
+queryTopicsIdByTime
+start_offset===
+30
+end_offset===
+49
+Python OUTPUT===
+private static final String queryTopicsIdByTime = "SELECT id FROM topics WHERE postdate>=? AND postdate<?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+private TopicTagService topicTagService;
+red_line===
+  private TopicTagService topicTagService; // TODO move to TopicService
+start_offset===
+0
+end_offset===
+71
+Python OUTPUT===
+private TopicTagService topicTagService;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+private MsgbaseDao msgbaseDao;
+red_line===
+  private MsgbaseDao msgbaseDao; // TODO move to TopicService
+start_offset===
+0
+end_offset===
+61
+Python OUTPUT===
+private MsgbaseDao msgbaseDao;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+private DeleteInfoDao deleteInfoDao;
+red_line===
+  private DeleteInfoDao deleteInfoDao; // TODO move to TopicService
+start_offset===
+0
+end_offset===
+67
+Python OUTPUT===
+private DeleteInfoDao deleteInfoDao;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+private EditHistoryDao editHistoryDao;
+red_line===
+  private EditHistoryDao editHistoryDao; // TODO move to TopicService
+start_offset===
+0
+end_offset===
+69
+Python OUTPUT===
+private EditHistoryDao editHistoryDao;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+private ImageDao imageDao;
+red_line===
+  private ImageDao imageDao; // TODO move to TopicService
+start_offset===
+0
+end_offset===
+57
+Python OUTPUT===
+private ImageDao imageDao;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Timestamp ts_start = new Timestamp(calendar.getTimeInMillis());
+red_line===
+ts_start
+start_offset===
+14
+end_offset===
+22
+Python OUTPUT===
+Timestamp ts_start = new Timestamp(calendar.getTimeInMillis());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Timestamp ts_end = new Timestamp(calendar.getTimeInMillis());
+red_line===
+ts_end
+start_offset===
+14
+end_offset===
+20
+Python OUTPUT===
+Timestamp ts_end = new Timestamp(calendar.getTimeInMillis());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"title\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+errors.rejectValue("title", null, "заголовок сообщения не может быть пустым");
+red_line===
+"title"
+start_offset===
+27
+end_offset===
+34
+Python OUTPUT===
+errors.rejectValue("title", null, "заголовок сообщения не может быть пустым");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"groupImageInfo\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+params.put("groupImageInfo", info);
+red_line===
+"groupImageInfo"
+start_offset===
+19
+end_offset===
+35
+Python OUTPUT===
+params.put("groupImageInfo", info);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"groupImagePath\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+params.put("groupImagePath", '/' + "tango" + group.getImage());
+red_line===
+"groupImagePath"
+start_offset===
+19
+end_offset===
+35
+Python OUTPUT===
+params.put("groupImagePath", '/' + "tango" + group.getImage());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"?lastmod\u003d\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return getGroupUrl() + msgid + "/page" + (pages - 1) + "?lastmod=" + lastmod.getTime();
+red_line===
+"?lastmod="
+start_offset===
+61
+end_offset===
+72
+Python OUTPUT===
+return getGroupUrl() + msgid + "/page" + (pages - 1) + "?lastmod=" + lastmod.getTime();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int restrict_topics = rs.getInt("restrict_topics");
+red_line===
+restrict_topics
+start_offset===
+8
+end_offset===
+23
+Python OUTPUT===
+int restrict_topics = rs.getInt("restrict_topics");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPartCommentIgnored = " AND not exists (select ignored from ignore_list where userid=:userid intersect select get_branch_authors(comments.id)) ";
+red_line===
+queryPartCommentIgnored
+start_offset===
+30
+end_offset===
+53
+Python OUTPUT===
+private static final String queryPartCommentIgnored = " AND not exists (select ignored from ignore_list where userid=:userid intersect select get_branch_authors(comments.id)) ";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPartIgnored = " AND t.userid NOT IN (select ignored from ignore_list where userid=:userid) ";
+red_line===
+queryPartIgnored
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+private static final String queryPartIgnored = " AND t.userid NOT IN (select ignored from ignore_list where userid=:userid) ";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPartNoTalks = " AND not t.groupid in (8404, 19390) ";
+red_line===
+queryPartNoTalks
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+private static final String queryPartNoTalks = " AND not t.groupid in (8404, 19390) ";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPartTech = " AND not t.groupid in (8404, 4068, 19392, 19390, 9326, 19405) AND section=2 ";
+red_line===
+queryPartTech
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+private static final String queryPartTech = " AND not t.groupid in (8404, 4068, 19392, 19390, 9326, 19405) AND section=2 ";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPartMain = " AND not t.groupid in (8404, 4068, 19392, 19390, 19405) ";
+red_line===
+queryPartMain
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+private static final String queryPartMain = " AND not t.groupid in (8404, 4068, 19392, 19390, 19405) ";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String noUncommited = " AND (t.moderate or NOT sections.moderate) ";
+red_line===
+noUncommited
+start_offset===
+30
+end_offset===
+42
+Python OUTPUT===
+private static final String noUncommited = " AND (t.moderate or NOT sections.moderate) ";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"stat1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+int stat1 = resultSet.getInt("stat1");
+red_line===
+"stat1"
+start_offset===
+35
+end_offset===
+42
+Python OUTPUT===
+int stat1 = resultSet.getInt("stat1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+private String var;
+red_line===
+var
+start_offset===
+17
+end_offset===
+20
+Python OUTPUT===
+private String var;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"tango/head-main.jsp\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private static final Theme TANGO = new Theme("tango", "tango/head-main.jsp", "tango/head-main.jsp");
+red_line===
+"tango/head-main.jsp"
+start_offset===
+56
+end_offset===
+77
+Python OUTPUT===
+private static final Theme TANGO = new Theme("tango", "tango/head-main.jsp", "tango/head-main.jsp");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"defaultProfile\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private static final ImmutableMap<String, Object> defaultProfile = createDefaultProfile();
+red_line===
+defaultProfile
+start_offset===
+52
+end_offset===
+66
+Python OUTPUT===
+private static final ImmutableMap<String, Object> defaultProfile = createDefaultProfile();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryIgnoreList = "SELECT a.ignored FROM ignore_list a WHERE a.userid=?";
+red_line===
+queryIgnoreList
+start_offset===
+30
+end_offset===
+45
+Python OUTPUT===
+private static final String queryIgnoreList = "SELECT a.ignored FROM ignore_list a WHERE a.userid=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryIgnoreStat = "SELECT count(*) as inum FROM ignore_list JOIN users ON  ignore_list.userid = users.id WHERE ignored=? AND not blocked";
+red_line===
+queryIgnoreStat
+start_offset===
+30
+end_offset===
+45
+Python OUTPUT===
+private static final String queryIgnoreStat = "SELECT count(*) as inum FROM ignore_list JOIN users ON  ignore_list.userid = users.id WHERE ignored=? AND not blocked";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"email\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+errors.reject("email", "некорректный email домен");
+red_line===
+"email"
+start_offset===
+20
+end_offset===
+27
+Python OUTPUT===
+errors.reject("email", "некорректный email домен");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027FORMAT_MODE_PROPERTY\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return (String) DefaultProfile.getDefaultProfile().get("format.mode");
+red_line===
+"format.mode"
+start_offset===
+61
+end_offset===
+74
+Python OUTPUT===
+return (String) DefaultProfile.getDefaultProfile().get("format.mode");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("list.size()>1 ???");
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("list.size()>1 ???");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("list.size()>1 ???");
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("list.size()>1 ???");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryChangeScore = "UPDATE users SET score=score+? WHERE id=?";
+red_line===
+queryChangeScore
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+private static final String queryChangeScore = "UPDATE users SET score=score+? WHERE id=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryUserById = "SELECT id,nick,score,max_score,candel,canmod,corrector,passwd,blocked,activated,photo,email,name,unread_events,style FROM users where id=?";
+red_line===
+queryUserById
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+private static final String queryUserById = "SELECT id,nick,score,max_score,candel,canmod,corrector,passwd,blocked,activated,photo,email,name,unread_events,style FROM users where id=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryUserIdByNick = "SELECT id FROM users where nick=?";
+red_line===
+queryUserIdByNick
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+private static final String queryUserIdByNick = "SELECT id FROM users where nick=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String updateUserStyle = "UPDATE users SET style=? WHERE id=?";
+red_line===
+updateUserStyle
+start_offset===
+30
+end_offset===
+45
+Python OUTPUT===
+private static final String updateUserStyle = "UPDATE users SET style=? WHERE id=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryBanInfoClass = "SELECT * FROM ban_info WHERE userid=?";
+red_line===
+queryBanInfoClass
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+private static final String queryBanInfoClass = "SELECT * FROM ban_info WHERE userid=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryCommentStat = "SELECT count(*) as c FROM comments WHERE userid=? AND not deleted";
+red_line===
+queryCommentStat
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+private static final String queryCommentStat = "SELECT count(*) as c FROM comments WHERE userid=? AND not deleted";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryCommentDates = "SELECT min(postdate) as first,max(postdate) as last FROM comments WHERE comments.userid=?";
+red_line===
+queryCommentDates
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+private static final String queryCommentDates = "SELECT min(postdate) as first,max(postdate) as last FROM comments WHERE comments.userid=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"count\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return ImmutableMap.<String, Object>of("count", userTagService.countFavs(id));
+red_line===
+"count"
+start_offset===
+45
+end_offset===
+52
+Python OUTPUT===
+return ImmutableMap.<String, Object>of("count", userTagService.countFavs(id));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Not authorized\" 11 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new AccessViolationException("Not authorized");
+red_line===
+"Not authorized"
+start_offset===
+41
+end_offset===
+57
+Python OUTPUT===
+throw new AccessViolationException("Not authorized");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"error\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return ImmutableMap.<String, Object>of("error", e.getMessage());
+red_line===
+"error"
+start_offset===
+45
+end_offset===
+52
+Python OUTPUT===
+return ImmutableMap.<String, Object>of("error", e.getMessage());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/user-filter\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new ModelAndView(new RedirectView("/user-filter"));
+red_line===
+"/user-filter"
+start_offset===
+45
+end_offset===
+59
+Python OUTPUT===
+return new ModelAndView(new RedirectView("/user-filter"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Модераторам нельзя игнорировать теги\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new AccessViolationException("Модераторам нельзя игнорировать теги");
+red_line===
+"Модераторам нельзя игнорировать теги"
+start_offset===
+41
+end_offset===
+79
+Python OUTPUT===
+throw new AccessViolationException("Модераторам нельзя игнорировать теги");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Not authorized\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new AccessViolationException("Not authorized");
+red_line===
+"Not authorized"
+start_offset===
+41
+end_offset===
+57
+Python OUTPUT===
+throw new AccessViolationException("Not authorized");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static ImmutableMap<String, String> OPTION_DESCRIPTION;
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final ImmutableMap < String , String > OPTION_DESCRIPTION ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"user_id\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+parameters.addValue("user_id", userId);
+red_line===
+"user_id"
+start_offset===
+24
+end_offset===
+33
+Python OUTPUT===
+parameters.addValue("user_id", userId);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"tag_id\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+parameters.addValue("tag_id", tagId);
+red_line===
+"tag_id"
+start_offset===
+24
+end_offset===
+32
+Python OUTPUT===
+parameters.addValue("tag_id", tagId);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"is_favorite\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+parameters.addValue("is_favorite", isFavorite);
+red_line===
+"is_favorite"
+start_offset===
+24
+end_offset===
+37
+Python OUTPUT===
+parameters.addValue("is_favorite", isFavorite);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/notifications\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+RedirectView view = new RedirectView("/notifications");
+red_line===
+"/notifications"
+start_offset===
+41
+end_offset===
+57
+Python OUTPUT===
+RedirectView view = new RedirectView("/notifications");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"not authorized\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new AccessViolationException("not authorized");
+red_line===
+"not authorized"
+start_offset===
+41
+end_offset===
+57
+Python OUTPUT===
+throw new AccessViolationException("not authorized");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Пользователя \" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new AccessViolationException("Пользователя " + user.getNick() + " нельзя заблокировать");
+red_line===
+"Пользователя "
+start_offset===
+41
+end_offset===
+56
+Python OUTPUT===
+throw new AccessViolationException("Пользователя " + user.getNick() + " нельзя заблокировать");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"User \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.info("User " + user.getNick() + " blocked by " + moderator.getNick());
+red_line===
+"User "
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+logger.info("User " + user.getNick() + " blocked by " + moderator.getNick());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"User \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Path uploadedFile = Files.createTempFile("userpic-", "");
+red_line===
+dFile =
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+Path uploadedFile = Files.createTempFile("userpic-", "");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"User \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Random random = new Random();
+red_line===
+dom = n
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+Random random = new Random();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"addphoto\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new ModelAndView("addphoto");
+red_line===
+"addphoto"
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+return new ModelAndView("addphoto");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"error\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new ModelAndView("addphoto", "error", "изображение не задано");
+red_line===
+"error"
+start_offset===
+42
+end_offset===
+49
+Python OUTPUT===
+return new ModelAndView("addphoto", "error", "изображение не задано");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"userid\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+insert.usingColumns("userid", "type", "private", "message_id", "comment_id", "message");
+red_line===
+"userid"
+start_offset===
+24
+end_offset===
+32
+Python OUTPUT===
+insert.usingColumns("userid", "type", "private", "message_id", "comment_id", "message");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+abstract public String renderNodeXhtml(Node node);
+red_line===
+public
+start_offset===
+11
+end_offset===
+17
+Python OUTPUT===
+public abstract final String renderNodeXhtml ( Node node ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final String citeHeader = "<blockquote>";
+red_line===
+citeHeader
+start_offset===
+29
+end_offset===
+39
+Python OUTPUT===
+public static final String citeHeader = "<blockquote>";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final String citeFooter = "</blockquote>";
+red_line===
+citeFooter
+start_offset===
+29
+end_offset===
+39
+Python OUTPUT===
+public static final String citeFooter = "</blockquote>";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String citeHeaderRSS = "<blockquote style=\"border-width: 0 0 0 5px; border-style: solid; border-color: black; padding: 0 0 0 .5em; \">";
+red_line===
+citeHeaderRSS
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+private static final String citeHeaderRSS = "<blockquote style=\"border-width: 0 0 0 5px; border-style: solid; border-color: black; padding: 0 0 0 .5em; \">";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String citeFooterRSS = "</blockquote>";
+red_line===
+citeFooterRSS
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+private static final String citeFooterRSS = "</blockquote>";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("BUG");
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("BUG");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+abstract public String renderXHtml();
+red_line===
+public
+start_offset===
+11
+end_offset===
+17
+Python OUTPUT===
+public abstract final String renderXHtml ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+abstract public String renderBBCode();
+red_line===
+public
+start_offset===
+11
+end_offset===
+17
+Python OUTPUT===
+public abstract final String renderBBCode ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return "";
+red_line===
+""
+start_offset===
+11
+end_offset===
+13
+Python OUTPUT===
+ return "";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static ImmutableSet<String> URL_TAGS = ImmutableSet.of("b", "i", "u", "s", "strong", "text");
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final ImmutableSet < String > URL_TAGS = ImmutableSet . of ( " b " , " i " , " u " , " s " , " strong " , " text " ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static ImmutableSet<String> ALLOWED_LIST_PARAMS = ImmutableSet.of("A", "a", "I", "i", "1");
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final ImmutableSet < String > ALLOWED_LIST_PARAMS = ImmutableSet . of ( " A " , " a " , " I " , " i " , " 1 " ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static ImmutableSet<String> DISALLOWED_PARAGRAPH_TAGS = ImmutableSet.of("pre", "url", "user", "code");
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final ImmutableSet < String > DISALLOWED_PARAGRAPH_TAGS = ImmutableSet . of ( " pre " , " url " , " user " , " code " ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static ImmutableSet<String> PARAGRAPHED_TAGS = ImmutableSet.of("pre", "code");
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final ImmutableSet < String > PARAGRAPHED_TAGS = ImmutableSet . of ( " pre " , " code " ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Refactor this repetition that can lead to a stack overflow for large inputs.
+scn.ruleId===
+5998
+scn.suspCodeStr===
+private static final Pattern P_REGEXP = Pattern.compile("(\r?\n){2,}");
+red_line===
+(\r?\n){2,}
+start_offset===
+59
+end_offset===
+70
+Python OUTPUT===
+private static final Pattern P_REGEXP = Pattern.compile("(\r?\n){2,}");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this member \"protected\".
+scn.ruleId===
+2386
+scn.suspCodeStr===
+public static String[] supportedFormat = {"JPEG", "gif", "png"};
+red_line===
+supportedFormat
+start_offset===
+25
+end_offset===
+40
+Python OUTPUT===
+protected static String [ ] supportedFormat = { " JPEG " , " gif " , " png " } ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Invalid image\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new BadImageException("Invalid image");
+red_line===
+"Invalid image"
+start_offset===
+34
+end_offset===
+49
+Python OUTPUT===
+throw new BadImageException("Invalid image");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static Pattern QUOTE_CHAR_PATTERN = Pattern.compile("(''|\")");
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final Pattern QUOTE_CHAR_PATTERN = Pattern . compile ( " (''|\") " ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print("horizontal ");
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.print("horizontal "); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print("vertical ");
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.print("vertical "); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(info.width + " " + info.height);
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println(info.width + " " + info.height); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"skip\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+fileStream.skip(3);
+red_line===
+skip
+start_offset===
+21
+end_offset===
+25
+Python OUTPUT===
+fileStream.skip(3);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"skip\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+fileStream.skip(skip);
+red_line===
+skip
+start_offset===
+21
+end_offset===
+25
+Python OUTPUT===
+fileStream.skip(skip);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Parameters to shortBigEndian have the same names but not the same order as the method arguments.
+scn.ruleId===
+2234
+scn.suspCodeStr===
+return shortBigEndian(lastRead, firstRead);
+red_line===
+(lastRead, firstRead)
+start_offset===
+25
+end_offset===
+46
+Python OUTPUT===
+return shortBigEndian(lastRead, firstRead);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "KOI8-R"));
+red_line===
+new BufferedReader(new InputStreamReader(new FileInputStream(filename), "KOI8-R"))
+start_offset===
+24
+end_offset===
+106
+Python OUTPUT===
+BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "KOI8-R"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+public static final String QUOTE_OUT_OPEN_HTML = "&#171;";
+red_line===
+"&laquo;";
+start_offset===
+64
+end_offset===
+74
+Python OUTPUT===
+public static final String QUOTE_OUT_OPEN_HTML = "&#171;";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+public static final String QUOTE_OUT_CLOSE_HTML = "&#187;";
+red_line===
+"&raquo;";
+start_offset===
+64
+end_offset===
+74
+Python OUTPUT===
+public static final String QUOTE_OUT_CLOSE_HTML = "&#187;";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+public static final String QUOTE_IN_OPEN_HTML = "&#8222;";
+red_line===
+"&bdquo;";
+start_offset===
+63
+end_offset===
+73
+Python OUTPUT===
+public static final String QUOTE_IN_OPEN_HTML = "&#8222;";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+public static final String QUOTE_IN_CLOSE_HTML = "&#8220;";
+red_line===
+"&ldquo;";
+start_offset===
+64
+end_offset===
+74
+Python OUTPUT===
+public static final String QUOTE_IN_CLOSE_HTML = "&#8220;";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static Pattern QUOTE_PATTERN = Pattern.compile("&quot;", Pattern.LITERAL);
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final Pattern QUOTE_PATTERN = Pattern . compile ( " &quot; " , Pattern . LITERAL ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"after\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+char before, after;
+red_line===
+after
+start_offset===
+17
+end_offset===
+22
+Python OUTPUT===
+char before, after;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"after\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+char before, after;
+red_line===
+after
+start_offset===
+17
+end_offset===
+22
+Python OUTPUT===
+char before, after;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+return sb.toString().replaceAll(MDASH_REGEX, MDASH_REPLACE);
+red_line===
+replaceAll
+start_offset===
+25
+end_offset===
+35
+Python OUTPUT===
+return sb.toString ( ).replaceAll ( MDASH_REGEX , MDASH_REPLACE ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u003ca href\u003d\\\"\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+out.append("<a href=\"").append(fixedUrlHref).append("\"");
+red_line===
+"<a href=\""
+start_offset===
+17
+end_offset===
+29
+Python OUTPUT===
+out.append("<a href=\"").append(fixedUrlHref).append("\"");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(gse);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(gse);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"[/quote]\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+buf.append(Strings.repeat("[/quote]", globalNestingLevel));
+red_line===
+"[/quote]"
+start_offset===
+36
+end_offset===
+46
+Python OUTPUT===
+buf.append(Strings.repeat("[/quote]", globalNestingLevel));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_true_lor_url\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private boolean _true_lor_url = false;
+red_line===
+_true_lor_url
+start_offset===
+18
+end_offset===
+31
+Python OUTPUT===
+private boolean _true_lor_url = false;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_topic_id\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private int _topic_id = -1;
+red_line===
+_topic_id
+start_offset===
+14
+end_offset===
+23
+Python OUTPUT===
+private int _topic_id = -1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_comment_id\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private int _comment_id = -1;
+red_line===
+_comment_id
+start_offset===
+14
+end_offset===
+25
+Python OUTPUT===
+private int _comment_id = -1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+String fragmentStr = new String(_fragment);
+red_line===
+String
+start_offset===
+35
+end_offset===
+41
+Python OUTPUT===
+ String fragmentStr = new (_ fragment);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+char[] _main_host = mainURI.getRawHost();
+red_line===
+_main_host
+start_offset===
+11
+end_offset===
+21
+Python OUTPUT===
+char[] _main_host = mainURI.getRawHost();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int _main_port = mainURI.getPort();
+red_line===
+_main_port
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+int _main_port = mainURI.getPort();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+char[] _https_scheme = "https".toCharArray();
+red_line===
+_https_scheme
+start_offset===
+11
+end_offset===
+24
+Python OUTPUT===
+char[] _https_scheme = "https".toCharArray();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+char[] _http_scheme = "http".toCharArray();
+red_line===
+_http_scheme
+start_offset===
+11
+end_offset===
+23
+Python OUTPUT===
+char[] _http_scheme = "http".toCharArray();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+private static final Random random = new Random();
+red_line===
+tatic final 
+start_offset===
+11
+end_offset===
+23
+Python OUTPUT===
+private static final Random random = new Random();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+MessageDigest md = MessageDigest.getInstance("MD5");
+red_line===
+geDigest md 
+start_offset===
+11
+end_offset===
+23
+Python OUTPUT===
+MessageDigest md = MessageDigest.getInstance("MD5");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use the original value instead.
+scn.ruleId===
+2676
+scn.suspCodeStr===
+int r = Math.abs(random.nextInt());
+red_line===
+random.nextInt()
+start_offset===
+23
+end_offset===
+39
+Python OUTPUT===
+int r = Math.abs(random.nextInt());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+continue;
+red_line===
+continue;
+start_offset===
+14
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+continue;
+red_line===
+continue;
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u0026amp;\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+res.append("&amp;");
+red_line===
+"&amp;"
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+res.append("&amp;");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u0026quot;\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+res.append("&quot;");
+red_line===
+"&quot;"
+start_offset===
+21
+end_offset===
+29
+Python OUTPUT===
+res.append("&quot;");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+i+=s.length()-1;
+red_line===
+i
+start_offset===
+14
+end_offset===
+15
+Python OUTPUT===
+i+=s.length()-1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+i += s.length() - 1;
+red_line===
+i
+start_offset===
+12
+end_offset===
+13
+Python OUTPUT===
+i += s.length() - 1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("unknown property '"+prop+"'; no default value");
+red_line===
+RuntimeException
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+throw new RuntimeException("unknown property '"+prop+"'; no default value");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"getCurrentUser()\" can return null.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+return getCurrentUser().getNick();
+red_line===
+getCurrentUser().getNick
+start_offset===
+11
+end_offset===
+35
+Python OUTPUT===
+return getCurrentUser().getNick();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"getCurrentUser()\" can return null.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+digest = MessageDigest.getInstance("MD5");
+red_line===
+t = MessageDigest.getIns
+start_offset===
+11
+end_offset===
+35
+Python OUTPUT===
+digest = MessageDigest.getInstance("MD5");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+return new String(Hex.encode(digest.digest(data.getBytes())));
+red_line===
+String
+start_offset===
+15
+end_offset===
+21
+Python OUTPUT===
+ return new Str.encode(digest.digest(data.getBytes()))); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return "is_comment";
+red_line===
+"is_comment"
+start_offset===
+13
+end_offset===
+25
+Python OUTPUT===
+ return "is_c
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return "postdate";
+red_line===
+"postdate"
+start_offset===
+13
+end_offset===
+23
+Python OUTPUT===
+ return "post
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Oops!? order="+order);
+red_line===
+RuntimeException
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+throw new RuntimeException("Oops!? order="+order);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPoolIdByTopicId = "SELECT polls.id FROM polls,topics WHERE topics.id=? AND polls.topic=topics.id";
+red_line===
+queryPoolIdByTopicId
+start_offset===
+30
+end_offset===
+50
+Python OUTPUT===
+private static final String queryPoolIdByTopicId = "SELECT polls.id FROM polls,topics WHERE topics.id=? AND polls.topic=topics.id";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryCurrentPollId = "SELECT polls.id FROM polls,topics WHERE topics.id=polls.topic AND topics.moderate = 't' AND topics.deleted = 'f' AND topics.commitdate = (select max(commitdate) from topics where groupid=19387 AND moderate AND NOT deleted)";
+red_line===
+queryCurrentPollId
+start_offset===
+30
+end_offset===
+48
+Python OUTPUT===
+private static final String queryCurrentPollId = "SELECT polls.id FROM polls,topics WHERE topics.id=polls.topic AND topics.moderate = 't' AND topics.deleted = 'f' AND topics.commitdate = (select max(commitdate) from topics where groupid=19387 AND moderate AND NOT deleted)";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPool = "SELECT topic, multiselect FROM polls WHERE id=?";
+red_line===
+queryPool
+start_offset===
+30
+end_offset===
+39
+Python OUTPUT===
+private static final String queryPool = "SELECT topic, multiselect FROM polls WHERE id=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPollVariantsOrderById = "SELECT id, label, votes FROM polls_variants WHERE vote=? ORDER BY id";
+red_line===
+queryPollVariantsOrderById
+start_offset===
+30
+end_offset===
+56
+Python OUTPUT===
+private static final String queryPollVariantsOrderById = "SELECT id, label, votes FROM polls_variants WHERE vote=? ORDER BY id";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPollVariantsOrderByVotes = "SELECT id, label, votes FROM polls_variants WHERE vote=? ORDER BY votes DESC, id";
+red_line===
+queryPollVariantsOrderByVotes
+start_offset===
+30
+end_offset===
+59
+Python OUTPUT===
+private static final String queryPollVariantsOrderByVotes = "SELECT id, label, votes FROM polls_variants WHERE vote=? ORDER BY votes DESC, id";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryPollUserVote = "select count(vote) from vote_users where userid=? and variant_id=?";
+red_line===
+queryPollUserVote
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+private static final String queryPollUserVote = "select count(vote) from vote_users where userid=? and variant_id=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryCountVotesUser = "SELECT count(vote) FROM vote_users WHERE vote=? AND userid=?";
+red_line===
+queryCountVotesUser
+start_offset===
+30
+end_offset===
+49
+Python OUTPUT===
+private static final String queryCountVotesUser = "SELECT count(vote) FROM vote_users WHERE vote=? AND userid=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryCountVotesPool = "SELECT count(DISTINCT userid) FROM vote_users WHERE vote=?";
+red_line===
+queryCountVotesPool
+start_offset===
+30
+end_offset===
+49
+Python OUTPUT===
+private static final String queryCountVotesPool = "SELECT count(DISTINCT userid) FROM vote_users WHERE vote=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryCountVotes = "SELECT sum(votes) as s FROM polls_variants WHERE vote=?";
+red_line===
+queryCountVotes
+start_offset===
+30
+end_offset===
+45
+Python OUTPUT===
+private static final String queryCountVotes = "SELECT sum(votes) as s FROM polls_variants WHERE vote=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String updateVote = "UPDATE polls_variants SET votes=votes+1 WHERE id=? AND vote=?";
+red_line===
+updateVote
+start_offset===
+30
+end_offset===
+40
+Python OUTPUT===
+private static final String updateVote = "UPDATE polls_variants SET votes=votes+1 WHERE id=? AND vote=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String insertVoteUser = "INSERT INTO vote_users VALUES(?, ?, ?)";
+red_line===
+insertVoteUser
+start_offset===
+30
+end_offset===
+44
+Python OUTPUT===
+private static final String insertVoteUser = "INSERT INTO vote_users VALUES(?, ?, ?)";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String insertPoll = "INSERT INTO polls (id, multiselect, topic) values (?,?,?)";
+red_line===
+insertPoll
+start_offset===
+30
+end_offset===
+40
+Python OUTPUT===
+private static final String insertPoll = "INSERT INTO polls (id, multiselect, topic) values (?,?,?)";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryNextPollId = "select nextval('vote_id') as voteid";
+red_line===
+queryNextPollId
+start_offset===
+30
+end_offset===
+45
+Python OUTPUT===
+private static final String queryNextPollId = "select nextval('vote_id') as voteid";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String insertNewVariant = "INSERT INTO polls_variants (id, vote, label) values (nextval('votes_id'), ?, ?)";
+red_line===
+insertNewVariant
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+private static final String insertNewVariant = "INSERT INTO polls_variants (id, vote, label) values (nextval('votes_id'), ?, ?)";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String updateVariant = "UPDATE polls_variants SET label=? WHERE id=?";
+red_line===
+updateVariant
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+private static final String updateVariant = "UPDATE polls_variants SET label=? WHERE id=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String deleteVariant = "DELETE FROM polls_variants WHERE id=?";
+red_line===
+deleteVariant
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+private static final String deleteVariant = "DELETE FROM polls_variants WHERE id=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String updateMultiselect = "UPDATE polls SET multiselect=? WHERE id=?";
+red_line===
+updateMultiselect
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+private static final String updateMultiselect = "UPDATE polls SET multiselect=? WHERE id=?";
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make sure \"max\" can\u0027t be zero before doing this division.
+scn.ruleId===
+3518
+scn.suspCodeStr===
+variantWidth = 320*variant.getVotes()/max;
+red_line===
+max
+start_offset===
+46
+end_offset===
+49
+Python OUTPUT===
+final variantWidth = 320 * variant . getVotes ( ) max ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Too many images for topic="+topic.getId());
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("Too many images for topic="+topic.getId());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"msgid\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+item.setMsgid(rs.getInt("msgid"));
+red_line===
+"msgid"
+start_offset===
+30
+end_offset===
+37
+Python OUTPUT===
+item.setMsgid(rs.getInt("msgid"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String replysForCommentCount = "SELECT count(id) FROM comments WHERE replyto=? AND NOT deleted";
+red_line===
+replysForCommentCount
+start_offset===
+30
+end_offset===
+51
+Python OUTPUT===
+private static final String replysForCommentCount = "SELECT count(id) FROM comments WHERE replyto=? AND NOT deleted";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String deleteComment = "UPDATE comments SET deleted='t' WHERE id=? AND not deleted";
+red_line===
+deleteComment
+start_offset===
+30
+end_offset===
+43
+Python OUTPUT===
+private static final String deleteComment = "UPDATE comments SET deleted='t' WHERE id=? AND not deleted";
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+The return value of \"map\" must be used.
+scn.ruleId===
+2201
+scn.suspCodeStr===
+userAgent.map(ua -> ua.substring(0, Math.min(511, ua.length())));
+red_line===
+map
+start_offset===
+14
+end_offset===
+17
+Python OUTPUT===
+userAgent.map(ua -> ua.substring(0, Math.min(511, ua.length())));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Комментарий \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+deleteInfo.put(msgid, "Комментарий " + msgid + " удален");
+red_line===
+"Комментарий "
+start_offset===
+32
+end_offset===
+46
+Python OUTPUT===
+deleteInfo.put(msgid, "Комментарий " + msgid + " удален");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"markup\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+insertMsgbase.usingColumns("id", "message", "markup");
+red_line===
+"markup"
+start_offset===
+48
+end_offset===
+56
+Python OUTPUT===
+insertMsgbase.usingColumns("id", "message", "markup");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryUserAgentById = "SELECT name FROM user_agents WHERE id=?";
+red_line===
+queryUserAgentById
+start_offset===
+30
+end_offset===
+48
+Python OUTPUT===
+private static final String queryUserAgentById = "SELECT name FROM user_agents WHERE id=?";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(ERR_MSG +e.getMessage());
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(ERR_MSG +e.getMessage());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(ERR_MSG +"URI not absolute path");
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(ERR_MSG +"URI not absolute path");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(ERR_MSG +"bad URI host");
+red_line===
+RuntimeException
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+throw new RuntimeException(ERR_MSG +"bad URI host");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(ERR_MSG +e.getMessage());
+red_line===
+RuntimeException
+start_offset===
+15
+end_offset===
+31
+Python OUTPUT===
+throw new RuntimeException(ERR_MSG +e.getMessage());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(ERR_MSG +e.getMessage());
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException(ERR_MSG +e.getMessage());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+\"NullPointerException\" will be thrown when invoking method \"prepareModelForCommonException()\".
+scn.ruleId===
+2259
+scn.suspCodeStr===
+prepareModelForCommonException(modelAndView, request, ex);
+red_line===
+prepareModelForCommonException
+start_offset===
+6
+end_offset===
+36
+Python OUTPUT===
+prepareModelForCommonException(modelAndView, request, ex);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"firstLetter\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+modelAndView.addObject("firstLetter", firstLetter);
+red_line===
+"firstLetter"
+start_offset===
+27
+end_offset===
+40
+Python OUTPUT===
+modelAndView.addObject("firstLetter", firstLetter);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"tagName\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+errors.rejectValue("tagName", "", "Некорректный тег: '" + tagRequestChange.getTagName() + "'");
+red_line===
+"tagName"
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+errors.rejectValue("tagName", "", "Некорректный тег: '" + tagRequestChange.getTagName() + "'");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"section\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+Assert.assertEquals(SectionScrollModeEnum.GROUP, section.getScrollMode());
+red_line===
+section.getScrollMode
+start_offset===
+53
+end_offset===
+74
+Python OUTPUT===
+Assert.assertEquals(SectionScrollModeEnum.GROUP, section.getScrollMode());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"section\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+Assert.assertEquals(SectionScrollModeEnum.SECTION, section.getScrollMode());
+red_line===
+section.getScrollMode
+start_offset===
+55
+end_offset===
+76
+Python OUTPUT===
+Assert.assertEquals(SectionScrollModeEnum.SECTION, section.getScrollMode());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"section\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+Assert.assertEquals(SectionScrollModeEnum.SECTION, section.getScrollMode());
+red_line===
+section.getScrollMode
+start_offset===
+55
+end_offset===
+76
+Python OUTPUT===
+Assert.assertEquals(SectionScrollModeEnum.SECTION, section.getScrollMode());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \" [[/code]]\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(" [[/code]]", ToLorCodeTexFormatter.escapeCode(" [/code]"));
+red_line===
+" [[/code]]"
+start_offset===
+17
+end_offset===
+29
+Python OUTPUT===
+assertEquals(" [[/code]]", ToLorCodeTexFormatter.escapeCode(" [/code]"));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"section\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+Assert.assertEquals(SectionScrollModeEnum.SECTION, section.getScrollMode());
+red_line===
+section.getScrollMode
+start_offset===
+55
+end_offset===
+76
+Python OUTPUT===
+Assert.assertEquals(SectionScrollModeEnum.SECTION, section.getScrollMode());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"[[code]]\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("[[code]]", ToLorCodeTexFormatter.escapeCode("[code]"));
+red_line===
+"[[code]]"
+start_offset===
+17
+end_offset===
+27
+Python OUTPUT===
+assertEquals("[[code]]", ToLorCodeTexFormatter.escapeCode("[code]"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \" [[code]]\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(" [[code]]", ToLorCodeTexFormatter.escapeCode(" [code]"));
+red_line===
+" [[code]]"
+start_offset===
+17
+end_offset===
+28
+Python OUTPUT===
+assertEquals(" [[code]]", ToLorCodeTexFormatter.escapeCode(" [code]"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"[/code]\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("[[/code]]", ToLorCodeTexFormatter.escapeCode("[/code]"));
+red_line===
+"[/code]"
+start_offset===
+63
+end_offset===
+72
+Python OUTPUT===
+assertEquals("[[/code]]", ToLorCodeTexFormatter.escapeCode("[/code]"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"SECTION\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+sectionList.add(new Section("Section 1", false, true, 1, false, "SECTION", TopicPermissionService.POSTSCORE_UNRESTRICTED));
+red_line===
+"SECTION"
+start_offset===
+68
+end_offset===
+77
+Python OUTPUT===
+sectionList.add(new Section("Section 1", false, true, 1, false, "SECTION", TopicPermissionService.POSTSCORE_UNRESTRICTED));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("masaka!");
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.println("masaka!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("masaka!");
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.println("masaka!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"JB\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private User JB;
+red_line===
+JB
+start_offset===
+15
+end_offset===
+17
+Python OUTPUT===
+private User JB;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"lorURI\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+LorURL lorURI = new LorURL(mainURI, failurl11);
+red_line===
+= new LorURL(mainURI, failurl11)
+start_offset===
+20
+end_offset===
+52
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("masaka!");
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.println("masaka!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("masaka!");
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.println("masaka!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"www.linux.org.ru/...\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("www.linux.org.ru/...", uri2.formatUrlBody(10));
+red_line===
+"www.linux.org.ru/..."
+start_offset===
+17
+end_offset===
+39
+Python OUTPUT===
+assertEquals("www.linux.org.ru/...", uri2.formatUrlBody(10));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"https://127.0.0.1:8085/forum/general/6890857?cid\u003d6892917\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("https://127.0.0.1:8085/forum/general/6890857?cid=6892917", lorURI.formatJump(messageDao, canon));
+red_line===
+"https://127.0.0.1:8085/forum/general/6890857?cid=6892917"
+start_offset===
+17
+end_offset===
+75
+Python OUTPUT===
+assertEquals("https://127.0.0.1:8085/forum/general/6890857?cid=6892917", lorURI.formatJump(messageDao, canon));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"lorURI\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+LorURL lorURI = new LorURL(mainURI, failurl8);
+red_line===
+= new LorURL(mainURI, failurl8)
+start_offset===
+20
+end_offset===
+51
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"lorURI\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+LorURL lorURI = new LorURL(mainURI, failurl9);
+red_line===
+= new LorURL(mainURI, failurl9)
+start_offset===
+20
+end_offset===
+51
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"https://127.0.0.1:8085/news/debian/6753486?cid\u003d6753612\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("https://127.0.0.1:8085/news/debian/6753486?cid=6753612", lorURI.formatJump(messageDao, canon));
+red_line===
+"https://127.0.0.1:8085/news/debian/6753486?cid=6753612"
+start_offset===
+17
+end_offset===
+73
+Python OUTPUT===
+assertEquals("https://127.0.0.1:8085/news/debian/6753486?cid=6753612", lorURI.formatJump(messageDao, canon));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String url13_1 = "http://www.linux.org.ru/view-news.jsp?tag=c%2B%2B";
+red_line===
+url13_1
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+String url13_1 = "http://www.linux.org.ru/view-news.jsp?tag=c%2B%2B";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String url13_2 = "http://www.linux.org.ru/view-news.jsp?tag=c++";
+red_line===
+url13_2
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+String url13_2 = "http://www.linux.org.ru/view-news.jsp?tag=c++";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+private static final String GOOGLE_CACHE = "http://74.125.95.132/search?q=cache:fTsc8ze3IxIJ:forum.springsource.org/showthread.php%3Ft%3D53418+spring+security+openid&cd=1&hl=en&ct=clnk&gl=us";
+red_line===
+tatic f
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+private static final String GOOGLE_CACHE = "http://74.125.95.132/search?q=cache:fTsc8ze3IxIJ:forum.springsource.org/showthread.php%3Ft%3D53418+spring+security+openid&cd=1&hl=en&ct=clnk&gl=us";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+assertEquals("<a href=\"http://74.125.95.132/search?q=cache:fTsc8ze3IxIJ:forum.springsource.org/showthread.php%3Ft%3D53418+spring+security+openid&amp;cd=1&amp;hl=en&amp;ct=clnk&amp;gl=us\">http://74.125.95.132/search?q=cache:fTsc8ze3IxIJ:forum.springsource.org/showt...</a>", toHtmlFormatter.format(GOOGLE_CACHE, false));
+red_line===
+quals("
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+assertEquals("<a href=\"http://74.125.95.132/search?q=cache:fTsc8ze3IxIJ:forum.springsource.org/showthread.php%3Ft%3D53418+spring+security+openid&amp;cd=1&amp;hl=en&amp;ct=clnk&amp;gl=us\">http://74.125.95.132/search?q=cache:fTsc8ze3IxIJ:forum.springsource.org/showt...</a>", toHtmlFormatter.format(GOOGLE_CACHE, false));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String url13_3 = "http://www.linux.org.ru/view-news.jsp?tag=c+c";
+red_line===
+url13_3
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+String url13_3 = "http://www.linux.org.ru/view-news.jsp?tag=c+c";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String url14_1 = "https://www.linux.org.ru/jump-message.jsp?msgid=6890857&amp;cid=6892917";
+red_line===
+url14_1
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+String url14_1 = "https://www.linux.org.ru/jump-message.jsp?msgid=6890857&amp;cid=6892917";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String url14_2 = "https://127.0.0.1:8080/jump-message.jsp?msgid=6890857&amp;cid=6892917";
+red_line===
+url14_2
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+String url14_2 = "https://127.0.0.1:8080/jump-message.jsp?msgid=6890857&amp;cid=6892917";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String url15_1 = "https://www.linux.org.ru/forum/linux-org-ru/6944260/page4?lastmod=1320084656912#comment-6944831";
+red_line===
+url15_1
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+String url15_1 = "https://www.linux.org.ru/forum/linux-org-ru/6944260/page4?lastmod=1320084656912#comment-6944831";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String url15_2 = "https://127.0.0.1:8080/forum/linux-org-ru/6944260/page4?lastmod=1320084656912#comment-6944831";
+red_line===
+url15_2
+start_offset===
+11
+end_offset===
+18
+Python OUTPUT===
+String url15_2 = "https://127.0.0.1:8080/forum/linux-org-ru/6944260/page4?lastmod=1320084656912#comment-6944831";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"uytutut\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+doThrow(new TagNotFoundException()).when(mockUserTagService).favoriteAdd(eq(user), eq("uytutut"));
+red_line===
+"uytutut"
+start_offset===
+92
+end_offset===
+101
+Python OUTPUT===
+doThrow(new TagNotFoundException()).when(mockUserTagService).favoriteAdd(eq(user), eq("uytutut"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+Assert.assertFalse(user.isAnonymous());
+red_line===
+    Assert.assertFalse(user.isAnonymous());  // TODO для заблокированного ананомного пользователя False :-\
+start_offset===
+0
+end_offset===
+107
+Python OUTPUT===
+Assert.assertFalse(user.isAnonymous());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"score\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(resultSet.getInt("score"), user.getScore());
+red_line===
+"score"
+start_offset===
+41
+end_offset===
+48
+Python OUTPUT===
+Assert.assertEquals(resultSet.getInt("score"), user.getScore());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u003cspan class\u003d\\\"stars\\\"\u003e★★★★★\u003c/span\u003e\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("<span class=\"stars\">★★★★★</span>", user.getStatus());
+red_line===
+"<span class=\"stars\">★★★★★</span>"
+start_offset===
+24
+end_offset===
+60
+Python OUTPUT===
+Assert.assertEquals("<span class=\"stars\">★★★★★</span>", user.getStatus());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"corrector\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(resultSet.getBoolean("corrector"), user.isCorrector());
+red_line===
+"corrector"
+start_offset===
+45
+end_offset===
+56
+Python OUTPUT===
+Assert.assertEquals(resultSet.getBoolean("corrector"), user.isCorrector());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"passwd\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertTrue(user.matchPassword("passwd"));
+red_line===
+"passwd"
+start_offset===
+41
+end_offset===
+49
+Python OUTPUT===
+Assert.assertTrue(user.matchPassword("passwd"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"style\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("tango", resultSet.getString("style"));
+red_line===
+"style"
+start_offset===
+53
+end_offset===
+60
+Python OUTPUT===
+Assert.assertEquals("tango", resultSet.getString("style"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"анонимный\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("анонимный", user.getStatus());
+red_line===
+"анонимный"
+start_offset===
+24
+end_offset===
+35
+Python OUTPUT===
+Assert.assertEquals("анонимный", user.getStatus());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"email\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(resultSet.getString("email"), user.getEmail());
+red_line===
+"email"
+start_offset===
+44
+end_offset===
+51
+Python OUTPUT===
+Assert.assertEquals(resultSet.getString("email"), user.getEmail());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String Latin1Supplement = "http://de.wikipedia.org/wiki/Großes_ß#Unicode";
+red_line===
+Latin1Supplement
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+private static final String Latin1Supplement = "http://de.wikipedia.org/wiki/Großes_ß#Unicode";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String greek = "http://el.wikipedia.org/wiki/άλλες";
+red_line===
+greek
+start_offset===
+30
+end_offset===
+35
+Python OUTPUT===
+private static final String greek = "http://el.wikipedia.org/wiki/άλλες";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"passwd\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String auth = WebHelper.doLogin(resource, "JB", "passwd");
+red_line===
+"passwd"
+start_offset===
+52
+end_offset===
+60
+Python OUTPUT===
+String auth = WebHelper.doLogin(resource, "JB", "passwd");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"UTF-8\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Document doc = Jsoup.parse(cr.getEntityInputStream(), "UTF-8", resource.getURI().toString());
+red_line===
+"UTF-8"
+start_offset===
+58
+end_offset===
+65
+Python OUTPUT===
+Document doc = Jsoup.parse(cr.getEntityInputStream(), "UTF-8", resource.getURI().toString());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \".error\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("Ошибка! Invalid image", doc.select(".error").text());
+red_line===
+".error"
+start_offset===
+53
+end_offset===
+61
+Python OUTPUT===
+assertEquals("Ошибка! Invalid image", doc.select(".error").text());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MAXCOM_NAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String MAXCOM_NAME = "Максим Валянский";
+red_line===
+MAXCOM_NAME
+start_offset===
+24
+end_offset===
+35
+Python OUTPUT===
+private static String MAXCOM_NAME = "Максим Валянский";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MAXCOM_URL\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String MAXCOM_URL = "http://maxcom.pp.ru/";
+red_line===
+MAXCOM_URL
+start_offset===
+24
+end_offset===
+34
+Python OUTPUT===
+private static String MAXCOM_URL = "http://maxcom.pp.ru/";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MAXCOM_EMAIL\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String MAXCOM_EMAIL = "max.valjanski+test93@gmail.com";
+red_line===
+MAXCOM_EMAIL
+start_offset===
+24
+end_offset===
+36
+Python OUTPUT===
+private static String MAXCOM_EMAIL = "max.valjanski+test93@gmail.com";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MAXCOM_TOWN\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String MAXCOM_TOWN = "Москва";
+red_line===
+MAXCOM_TOWN
+start_offset===
+24
+end_offset===
+35
+Python OUTPUT===
+private static String MAXCOM_TOWN = "Москва";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MAXCOM_INFO\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String MAXCOM_INFO = "test<b>test</b>";
+red_line===
+MAXCOM_INFO
+start_offset===
+24
+end_offset===
+35
+Python OUTPUT===
+private static String MAXCOM_INFO = "test<b>test</b>";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MAXCOM_PASS\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String MAXCOM_PASS = "passwd";
+red_line===
+MAXCOM_PASS
+start_offset===
+24
+end_offset===
+35
+Python OUTPUT===
+private static String MAXCOM_PASS = "passwd";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"JB_NAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String JB_NAME = "Тёма";
+red_line===
+JB_NAME
+start_offset===
+24
+end_offset===
+31
+Python OUTPUT===
+private static String JB_NAME = "Тёма";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"JB_URL\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String JB_URL = "http://darkmachine.org";
+red_line===
+JB_URL
+start_offset===
+24
+end_offset===
+30
+Python OUTPUT===
+private static String JB_URL = "http://darkmachine.org";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"JB_EMAIL\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String JB_EMAIL = "mail@darkmachine.org";
+red_line===
+JB_EMAIL
+start_offset===
+24
+end_offset===
+32
+Python OUTPUT===
+private static String JB_EMAIL = "mail@darkmachine.org";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"JB_TOWN\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String JB_TOWN = "Самара";
+red_line===
+JB_TOWN
+start_offset===
+24
+end_offset===
+31
+Python OUTPUT===
+private static String JB_TOWN = "Самара";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"JB_INFO\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String JB_INFO = "[i]Эффективный менеджер по распилу гос-бабла[/i]";
+red_line===
+JB_INFO
+start_offset===
+24
+end_offset===
+31
+Python OUTPUT===
+private static String JB_INFO = "[i]Эффективный менеджер по распилу гос-бабла[/i]";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"JB_PASS\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String JB_PASS = "passwd";
+red_line===
+JB_PASS
+start_offset===
+24
+end_offset===
+31
+Python OUTPUT===
+private static String JB_PASS = "passwd";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"action\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("/people/JB/edit", doc.getElementById("editRegForm").attr("action"));
+red_line===
+"action"
+start_offset===
+75
+end_offset===
+83
+Python OUTPUT===
+assertEquals("/people/JB/edit", doc.getElementById("editRegForm").attr("action"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"email\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String email = doc.getElementById("email").val();
+red_line===
+"email"
+start_offset===
+38
+end_offset===
+45
+Python OUTPUT===
+String email = doc.getElementById("email").val();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"oldpass\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+formData.add("oldpass", JB_PASS);
+red_line===
+"oldpass"
+start_offset===
+17
+end_offset===
+26
+Python OUTPUT===
+formData.add("oldpass", JB_PASS);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"passwd2\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+formData.add("password", "passwd2");
+red_line===
+"passwd2"
+start_offset===
+29
+end_offset===
+38
+Python OUTPUT===
+formData.add("password", "passwd2");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"UTF-8\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Document doc = Jsoup.parse(cr.getEntityInputStream(), "UTF-8", resource.getURI().toString());
+red_line===
+"UTF-8"
+start_offset===
+58
+end_offset===
+65
+Python OUTPUT===
+Document doc = Jsoup.parse(cr.getEntityInputStream(), "UTF-8", resource.getURI().toString());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"moderate\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getBoolean("moderate")).thenReturn(true);
+red_line===
+"moderate"
+start_offset===
+30
+end_offset===
+40
+Python OUTPUT===
+when(resultSet.getBoolean("moderate")).thenReturn(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"postdate\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSetModerateOld.getTimestamp("postdate")).thenReturn(new Timestamp(oldTime));
+red_line===
+"postdate"
+start_offset===
+43
+end_offset===
+53
+Python OUTPUT===
+when(resultSetModerateOld.getTimestamp("postdate")).thenReturn(new Timestamp(oldTime));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"user\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+User user = userDao.getUser(TEST_ID);
+red_line===
+= userDao.getUser(TEST_ID)
+start_offset===
+14
+end_offset===
+40
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"UTF-8\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Document doc = Jsoup.parse(cr.getEntityInputStream(), "UTF-8", resource.getURI().toString());
+red_line===
+"UTF-8"
+start_offset===
+58
+end_offset===
+65
+Python OUTPUT===
+Document doc = Jsoup.parse(cr.getEntityInputStream(), "UTF-8", resource.getURI().toString());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+properties.load(new FileInputStream("src/main/webapp/WEB-INF/config.properties.dist"));
+red_line===
+new FileInputStream("src/main/webapp/WEB-INF/config.properties.dist")
+start_offset===
+20
+end_offset===
+89
+Python OUTPUT===
+properties.load(new FileInputStream("src/main/webapp/WEB-INF/config.properties.dist"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Wrong count of user tags.\" 15 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("Wrong count of user tags.", 5, result);
+red_line===
+"Wrong count of user tags."
+start_offset===
+17
+end_offset===
+44
+Python OUTPUT===
+assertEquals("Wrong count of user tags.", 5, result);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Wrong count of user ID\u0027s.\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("Wrong count of user ID's.", 1, userIdList.size());
+red_line===
+"Wrong count of user ID's."
+start_offset===
+17
+end_offset===
+44
+Python OUTPUT===
+assertEquals("Wrong count of user ID's.", 1, userIdList.size());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"score\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getInt("score")).thenReturn(600);
+red_line===
+"score"
+start_offset===
+26
+end_offset===
+33
+Python OUTPUT===
+when(resultSet.getInt("score")).thenReturn(600);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"S+Q/c5dtkvNxO42uEcQBdP8r32zOfdUq\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getString("passwd")).thenReturn("S+Q/c5dtkvNxO42uEcQBdP8r32zOfdUq");
+red_line===
+"S+Q/c5dtkvNxO42uEcQBdP8r32zOfdUq"
+start_offset===
+51
+end_offset===
+85
+Python OUTPUT===
+when(resultSet.getString("passwd")).thenReturn("S+Q/c5dtkvNxO42uEcQBdP8r32zOfdUq");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"corrector\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getBoolean("corrector")).thenReturn(false);
+red_line===
+"corrector"
+start_offset===
+30
+end_offset===
+41
+Python OUTPUT===
+when(resultSet.getBoolean("corrector")).thenReturn(false);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"passwd\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getString("passwd")).thenReturn("UEX2F5/8Q5loMT3EQaknMyNbSxtlgain");
+red_line===
+"passwd"
+start_offset===
+29
+end_offset===
+37
+Python OUTPUT===
+when(resultSet.getString("passwd")).thenReturn("UEX2F5/8Q5loMT3EQaknMyNbSxtlgain");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"style\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getString("style")).thenReturn("tango");
+red_line===
+"style"
+start_offset===
+29
+end_offset===
+36
+Python OUTPUT===
+when(resultSet.getString("style")).thenReturn("tango");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"candel\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getBoolean("candel")).thenReturn(true);
+red_line===
+"candel"
+start_offset===
+30
+end_offset===
+38
+Python OUTPUT===
+when(resultSet.getBoolean("candel")).thenReturn(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"canmod\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getBoolean("canmod")).thenReturn(true);
+red_line===
+"canmod"
+start_offset===
+30
+end_offset===
+38
+Python OUTPUT===
+when(resultSet.getBoolean("canmod")).thenReturn(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"unread_events\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getInt("unread_events")).thenReturn(0);
+red_line===
+"unread_events"
+start_offset===
+26
+end_offset===
+41
+Python OUTPUT===
+when(resultSet.getInt("unread_events")).thenReturn(0);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"blocked\" 9 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getBoolean("blocked")).thenReturn(false);
+red_line===
+"blocked"
+start_offset===
+30
+end_offset===
+39
+Python OUTPUT===
+when(resultSet.getBoolean("blocked")).thenReturn(false);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"email\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getString("email")).thenReturn("max@linux.org.ru");
+red_line===
+"email"
+start_offset===
+29
+end_offset===
+36
+Python OUTPUT===
+when(resultSet.getString("email")).thenReturn("max@linux.org.ru");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"photo\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getString("photo")).thenReturn("1:403073453.png");
+red_line===
+"photo"
+start_offset===
+29
+end_offset===
+36
+Python OUTPUT===
+when(resultSet.getString("photo")).thenReturn("1:403073453.png");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"max_score\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getInt("max_score")).thenReturn(600);
+red_line===
+"max_score"
+start_offset===
+26
+end_offset===
+37
+Python OUTPUT===
+when(resultSet.getInt("max_score")).thenReturn(600);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"activated\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getBoolean("activated")).thenReturn(true);
+red_line===
+"activated"
+start_offset===
+30
+end_offset===
+41
+Python OUTPUT===
+when(resultSet.getBoolean("activated")).thenReturn(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("cookies:" + cr.getCookies());
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println("cookies:" + cr.getCookies()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"auth\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+String auth = getAuthCookie(cr);
+red_line===
+getAuthCookie(cr)
+start_offset===
+18
+end_offset===
+35
+Python OUTPUT===
+String auth = getAuthCookie(cr);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"userAgentDao\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+UserAgentDao userAgentDao = mock(UserAgentDao.class);
+red_line===
+= mock(UserAgentDao.class)
+start_offset===
+30
+end_offset===
+56
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"messageDao\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+TopicDao messageDao = mock(TopicDao.class);
+red_line===
+= mock(TopicDao.class)
+start_offset===
+24
+end_offset===
+46
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"deleteInfoDao\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+DeleteInfoDao deleteInfoDao = mock(DeleteInfoDao.class);
+red_line===
+= mock(DeleteInfoDao.class)
+start_offset===
+32
+end_offset===
+59
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"sectionDao\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+SectionDao sectionDao = mock(SectionDaoImpl.class);
+red_line===
+= mock(SectionDaoImpl.class)
+start_offset===
+26
+end_offset===
+54
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"userDao\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+UserDao userDao = mock(UserDao.class);
+red_line===
+= mock(UserDao.class)
+start_offset===
+20
+end_offset===
+41
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"groupDao\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+GroupDao groupDao = mock(GroupDao.class);
+red_line===
+= mock(GroupDao.class)
+start_offset===
+22
+end_offset===
+44
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"pollDao\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+PollDao pollDao = mock(PollDao.class);
+red_line===
+= mock(PollDao.class)
+start_offset===
+20
+end_offset===
+41
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"tags\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+ImmutableList<String> tags = ImmutableList.of("one", "two");
+red_line===
+= ImmutableList.of("one", "two")
+start_offset===
+31
+end_offset===
+63
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"postscore\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getInt("postscore")).thenReturn(-9999);
+red_line===
+"postscore"
+start_offset===
+26
+end_offset===
+37
+Python OUTPUT===
+when(resultSet.getInt("postscore")).thenReturn(-9999);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"section\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(resultSet.getInt("section")).thenReturn(3);
+red_line===
+"section"
+start_offset===
+26
+end_offset===
+35
+Python OUTPUT===
+when(resultSet.getInt("section")).thenReturn(3);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"userid\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(user.getId(), resultSet.getInt("userid"));
+red_line===
+"userid"
+start_offset===
+48
+end_offset===
+56
+Python OUTPUT===
+assertEquals(user.getId(), resultSet.getInt("userid"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"No any records\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertFalse("No any records", rows.isEmpty());
+red_line===
+"No any records"
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+assertFalse("No any records", rows.isEmpty());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"select nextval(\u0027s_msgid\u0027)\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+int commentId = jdbcTemplate.queryForObject("select nextval('s_msgid')", Integer.class);
+red_line===
+"select nextval('s_msgid')"
+start_offset===
+48
+end_offset===
+75
+Python OUTPUT===
+int commentId = jdbcTemplate.queryForObject("select nextval('s_msgid')", Integer.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \".infoblock p\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("[править]", doc.select(".infoblock p").last().text());
+red_line===
+".infoblock p"
+start_offset===
+41
+end_offset===
+55
+Python OUTPUT===
+assertEquals("[править]", doc.select(".infoblock p").last().text());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"UTF-8\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Document doc = Jsoup.parse(cr.getEntityInputStream(), "UTF-8", resource.getURI().toString());
+red_line===
+"UTF-8"
+start_offset===
+58
+end_offset===
+65
+Python OUTPUT===
+Document doc = Jsoup.parse(cr.getEntityInputStream(), "UTF-8", resource.getURI().toString());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \".infoblock\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(doc.select(".infoblock").text().length() > 0);
+red_line===
+".infoblock"
+start_offset===
+26
+end_offset===
+38
+Python OUTPUT===
+assertTrue(doc.select(".infoblock").text().length() > 0);
+isFixed===
+false
+==================

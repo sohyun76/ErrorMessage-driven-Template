@@ -1,0 +1,1235 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"GenericValues\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+return (GenericValues<L, R>) this;
+red_line===
+GenericValues<L, R>
+start_offset===
+14
+end_offset===
+33
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value(RecursiveValue_dataenum child);
+red_line===
+Value
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Left(L other);
+red_line===
+Left
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Right(R error);
+red_line===
+Right
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Neither(String s);
+red_line===
+Neither
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case None();
+red_line===
+None
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value1(int param1, boolean param2);
+red_line===
+Value1
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value();
+red_line===
+Value
+start_offset===
+18
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case TypeParamAnother(Set<InPackage_dataenum> others);
+red_line===
+TypeParamAnother
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Branch(RecursiveGenericValue_dataenum<L, R> left, RecursiveGenericValue_dataenum<L, R> right);
+red_line===
+Branch
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Right(R value);
+red_line===
+Right
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Many(List<T> values);
+red_line===
+Many
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case None();
+red_line===
+None
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value(int param);
+red_line===
+Value
+start_offset===
+18
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\n\u0026\u0026 \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+result.addCode("\n&& ");
+red_line===
+"\n&& "
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case SimpleTypes(String s, Integer i, int unboxed);
+red_line===
+SimpleTypes
+start_offset===
+16
+end_offset===
+27
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"InnerGenericValue\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+return (InnerGenericValue<T>) this;
+red_line===
+InnerGenericValue<T>
+start_offset===
+14
+end_offset===
+34
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case TypeParamValue(Set<RecursiveValue_dataenum> children);
+red_line===
+TypeParamValue
+start_offset===
+16
+end_offset===
+30
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Both(L one, R two);
+red_line===
+Both
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Wrapped(Set<Set<L>> setOfSetOfL);
+red_line===
+Wrapped
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value();
+red_line===
+Value
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value();
+red_line===
+Value
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+<T> dataenum_case Just(T param);
+red_line===
+Just
+start_offset===
+20
+end_offset===
+24
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value();
+red_line===
+Value
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value(int... values);
+red_line===
+Value
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value2(int param1, boolean param2);
+red_line===
+Value2
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"result\" which hides the field declared at line 56.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+int result = 0;
+red_line===
+result
+start_offset===
+10
+end_offset===
+16
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"builder\" which hides the field declared at line 58.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+StringBuilder builder = new StringBuilder();
+red_line===
+builder
+start_offset===
+20
+end_offset===
+27
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Another(InPackage_dataenum other);
+red_line===
+Another
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case TypeParamParamAnother(Set<Set<InPackage_dataenum>> manyOthers);
+red_line===
+TypeParamParamAnother
+start_offset===
+16
+end_offset===
+37
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Left(L value);
+red_line===
+Left
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value1, R_> value1);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value1(int param1, boolean param2);
+red_line===
+Value1
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case One(T value);
+red_line===
+One
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename method \"caseISimportant\" to prevent any misunderstanding/clash with method \"caseIsImportant\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+dataenum_case caseISimportant(String param);
+red_line===
+caseISimportant
+start_offset===
+18
+end_offset===
+33
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value(String param);
+red_line===
+Value
+start_offset===
+18
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Value(@Redacted int[] param1, @Redacted boolean param2);
+red_line===
+Value
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.
+scn.ruleId===
+119
+scn.suspCodeStr===
+public abstract <R_> R_ map(@Nonnull Function<Value, R_> value);
+red_line===
+R_
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"result\" which hides the field declared at line 58.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+int result = 0;
+red_line===
+result
+start_offset===
+10
+end_offset===
+16
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"builder\" which hides the field declared at line 56.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+StringBuilder builder = new StringBuilder();
+red_line===
+builder
+start_offset===
+20
+end_offset===
+27
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty collection instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty collection instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty collection instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty collection instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Another();
+red_line===
+Another
+start_offset===
+16
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Collections(Set<String> set, List<Boolean> list);
+red_line===
+Collections
+start_offset===
+16
+end_offset===
+27
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case TypeParameter(T thing);
+red_line===
+TypeParameter
+start_offset===
+16
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case ReferencesOther(Other_dataenum other);
+red_line===
+ReferencesOther
+start_offset===
+16
+end_offset===
+31
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case NullableParameter(@Nullable String maybeNull);
+red_line===
+NullableParameter
+start_offset===
+16
+end_offset===
+33
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case RedactMe(@Redacted String foo);
+red_line===
+RedactMe
+start_offset===
+16
+end_offset===
+24
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case One(int i);
+red_line===
+One
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Two(String s);
+red_line===
+Two
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case Three(String s);
+red_line===
+Three
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this method name to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+100
+scn.suspCodeStr===
+dataenum_case RedactedValue(String shouldShow, @Redacted Integer redacted);
+red_line===
+RedactedValue
+start_offset===
+16
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"InnerGenericValue\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+return (InnerGenericValue<T>) this;
+red_line===
+InnerGenericValue<T>
+start_offset===
+14
+end_offset===
+34
+Python OUTPUT===
+
+isFixed===
+true
+==================

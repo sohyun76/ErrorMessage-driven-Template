@@ -1,0 +1,456 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final Map<String, String> columnToPropertyOverrides = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+69
+end_offset===
+85
+Python OUTPUT===
+<> > columnToPropertyOverrides = new HashMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+resultSetHandler = new ScalarHandler<T>();
+red_line===
+<T>
+start_offset===
+44
+end_offset===
+47
+Python OUTPUT===
+<> < T > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+resultSetHandler = new ColumnListHandler<T>(columnName);
+red_line===
+<T>
+start_offset===
+48
+end_offset===
+51
+Python OUTPUT===
+<> < T > ( columnName ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(e.getMessage());
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.println(e.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(book.toString());
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println(book.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("The number of books in the table are: " + numBooks);
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println("The number of books in the table are: " + numBooks); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Book> books = new ArrayList<Book>();
+red_line===
+<Book>
+start_offset===
+36
+end_offset===
+42
+Python OUTPUT===
+<> books = new ArrayList < Book > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(autoID);
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println(autoID); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(book.getTitle());
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.println(book.getTitle()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(object == null ? "null" : object.toString());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(object == null ? "null" : object.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(bookTitle);
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.println(bookTitle); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String SQL = "INSERT INTO BOOKS (TITLE, AUTHOR, PRICE) VALUES (?, ?, ?)";
+red_line===
+SQL
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+String SQL = "INSERT INTO BOOKS (TITLE, AUTHOR, PRICE) VALUES (?, ?, ?)";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String SQL = "SELECT * FROM BOOKS";
+red_line===
+SQL
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+String SQL = "SELECT * FROM BOOKS";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String SQL = "SELECT TITLE FROM BOOKS";
+red_line===
+SQL
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+String SQL = "SELECT TITLE FROM BOOKS";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String SQL = "INSERT INTO BOOKS (TITLE, AUTHOR, PRICE) VALUES (?, ?, ?)";
+red_line===
+SQL
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+String SQL = "INSERT INTO BOOKS (TITLE, AUTHOR, PRICE) VALUES (?, ?, ?)";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String SQL = "SELECT COUNT(*) FROM BOOKS";
+red_line===
+SQL
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+String SQL = "SELECT COUNT(*) FROM BOOKS";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Book> books = new ArrayList<Book>();
+red_line===
+<Book>
+start_offset===
+36
+end_offset===
+42
+Python OUTPUT===
+<> books = new ArrayList < Book > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Cryptonomicon\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+book.setTitle("Cryptonomicon");
+red_line===
+"Cryptonomicon"
+start_offset===
+18
+end_offset===
+33
+Python OUTPUT===
+book.setTitle("Cryptonomicon");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String SQL = "INSERT INTO BOOKS  (TITLE, AUT_HOR, PRICE) VALUES (?, ?, ?)";
+red_line===
+SQL
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+String SQL = "INSERT INTO BOOKS  (TITLE, AUT_HOR, PRICE) VALUES (?, ?, ?)";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"spotfix_id\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private long spotfix_id;
+red_line===
+spotfix_id
+start_offset===
+17
+end_offset===
+27
+Python OUTPUT===
+private long spotfix_id;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String SQL = "INSERT INTO TEST0 (spotfix_id) VALUES (?)";
+red_line===
+SQL
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+String SQL = "INSERT INTO TEST0 (spotfix_id) VALUES (?)";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Cryptonomicon\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+book.setTitle("Cryptonomicon");
+red_line===
+"Cryptonomicon"
+start_offset===
+18
+end_offset===
+33
+Python OUTPUT===
+book.setTitle("Cryptonomicon");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"sqlException\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+SQLException sqlException = e.getSqlException();
+red_line===
+= e.getSqlException()
+start_offset===
+32
+end_offset===
+53
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String SQL = "INSERT INTO BOOKS (TITLE, AUT_HOR, PRICE) VALUES (?, ?, ?, ?)";
+red_line===
+SQL
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+String SQL = "INSERT INTO BOOKS (TITLE, AUT_HOR, PRICE) VALUES (?, ?, ?, ?)";
+isFixed===
+false
+==================

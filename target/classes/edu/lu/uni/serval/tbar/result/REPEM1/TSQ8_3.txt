@@ -1,0 +1,2437 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make member \"HTML_ENTITIES\" \"protected\".
+scn.ruleId===
+2386
+scn.suspCodeStr===
+HTML_ENTITIES = map.keySet().toArray(new String[map.size()]);
+red_line===
+HTML_ENTITIES
+start_offset===
+2
+end_offset===
+15
+Python OUTPUT===
+final HTML_ENTITIES = map . keySet ( ) . toArray ( new String [ map . size ( ) ] ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make member \"NUMERIC_ENTITIES\" \"protected\".
+scn.ruleId===
+2386
+scn.suspCodeStr===
+NUMERIC_ENTITIES = map.values().toArray(new String[map.size()]);
+red_line===
+NUMERIC_ENTITIES
+start_offset===
+2
+end_offset===
+18
+Python OUTPUT===
+final NUMERIC_ENTITIES = map . values ( ) . toArray ( new String [ map . size ( ) ] ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"keyword\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final String keyword;
+red_line===
+keyword
+start_offset===
+22
+end_offset===
+29
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"mode\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final Mode mode;
+red_line===
+mode
+start_offset===
+20
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+topic = "http://" + topic;
+red_line===
+"http://"
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+ topic = "http://" + topic; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"feed\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Feed feed;
+red_line===
+feed
+start_offset===
+14
+end_offset===
+18
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"entries\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private List<FeedEntry> entries;
+red_line===
+entries
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"urgent\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean urgent;
+red_line===
+urgent
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+String pi = new String(ArrayUtils.subarray(bytes, 0, index + 1)).replace('\'', '"');
+red_line===
+String
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+ String pi = new (ArrayUtils.subarray(bytes, 0, index + 1)).replace('\'','"');
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+return rot13(new String(Base64.decodeBase64(code)));
+red_line===
+String
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+ return rot13(new SBase64.decodeBase64(code))); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"https\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+whitelist.addProtocols("a", "href", "ftp", "http", "https", "magnet", "mailto");
+red_line===
+"https"
+start_offset===
+53
+end_offset===
+60
+Python OUTPUT===
+ whitelist.addProtocols("a", "href", "ftp", "http", "https", "magnet", "mailto"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"border\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private static final List<String> ALLOWED_IFRAME_CSS_RULES = Arrays.asList("height", "width", "border");
+red_line===
+"border"
+start_offset===
+95
+end_offset===
+103
+Python OUTPUT===
+ private static final List<String> ALLOWED_IFRAME_CSS_RULES = Arrays.asList("height", "width", "border"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"bordercolor\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+whitelist.addAttributes("table", "border", "bordercolor", "summary", "width");
+red_line===
+"bordercolor"
+start_offset===
+45
+end_offset===
+58
+Python OUTPUT===
+ whitelist.addAttributes("table", "border", "bordercolor", "summary", "width"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"style\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+whitelist.addAttributes("iframe", "src", "height", "width", "allowfullscreen", "frameborder", "style");
+red_line===
+"style"
+start_offset===
+96
+end_offset===
+103
+Python OUTPUT===
+ whitelist.addAttributes("iframe", "src", "height", "width", "allowfullscreen", "frameborder", "style"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"feed\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Feed feed = new Feed();
+red_line===
+feed
+start_offset===
+14
+end_offset===
+18
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"entries\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private List<FeedEntry> entries = new ArrayList<>();
+red_line===
+entries
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"title\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String title;
+red_line===
+title
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"urlAfterRedirect\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String urlAfterRedirect;
+red_line===
+urlAfterRedirect
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"fetchDuration\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private long fetchDuration;
+red_line===
+fetchDuration
+start_offset===
+14
+end_offset===
+27
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+return total == 0 ? false : ((float) rtlCount / total > RTL_DETECTION_THRESHOLD ? true : false);
+red_line===
+false
+start_offset===
+22
+end_offset===
+27
+Python OUTPUT===
+ return total == 0 ? f: ((float) rtlCount  /  total > RTL_DETECTION_THRESHOLD ? true : false); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract this nested ternary operation into an independent statement.
+scn.ruleId===
+3358
+scn.suspCodeStr===
+return total == 0 ? false : ((float) rtlCount / total > RTL_DETECTION_THRESHOLD ? true : false);
+red_line===
+(float) rtlCount / total > RTL_DETECTION_THRESHOLD ? true : false
+start_offset===
+31
+end_offset===
+96
+Python OUTPUT===
+ return total == 0 ? false : ((float) rtlCount / total > RTL_DETECTION_THRESHOLD ? true : false); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literals.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+return total == 0 ? false : ((float) rtlCount / total > RTL_DETECTION_THRESHOLD ? true : false);
+red_line===
+true
+start_offset===
+84
+end_offset===
+88
+Python OUTPUT===
+ return total == 0 ? false : ((float) rtlCount  /  total > RTL_DETECTION_THRESHOLD ? t: false); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MAPPER\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static ObjectMapper MAPPER = new ObjectMapper();
+red_line===
+MAPPER
+start_offset===
+29
+end_offset===
+35
+Python OUTPUT===
+ private static ObjectMapper MAPPER = new ObjectMapper(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"SSL_CONTEXT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static SSLContext SSL_CONTEXT = null;
+red_line===
+SSL_CONTEXT
+start_offset===
+27
+end_offset===
+38
+Python OUTPUT===
+ private static SSLContext SSL_CONTEXT = null; 
+isFixed===
+false
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Change this code to use a stronger protocol.
+scn.ruleId===
+4423
+scn.suspCodeStr===
+SSL_CONTEXT = SSLContext.getInstance("TLS");
+red_line===
+"TLS"
+start_offset===
+40
+end_offset===
+45
+Python OUTPUT===
+ SSL_CONTEXT = SSLContext.getInstance("TLS"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+10
+end_offset===
+14
+Python OUTPUT===
+ return null; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(new String(result.content));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(new String(result.content)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"contentType\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final String contentType;
+red_line===
+contentType
+start_offset===
+23
+end_offset===
+34
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"lastModifiedSince\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final String lastModifiedSince;
+red_line===
+lastModifiedSince
+start_offset===
+23
+end_offset===
+40
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"eTag\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final String eTag;
+red_line===
+eTag
+start_offset===
+23
+end_offset===
+27
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"duration\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final long duration;
+red_line===
+duration
+start_offset===
+21
+end_offset===
+29
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"urlAfterRedirect\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final String urlAfterRedirect;
+red_line===
+urlAfterRedirect
+start_offset===
+23
+end_offset===
+39
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"position\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Integer position;
+red_line===
+position
+start_offset===
+17
+end_offset===
+25
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"errorCount\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private int errorCount;
+red_line===
+errorCount
+start_offset===
+13
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"averageEntryInterval\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Long averageEntryInterval;
+red_line===
+averageEntryInterval
+start_offset===
+14
+end_offset===
+34
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"starred\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean starred;
+red_line===
+starred
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"showRead\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean showRead;
+red_line===
+showRead
+start_offset===
+17
+end_offset===
+25
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"scrollMarks\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean scrollMarks;
+red_line===
+scrollMarks
+start_offset===
+17
+end_offset===
+28
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"email\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean email;
+red_line===
+email
+start_offset===
+17
+end_offset===
+22
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"gmail\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean gmail;
+red_line===
+gmail
+start_offset===
+17
+end_offset===
+22
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"facebook\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean facebook;
+red_line===
+facebook
+start_offset===
+17
+end_offset===
+25
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"twitter\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean twitter;
+red_line===
+twitter
+start_offset===
+17
+end_offset===
+24
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"googleplus\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean googleplus;
+red_line===
+googleplus
+start_offset===
+17
+end_offset===
+27
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"tumblr\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean tumblr;
+red_line===
+tumblr
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"pocket\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean pocket;
+red_line===
+pocket
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"instapaper\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean instapaper;
+red_line===
+instapaper
+start_offset===
+17
+end_offset===
+27
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"buffer\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean buffer;
+red_line===
+buffer
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"readability\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean readability;
+red_line===
+readability
+start_offset===
+17
+end_offset===
+28
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"collapsed\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean collapsed;
+red_line===
+collapsed
+start_offset===
+17
+end_offset===
+26
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"position\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Integer position;
+red_line===
+position
+start_offset===
+17
+end_offset===
+25
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception("Unexpected response code: " + code + " " + response.getStatusLine().getReasonPhrase() + " - "
+							+ message);
+red_line===
+Exception
+start_offset===
+15
+end_offset===
+24
+Python OUTPUT===
+ throw new Exception("Unexpected response code: " + code + " " + response.getStatusLine().getReasonPhrase() + " - " + message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027userDAO::count\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+long count = UnitOfWork.call(sessionFactory, () -> userDAO.count());
+red_line===
+->
+start_offset===
+50
+end_offset===
+52
+Python OUTPUT===
+ long count = UnitOfWork.call(sessionFactory, () -> userDAO.count()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027!unknown!.this::!unknownMethod!\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+UnitOfWork.run(sessionFactory, () -> initialData());
+red_line===
+->
+start_offset===
+37
+end_offset===
+39
+Python OUTPUT===
+ UnitOfWork.run(sessionFactory, () -> initialData()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this expression which always evaluates to \"false\"
+scn.ruleId===
+2589
+scn.suspCodeStr===
+Preconditions
+					.checkArgument(forceRegistration || StringUtils.length(password) >= 6, "Password too short (6 characters maximum)");
+red_line===
+forceRegistration
+start_offset===
+20
+end_offset===
+37
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("could not load default favicon", e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+ throw new RuntimeException("could not load default favicon", e); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+doc = Jsoup.parse(new String(result.getContent()), url);
+red_line===
+String
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+ doc = Jsoup.parse(new Stesult.getContent()), url); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ICON_MIMETYPE_BLACKLIST\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static List<String> ICON_MIMETYPE_BLACKLIST = Arrays.asList("application/xml", "text/html");
+red_line===
+ICON_MIMETYPE_BLACKLIST
+start_offset===
+29
+end_offset===
+52
+Python OUTPUT===
+ private static List<String> ICON_MIMETYPE_BLACKLIST = Arrays.asList("application/xml", "text/html"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MIN_ICON_LENGTH\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static long MIN_ICON_LENGTH = 100;
+red_line===
+MIN_ICON_LENGTH
+start_offset===
+21
+end_offset===
+36
+Python OUTPUT===
+ private static long MIN_ICON_LENGTH = 100; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MAX_ICON_LENGTH\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static long MAX_ICON_LENGTH = 100000;
+red_line===
+MAX_ICON_LENGTH
+start_offset===
+21
+end_offset===
+36
+Python OUTPUT===
+ private static long MAX_ICON_LENGTH = 100000; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"TIMEOUT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+protected static int TIMEOUT = 4000;
+red_line===
+TIMEOUT
+start_offset===
+22
+end_offset===
+29
+Python OUTPUT===
+ protected static int TIMEOUT = 4000; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"icon\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final byte[] icon;
+red_line===
+icon
+start_offset===
+23
+end_offset===
+27
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"mediaType\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final String mediaType;
+red_line===
+mediaType
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.inner = new ArrayList<E>(Math.max(0, capacity));
+red_line===
+<E>
+start_offset===
+28
+end_offset===
+31
+Python OUTPUT===
+\u003c\u003e new ArrayList < E > ( Math.max ( 0 , capacity ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private static final Pattern REGEXP = Pattern.compile("(.*\\byoutube\\.com)\\/channel\\/([^\\/]+)", Pattern.CASE_INSENSITIVE);
+red_line===
+n R
+start_offset===
+28
+end_offset===
+31
+Python OUTPUT===
+\u003c\u003e REGEXP = Pattern.compile ( " (.*\\byoutube\\.com)\\/channel\\/([^\\/]+) " , Pattern.CASE_INSENSITIVE ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"capacity\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Long capacity;
+red_line===
+capacity
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027!unknown!.this::!unknownMethod!\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+this.factory = new JPAQueryFactory(() -> currentSession());
+red_line===
+->
+start_offset===
+40
+end_offset===
+42
+Python OUTPUT===
+ this.factory = new JPAQueryFactory(() -> currentSession()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027!unknown!.this::!unknownMethod!\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+models.forEach(m -> persist(m));
+red_line===
+->
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+ models.forEach(m -> persist(m)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027this::delete\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+objects.forEach(o -> delete(o));
+red_line===
+->
+start_offset===
+20
+end_offset===
+22
+Python OUTPUT===
+ objects.forEach(o -> delete(o)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"feed\" which hides the field declared at line 24.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Feed feed = Iterables.getFirst(feeds, null);
+red_line===
+feed
+start_offset===
+7
+end_offset===
+11
+Python OUTPUT===
+ Feed ffeed= Iterables.getFirst(feeds, null); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"status\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+FeedEntryStatus status = Iterables.getFirst(statuses, null);
+red_line===
+status
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+ FeedEntryStatus sstatus= Iterables.getFirst(statuses, null); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean read = unreadThreshold == null ? false : entry.getUpdated().before(unreadThreshold);
+red_line===
+false
+start_offset===
+44
+end_offset===
+49
+Python OUTPUT===
+ boolean read = unreadThreshold == null ? fa entry.getUpdated().before(unreadThreshold); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"content\" which hides the field declared at line 47.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+FeedEntryContent content = new FeedEntryContent();
+red_line===
+content
+start_offset===
+21
+end_offset===
+28
+Python OUTPUT===
+ FeedEntryContent concontentnew FeedEntryContent(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"entry\" which hides the field declared at line 46.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+FeedEntry entry = new FeedEntry();
+red_line===
+entry
+start_offset===
+14
+end_offset===
+19
+Python OUTPUT===
+ FeedEntry ententrynew FeedEntry(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"status\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+FeedEntryStatus status = new FeedEntryStatus();
+red_line===
+status
+start_offset===
+20
+end_offset===
+26
+Python OUTPUT===
+ FeedEntryStatus stastatusnew FeedEntryStatus(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"entry\" which hides the field declared at line 46.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+FeedEntry entry = feedEntryDAO.findById(placeholder.getEntry().getId());
+red_line===
+entry
+start_offset===
+14
+end_offset===
+19
+Python OUTPUT===
+ FeedEntry ententryfeedEntryDAO.findById(placeholder.getEntry().getId()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"status\" which hides the field declared at line 45.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+FeedEntryStatus status = handleStatus(user, statusId == null ? null : findById(statusId), placeholder.getSubscription(),
+						entry);
+red_line===
+status
+start_offset===
+20
+end_offset===
+26
+Python OUTPUT===
+ FeedEntryStatus stastatushandleStatus(user, statusId == null ? null : findById(statusId), placeholder.getSubscription(), entry); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+FixedSizeSortedSet<FeedEntryStatus> set = new FixedSizeSortedSet<FeedEntryStatus>(capacity, comparator);
+red_line===
+<FeedEntryStatus>
+start_offset===
+66
+end_offset===
+83
+Python OUTPUT===
+\u003c\u003e set = new FixedSizeSortedSet < FeedEntryStatus > ( capacity , comparator ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment; \"status\" already holds the assigned value along all execution paths.
+scn.ruleId===
+4165
+scn.suspCodeStr===
+status = handleStatus(user, status, status.getSubscription(), status.getEntry());
+red_line===
+status = handleStatus(user, status, status.getSubscription(), status.getEntry())
+start_offset===
+3
+end_offset===
+83
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"content\" which hides the field declared at line 101.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+SyndContentImpl content = new SyndContentImpl();
+red_line===
+content
+start_offset===
+18
+end_offset===
+25
+Python OUTPUT===
+ SyndContentImpl ccontent= new SyndContentImpl(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"unreadCount\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private long unreadCount;
+red_line===
+unreadCount
+start_offset===
+14
+end_offset===
+25
+Python OUTPUT===
+ private long unreadCount; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"entries\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private List<Entry> entries = new ArrayList<>();
+red_line===
+entries
+start_offset===
+21
+end_offset===
+28
+Python OUTPUT===
+ private List<Entry> entries = new ArrayList<>(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Date\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+Date olderThan = req.getOlderThan() == null ? null : new Date(req.getOlderThan());
+red_line===
+Date
+start_offset===
+59
+end_offset===
+63
+Python OUTPUT===
+ Date olderThan = req.getOlderThan() == null ? null : new ( req.getOlderThan());
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Date\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+Date olderThan = req.getOlderThan() == null ? null : new Date(req.getOlderThan());
+red_line===
+Date
+start_offset===
+59
+end_offset===
+63
+Python OUTPUT===
+ Date olderThan = req.getOlderThan() == null ? null : new ( req.getOlderThan());
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this member \"protected\".
+scn.ruleId===
+2386
+scn.suspCodeStr===
+public static final Date STARTUP_TIME = new Date();
+red_line===
+STARTUP_TIME
+start_offset===
+26
+end_offset===
+38
+Python OUTPUT===
+protected static final Date STARTUP_TIME = new Date ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/rest/*\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+environment.jersey().setUrlPattern("/rest/*");
+red_line===
+"/rest/*"
+start_offset===
+37
+end_offset===
+46
+Python OUTPUT===
+ environment.jersey().setUrlPattern("/rest/*"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"SessionHandlerFactory\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private SessionHandlerFactory SessionHandlerFactory = new SessionHandlerFactory();
+red_line===
+SessionHandlerFactory
+start_offset===
+31
+end_offset===
+52
+Python OUTPUT===
+ private SessionHandlerFactory SessionHandlerFactory = new SessionHandlerFactory(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"keepStatusDays\" which hides the field declared at line 121.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+int keepStatusDays = getKeepStatusDays();
+red_line===
+keepStatusDays
+start_offset===
+7
+end_offset===
+21
+Python OUTPUT===
+ int kekeepStatusDays getKeepStatusDays(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"googleAnalyticsTrackingCode\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String googleAnalyticsTrackingCode;
+red_line===
+googleAnalyticsTrackingCode
+start_offset===
+17
+end_offset===
+44
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"googleAuthKey\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String googleAuthKey;
+red_line===
+googleAuthKey
+start_offset===
+17
+end_offset===
+30
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"smtpHost\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String smtpHost;
+red_line===
+smtpHost
+start_offset===
+17
+end_offset===
+25
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"smtpPort\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private int smtpPort;
+red_line===
+smtpPort
+start_offset===
+14
+end_offset===
+22
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"smtpTls\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean smtpTls;
+red_line===
+smtpTls
+start_offset===
+18
+end_offset===
+25
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"smtpUserName\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String smtpUserName;
+red_line===
+smtpUserName
+start_offset===
+17
+end_offset===
+29
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"smtpPassword\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String smtpPassword;
+red_line===
+smtpPassword
+start_offset===
+17
+end_offset===
+29
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"smtpFromAddress\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String smtpFromAddress;
+red_line===
+smtpFromAddress
+start_offset===
+17
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"graphiteEnabled\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private boolean graphiteEnabled;
+red_line===
+graphiteEnabled
+start_offset===
+18
+end_offset===
+33
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"graphitePrefix\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String graphitePrefix;
+red_line===
+graphitePrefix
+start_offset===
+17
+end_offset===
+31
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"graphiteHost\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String graphiteHost;
+red_line===
+graphiteHost
+start_offset===
+17
+end_offset===
+29
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"graphitePort\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private int graphitePort;
+red_line===
+graphitePort
+start_offset===
+14
+end_offset===
+26
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"graphiteInterval\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private int graphiteInterval;
+red_line===
+graphiteInterval
+start_offset===
+14
+end_offset===
+30
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"userAgent\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String userAgent;
+red_line===
+userAgent
+start_offset===
+17
+end_offset===
+26
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"scheme_\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+String scheme_;
+red_line===
+scheme_
+start_offset===
+15
+end_offset===
+22
+Python OUTPUT===
+ String scheme_scheme_
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"location_\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+String location_;
+red_line===
+location_
+start_offset===
+15
+end_offset===
+24
+Python OUTPUT===
+ String locatiolocation_
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"path_\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+String path_;
+red_line===
+path_
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+ String path_; path_
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"parameters_\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+String parameters_;
+red_line===
+parameters_
+start_offset===
+15
+end_offset===
+26
+Python OUTPUT===
+ String parametparameters_
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"query_\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+String query_;
+red_line===
+query_
+start_offset===
+15
+end_offset===
+21
+Python OUTPUT===
+ String query_;query_
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"fragment_\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+String fragment_;
+red_line===
+fragment_
+start_offset===
+15
+end_offset===
+24
+Python OUTPUT===
+ String fragmenfragment_
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+path = "/" + path;
+red_line===
+"/"
+start_offset===
+11
+end_offset===
+14
+Python OUTPUT===
+ path = " / "path; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty map instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+10
+end_offset===
+14
+Python OUTPUT===
+ return null; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final Map<String, String> params = new HashMap<String, String>(pairs.length);
+red_line===
+<String, String>
+start_offset===
+48
+end_offset===
+64
+Python OUTPUT===
+\u003c\u003e > params = new HashMap < String , String > ( pairs.length ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new TreeMap<String, String>(params);
+red_line===
+<String, String>
+start_offset===
+20
+end_offset===
+36
+Python OUTPUT===
+\u003c\u003e String > ( params ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Merge this if statement with the enclosing one.
+scn.ruleId===
+1066
+scn.suspCodeStr===
+if (category.equals(o.getTitle()))
+					return true;
+red_line===
+if
+start_offset===
+4
+end_offset===
+6
+Python OUTPUT===
+ if (category.equals(o.getTitle())) return true; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Merge this if statement with the enclosing one.
+scn.ruleId===
+1066
+scn.suspCodeStr===
+if (title.equals(o.getTitle()) && o.getAttributeValue("xmlUrl").equals(url))
+					return true;
+red_line===
+if
+start_offset===
+4
+end_offset===
+6
+Python OUTPUT===
+ if (title.equals(o.getTitle()) && o.getAttributeValue("xmlUrl").equals(url)) return true; 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"cat1Outline\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+List<Outline> cat1Children = cat1Outline.getChildren();
+red_line===
+cat1Outline.getChildren
+start_offset===
+31
+end_offset===
+54
+Python OUTPUT===
+ List<Outline> cat1Children = cat1Outline.getChildren(); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"cat2Outline\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+List<Outline> cat2Children = cat2Outline.getChildren();
+red_line===
+cat2Outline.getChildren
+start_offset===
+31
+end_offset===
+54
+Python OUTPUT===
+ List<Outline> cat2Children = cat2Outline.getChildren(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"content\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private FeedEntryContent content;
+red_line===
+content
+start_offset===
+26
+end_offset===
+33
+Python OUTPUT===
+ private FeedEntryContent ; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make mockServerClient a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public MockServerClient mockServerClient;
+red_line===
+mockServerClient
+start_offset===
+28
+end_offset===
+44
+Python OUTPUT===
+public static final MockServerClient mockServerClient ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"apikey\" 11 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(userDAO.findByApiKey("apikey")).thenReturn(null);
+red_line===
+"apikey"
+start_offset===
+28
+end_offset===
+36
+Python OUTPUT===
+ when(userDAO.findByApiKey("apikey")).thenReturn(null); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"password\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Optional<User> user = userService.login(null, "password");
+red_line===
+"password"
+start_offset===
+48
+end_offset===
+58
+Python OUTPUT===
+ Optional<User> user = userService.login(null, "password"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"test@test.com\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(userDAO.findByName("test@test.com")).thenReturn(null);
+red_line===
+"test@test.com"
+start_offset===
+26
+end_offset===
+41
+Python OUTPUT===
+ when(userDAO.findByName("test@test.com")).thenReturn(null); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"UTF-8\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("UTF-8", FeedUtils.extractDeclaredEncoding("<?xml encoding=\"UTF-8\" ?>".getBytes()));
+red_line===
+"UTF-8"
+start_offset===
+22
+end_offset===
+29
+Python OUTPUT===
+ Assert.assertEquals("UTF-8", FeedUtils.extractDeclaredEncoding("<?xml encoding=\"UTF-8\" ?>".getBytes())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://a.com/feed\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(expected, FeedUtils.toAbsoluteUrl("http://a.com/blog/entry/1", "http://a.com/feed", "http://a.com/feed"));
+red_line===
+"http://a.com/feed"
+start_offset===
+85
+end_offset===
+104
+Python OUTPUT===
+ Assert.assertEquals(expected, FeedUtils.toAbsoluteUrl("http://a.com/blog/entry/1", "http://a.com/feed", "http://a.com/feed")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://a.com/blog/entry/1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String expected = "http://a.com/blog/entry/1";
+red_line===
+"http://a.com/blog/entry/1"
+start_offset===
+20
+end_offset===
+47
+Python OUTPUT===
+ String expected = "http://a.com/blog/entry/1"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://a.com/feed/\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(expected, FeedUtils.toAbsoluteUrl("http://a.com/blog/entry/1", "http://a.com/feed/", "http://a.com/feed/"));
+red_line===
+"http://a.com/feed/"
+start_offset===
+85
+end_offset===
+105
+Python OUTPUT===
+ Assert.assertEquals(expected, FeedUtils.toAbsoluteUrl("http://a.com/blog/entry/1", "http://a.com/feed/", "http://a.com/feed/")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+set = new FixedSizeSortedSet<String>(3, COMP);
+red_line===
+<String>
+start_offset===
+30
+end_offset===
+38
+Python OUTPUT===
+\u003c\u003e < String > ( 3 , COMP ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"SESSION_KEY_USER\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String SESSION_KEY_USER = "user";
+red_line===
+SESSION_KEY_USER
+start_offset===
+23
+end_offset===
+39
+Python OUTPUT===
+ private static String SESSION_KEY_USER = "user"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"password\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+when(service.login("user", "password")).thenReturn(absentUser);
+red_line===
+"password"
+start_offset===
+29
+end_offset===
+39
+Python OUTPUT===
+ when(service.login("user", "password")).thenReturn(absentUser); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"test@test.com\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+req.setEmail("test@test.com");
+red_line===
+"test@test.com"
+start_offset===
+15
+end_offset===
+30
+Python OUTPUT===
+ req.setEmail("test@test.com"); 
+isFixed===
+false
+==================

@@ -1,0 +1,898 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+public void internalStaticFieldAccess() { staticFieldOne = ""; }
+red_line===
+{ staticFieldO
+start_offset===
+42
+end_offset===
+56
+Python OUTPUT===
+public final void internalStaticFieldAccess ( ) { staticFieldOne = " " ; }
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(new WillGoAway());
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println(new WillGoAway()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+Object aMethod(String parameter) throws Exception;
+red_line===
+s Excepti
+start_offset===
+40
+end_offset===
+49
+Python OUTPUT===
+ Object aMethod(String parameter) throws Exception; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Still here!");
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println("Still here!"); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("a-copy-one: " + s);
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println("a-copy-one: " + s); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+Object aMethod(String parameter) throws Exception;
+red_line===
+s Excepti
+start_offset===
+40
+end_offset===
+49
+Python OUTPUT===
+ Object aMethod(String parameter) throws Exception; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+Object anotherMethod(String parameter) throws Exception;
+red_line===
+s Excepti
+start_offset===
+46
+end_offset===
+55
+Python OUTPUT===
+ Object anotherMethod(String parameter) throws Exception; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return "static";
+red_line===
+urn "sta
+start_offset===
+7
+end_offset===
+15
+Python OUTPUT===
+ return"; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"simple-test\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+getMojo("simple-test").execute();
+red_line===
+ojo("simple-t
+start_offset===
+8
+end_offset===
+21
+Python OUTPUT===
+ getMojo("simple-test").execute(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(l.load(new File("core/src/test/resources/ArtifactLoaderTest.jar")));
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println(l.load(new File("core/src/test/resources/ArtifactLoaderTest.jar"))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(
+          "Multiple definitions of " + declaredMethod.descriptor() + " in class " + className);
+red_line===
+w new RuntimeExc
+start_offset===
+10
+end_offset===
+26
+Python OUTPUT===
+ throw new RuntimeException( "Multiple definitions of " + declaredMethod.descriptor() + " in class " + className); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+final Class moduleFinderClass = Class.forName("java.lang.module.ModuleFinder");
+red_line===
+final
+start_offset===
+6
+end_offset===
+11
+Python OUTPUT===
+ final Class moduleFinderClass = Class.forName("java.lang.module.ModuleFinder"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+final Class moduleReferenceClass = Class.forName("java.lang.module.ModuleReference");
+red_line===
+final
+start_offset===
+6
+end_offset===
+11
+Python OUTPUT===
+ final Class moduleReferenceClass = Class.forName("java.lang.module.ModuleReference"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+final Class moduleReaderClass = Class.forName("java.lang.module.ModuleReader");
+red_line===
+final
+start_offset===
+6
+end_offset===
+11
+Python OUTPUT===
+ final Class moduleReaderClass = Class.forName("java.lang.module.ModuleReader"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"com/Main\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+final DeclaredClass mainClass = newClass("com/Main").methods(methodMap(mainMethod)).build();
+red_line===
+ass("com/M
+start_offset===
+41
+end_offset===
+51
+Python OUTPUT===
+ final DeclaredClass mainClass = newClass("com/Main").methods(methodMap(mainMethod)).build(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map<String, Class> desc = new HashMap<>();
+red_line===
+ng, C
+start_offset===
+12
+end_offset===
+17
+Python OUTPUT===
+ Map<String, Class> desc = new HashMap<>(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return 2;
+red_line===
+e
+start_offset===
+7
+end_offset===
+8
+Python OUTPUT===
+ return2; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(FileInputStream.class.toString());
+red_line===
+      Syst
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println(FileInputStream.class.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(long[].class);
+red_line===
+      Syst
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println(long[].class); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(C.class.getCanonicalName());
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println(C.class.getCanonicalName()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("b got result: " + result);
+red_line===
+     Syste
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println("b got result: " + result); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make publicFieldOne a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public Object publicFieldOne;
+red_line===
+t publicFieldO
+start_offset===
+14
+end_offset===
+28
+Python OUTPUT===
+public static final Object publicFieldOne ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make staticFieldOne a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static Object staticFieldOne;
+red_line===
+t staticFieldO
+start_offset===
+21
+end_offset===
+35
+Python OUTPUT===
+public static final Object staticFieldOne ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"privateFieldOne\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private Object privateFieldOne;
+red_line===
+t privateFieldO
+start_offset===
+15
+end_offset===
+30
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("a-copy-two: " + s);
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println("a-copy-two: " + s); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Not going anywhere...");
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println("Not going anywhere..."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("a1-one: " + s);
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println("a1-one: " + s); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("a1-two: " + s);
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println("a1-two: " + s); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("not accessible...!");
+red_line===
+    System
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println("not accessible...!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"boobaz\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+verify(artifactLoader, never()).load(argThat(hasId("boobaz")), any(File.class));
+red_line===
+sId("boo
+start_offset===
+51
+end_offset===
+59
+Python OUTPUT===
+ verify(artifactLoader, never()).load(argThat(hasId("boobaz")), any(File.class)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"bootClasspath\" which hides the field declared at line 147.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final String bootClasspath = System.getProperty("sun.boot.class.path");
+red_line===
+ing bootClass
+start_offset===
+13
+end_offset===
+26
+Python OUTPUT===
+ final StringbootClasspathh = System.getProperty("sun.boot.class.path"); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Could not load " + path, e);
+red_line===
+w new RuntimeExc
+start_offset===
+10
+end_offset===
+26
+Python OUTPUT===
+ throw new RuntimeException("Could not load " + path, e); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+Enumeration<JarEntry> entries = jarFile.entries();
+red_line===
+  Enumeration<Ja
+start_offset===
+4
+end_offset===
+20
+Python OUTPUT===
+ Enumeration<JarEntry> entries = jarFile.entries(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<T> list = new ArrayList<T>();
+red_line===
+Lis
+start_offset===
+28
+end_offset===
+31
+Python OUTPUT===
+\u003c\u003e T > list = new ArrayList < T > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Unexpected method call opcode: " + insn.getOpcode());
+red_line===
+row new RuntimeE
+start_offset===
+10
+end_offset===
+26
+Python OUTPUT===
+ throw new RuntimeException("Unexpected method call opcode: " + insn.getOpcode()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+final Set moduleReferences = (Set) moduleFinderClass.getMethod("findAll")
+          .invoke(systemModuleFinder);
+red_line===
+fin
+start_offset===
+6
+end_offset===
+9
+Python OUTPUT===
+ final Set moduleReferences = (Set) moduleFinderClass.getMethod("findAll") .invoke(systemModuleFinder); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"com/d/Foo\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+final DeclaredClass fooClass = newClass("com/d/Foo").methods(methodMap(methodOnlyInD1)).build();
+red_line===
+ass("com/d/
+start_offset===
+40
+end_offset===
+51
+Python OUTPUT===
+ final DeclaredClass fooClass = newClass("com/d/Foo").methods(methodMap(methodOnlyInD1)).build(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"com/super\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+final DeclaredClass superClass =
+        newClass("com/super").methods(methodMap(methodOnlyInSuper)).build();
+red_line===
+ewClass("co
+start_offset===
+9
+end_offset===
+20
+Python OUTPUT===
+ final DeclaredClass superClass = newClass("com/super").methods(methodMap(methodOnlyInSuper)).build(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"other/Unknown\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Map<ClassTypeDescriptor, DeclaredClass> world =
+        classMap(root, newClass("other/Unknown").build());
+red_line===
+ewClass("other/
+start_offset===
+24
+end_offset===
+39
+Python OUTPUT===
+ Map<ClassTypeDescriptor, DeclaredClass> world = classMap(root, newClass("other/Unknown").build()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"my/Root\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+DeclaredClass root = newClass("my/Root").build();
+red_line===
+ass("my/R
+start_offset===
+30
+end_offset===
+39
+Python OUTPUT===
+ DeclaredClass root = newClass("my/Root").build(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(Object[].class);
+red_line===
+      Syst
+start_offset===
+0
+end_offset===
+10
+Python OUTPUT===
+ System.out.println(Object[].class); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"artifact\" which hides the field declared at line 52.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Artifact artifact = loadTestClassesAsArtifact();
+red_line===
+act arti
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+ final Artifactartifactt = loadTestClassesAsArtifact(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"artifact\" which hides the field declared at line 52.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Artifact artifact = loadTestClassesAsArtifact();
+red_line===
+act arti
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+ final Artifactartifactt = loadTestClassesAsArtifact(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"artifact\" which hides the field declared at line 52.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Artifact artifact = loadAsmJar();
+red_line===
+act arti
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+ final Artifactartifactt = loadAsmJar(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Ljava/lang/Object;\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+DeclaredField myField = new DeclaredFieldBuilder().name("publicFieldOne")
+        .descriptor(TypeDescriptors.fromRaw("Ljava/lang/Object;")).build();
+red_line===
+fromRaw("Ljava/lang/
+start_offset===
+36
+end_offset===
+56
+Python OUTPUT===
+ DeclaredField myField = new DeclaredFieldBuilder().name("publicFieldOne") .descriptor(TypeDescriptors.fromRaw("Ljava/lang/Object;")).build(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"artifact\" which hides the field declared at line 52.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Artifact artifact = loader.load(FilePathHelper.getPath("target/classes"));
+red_line===
+act arti
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+ final Artifactartifactt = loader.load(FilePathHelper.getPath("target/classes")); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"artifact\" which hides the field declared at line 52.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Artifact artifact = loader.load(file);
+red_line===
+ifact ar
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+ final Artifactartifactt = loader.load(file); 
+isFixed===
+true
+==================

@@ -1,0 +1,152 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<Field> fields = new ArrayList<Field>();
+red_line===
+<Field>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<String> markdown = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> payload = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+push(webHookUrl, text, username, imageOrIcon, destination, parse, new ArrayList<SlackAttachment>());
+red_line===
+<SlackAttachment>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"test-channel\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+slack.sendToChannel("test-channel").push(message);
+red_line===
+"test-channel"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"mockUrl\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Slack slack = new Slack("mockUrl", slackService);
+red_line===
+"mockUrl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"hello\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+SlackMessage message = new SlackMessage("hello");
+red_line===
+"hello"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \":ghost:\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(iconCaptor.getValue(), is(":ghost:"));
+red_line===
+":ghost:"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================

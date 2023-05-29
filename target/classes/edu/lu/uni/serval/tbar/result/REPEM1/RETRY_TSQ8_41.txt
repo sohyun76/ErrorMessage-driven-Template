@@ -1,0 +1,6308 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String invalidFormatError = NS + "INVALID FORMAT ERROR unknown format: %s";
+red_line===
+invalidFormatError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+static final String invalidPrefixError = NS + "INVALID PREFIX ERROR Invalid prefix string: %s";
+red_line===
+invalidPrefixError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"cellValue\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public String cellValue;
+red_line===
+cellValue
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+private static String defaultContextPath = "/obo_context.jsonld";
+red_line===
+"/obo_context.jsonld"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+success = f.delete();
+red_line===
+delete
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+success = dir.delete();
+red_line===
+delete
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String[] lines = input.replaceAll("\\r", "").split("\\n");
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove or replace this boundary that will never match because it appears before mandatory input.
+scn.ruleId===
+5996
+scn.suspCodeStr===
+String result = line.replaceFirst("($|\\s)#.*$", "").trim();
+red_line===
+$
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"delete\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+f.delete();
+red_line===
+f.delete();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"delete\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+f.delete();
+red_line===
+f.delete();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileWriter writer = new FileWriter(file);
+red_line===
+new FileWriter(file)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+is = new BufferedInputStream(url.openStream(), 1024);
+red_line===
+new BufferedInputStream(url.openStream(), 1024)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileInputStream fis = new FileInputStream(gzipFile);
+red_line===
+new FileInputStream(gzipFile)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"sortColumns\" which hides the field declared at line 34.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Map<Integer, Column> sortColumns = new HashMap<>();
+red_line===
+sortColumns
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(DiffOperation.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"plain\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String format = OptionsHelper.getOption(options, "format", "plain");
+red_line===
+"plain"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"rowNum\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public int rowNum = -1;
+red_line===
+rowNum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"colNum\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public int colNum = -1;
+red_line===
+colNum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"ruleID\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public String ruleID;
+red_line===
+ruleID
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"ruleName\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public String ruleName;
+red_line===
+ruleName
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(nullIDError, tableName, row + 1, id, label));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingTypeError, tableName, row + 1, id));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(nullIDError, tableName, row + 1, id, label));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(unknownTypeError, tableName, row + 1, id));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String sub = template.substring(2).trim().replaceAll("%", content);
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"force\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("force", "false");
+red_line===
+"force"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"errors\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("errors", null);
+red_line===
+"errors"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"include\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("individuals", "include");
+red_line===
+"include"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"false\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("copy-ontology-annotations", "false");
+red_line===
+"false"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(columnOutOfRangeError, colNum + 1, wildcard, row.size()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(malformedRuleError, rule.trim()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(noMainError, colNum + 1, rule));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(malformedWhenClauseError, colNum + 1, whenClause));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(unrecognizedRuleTypeError, colNum + 1, ruleType));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String malformedRuleError = NS + "MALFORMED RULE ERROR malformed rule: %s";
+red_line===
+malformedRuleError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"rowIdx\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private int rowIdx;
+red_line===
+rowIdx
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format("Validating %s ...", currentTable));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"provider\" which hides the field declared at line 135.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+ShortFormProvider provider = column.getShortFormProvider();
+red_line===
+provider
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Group parts of the regex together to make the intended operator precedence explicit.
+scn.ruleId===
+5850
+scn.suspCodeStr===
+term = term.replaceAll("^\'|\'$", "");
+red_line===
+^\'|\'$
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(outStr);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+String[] rules = ruleString.split("\\s*;\\s*");
+red_line===
+String[] r
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+Matcher m = Pattern.compile("(\\(\\s*when\\s+.+\\))(.*)").matcher(rule);
+red_line===
+tcher m = 
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+m = Pattern.compile("^(.+)\\s+\\(when\\s").matcher(rule);
+red_line===
+= Pattern.
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DEFAULT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static EquivalentClassReasoningMode DEFAULT = ALL;
+red_line===
+DEFAULT
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+return content.replaceAll("'", "\\\\'");
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Group parts of the regex together to make the intended operator precedence explicit.
+scn.ruleId===
+5850
+scn.suspCodeStr===
+name = name.trim().replaceAll("^'|'$", "");
+red_line===
+^'|'$
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Group parts of the regex together to make the intended operator precedence explicit.
+scn.ruleId===
+5850
+scn.suspCodeStr===
+name = name.trim().replaceAll("^\"|\"$", "");
+red_line===
+^\"|\"$
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format("'%s' is not a rule in this Report", ruleName));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"info\" to prevent any misunderstanding/clash with field \"INFO\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+public Map<String, List<Violation>> info = new HashMap<>();
+red_line===
+info
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"warn\" to prevent any misunderstanding/clash with field \"WARN\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+public Map<String, List<Violation>> warn = new HashMap<>();
+red_line===
+warn
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"error\" to prevent any misunderstanding/clash with field \"ERROR\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+public Map<String, List<Violation>> error = new HashMap<>();
+red_line===
+error
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final Logger logger = LoggerFactory.getLogger(Violation.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+values = new ArrayList<String>(statements.get(property));
+red_line===
+<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make entity a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public OWLEntity entity;
+red_line===
+entity
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make subject a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String subject;
+red_line===
+subject
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make entityStatements a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public Map<OWLEntity, List<OWLObject>> entityStatements = new HashMap<>();
+red_line===
+entityStatements
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make statements a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public Map<String, List<String>> statements = new HashMap<>();
+red_line===
+statements
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(CatalogXmlIRIMapper.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Disable access to external entities in XML parsing.
+scn.ruleId===
+2755
+scn.suspCodeStr===
+SAXParserFactory factory = SAXParserFactory.newInstance();
+red_line===
+newInstance
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"dataFactory\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+OWLDataFactory dataFactory = manager.getOWLDataFactory();
+red_line===
+= manager.getOWLDataFactory()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(typedFormatError, 0, "", template));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(languageFormatError, 0, "", template));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(iriError, 0, 0, "", value));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String fileTypeError = NS + "FILE TYPE ERROR unrecognized file type for: %s";
+red_line===
+fileTypeError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String idError = NS + "ID ERROR an \"ID\" column is required in table %s";
+red_line===
+idError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String sub = template.substring(template.indexOf(" ")).trim().replaceAll("%", content);
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String sub = template.substring(template.indexOf(" ")).trim().replaceAll("%", content);
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+sub = template.substring(template.indexOf(" ")).replaceAll("%", content);
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"dataFactory\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+OWLDataFactory dataFactory = manager.getOWLDataFactory();
+red_line===
+= manager.getOWLDataFactory()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(MergeOperation.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(entityFormatError, entityFormat));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(entitySelectError, entitySelect));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(multipleSelectError, c));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(multipleFormatError, c));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(unknownTagError, c, subTag));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(unknownTagError, c, currentEntityFormat));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(unknownFormatError, format));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(invalidColumnError, colName));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://www.w3.org/2002/07/owl#disjointWith\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "http://www.w3.org/2002/07/owl#disjointWith":
+red_line===
+"http://www.w3.org/2002/07/owl#disjointWith"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+Imports importsFlag = Imports.EXCLUDED;
+red_line===
+    Imports importsFlag = Imports.EXCLUDED; // TODO - make this optional
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://www.w3.org/2000/01/rdf-schema#subClassOf\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "http://www.w3.org/2000/01/rdf-schema#subClassOf":
+red_line===
+"http://www.w3.org/2000/01/rdf-schema#subClassOf"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"LABEL\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "LABEL":
+red_line===
+"LABEL"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://www.w3.org/2002/07/owl#equivalentClass\" 11 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "http://www.w3.org/2002/07/owl#equivalentClass":
+red_line===
+"http://www.w3.org/2002/07/owl#equivalentClass"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://www.w3.org/2002/07/owl#equivalentProperty\" 11 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "http://www.w3.org/2002/07/owl#equivalentProperty":
+red_line===
+"http://www.w3.org/2002/07/owl#equivalentProperty"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"format\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("format", "tsv");
+red_line===
+"format"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":
+red_line===
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://www.w3.org/2000/01/rdf-schema#subPropertyOf\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "http://www.w3.org/2000/01/rdf-schema#subPropertyOf":
+red_line===
+"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"NAMED\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "NAMED":
+red_line===
+"NAMED"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingEntityError, iri.toString()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(multipleEntitiesError, iri.toString()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"include-indirect\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("include-indirect", "false");
+red_line===
+"include-indirect"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"create-new-ontology-with-annotations\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("create-new-ontology-with-annotations", "false");
+red_line===
+"create-new-ontology-with-annotations"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"false\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("create-new-ontology", "false");
+red_line===
+"false"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"exclude-duplicate-axioms\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("exclude-duplicate-axioms", "false");
+red_line===
+"exclude-duplicate-axioms"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this subtraction operation to a \"float\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+float elapsedTime = System.currentTimeMillis() - startTime;
+red_line===
+-
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this subtraction operation to a \"float\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+float elapsedTime = System.currentTimeMillis() - startTime;
+red_line===
+-
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingEntityError, oldIRI.toString()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception("You must specify either an ID or a label");
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"individual\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "individual":
+red_line===
+"individual"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"named individual\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "named individual":
+red_line===
+"named individual"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"subproperty\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "subproperty":
+red_line===
+"subproperty"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"class\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+type = "class";
+red_line===
+"class"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://www.w3.org/2002/07/owl#Individual\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "http://www.w3.org/2002/07/owl#Individual":
+red_line===
+"http://www.w3.org/2002/07/owl#Individual"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://www.w3.org/2002/07/owl#NamedIndividual\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+case "http://www.w3.org/2002/07/owl#NamedIndividual":
+red_line===
+"http://www.w3.org/2002/07/owl#NamedIndividual"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Extract with MIREOT ...\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.debug("Extract with MIREOT ...");
+red_line===
+"Extract with MIREOT ..."
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingEntityBinding, queryName));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingEntityBinding, queryName));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(limitNumberError, limitString));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingEntityBinding, queryName));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryDir = "report_queries";
+red_line===
+queryDir
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String failOnError = NS + "FAIL ON ERROR '%s' is not a valid fail-on level.";
+red_line===
+failOnError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Violations: " + violationCount);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----------------");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(ERROR + ":      " + report.getTotalViolations(ERROR));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(WARN + ":       " + report.getTotalViolations(WARN));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ retur
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"cellValue\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public String cellValue;
+red_line===
+cellValue
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public final String cellValue ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+success = dir.delete();
+red_line===
+delete
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ success = dir.delete(); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove or replace this boundary that will never match because it appears before mandatory input.
+scn.ruleId===
+5996
+scn.suspCodeStr===
+String result = line.replaceFirst("($|\\s)#.*$", "").trim();
+red_line===
+$
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String result = line.replaceFirst("($|\\s.*$", "").trim(); 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"delete\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+f.delete();
+red_line===
+f.delete();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ f.delete(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ retur
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"cellValue\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public String cellValue;
+red_line===
+cellValue
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public final String cellValue ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+is = new BufferedInputStream(url.openStream(), 1024);
+red_line===
+new BufferedInputStream(url.openStream(), 1024)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ is = new BufferedInputStream(url.openStream(), 1024); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileInputStream fis = new FileInputStream(gzipFile);
+red_line===
+new FileInputStream(gzipFile)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ FileInputStream fis = new FileInputStream(gzipFile); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+success = dir.delete();
+red_line===
+delete
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ success = dir.delete(); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove or replace this boundary that will never match because it appears before mandatory input.
+scn.ruleId===
+5996
+scn.suspCodeStr===
+String result = line.replaceFirst("($|\\s)#.*$", "").trim();
+red_line===
+$
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String result = line.replaceFirst("($|\\s.*$", "").trim(); 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"delete\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+f.delete();
+red_line===
+f.delete();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ f.delete(); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileWriter writer = new FileWriter(file);
+red_line===
+new FileWriter(file)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ FileWriter writer = new FileWriter(file); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(DiffOperation.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"rowNum\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public int rowNum = -1;
+red_line===
+rowNum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public final int rowNum = - 1 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"colNum\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public int colNum = -1;
+red_line===
+colNum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public final int colNum = - 1 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"ruleID\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public String ruleID;
+red_line===
+ruleID
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public final String ruleID ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"ruleName\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+public String ruleName;
+red_line===
+ruleName
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public final String ruleName ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make rowNum a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int rowNum = -1;
+red_line===
+rowNum
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final int rowNum = - 1 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make ruleID a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String ruleID;
+red_line===
+ruleID
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String ruleID ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(nullIDError, tableName, row + 1, id, label));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(nullIDError, tableName, row + 1, id, label)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(nullIDError, tableName, row + 1, id, label));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(nullIDError, tableName, row + 1, id, label)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"force\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("force", "false");
+red_line===
+"force"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("force", "false"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"include\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("individuals", "include");
+red_line===
+"include"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("individuals", "include"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(malformedRuleError, rule.trim()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(malformedRuleError, rule.trim())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(malformedWhenClauseError, colNum + 1, whenClause));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(malformedWhenClauseError, colNum + 1, whenClause)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(unrecognizedRuleTypeError, colNum + 1, ruleType));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(unrecognizedRuleTypeError, colNum + 1, ruleType)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String malformedRuleError = NS + "MALFORMED RULE ERROR malformed rule: %s";
+red_line===
+malformedRuleError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String malformedRuleError = NS + "MALFORMED RULE ERROR malformed rule: %s"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format("Validating %s ...", currentTable));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(String.format("Validating %s ...", currentTable)); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Group parts of the regex together to make the intended operator precedence explicit.
+scn.ruleId===
+5850
+scn.suspCodeStr===
+term = term.replaceAll("^\'|\'$", "");
+red_line===
+^\'|\'$
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ term = term.replaceAll("^\'|\'$", ""); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DEFAULT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static EquivalentClassReasoningMode DEFAULT = ALL;
+red_line===
+DEFAULT
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static EquivalentClassReasoningMode DEFAULT = ALL; 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Group parts of the regex together to make the intended operator precedence explicit.
+scn.ruleId===
+5850
+scn.suspCodeStr===
+name = name.trim().replaceAll("^'|'$", "");
+red_line===
+^'|'$
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ name = name.trim().replaceAll("^'|'$", ""); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format("'%s' is not a rule in this Report", ruleName));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format("'%s' is not a rule in this Report", ruleName)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"warn\" to prevent any misunderstanding/clash with field \"WARN\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+public Map<String, List<Violation>> warn = new HashMap<>();
+red_line===
+warn
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ public Map<String, List<Violation>> warn = new HashMap<>(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"error\" to prevent any misunderstanding/clash with field \"ERROR\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+public Map<String, List<Violation>> error = new HashMap<>();
+red_line===
+error
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ public Map<String, List<Violation>> error = new HashMap<>(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make warn a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public Map<String, List<Violation>> warn = new HashMap<>();
+red_line===
+warn
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final Map < String , List < Violation >> warn = new HashMap < > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final Logger logger = LoggerFactory.getLogger(Violation.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+values = new ArrayList<String>(statements.get(property));
+red_line===
+<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make entity a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public OWLEntity entity;
+red_line===
+entity
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final OWLEntity entity ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make subject a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String subject;
+red_line===
+subject
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final String subject ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make entityStatements a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public Map<OWLEntity, List<OWLObject>> entityStatements = new HashMap<>();
+red_line===
+entityStatements
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final Map < OWLEntity , List < OWLObject >> entityStatements = new HashMap < > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make statements a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public Map<String, List<String>> statements = new HashMap<>();
+red_line===
+statements
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+public static final Map < String , List < String >> statements = new HashMap < > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(CatalogXmlIRIMapper.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Disable access to external entities in XML parsing.
+scn.ruleId===
+2755
+scn.suspCodeStr===
+SAXParserFactory factory = SAXParserFactory.newInstance();
+red_line===
+newInstance
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ SAXParserFactory factory = SAXParserFactory.newInstance(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(typedFormatError, 0, "", template));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(typedFormatError, 0, "", template)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(languageFormatError, 0, "", template));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(languageFormatError, 0, "", template)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(iriError, 0, 0, "", value));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(iriError, 0, 0, "", value)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String fileTypeError = NS + "FILE TYPE ERROR unrecognized file type for: %s";
+red_line===
+fileTypeError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String fileTypeError = NS + "FILE TYPE ERROR unrecognized file type for: %s"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String sub = template.substring(template.indexOf(" ")).trim().replaceAll("%", content);
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+String sub = template.substring ( template.indexOf ( " " ) ).trim ( ).replaceAll ( " % " , content ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+sub = template.substring(template.indexOf(" ")).replaceAll("%", content);
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+sub = template.substring ( template.indexOf ( " " ) ).replaceAll ( " % " , content ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(MergeOperation.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingEntityError, iri.toString()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(missingEntityError, iri.toString())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(multipleEntitiesError, iri.toString()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(multipleEntitiesError, iri.toString())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"exclude-duplicate-axioms\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("exclude-duplicate-axioms", "false");
+red_line===
+"exclude-duplicate-axioms"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("exclude-duplicate-axioms", "false"); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this subtraction operation to a \"float\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+float elapsedTime = System.currentTimeMillis() - startTime;
+red_line===
+-
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ float elapsedTime = System.currentTimeMillis() - startTime;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Extract with MIREOT ...\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.debug("Extract with MIREOT ...");
+red_line===
+"Extract with MIREOT ..."
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ logger.debug("Extract with MIREOT ..."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingEntityBinding, queryName));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(missingEntityBinding, queryName)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(limitNumberError, limitString));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(limitNumberError, limitString)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingEntityBinding, queryName));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(missingEntityBinding, queryName)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryDir = "report_queries";
+red_line===
+queryDir
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String queryDir = "report_queries"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String failOnError = NS + "FAIL ON ERROR '%s' is not a valid fail-on level.";
+red_line===
+failOnError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String failOnError = NS + "FAIL ON ERROR '%s' is not a valid fail-on level."; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("No violations found.");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("No violations found."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print("tsv!");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.print("tsv!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+entries = jar.entries();
+red_line===
+tries = ja
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ entries = jar.entries(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----------------");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("-----------------"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(WARN + ":       " + report.getTotalViolations(WARN));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(WARN + ": " + report.getTotalViolations(WARN)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(INFO + ":       " + report.getTotalViolations(INFO));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(INFO + ": " + report.getTotalViolations(INFO)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format("\nFirst %d violations:", n));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(String.format("\nFirst %d violations:", n)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.join(separator, lines.get(i + 1)));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(String.join(separator, lines.get(i + 1))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"profile\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("profile", null);
+red_line===
+"profile"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("profile", null); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"format\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("format", null);
+red_line===
+"format"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("format", null); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"labels\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("labels", "false");
+red_line===
+"labels"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("labels", "false"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"fail-on\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("fail-on", "error");
+red_line===
+"fail-on"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("fail-on", "error"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Writing report to: \" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.debug("Writing report to: " + outputPath);
+red_line===
+"Writing report to: "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ logger.debug("Writing report to: " + outputPath); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(literalValueError, dataTypeID, "boolean"));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(literalValueError, dataTypeID, "boolean")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(literalValueError, dataTypeID, "double"));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(literalValueError, dataTypeID, "double")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(literalValueError, dataTypeID, "float"));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(literalValueError, dataTypeID, "float")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(literalValueError, dataTypeID, "integer"));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(literalValueError, dataTypeID, "integer")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String axiomTypeError = NS + "AXIOM TYPE ERROR %s is not a valid axiom type";
+red_line===
+axiomTypeError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String axiomTypeError = NS + "AXIOM TYPE ERROR %s is not a valid axiom type"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String literalValueError = NS + "LITERAL VALUE ERROR %s is not a %s value";
+red_line===
+literalValueError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String literalValueError = NS + "LITERAL VALUE ERROR %s is not a %s value"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+Matcher datatypeMatcher = Pattern.compile("'(.*)'\\^\\^(.*)").matcher(value);
+red_line===
+Pattern.compile("
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ Matcher datatypeMatcher = Pattern.compile("'(.*)'\\^\\^(.*)").matcher(value); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+Matcher langMatcher = Pattern.compile("'(.*)'@(.*)").matcher(value);
+red_line===
+ern.compile("'(.*
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ Matcher langMatcher = Pattern.compile("'(.*)'@(.*)").matcher(value); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String queryTypeError = NS + "QUERY TYPE ERROR unknown query type: %s";
+red_line===
+queryTypeError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String queryTypeError = NS + "QUERY TYPE ERROR unknown query type: %s"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+ResultSetMgr.write(System.err, results, Lang.CSV);
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ ResultSetMgr.write(System.err, results, Lang.CSV); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.print('\n');
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.err.print('\n'); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"execQuery\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+ResultSetRewindable results = ResultSetFactory.copyResults(execQuery(dataset, query));
+red_line===
+execQuery
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ ResultSetRewindable results = ResultSetFactory.copyResults(exetaset, query)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Rule " + ruleName + ": " + results.size() + " violation(s)");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("Rule " + ruleName + ": " + results.size() + " violation(s)"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("PASS Rule " + ruleName + ": 0 violation(s)");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("PASS Rule " + ruleName + ": 0 violation(s)"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+ResultSetMgr.write(System.err, results, Lang.CSV);
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ ResultSetMgr.write(System.err, results, Lang.CSV); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("FAIL Rule " + ruleName + ": " + results.size() + " violation(s)");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("FAIL Rule " + ruleName + ": " + results.size() + " violation(s)"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"execConstruct\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+writeResult(execConstruct(dataset, query), outputFormat, new FileOutputStream(output));
+red_line===
+execConstruct
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ writeResult(exetaset, query), outputFormat, new FileOutputStream(output)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"execQuery\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+writeResult(execQuery(dataset, query), outputFormat, new FileOutputStream(output));
+red_line===
+execQuery
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ writeResult(exetaset, query), outputFormat, new FileOutputStream(output)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"execQuery\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+ResultSetRewindable results = ResultSetFactory.copyResults(execQuery(dataset, query));
+red_line===
+execQuery
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ ResultSetRewindable results = ResultSetFactory.copyResults(exetaset, query)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("PASS Rule " + ruleName + ": 0 violation(s)");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("PASS Rule " + ruleName + ": 0 violation(s)"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("FAIL Rule " + ruleName + ": " + results.size() + " violation(s)");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("FAIL Rule " + ruleName + ": " + results.size() + " violation(s)"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+ResultSetMgr.write(System.err, results, Lang.CSV);
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ ResultSetMgr.write(System.err, results, Lang.CSV); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this silly call to \"Math.ceil\"
+scn.ruleId===
+2185
+scn.suspCodeStr===
+seconds = (int) Math.ceil(elapsedTime / 1000);
+red_line===
+Math.ceil
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ seconds = (int) MatapsedTime  /  1000); 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this division operation to a \"double\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+seconds = (int) Math.ceil(elapsedTime / 1000);
+red_line===
+/
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ seconds = (int) Math.ceil (elapsedTime  /  1000);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format("Ontology IRI for %s does not exist.", "/simple.owl"));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format("Ontology IRI for %s does not exist.", "/simple.owl")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format("Version IRI for %s does not exist.", "/simple.owl"));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format("Version IRI for %s does not exist.", "/simple.owl")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"simple.owl#test1\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+IRI iri = IRI.create(base + "simple.owl#test1");
+red_line===
+"simple.owl#test1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ IRI iri = IRI.create(base + "simple.owl#test1"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Test 1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+expected.add("Test 1");
+red_line===
+"Test 1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ expected.add("Test 1"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple.owl\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology simple = loadOntology("/simple.owl");
+red_line===
+"/simple.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology simple = loadOntology("/simple.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options2 = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> optionsA = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> optionsB = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"named-classes-only\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options2.put("named-classes-only", "true");
+red_line===
+"named-classes-only"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options2.put("named-classes-only", "true"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"preserve-annotated-axioms\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("preserve-annotated-axioms", "true");
+red_line===
+"preserve-annotated-axioms"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("preserve-annotated-axioms", "true"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/redundant_subclasses.owl\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology reasoned = loadOntology("/redundant_subclasses.owl");
+red_line===
+"/redundant_subclasses.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology reasoned = loadOntology("/redundant_subclasses.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"remove-redundant-subclass-axioms\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("remove-redundant-subclass-axioms", "true");
+red_line===
+"remove-redundant-subclass-axioms"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("remove-redundant-subclass-axioms", "true"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(writer.toString());
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(writer.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple.owl\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology ontology = loadOntology("/simple.owl");
+red_line===
+"/simple.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology ontology = loadOntology("/simple.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple.owl\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology filtered = loadOntology("/simple.owl");
+red_line===
+"/simple.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology filtered = loadOntology("/simple.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple_parts.owl\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology filtered = loadOntology("/simple_parts.owl");
+red_line===
+"/simple_parts.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology filtered = loadOntology("/simple_parts.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<OWLOntology> ontologies = new ArrayList<OWLOntology>();
+red_line===
+<OWLOntology>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception("Ontology 'intersection.omn' does not have an IRI");
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception("Ontology 'intersection.omn' does not have an IRI"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"axiom-generators\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("axiom-generators", "EquivalentClass Subclass DisjointClasses");
+red_line===
+"axiom-generators"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("axiom-generators", "EquivalentClass Subclass DisjointClasses"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"SubClassOf(\u003chttp://x.org/XA\u003e \u003chttp://x.org/XB\u003e)\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(checkContains(reasoned, "SubClassOf(<http://x.org/XA> <http://x.org/XB>)"));
+red_line===
+"SubClassOf(<http://x.org/XA> <http://x.org/XB>)"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ assertTrue(checkContains(reasoned, "SubClassOf(<http://x.org/XA> <http://x.org/XB>)")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple.owl\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology reasoned = loadOntology("/simple.owl");
+red_line===
+"/simple.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology reasoned = loadOntology("/simple.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"create-new-ontology\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+opts.put("create-new-ontology", "true");
+red_line===
+"create-new-ontology"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ opts.put("create-new-ontology", "true"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"annotate-inferred-axioms\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+opts.put("annotate-inferred-axioms", "true");
+red_line===
+"annotate-inferred-axioms"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ opts.put("annotate-inferred-axioms", "true"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/relax_equivalence_axioms_test.obo\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology reasoned = loadOntology("/relax_equivalence_axioms_test.obo");
+red_line===
+"/relax_equivalence_axioms_test.obo"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology reasoned = loadOntology("/relax_equivalence_axioms_test.obo"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/redundant_subclasses.owl\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology reasoned = loadOntology("/redundant_subclasses.owl");
+red_line===
+"/redundant_subclasses.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology reasoned = loadOntology("/redundant_subclasses.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple_elk.owl\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertIdentical("/simple_elk.owl", reasoned);
+red_line===
+"/simple_elk.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ assertIdentical("/simple_elk.owl", reasoned); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"false\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+opts.put("exclude-external-entities", "false");
+red_line===
+"false"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ opts.put("exclude-external-entities", "false"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple_logic.owl\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology ontology = loadOntology("/simple_logic.owl");
+red_line===
+"/simple_logic.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology ontology = loadOntology("/simple_logic.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"remove-redundant-subclass-axioms\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+options.put("remove-redundant-subclass-axioms", "true");
+red_line===
+"remove-redundant-subclass-axioms"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ options.put("remove-redundant-subclass-axioms", "true"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/inferred-equiv.owl\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology inferred = loadOntology("/inferred-equiv.owl");
+red_line===
+"/inferred-equiv.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology inferred = loadOntology("/inferred-equiv.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"asserted-only\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("asserted-only", ASSERTED_ONLY.written());
+red_line===
+"asserted-only"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ assertEquals("asserted-only", ASSERTED_ONLY.written()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"test1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+objects.add(df.getOWLClass(IRI.create(base + "test1")));
+red_line===
+"test1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ objects.add(df.getOWLClass(IRI.create(base + "test1"))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(writer.toString());
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(writer.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(writer.toString());
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(writer.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple.owl\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology simple = loadOntology("/simple.owl");
+red_line===
+"/simple.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology simple = loadOntology("/simple.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception("Class 'test one' does not exist.");
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception("Class 'test one' does not exist."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("PARSER");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("PARSER"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"GO:XXXX\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+iri = ioHelper.createIRI("GO:XXXX");
+red_line===
+"GO:XXXX"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ iri = ioHelper.createIRI("GO:XXXX"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"test one\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("'test one'", QuotedEntityChecker.wrap("test one"));
+red_line===
+"test one"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ Assert.assertEquals("'test one'", QuotedEntityChecker.wrap("test one")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String path = "/template.csv";
+red_line===
+"/template.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String path = "/template.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String path = "/legacy-template.csv";
+red_line===
+"/legacy-template.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String path = "/legacy-template.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String path = "/template-ids.csv";
+red_line===
+"/template-ids.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String path = "/template-ids.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+path = "/template-labels.csv";
+red_line===
+"/template-labels.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ path = "/template-labels.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+path = "/template-logical.csv";
+red_line===
+"/template-logical.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ path = "/template-logical.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String path = "/template-ids.csv";
+red_line===
+"/template-ids.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String path = "/template-ids.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+path = "/template-labels.csv";
+red_line===
+"/template-labels.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ path = "/template-labels.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+path = "/legacy-template-logical.csv";
+red_line===
+"/legacy-template-logical.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ path = "/legacy-template-logical.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String path = "/docs-template.csv";
+red_line===
+"/docs-template.csv"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String path = "/docs-template.csv"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple_parts.owl\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology simpleParts = loadOntology("/simple_parts.owl");
+red_line===
+"/simple_parts.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology simpleParts = loadOntology("/simple_parts.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> options = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format("Test ontology %s does not have an IRI", expectedPath));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format("Test ontology %s does not have an IRI", expectedPath)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String ontologyInputPath = "/mireot.owl";
+red_line===
+"/mireot.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String ontologyInputPath = "/mireot.owl"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String ontologyExpectedPath = "/mireot_xmlentities.owl";
+red_line===
+"/mireot_xmlentities.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String ontologyExpectedPath = "/mireot_xmlentities.owl"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File tempFile = File.createTempFile("mireot_xmlentities_test", ".owl");
+red_line===
+pFile("mireot_xmlentities
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ File tempFile = File.createTempFile("mireot_xmlentities_test", ".owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File tempFile = File.createTempFile("simple-saved", ".json");
+red_line===
+pFile("simple-saved", ".j
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ File tempFile = File.createTempFile("simple-saved", ".json"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File tempFile = File.createTempFile("simple-compressed", ".owl.gz");
+red_line===
+pFile("simple-compressed"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ File tempFile = File.createTempFile("simple-compressed", ".owl.gz"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple.owl\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertIdentical("/simple.owl", loadOntologyWithCatalog("/simple.json"));
+red_line===
+"/simple.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ assertIdentical("/simple.owl", loadOntologyWithCatalog("/simple.json")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"http://example.com#\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+expected.put("foo", "http://example.com#");
+red_line===
+"http://example.com#"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ expected.put("foo", "http://example.com#"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/simple.owl\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+OWLOntology simple = loadOntology("/simple.owl");
+red_line===
+"/simple.owl"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ OWLOntology simple = loadOntology("/simple.owl"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"checker\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+QuotedEntityChecker checker = new QuotedEntityChecker();
+red_line===
+checker
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ QuotedEntityChecker checker = new QuotedEntityChecker(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Expected exactly 1 expression, got %d\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+fail(String.format("Expected exactly 1 expression, got %d", expressions.size()));
+red_line===
+"Expected exactly 1 expression, got %d"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ fail(String.format("Expected exactly 1 expression, got %d", expressions.size())); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ann\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals("Annotation(rdfs:label \"bar\"^^xsd:string)", ann.toString());
+red_line===
+ann.toString
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ assertEquals("Annotation(rdfs:label \"bar\"^^xsd:string)", ann.toString()); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"p\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(p.toString(), expr.toString());
+red_line===
+p.toString
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ assertEquals(p.toString(), expr.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception("Ontology 'incoherent-tbox.owl' does not have an IRI");
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception("Ontology 'incoherent-tbox.owl' does not have an IRI"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format("OWLAnnotation '%s' has no value.", ann.toString()));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format("OWLAnnotation '%s' has no value.", ann.toString())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String PATH = "target/unsat.owl";
+red_line===
+PATH
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String PATH = "target/unsat.owl"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(ReduceCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(MergeCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(FilterCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(report.toString());
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(report.toString()); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileWriter writer = new FileWriter(outputFile);
+red_line===
+new FileWriter(outputFile)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ FileWriter writer = new FileWriter(outputFile); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(thresholdValueError, threshold));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(thresholdValueError, threshold)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(TemplateCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"template\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+o.addOption("t", "template", true, "read template from a file");
+red_line===
+"template"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ o.addOption("t", "template", true, "read template from a file"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(UnmergeCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+String global = "global#";
+red_line===
+global
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String global = "global#"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+String missingFileError = global + "MISSING FILE ERROR file '%s' for '%s' does not exist";
+red_line===
+missingFileError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String missingFileError = global + "MISSING FILE ERROR file '%s' for '%s' does not exist"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception("unbalanced quotes in " + toProcess);
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception("unbalanced quotes in " + toProcess); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String missingRequirementError = NS + "MISSING REQUIREMENT ERROR %s";
+red_line===
+missingRequirementError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String missingRequirementError = NS + "MISSING REQUIREMENT ERROR %s"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String missingInputError = NS + "MISSING INPUT ERROR an --input is required";
+red_line===
+missingInputError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String missingInputError = NS + "MISSING INPUT ERROR an --input is required"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"Vector\" by an unsynchronized one such as \"ArrayList\" or \"LinkedList\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+Vector<String> v = new Vector<>();
+red_line===
+Vector<String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ArrayList < String > v = new ArrayList < > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer current = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+StringBuilder current = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("ROBOT version " + version);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("ROBOT version " + version); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+Matcher m = Pattern.compile("([^\\s]+=.*'[^']+'[^\\s']*|[^\\s']+)").matcher(selects);
+red_line===
+Matcher m 
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ Matcher m = Pattern.compile("([^\\s]+=.*'[^']+'[^\\s']*|[^\\s']+)").matcher(selects); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"catalog\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String catalogPath = getOptionalValue(line, "catalog");
+red_line===
+"catalog"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String catalogPath = getOptionalValue(line, "catalog"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"version\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String version = p.getProperty("version");
+red_line===
+"version"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ String version = p.getProperty("version"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"input\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+List<String> inputOntologyPaths = getOptionalValues(line, "input");
+red_line===
+"input"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ List<String> inputOntologyPaths = getOptionalValues(line, "input"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"add-prefixes\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+prefixes = getOptionalValue(line, "add-prefixes");
+red_line===
+"add-prefixes"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ prefixes = getOptionalValue(line, "add-prefixes"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"input-iri\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+List<String> inputOntologyIRIs = getOptionalValues(line, "input-iri");
+red_line===
+"input-iri"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ List<String> inputOntologyIRIs = getOptionalValues(line, "input-iri"); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"state\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+state.setCatalogPath(catalogPath);
+red_line===
+state.setCatalogPath
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ state.setCatalogPath(catalogPath); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"state\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+state.setOntologyPath(ontologyPath);
+red_line===
+state.setOntologyPath
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ state.setOntologyPath(ontologyPath); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+InputStream is = new FileInputStream(f);
+red_line===
+new FileInputStream(f)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ InputStream is = new FileInputStream(f); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String nullCommandError = NS + "MISSING COMMAND ERROR command is null: %s";
+red_line===
+nullCommandError
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ private static final String nullCommandError = NS + "MISSING COMMAND ERROR command is null: %s"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(RepairCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("commands:");
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println("commands:"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format(" %-16s %s", name, description));
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ System.out.println(String.format(" %-16s %s", name, description)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(AnnotateCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"property\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+IRI iri = CommandLineHelper.maybeCreateIRI(ioHelper, property, "property");
+red_line===
+"property"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ IRI iri = CommandLineHelper.maybeCreateIRI(ioHelper, property, "property"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(invalidMethodError);
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(invalidMethodError); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(invalidImportsError);
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(invalidImportsError); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(String.format(missingFileError, sourceMapPath, "--sources"));
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(String.format(missingFileError, sourceMapPath, "--sources")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception(invalidSourceMapError);
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ throw new Exception(invalidSourceMapError); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(ExtractCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"branch-from-terms\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+o.addOption("B", "branch-from-terms", true, "root terms of branches to extract");
+red_line===
+"branch-from-terms"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ o.addOption("B", "branch-from-terms", true, "root terms of branches to extract"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"upper-term\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+o.addOption("u", "upper-term", true, "upper level term to extract");
+red_line===
+"upper-term"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ o.addOption("u", "upper-term", true, "upper level term to extract"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"branch-from-term\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+o.addOption("b", "branch-from-term", true, "root term of branch to extract");
+red_line===
+"branch-from-term"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ o.addOption("b", "branch-from-term", true, "root term of branch to extract"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"sources\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+o.addOption("s", "sources", true, "specify a mapping file of term to source ontology");
+red_line===
+"sources"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ o.addOption("s", "sources", true, "specify a mapping file of term to source ontology"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"logger\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger logger = LoggerFactory.getLogger(MaterializeCommand.class);
+red_line===
+logger
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"upper-terms\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+o.addOption("U", "upper-terms", true, "upper level terms to extract");
+red_line===
+"upper-terms"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ o.addOption("U", "upper-terms", true, "upper level terms to extract"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"lower-term\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+o.addOption("l", "lower-term", true, "lower level term to extract");
+red_line===
+"lower-term"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+ o.addOption("l", "lower-term", true, "lower level term to extract"); 
+isFixed===
+false
+==================

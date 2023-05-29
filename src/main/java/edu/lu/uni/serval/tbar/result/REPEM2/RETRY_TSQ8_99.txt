@@ -1,0 +1,7391 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean vProg = vp == null ? false : vp.getFeatureAsBoolean(Feature.PROGRESSIVE).booleanValue();
+red_line===
+false
+start_offset===
+31
+end_offset===
+36
+Python OUTPUT===
+ boolean vProg = vp == null ? f: vp.getFeatureAsBoolean(Feature.PROGRESSIVE).booleanValue(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean sPerf = wp.isPERFECT() == null ? false : wp.isPERFECT();
+red_line===
+false
+start_offset===
+43
+end_offset===
+48
+Python OUTPUT===
+ boolean sPerf = wp.isPERFECT() == null ? f: wp.isPERFECT(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean vPerf = vp == null ? false : vp.getFeatureAsBoolean(Feature.PERFECT).booleanValue();
+red_line===
+false
+start_offset===
+31
+end_offset===
+36
+Python OUTPUT===
+ boolean vPerf = vp == null ? f: vp.getFeatureAsBoolean(Feature.PERFECT).booleanValue(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean sNeg = wp.isNEGATED() == null ? false : wp.isNEGATED();
+red_line===
+false
+start_offset===
+42
+end_offset===
+47
+Python OUTPUT===
+ boolean sNeg = wp.isNEGATED() == null ? f: wp.isNEGATED(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean vNeg = vp == null ? false : vp.getFeatureAsBoolean(Feature.NEGATED).booleanValue();
+red_line===
+false
+start_offset===
+30
+end_offset===
+35
+Python OUTPUT===
+ boolean vNeg = vp == null ? f: vp.getFeatureAsBoolean(Feature.NEGATED).booleanValue(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean ssgg = wp.isSUPPRESSGENITIVEINGERUND() == null ? false : wp.isSUPPRESSGENITIVEINGERUND();
+red_line===
+false
+start_offset===
+59
+end_offset===
+64
+Python OUTPUT===
+ boolean ssgg = wp.isSUPPRESSGENITIVEINGERUND() == null ? f: wp.isSUPPRESSGENITIVEINGERUND(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean vsgg = vp == null ? false : vp.getFeatureAsBoolean(Feature.SUPPRESS_GENITIVE_IN_GERUND).booleanValue();
+red_line===
+false
+start_offset===
+30
+end_offset===
+35
+Python OUTPUT===
+ boolean vsgg = vp == null ? f: vp.getFeatureAsBoolean(Feature.SUPPRESS_GENITIVE_IN_GERUND).booleanValue(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean ssc = wp.isSUPRESSEDCOMPLEMENTISER() == null ? false : wp.isSUPRESSEDCOMPLEMENTISER();
+red_line===
+false
+start_offset===
+57
+end_offset===
+62
+Python OUTPUT===
+ boolean ssc = wp.isSUPRESSEDCOMPLEMENTISER() == null ? f: wp.isSUPRESSEDCOMPLEMENTISER(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean vsc = vp == null ? false : vp.getFeatureAsBoolean(Feature.SUPRESSED_COMPLEMENTISER).booleanValue();
+red_line===
+false
+start_offset===
+29
+end_offset===
+34
+Python OUTPUT===
+ boolean vsc = vp == null ? f: vp.getFeatureAsBoolean(Feature.SUPRESSED_COMPLEMENTISER).booleanValue(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+return featureName != null ? this.features.containsKey(featureName) : false;
+red_line===
+false
+start_offset===
+72
+end_offset===
+77
+Python OUTPUT===
+ return featureName != null ? this.features.containsKey(featureName) : f 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+orderedModifiers = new ArrayList<NLGElement>(originalModifiers);
+red_line===
+<NLGElement>
+start_offset===
+35
+end_offset===
+47
+Python OUTPUT===
+<> ArrayList < NLGElement > ( or iginalModifiers ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment; \"position\" already holds the assigned value along all execution paths.
+scn.ruleId===
+4165
+scn.suspCodeStr===
+position = QUALITATIVE_POSITION;
+red_line===
+position = QUALITATIVE_POSITION
+start_offset===
+4
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment; \"pluralSubjects\" already holds the assigned value along all execution paths.
+scn.ruleId===
+4165
+scn.suspCodeStr===
+pluralSubjects = false;
+red_line===
+pluralSubjects = false
+start_offset===
+6
+end_offset===
+28
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> realisedList = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+47
+end_offset===
+59
+Python OUTPUT===
+<> realisedList = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"Stack\" by an unsynchronized one such as \"Deque\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+Stack<NLGElement> vgComponents = null;
+red_line===
+Stack<NLGElement>
+start_offset===
+2
+end_offset===
+19
+Python OUTPUT===
+Deque < NLGElement > vgComponents = null ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"Stack\" by an unsynchronized one such as \"Deque\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+Stack<NLGElement> mainVerbRealisation = new Stack<NLGElement>();
+red_line===
+Stack<NLGElement>
+start_offset===
+2
+end_offset===
+19
+Python OUTPUT===
+Deque < NLGElement > mainVerbRealisation = new Deque < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"Stack\" by an unsynchronized one such as \"Deque\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+Stack<NLGElement> auxiliaryRealisation = new Stack<NLGElement>();
+red_line===
+Stack<NLGElement>
+start_offset===
+2
+end_offset===
+19
+Python OUTPUT===
+Deque < NLGElement > auxiliaryRealisation = new Deque < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"Stack\" by an unsynchronized one such as \"Deque\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+Stack<NLGElement> vgComponents = new Stack<NLGElement>();
+red_line===
+Stack<NLGElement>
+start_offset===
+2
+end_offset===
+19
+Python OUTPUT===
+Deque < NLGElement > vgComponents = new Deque < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"newFront\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+NLGElement newFront = frontVG;
+red_line===
+= frontVG
+start_offset===
+22
+end_offset===
+31
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+protected XmlInflection var;
+red_line===
+var
+start_offset===
+28
+end_offset===
+31
+Python OUTPUT===
+protected XmlInflection var;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+protected List<DocumentRealisation> record;
+red_line===
+record
+start_offset===
+40
+end_offset===
+46
+Python OUTPUT===
+protected List<DocumentRealisation> record;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+record = new ArrayList<DocumentRealisation>();
+red_line===
+<DocumentRealisation>
+start_offset===
+34
+end_offset===
+55
+Python OUTPUT===
+<> < DocumentRealisation > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+coord = new ArrayList<XmlNLGElement>();
+red_line===
+<XmlNLGElement>
+start_offset===
+33
+end_offset===
+48
+Python OUTPUT===
+<> < XmlNLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+child = new ArrayList<XmlNLGElement>();
+red_line===
+<XmlNLGElement>
+start_offset===
+33
+end_offset===
+48
+Python OUTPUT===
+<> < XmlNLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+subj = new ArrayList<XmlNLGElement>();
+red_line===
+<XmlNLGElement>
+start_offset===
+32
+end_offset===
+47
+Python OUTPUT===
+<> < XmlNLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileOutputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileOutputStream os = new FileOutputStream(recordingFile);
+red_line===
+new FileOutputStream(recordingFile)
+start_offset===
+24
+end_offset===
+59
+Python OUTPUT===
+FileOutputStream os = new FileOutputStream(recordingFile);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+frontMod = new ArrayList<XmlNLGElement>();
+red_line===
+<XmlNLGElement>
+start_offset===
+36
+end_offset===
+51
+Python OUTPUT===
+<> < XmlNLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+preMod = new ArrayList<XmlNLGElement>();
+red_line===
+<XmlNLGElement>
+start_offset===
+34
+end_offset===
+49
+Python OUTPUT===
+<> < XmlNLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+compl = new ArrayList<XmlNLGElement>();
+red_line===
+<XmlNLGElement>
+start_offset===
+33
+end_offset===
+48
+Python OUTPUT===
+<> < XmlNLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+postMod = new ArrayList<XmlNLGElement>();
+red_line===
+<XmlNLGElement>
+start_offset===
+35
+end_offset===
+50
+Python OUTPUT===
+<> < XmlNLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Disable access to external entities in XML parsing.
+scn.ruleId===
+2755
+scn.suspCodeStr===
+Transformer transformer = TransformerFactory.newInstance().newTransformer();
+red_line===
+newInstance
+start_offset===
+47
+end_offset===
+58
+Python OUTPUT===
+Transformer transformer = TransformerFactory.newInstance().newTransformer();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+static Recording record = null;
+red_line===
+record
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+static Recording record = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+RecordSet record = null;
+red_line===
+record
+start_offset===
+11
+end_offset===
+17
+Python OUTPUT===
+RecordSet record = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+StreamResult xmlOutput = new StreamResult(new OutputStreamWriter(os, "UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+71
+end_offset===
+78
+Python OUTPUT===
+ StreamResult xmlOutput = new StreamResult(new OutputStreamWriter(os, "UTF-8")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean sAggregateAuxiliary = wp.isAGGREGATEAUXILIARY() == null ? false : wp.isAGGREGATEAUXILIARY();
+red_line===
+false
+start_offset===
+68
+end_offset===
+73
+Python OUTPUT===
+ boolean sAggregateAuxiliary = wp.isAGGREGATEAUXILIARY() == null ? f: wp.isAGGREGATEAUXILIARY(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean sPass = wp.isPASSIVE() == null ? false : wp.isPASSIVE();
+red_line===
+false
+start_offset===
+43
+end_offset===
+48
+Python OUTPUT===
+ boolean sPass = wp.isPASSIVE() == null ? f: wp.isPASSIVE(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean vPass = vp == null ? false : vp.getFeatureAsBoolean(Feature.PASSIVE).booleanValue();
+red_line===
+false
+start_offset===
+31
+end_offset===
+36
+Python OUTPUT===
+ boolean vPass = vp == null ? f: vp.getFeatureAsBoolean(Feature.PASSIVE).booleanValue(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean sProg = wp.isPROGRESSIVE() == null ? false : wp.isPROGRESSIVE();
+red_line===
+false
+start_offset===
+47
+end_offset===
+52
+Python OUTPUT===
+ boolean sProg = wp.isPROGRESSIVE() == null ? f: wp.isPROGRESSIVE(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<NLGElement> subjects = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+49
+end_offset===
+61
+Python OUTPUT===
+<> subjects = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"p\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+NLGElement p = factory.createStringElement(wp.getVal());
+red_line===
+factory.createStringElement(wp.getVal())
+start_offset===
+18
+end_offset===
+58
+Python OUTPUT===
+NLGElement p = factory.createStringElement(wp.getVal());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"hp\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+hp.setFeature(Feature.APPOSITIVE, appositive);
+red_line===
+hp.setFeature
+start_offset===
+4
+end_offset===
+17
+Python OUTPUT===
+hp.setFeature(Feature.APPOSITIVE, appositive);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer buffer = new StringBuffer("WordElement[");
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder buffer = new StringBuilder ( " WordElement[ " ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer print = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder print = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+String id;
+red_line===
+id in lexicon (may be null);
+start_offset===
+15
+end_offset===
+43
+Python OUTPUT===
+String id;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"argx\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+input = (String) args[argx++];
+red_line===
+argx++
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.forms = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+27
+end_offset===
+43
+Python OUTPUT===
+<> < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.inflVars = new HashMap<Inflection, InflectionSet>();
+red_line===
+<Inflection, InflectionSet>
+start_offset===
+29
+end_offset===
+56
+Python OUTPUT===
+<> Inflection , InflectionSet > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+SortedSet<String> featureNames = new TreeSet<String>(getAllFeatureNames());
+red_line===
+<String>
+start_offset===
+46
+end_offset===
+54
+Python OUTPUT===
+<> featureNames = new TreeSet < String > ( getAllFeatureNames ( ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+22
+end_offset===
+34
+Python OUTPUT===
+<> NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"argx\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String lexFile = (String) args[argx++];
+red_line===
+argx++
+start_offset===
+34
+end_offset===
+40
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+ElementCategory _category = getCategory();
+red_line===
+_category
+start_offset===
+18
+end_offset===
+27
+Python OUTPUT===
+ElementCategory _category = getCategory();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"argx\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String path = (String) args[argx++];
+red_line===
+argx++
+start_offset===
+31
+end_offset===
+37
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"NLG XMLRealiser Error\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new XMLRealiserException("NLG XMLRealiser Error", e);
+red_line===
+"NLG XMLRealiser Error"
+start_offset===
+35
+end_offset===
+58
+Python OUTPUT===
+throw new XMLRealiserException("NLG XMLRealiser Error", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer print = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder print = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This case\u0027s code block is the same as the block for the case on line 112.
+scn.ruleId===
+1871
+scn.suspCodeStr===
+default:
+red_line===
+default
+start_offset===
+3
+end_offset===
+10
+Python OUTPUT===
+default:
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"invalid args\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new XMLRealiserException("invalid args");
+red_line===
+"invalid args"
+start_offset===
+34
+end_offset===
+48
+Python OUTPUT===
+throw new XMLRealiserException("invalid args");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+2
+end_offset===
+9
+Python OUTPUT===
+ r
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+2
+end_offset===
+9
+Python OUTPUT===
+ r
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> children = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+43
+end_offset===
+55
+Python OUTPUT===
+<> children = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+complements = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+30
+end_offset===
+42
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> complementsToRemove = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+54
+end_offset===
+66
+Python OUTPUT===
+<> complementsToRemove = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+complements = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+30
+end_offset===
+42
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+postModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+32
+end_offset===
+44
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+postModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+32
+end_offset===
+44
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+frontModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+33
+end_offset===
+45
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+frontModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+33
+end_offset===
+45
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+preModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+31
+end_offset===
+43
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer print = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder print = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+coordinates = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+30
+end_offset===
+42
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+preModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+31
+end_offset===
+43
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+preModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+31
+end_offset===
+43
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+postModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+32
+end_offset===
+44
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+postModifiers = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+32
+end_offset===
+44
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+complements = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+30
+end_offset===
+42
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+complements = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+30
+end_offset===
+42
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer print = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder print = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+22
+end_offset===
+34
+Python OUTPUT===
+<> NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer print = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder print = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+components = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+29
+end_offset===
+41
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+components = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+29
+end_offset===
+41
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer print = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder print = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer buffer = new StringBuffer("{realisation=").append(this.realisation);
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder buffer = new StringBuilder ( " {realisation= " ).append ( this.realisation ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer print = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder print = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer print = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder print = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<NLGElement> elementsToAdd = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+54
+end_offset===
+66
+Python OUTPUT===
+<> elementsToAdd = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+components = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+31
+end_offset===
+43
+Python OUTPUT===
+<> < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Boolean\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+this.features.put(featureName, new Boolean(featureValue));
+red_line===
+Boolean
+start_offset===
+38
+end_offset===
+45
+Python OUTPUT===
+ this.features.put(featureName, new BoeatureValue)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Integer\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+this.features.put(featureName, new Integer(featureValue));
+red_line===
+Integer
+start_offset===
+38
+end_offset===
+45
+Python OUTPUT===
+ this.features.put(featureName, new IneatureValue)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+this.features.put(featureName, new Long(featureValue));
+red_line===
+Long
+start_offset===
+38
+end_offset===
+42
+Python OUTPUT===
+ this.features.put(featureName, new LoeatureValue)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+protected HashMap<String, Object> features = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+57
+end_offset===
+73
+Python OUTPUT===
+<> features = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> list = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+39
+end_offset===
+51
+Python OUTPUT===
+<> list = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Object> values = new ArrayList<Object>();
+red_line===
+<Object>
+start_offset===
+37
+end_offset===
+45
+Python OUTPUT===
+<> values = new ArrayList < Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> values = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+37
+end_offset===
+45
+Python OUTPUT===
+<> values = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> subjects = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+43
+end_offset===
+55
+Python OUTPUT===
+<> subjects = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Float\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+this.features.put(featureName, new Float(featureValue));
+red_line===
+Float
+start_offset===
+38
+end_offset===
+43
+Python OUTPUT===
+ this.features.put(featureName, new FleatureValue)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+indexByVariant = new HashMap<String, List<WordElement>>();
+red_line===
+<String, List<WordElement>>
+start_offset===
+30
+end_offset===
+57
+Python OUTPUT===
+<> >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+this.features.put(featureName, new Double(featureValue));
+red_line===
+Double
+start_offset===
+38
+end_offset===
+44
+Python OUTPUT===
+ this.features.put(featureName, new DoeatureValue)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Integer\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+intValue = new Integer(((Number) value).intValue());
+red_line===
+Integer
+start_offset===
+18
+end_offset===
+25
+Python OUTPUT===
+ intValue = new In(Number) value).intValue()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Integer\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+intValue = new Integer((String) value);
+red_line===
+Integer
+start_offset===
+19
+end_offset===
+26
+Python OUTPUT===
+ intValue = new Inttring) value); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+longValue = new Long(((Number) value).longValue());
+red_line===
+Long
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ longValue = new Lo(Number) value).longValue()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Long\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+longValue = new Long((String) value);
+red_line===
+Long
+start_offset===
+20
+end_offset===
+24
+Python OUTPUT===
+ longValue = new Lontring) value); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Float\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+floatValue = new Float(((Number) value).floatValue());
+red_line===
+Float
+start_offset===
+20
+end_offset===
+25
+Python OUTPUT===
+ floatValue = new Fl(Number) value).floatValue()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Float\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+floatValue = new Float((String) value);
+red_line===
+Float
+start_offset===
+21
+end_offset===
+26
+Python OUTPUT===
+ floatValue = new Flotring) value); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+doubleValue = new Double(((Number) value).doubleValue());
+red_line===
+Double
+start_offset===
+21
+end_offset===
+27
+Python OUTPUT===
+ doubleValue = new Do(Number) value).doubleValue()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Double\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+doubleValue = new Double((String) value);
+red_line===
+Double
+start_offset===
+22
+end_offset===
+28
+Python OUTPUT===
+ doubleValue = new Doutring) value); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Inflection> inflections = new ArrayList<Inflection>();
+red_line===
+<Inflection>
+start_offset===
+46
+end_offset===
+58
+Python OUTPUT===
+<> inflections = new ArrayList < Inflection > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"words\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private Set<WordElement>               words;
+red_line===
+words
+start_offset===
+40
+end_offset===
+45
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(ex.toString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(ex.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(ex.toString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(ex.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Error in XML lexicon node for " + word.toString());
+red_line===
+System.err
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ System.err.println("Error in XML lexicon node for " + word.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+words = new HashSet<WordElement>();
+red_line===
+<WordElement>
+start_offset===
+21
+end_offset===
+34
+Python OUTPUT===
+<> < WordElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+indexByID = new HashMap<String, WordElement>();
+red_line===
+<String, WordElement>
+start_offset===
+25
+end_offset===
+46
+Python OUTPUT===
+<> WordElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+indexByBase = new HashMap<String, List<WordElement>>();
+red_line===
+<String, List<WordElement>>
+start_offset===
+27
+end_offset===
+54
+Python OUTPUT===
+<> >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Insuffient number of arguments supplied. Please supply the following Arguments: \n");
+red_line===
+System.err
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.err.println("Insuffient number of arguments supplied. Please supply the following Arguments: \n"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("\t\t 1. The full path to the NIHDB Lexicon database file e.g. C:\\NIHDB\\lexAccess2009 ");
+red_line===
+System.err
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.err.println("\t\t 1. The full path to the NIHDB Lexicon database file e.g. C:\\NIHDB\\lexAccess2009 "); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("\t\t 3. The full path to the XML file that the XML Lexicon will be written out to.");
+red_line===
+System.err
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.err.println("\t\t 3. The full path to the XML file that the XML Lexicon will be written out to."); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"LineNumberReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+LineNumberReader wordListFile = new LineNumberReader(new FileReader(WORDLIST_FILENAME));
+red_line===
+new LineNumberReader(new FileReader(WORDLIST_FILENAME))
+start_offset===
+37
+end_offset===
+92
+Python OUTPUT===
+LineNumberReader wordListFile = new LineNumberReader(new FileReader(WORDLIST_FILENAME));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileWriter\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileWriter xmlFile = new FileWriter(XML_FILENAME);
+red_line===
+new FileWriter(XML_FILENAME)
+start_offset===
+26
+end_offset===
+54
+Python OUTPUT===
+FileWriter xmlFile = new FileWriter(XML_FILENAME);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_HSQL_DRIVER\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String DB_HSQL_DRIVER      = "org.hsqldb.jdbc.JDBCDriver";
+red_line===
+DB_HSQL_DRIVER
+start_offset===
+23
+end_offset===
+37
+Python OUTPUT===
+private static String DB_HSQL_DRIVER      = "org.hsqldb.jdbc.JDBCDriver";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_HQSL_JDBC\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String DB_HQSL_JDBC        = "jdbc:hsqldb:";
+red_line===
+DB_HQSL_JDBC
+start_offset===
+23
+end_offset===
+35
+Python OUTPUT===
+private static String DB_HQSL_JDBC        = "jdbc:hsqldb:";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_DEFAULT_USERNAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String DB_DEFAULT_USERNAME = "sa";
+red_line===
+DB_DEFAULT_USERNAME
+start_offset===
+23
+end_offset===
+42
+Python OUTPUT===
+private static String DB_DEFAULT_USERNAME = "sa";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_DEFAULT_PASSWORD\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String DB_DEFAULT_PASSWORD = "";
+red_line===
+DB_DEFAULT_PASSWORD
+start_offset===
+23
+end_offset===
+42
+Python OUTPUT===
+private static String DB_DEFAULT_PASSWORD = "";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_HSQL_EXTENSION\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String DB_HSQL_EXTENSION   = ".data";
+red_line===
+DB_HSQL_EXTENSION
+start_offset===
+23
+end_offset===
+40
+Python OUTPUT===
+private static String DB_HSQL_EXTENSION   = ".data";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"Vector\" by an unsynchronized one such as \"ArrayList\" or \"LinkedList\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+Vector<String> vars = record.GetSpellingVars();
+red_line===
+Vector<String>
+start_offset===
+2
+end_offset===
+16
+Python OUTPUT===
+ArrayList < String > vars = record.GetSpellingVars ( ) ;
+isFixed===
+true
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Add password protection to this database.
+scn.ruleId===
+2115
+scn.suspCodeStr===
+conn = DriverManager.getConnection(DB_HQSL_JDBC + dbfilename, DB_DEFAULT_USERNAME, DB_DEFAULT_PASSWORD);
+red_line===
+DriverManager.getConnection(DB_HQSL_JDBC + dbfilename, DB_DEFAULT_USERNAME, DB_DEFAULT_PASSWORD)
+start_offset===
+10
+end_offset===
+106
+Python OUTPUT===
+conn = DriverManager.getConnection(DB_HQSL_JDBC + dbfilename, DB_DEFAULT_USERNAME, DB_DEFAULT_PASSWORD);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Cannot open lexical db: " + ex.toString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Cannot open lexical db: " + ex.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Cannot open lexical db: " + ex.toString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Cannot open lexical db: " + ex.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Lexical DB error: " + ex.toString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Lexical DB error: " + ex.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Lexical DB error: " + ex.toString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Lexical DB error: " + ex.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Lexical DB error: " + ex.toString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Lexical DB error: " + ex.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+2
+end_offset===
+9
+Python OUTPUT===
+ r
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+2
+end_offset===
+9
+Python OUTPUT===
+ r
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+2
+end_offset===
+9
+Python OUTPUT===
+ r
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+2
+end_offset===
+9
+Python OUTPUT===
+ r
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+2
+end_offset===
+9
+Python OUTPUT===
+ r
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<WordElement> wordElements = new ArrayList<WordElement>();
+red_line===
+<WordElement>
+start_offset===
+48
+end_offset===
+61
+Python OUTPUT===
+<> wordElements = new ArrayList < WordElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Inflection> wordVariants = new ArrayList<Inflection>();
+red_line===
+<Inflection>
+start_offset===
+48
+end_offset===
+60
+Python OUTPUT===
+<> wordVariants = new ArrayList < Inflection > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Inflection> wordVariants = new ArrayList<Inflection>();
+red_line===
+<Inflection>
+start_offset===
+48
+end_offset===
+60
+Python OUTPUT===
+<> wordVariants = new ArrayList < Inflection > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> wordVars = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+40
+end_offset===
+48
+Python OUTPUT===
+<> wordVars = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<WordElement> result = new ArrayList<WordElement>();
+red_line===
+<WordElement>
+start_offset===
+42
+end_offset===
+55
+Python OUTPUT===
+<> result = new ArrayList < WordElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+lexiconList = new ArrayList<Lexicon>();
+red_line===
+<Lexicon>
+start_offset===
+29
+end_offset===
+38
+Python OUTPUT===
+<> < Lexicon > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<WordElement> result = new ArrayList<WordElement>();
+red_line===
+<WordElement>
+start_offset===
+42
+end_offset===
+55
+Python OUTPUT===
+<> result = new ArrayList < WordElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<WordElement> result = new ArrayList<WordElement>();
+red_line===
+<WordElement>
+start_offset===
+42
+end_offset===
+55
+Python OUTPUT===
+<> result = new ArrayList < WordElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<WordElement> result = new ArrayList<WordElement>();
+red_line===
+<WordElement>
+start_offset===
+42
+end_offset===
+55
+Python OUTPUT===
+<> result = new ArrayList < WordElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<WordElement> result = new ArrayList<WordElement>();
+red_line===
+<WordElement>
+start_offset===
+42
+end_offset===
+55
+Python OUTPUT===
+<> result = new ArrayList < WordElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<String> variants = new HashSet<String>();
+red_line===
+<String>
+start_offset===
+36
+end_offset===
+44
+Python OUTPUT===
+<> variants = new HashSet < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"value\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+word.setCategory(LexicalCategory.valueOf(value.toUpperCase()));
+red_line===
+value.toUpperCase
+start_offset===
+46
+end_offset===
+63
+Python OUTPUT===
+word.setCategory(LexicalCategory.valueOf(value.toUpperCase()));
+isFixed===
+false
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Disable access to external entities in XML parsing.
+scn.ruleId===
+2755
+scn.suspCodeStr===
+DocumentBuilder builder = factory.newDocumentBuilder();
+red_line===
+newDocumentBuilder
+start_offset===
+37
+end_offset===
+55
+Python OUTPUT===
+DocumentBuilder builder = factory.newDocumentBuilder();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_FILENAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String DB_FILENAME;
+red_line===
+DB_FILENAME
+start_offset===
+23
+end_offset===
+34
+Python OUTPUT===
+private static String DB_FILENAME;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+int counter = Integer.valueOf(prefix);
+red_line===
+Integer.valueOf(prefix)
+start_offset===
+17
+end_offset===
+40
+Python OUTPUT===
+int counter = Integer.valueOf(prefix);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+int subCounter = Integer.valueOf(subCounterStr);
+red_line===
+Integer.valueOf(subCounterStr)
+start_offset===
+20
+end_offset===
+50
+Python OUTPUT===
+int subCounter = Integer.valueOf(subCounterStr);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Directly append the argument of String.valueOf().
+scn.ruleId===
+1153
+scn.suspCodeStr===
+prefix = prefix.substring(0, dotPosition) + "." + String.valueOf(subCounter);
+red_line===
+String.valueOf(subCounter)
+start_offset===
+53
+end_offset===
+79
+Python OUTPUT===
+prefix = prefix.substring(0, dotPosition) + "." + String.valueOf(subCounter);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer realisation = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder realisation = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"WORDLIST_FILENAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String WORDLIST_FILENAME;
+red_line===
+WORDLIST_FILENAME
+start_offset===
+23
+end_offset===
+40
+Python OUTPUT===
+private static String WORDLIST_FILENAME;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> realisedList = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+47
+end_offset===
+59
+Python OUTPUT===
+<> realisedList = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"XML_FILENAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String XML_FILENAME;
+red_line===
+XML_FILENAME
+start_offset===
+23
+end_offset===
+35
+Python OUTPUT===
+private static String XML_FILENAME;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer realisation = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder realisation = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+static private NumberedPrefix numberedPrefix = new NumberedPrefix();
+red_line===
+private
+start_offset===
+8
+end_offset===
+15
+Python OUTPUT===
+private static final NumberedPrefix numberedPrefix = new NumberedPrefix ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> realisedList = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+47
+end_offset===
+59
+Python OUTPUT===
+<> realisedList = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_rules\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private List<AggregationRule> _rules;
+red_line===
+_rules
+start_offset===
+31
+end_offset===
+37
+Python OUTPUT===
+private List<AggregationRule> _rules;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_factory\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private NLGFactory            _factory;
+red_line===
+_factory
+start_offset===
+31
+end_offset===
+39
+Python OUTPUT===
+private NLGFactory            _factory;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this._rules = new ArrayList<AggregationRule>();
+red_line===
+<AggregationRule>
+start_offset===
+29
+end_offset===
+46
+Python OUTPUT===
+<> = new ArrayList < AggregationRule > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("*** Please add the HSQLDB JDBCDriver to your Java classpath and try again.");
+red_line===
+System.err
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.err.println("*** Please add the HSQLDB JDBCDriver to your Java classpath and try again."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("*** XML Lexicon Export Completed.");
+red_line===
+System.out
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ System.out.println("*** XML Lexicon Export Completed."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("*** An Error occured during the export. The Exception message is below: ");
+red_line===
+System.err
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ System.err.println("*** An Error occured during the export. The Exception message is below: "); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(e.getMessage());
+red_line===
+System.err
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ System.err.println(e.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("************************");
+red_line===
+System.err
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ System.err.println("************************"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> results = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+42
+end_offset===
+54
+Python OUTPUT===
+<> results = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> removed = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+43
+end_offset===
+55
+Python OUTPUT===
+<> removed = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Please make sure you have the correct application arguments: ");
+red_line===
+System.err
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ System.err.println("Please make sure you have the correct application arguments: "); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer buffer = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder buffer = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_syntax\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private SyntaxProcessor _syntax;
+red_line===
+_syntax
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+private SyntaxProcessor _syntax;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_factory\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private NLGFactory      _factory;
+red_line===
+_factory
+start_offset===
+25
+end_offset===
+33
+Python OUTPUT===
+private NLGFactory      _factory;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer realised = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder realised = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove duplicates in this character class.
+scn.ruleId===
+5869
+scn.suspCodeStr===
+plural = baseForm.replaceAll("[(um)(on)]\\b", "a");
+red_line===
+(
+start_offset===
+35
+end_offset===
+36
+Python OUTPUT===
+ plural = baseForm.replaceAll("[(um(on)]\\b", "a"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DEBUG\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+static boolean DEBUG = false;
+red_line===
+DEBUG
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+static boolean DEBUG = false;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+equal = h1 != null && h2 != null ? h1.equals(h2) : false;
+red_line===
+false
+start_offset===
+55
+end_offset===
+60
+Python OUTPUT===
+ equal = h1 != null && h2 != null ? h1.equals(h2) : fal
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<PhraseSet> funcsets = new ArrayList<PhraseSet>();
+red_line===
+<PhraseSet>
+start_offset===
+42
+end_offset===
+53
+Python OUTPUT===
+<> funcsets = new ArrayList < PhraseSet > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> realisedElements = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+51
+end_offset===
+63
+Python OUTPUT===
+<> realisedElements = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer numeric = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder numeric = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer buffer = new StringBuffer(string);
+red_line===
+StringBuffer
+start_offset===
+4
+end_offset===
+16
+Python OUTPUT===
+StringBuilder buffer = new StringBuilder ( string ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this alternation with a character class.
+scn.ruleId===
+6035
+scn.suspCodeStr===
+private static final String AN_AGREEMENT = "\\A(a|e|i|o|u).*";
+red_line===
+a|e|i|o|u
+start_offset===
+49
+end_offset===
+58
+Python OUTPUT===
+ private static final String AN_AGREEMENT = "\\A(a|e|i|o|u).*"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this silly call to \"Math.round\"
+scn.ruleId===
+2185
+scn.suspCodeStr===
+num = Math.round(num / 1000);
+red_line===
+Math.round
+start_offset===
+9
+end_offset===
+19
+Python OUTPUT===
+ num = Maum  /  1000); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+continue;
+red_line===
+continue;
+start_offset===
+7
+end_offset===
+16
+Python OUTPUT===
+ contin
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<PhraseSet> funcsets = new ArrayList<PhraseSet>();
+red_line===
+<PhraseSet>
+start_offset===
+42
+end_offset===
+53
+Python OUTPUT===
+<> funcsets = new ArrayList < PhraseSet > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new Exception("Client did not send data.");
+red_line===
+Exception
+start_offset===
+14
+end_offset===
+23
+Python OUTPUT===
+throw new Exception("Client did not send data.");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DEBUG\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+static boolean DEBUG = SimpleServer.DEBUG;
+red_line===
+DEBUG
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+static boolean DEBUG = SimpleServer.DEBUG;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Client connected from " + socket.getRemoteSocketAddress());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Client connected from " + socket.getRemoteSocketAddress()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String tmp = new String(data, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+33
+end_offset===
+40
+Python OUTPUT===
+ String tmp = new String(data, "UTF-8"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] tmp2 = result.getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+33
+end_offset===
+40
+Python OUTPUT===
+ byte[] tmp2 = result.getBytes("UTF-8"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(text + "\n\t" + result);
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println(text + "\n\t" + result); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+.printStac
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] tmp = ("Exception: " + e.getMessage()).getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+59
+end_offset===
+66
+Python OUTPUT===
+ byte[] tmp = ("Exception: " + e.getMessage()).getBytes("UTF-8"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Could not close client socket!");
+red_line===
+System.err
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.err.println("Could not close client socket!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"output\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+String output = XMLRealiser.realise(request.getDocument());
+red_line===
+XMLRealiser.realise(request.getDocument())
+start_offset===
+18
+end_offset===
+60
+Python OUTPUT===
+String output = XMLRealiser.realise(request.getDocument());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Port Number used by Server is: " + serverSocket.getLocalPort());
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("Port Number used by Server is: " + serverSocket.getLocalPort()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+	e.printSt
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Server is using the following lexicon: " + lexiconPath);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("Server is using the following lexicon: " + lexiconPath); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(o);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(o); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Waiting for client on port " + serverSocket.getLocalPort() + "...");
+red_line===
+System.out
+start_offset===
+6
+end_offset===
+16
+Python OUTPUT===
+ System.out.println("Waiting for client on port " + serverSocket.getLocalPort() + "..."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Socket timed out!");
+red_line===
+System.err
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ System.err.println("Socket timed out!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+e.printSta
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+printStack
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Could not close socket!");
+red_line===
+System.err
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.err.println("Could not close socket!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Server shutting down.");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("Server shutting down."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+red_line===
+System.out
+start_offset===
+65
+end_offset===
+75
+Python OUTPUT===
+ BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileReader reader = new FileReader(new File("./src/main/resources/lexicon.properties"));
+red_line===
+new FileReader(new File("./src/main/resources/lexicon.properties"))
+start_offset===
+23
+end_offset===
+90
+Python OUTPUT===
+FileReader reader = new FileReader(new File("./src/main/resources/lexicon.properties"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"RECURSIVE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+public static List<DiscourseFunction> RECURSIVE = Arrays.asList(DiscourseFunction.VERB_PHRASE);
+red_line===
+RECURSIVE
+start_offset===
+39
+end_offset===
+48
+Python OUTPUT===
+public static List<DiscourseFunction> RECURSIVE = Arrays.asList(DiscourseFunction.VERB_PHRASE);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer buffer = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+4
+end_offset===
+16
+Python OUTPUT===
+StringBuilder buffer = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer realisation = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+3
+end_offset===
+15
+Python OUTPUT===
+StringBuilder realisation = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer realisation = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+StringBuilder realisation = new StringBuilder ( ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<FunctionalSet> pairs = new ArrayList<FunctionalSet>();
+red_line===
+<FunctionalSet>
+start_offset===
+43
+end_offset===
+58
+Python OUTPUT===
+<> pairs = new ArrayList < FunctionalSet > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+realisation = realisation.replaceAll(" ,", ",");
+red_line===
+replaceAll
+start_offset===
+30
+end_offset===
+40
+Python OUTPUT===
+realisation = realisation.replaceAll ( " , " , " , " ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> realisedList = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+47
+end_offset===
+59
+Python OUTPUT===
+<> realisedList = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+boolean all_appositives = true;
+red_line===
+all_appositives
+start_offset===
+13
+end_offset===
+28
+Python OUTPUT===
+boolean all_appositives = true;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+return this.orthography == null ? false : this.orthography.isCommaSepPremodifiers();
+red_line===
+false
+start_offset===
+36
+end_offset===
+41
+Python OUTPUT===
+ return this.orthography == null ? f: this.orthography.isCommaSepPremodifiers(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+return this.orthography == null ? false : this.orthography.isCommaSepCuephrase();
+red_line===
+false
+start_offset===
+36
+end_offset===
+41
+Python OUTPUT===
+ return this.orthography == null ? f: this.orthography.isCommaSepCuephrase(); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"debug\" which hides the field declared at line 43.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+StringBuilder debug = new StringBuilder();
+red_line===
+debug
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+StringBuilder debug = new StringBuilder();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("INITIAL TREE\n");
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("INITIAL TREE\n"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(element.printTree(null));
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(element.printTree(null)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("<br/>POST-SYNTAX TREE<br/>");
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("<br/>POST-SYNTAX TREE<br/>"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(postSyntax.printTree(null));
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(postSyntax.printTree(null)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> children = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+43
+end_offset===
+55
+Python OUTPUT===
+<> children = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("\nPOST-MORPHOLOGY TREE\n");
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("\nPOST-MORPHOLOGY TREE\n"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(postMorphology.printTree(null));
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(postMorphology.printTree(null)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("\nPOST-ORTHOGRAPHY TREE\n");
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("\nPOST-ORTHOGRAPHY TREE\n"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(postOrthography.printTree(null));
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(postOrthography.printTree(null)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("\nPOST-FORMATTER TREE\n");
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println("\nPOST-FORMATTER TREE\n"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(postFormatter.printTree(null));
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println(postFormatter.printTree(null)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> realisedElements = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+51
+end_offset===
+63
+Python OUTPUT===
+<> realisedElements = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u003cbr/\u003e\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+debug.append(element.printTree("&nbsp;&nbsp;").replaceAll("\n", "<br/>"));
+red_line===
+"<br/>"
+start_offset===
+67
+end_offset===
+74
+Python OUTPUT===
+debug.append(element.printTree("&nbsp;&nbsp;").replaceAll("\n", "<br/>"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"lexicon\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private Lexicon    lexicon       = null;
+red_line===
+lexicon
+start_offset===
+20
+end_offset===
+27
+Python OUTPUT===
+ private Lexicon lexnull; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"George\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+PhraseElement clause = this.phraseFactory.createClause("Mary", "chase", "George");
+red_line===
+"George"
+start_offset===
+74
+end_offset===
+82
+Python OUTPUT===
+PhraseElement clause = this.phraseFactory.createClause("Mary", "chase", "George");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement clause_1 = this.phraseFactory.createClause("Mary", "chase", "George");
+red_line===
+clause_1
+start_offset===
+16
+end_offset===
+24
+Python OUTPUT===
+PhraseElement clause_1 = this.phraseFactory.createClause("Mary", "chase", "George");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement prepositionalPhrase_1 = this.phraseFactory.createPrepositionPhrase("in", "the park");
+red_line===
+prepositionalPhrase_1
+start_offset===
+16
+end_offset===
+37
+Python OUTPUT===
+PhraseElement prepositionalPhrase_1 = this.phraseFactory.createPrepositionPhrase("in", "the park");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement clause_2 = this.phraseFactory.createClause("she", "run", "him");
+red_line===
+clause_2
+start_offset===
+16
+end_offset===
+24
+Python OUTPUT===
+PhraseElement clause_2 = this.phraseFactory.createClause("she", "run", "him");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement prepositionalPhrase_2 = this.phraseFactory.createPrepositionPhrase("into", "the pond");
+red_line===
+prepositionalPhrase_2
+start_offset===
+16
+end_offset===
+37
+Python OUTPUT===
+PhraseElement prepositionalPhrase_2 = this.phraseFactory.createPrepositionPhrase("into", "the pond");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.phrases = new ArrayList<NLGElement>(Arrays.asList(phrases));
+red_line===
+<NLGElement>
+start_offset===
+30
+end_offset===
+42
+Python OUTPUT===
+<> new ArrayList < NLGElement > ( Arrays.asList ( phrases ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"s2\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+SPhraseSpec s1, s2, s3, s4;
+red_line===
+s2
+start_offset===
+17
+end_offset===
+19
+Python OUTPUT===
+SPhraseSpec s1, s2, s3, s4;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"tomorrow\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s4.addFrontModifier("tomorrow");
+red_line===
+"tomorrow"
+start_offset===
+27
+end_offset===
+37
+Python OUTPUT===
+this.s4.addFrontModifier("tomorrow");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"angry\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+np.addPreModifier("angry");
+red_line===
+"angry"
+start_offset===
+20
+end_offset===
+27
+Python OUTPUT===
+np.addPreModifier("angry");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"in the shop\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s4.addPostModifier("in the shop");
+red_line===
+"in the shop"
+start_offset===
+26
+end_offset===
+39
+Python OUTPUT===
+this.s4.addPostModifier("in the shop");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"upset\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+_s4.setVerbPhrase(this.phraseFactory.createVerbPhrase("upset"));
+red_line===
+"upset"
+start_offset===
+56
+end_offset===
+63
+Python OUTPUT===
+_s4.setVerbPhrase(this.phraseFactory.createVerbPhrase("upset"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"chase\" 9 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+PhraseElement s = this.phraseFactory.createClause(subject, "chase", object);
+red_line===
+"chase"
+start_offset===
+61
+end_offset===
+68
+Python OUTPUT===
+PhraseElement s = this.phraseFactory.createClause(subject, "chase", object);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"pick up\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+PhraseElement pick = this.phraseFactory.createVerbPhrase("pick up");
+red_line===
+"pick up"
+start_offset===
+59
+end_offset===
+68
+Python OUTPUT===
+PhraseElement pick = this.phraseFactory.createVerbPhrase("pick up");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Peter\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+_s4.setObject(this.phraseFactory.createNounPhrase("Peter"));
+red_line===
+"Peter"
+start_offset===
+52
+end_offset===
+59
+Python OUTPUT===
+_s4.setObject(this.phraseFactory.createNounPhrase("Peter"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"should\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s3.setFeature(Feature.MODAL, "should");
+red_line===
+"should"
+start_offset===
+36
+end_offset===
+44
+Python OUTPUT===
+this.s3.setFeature(Feature.MODAL, "should");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"the balls\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s4.setObject("the balls");
+red_line===
+"the balls"
+start_offset===
+20
+end_offset===
+31
+Python OUTPUT===
+this.s4.setObject("the balls");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"surfer\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+NPPhraseSpec object = this.phraseFactory.createNounPhrase("surfer");
+red_line===
+"surfer"
+start_offset===
+60
+end_offset===
+68
+Python OUTPUT===
+NPPhraseSpec object = this.phraseFactory.createNounPhrase("surfer");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"however\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s4.setFeature(Feature.CUE_PHRASE, "however");
+red_line===
+"however"
+start_offset===
+41
+end_offset===
+50
+Python OUTPUT===
+this.s4.setFeature(Feature.CUE_PHRASE, "however");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"there\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s2.setSubject("there");
+red_line===
+"there"
+start_offset===
+21
+end_offset===
+28
+Python OUTPUT===
+this.s2.setSubject("there");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec _s4 = this.phraseFactory.createClause();
+red_line===
+_s4
+start_offset===
+14
+end_offset===
+17
+Python OUTPUT===
+SPhraseSpec _s4 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _man = this.phraseFactory.createNounPhrase("the", "man");
+red_line===
+_man
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+PhraseElement _man = this.phraseFactory.createNounPhrase("the", "man");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _woman = this.phraseFactory.createNounPhrase("the", "woman");
+red_line===
+_woman
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+PhraseElement _woman = this.phraseFactory.createNounPhrase("the", "woman");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _s1 = this.phraseFactory.createClause(np, "chase", "John");
+red_line===
+_s1
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+PhraseElement _s1 = this.phraseFactory.createClause(np, "chase", "John");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _s2 = this.phraseFactory.createClause("there", "be", np);
+red_line===
+_s2
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+PhraseElement _s2 = this.phraseFactory.createClause("there", "be", np);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _s6 = this.phraseFactory.createClause(phraseFactory.createNounPhrase("the", "child"), vp);
+red_line===
+_s6
+start_offset===
+16
+end_offset===
+19
+Python OUTPUT===
+PhraseElement _s6 = this.phraseFactory.createClause(phraseFactory.createNounPhrase("the", "child"), vp);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(realised.getRealisation());
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(realised.getRealisation()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(result);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(result); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec _dog = this.phraseFactory.createNounPhrase("a", "dog");
+red_line===
+_dog
+start_offset===
+15
+end_offset===
+19
+Python OUTPUT===
+NPPhraseSpec _dog = this.phraseFactory.createNounPhrase("a", "dog");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _dog = this.phraseFactory.createNounPhrase("a", "dog");
+red_line===
+_dog
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+PhraseElement _dog = this.phraseFactory.createNounPhrase("a", "dog");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _dog = this.phraseFactory.createNounPhrase("the", "dog");
+red_line===
+_dog
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+PhraseElement _dog = this.phraseFactory.createNounPhrase("the", "dog");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _rott = this.phraseFactory.createNounPhrase("a", "rottweiler");
+red_line===
+_rott
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+PhraseElement _rott = this.phraseFactory.createNounPhrase("a", "rottweiler");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec _sent = this.phraseFactory.createClause(_dog, "ran");
+red_line===
+_sent
+start_offset===
+14
+end_offset===
+19
+Python OUTPUT===
+SPhraseSpec _sent = this.phraseFactory.createClause(_dog, "ran");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"s2\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+SPhraseSpec s1, s2, s3, s4, s5, s6;
+red_line===
+s2
+start_offset===
+17
+end_offset===
+19
+Python OUTPUT===
+SPhraseSpec s1, s2, s3, s4, s5, s6;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"woman\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s2.setSubject(this.phraseFactory.createNounPhrase("the", "woman"));
+red_line===
+"woman"
+start_offset===
+64
+end_offset===
+71
+Python OUTPUT===
+this.s2.setSubject(this.phraseFactory.createNounPhrase("the", "woman"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"woman\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+protected PhraseElement man, woman, dog, boy, np4, np5, np6, proTest1, proTest2;
+red_line===
+woman
+start_offset===
+30
+end_offset===
+35
+Python OUTPUT===
+protected PhraseElement man, woman, dog, boy, np4, np5, np6, proTest1, proTest2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"stunning\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+protected PhraseElement beautiful, stunning, salacious;
+red_line===
+stunning
+start_offset===
+36
+end_offset===
+44
+Python OUTPUT===
+protected PhraseElement beautiful, stunning, salacious;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"behindTheCurtain\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+protected PhraseElement onTheRock, behindTheCurtain, inTheRoom, underTheTable;
+red_line===
+behindTheCurtain
+start_offset===
+36
+end_offset===
+52
+Python OUTPUT===
+protected PhraseElement onTheRock, behindTheCurtain, inTheRoom, underTheTable;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"kiss\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+protected VPPhraseSpec kick, kiss, walk, talk, getUp, fallDown, give, say;
+red_line===
+kiss
+start_offset===
+30
+end_offset===
+34
+Python OUTPUT===
+protected VPPhraseSpec kick, kiss, walk, talk, getUp, fallDown, give, say;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"happy\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+p.setObject("happy");
+red_line===
+"happy"
+start_offset===
+14
+end_offset===
+21
+Python OUTPUT===
+p.setObject("happy");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"George\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+p.setObject("George");
+red_line===
+"George"
+start_offset===
+14
+end_offset===
+22
+Python OUTPUT===
+p.setObject("George");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(realiser.realiseSentence(test1));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(realiser.realiseSentence(test1)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(realiser.realiseSentence(test2));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(realiser.realiseSentence(test2)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"chase\" 14 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+p.setVerb("chase");
+red_line===
+"chase"
+start_offset===
+12
+end_offset===
+19
+Python OUTPUT===
+p.setVerb("chase");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(realiser.realiseSentence(test3));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(realiser.realiseSentence(test3)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(realiser.realiseSentence(test4));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(realiser.realiseSentence(test4)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"beautiful\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+NLGElement beautiful = this.phraseFactory.createStringElement("beautiful");
+red_line===
+"beautiful"
+start_offset===
+64
+end_offset===
+75
+Python OUTPUT===
+NLGElement beautiful = this.phraseFactory.createStringElement("beautiful");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"a unicorn\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+SPhraseSpec test1 = this.phraseFactory.createClause("a unicorn", "be", "regarded as a");
+red_line===
+"a unicorn"
+start_offset===
+54
+end_offset===
+65
+Python OUTPUT===
+SPhraseSpec test1 = this.phraseFactory.createClause("a unicorn", "be", "regarded as a");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"the monkey\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+p.setObject("the monkey");
+red_line===
+"the monkey"
+start_offset===
+14
+end_offset===
+26
+Python OUTPUT===
+p.setObject("the monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"horse-like\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+NLGElement horseLike = this.phraseFactory.createStringElement("horse-like");
+red_line===
+"horse-like"
+start_offset===
+64
+end_offset===
+76
+Python OUTPUT===
+NLGElement horseLike = this.phraseFactory.createStringElement("horse-like");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"creature\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+NLGElement creature = this.phraseFactory.createStringElement("creature");
+red_line===
+"creature"
+start_offset===
+63
+end_offset===
+73
+Python OUTPUT===
+NLGElement creature = this.phraseFactory.createStringElement("creature");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"list2\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+private DocumentElement list1, list2;
+red_line===
+list2
+start_offset===
+32
+end_offset===
+37
+Python OUTPUT===
+private DocumentElement list1, list2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"listItem2\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+private DocumentElement listItem1, listItem2, listItem3;
+red_line===
+listItem2
+start_offset===
+36
+end_offset===
+45
+Python OUTPUT===
+private DocumentElement listItem1, listItem2, listItem3;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"a bag\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+NPPhraseSpec object = this.phraseFactory.createNounPhrase("a bag");
+red_line===
+"a bag"
+start_offset===
+60
+end_offset===
+67
+Python OUTPUT===
+NPPhraseSpec object = this.phraseFactory.createNounPhrase("a bag");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"carry\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+SPhraseSpec _s1 = this.phraseFactory.createClause(subject, "carry", object);
+red_line===
+"carry"
+start_offset===
+61
+end_offset===
+68
+Python OUTPUT===
+SPhraseSpec _s1 = this.phraseFactory.createClause(subject, "carry", object);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec _s1 = this.phraseFactory.createClause(subject, "carry", object);
+red_line===
+_s1
+start_offset===
+14
+end_offset===
+17
+Python OUTPUT===
+SPhraseSpec _s1 = this.phraseFactory.createClause(subject, "carry", object);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec _s1 = this.phraseFactory.createClause(subject, "carry", object);
+red_line===
+_s1
+start_offset===
+14
+end_offset===
+17
+Python OUTPUT===
+SPhraseSpec _s1 = this.phraseFactory.createClause(subject, "carry", object);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"my dog\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+p.setSubject("my dog");
+red_line===
+"my dog"
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+p.setSubject("my dog");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"p2\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+private SPhraseSpec p1, p2, p3;
+red_line===
+p2
+start_offset===
+25
+end_offset===
+27
+Python OUTPUT===
+private SPhraseSpec p1, p2, p3;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"a vessel\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("a vessel", this.realiser.realise(np1).getRealisation());
+red_line===
+"a vessel"
+start_offset===
+22
+end_offset===
+32
+Python OUTPUT===
+Assert.assertEquals("a vessel", this.realiser.realise(np1).getRealisation());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("HTML realisation ~ \n=============================\n");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("HTML realisation ~ \n=============================\n"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(output);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(output); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(output);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(output); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> list = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+39
+end_offset===
+51
+Python OUTPUT===
+<> list = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"house\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+PhraseElement theHouse = phraseFactory.createNounPhrase("the", "house");
+red_line===
+"house"
+start_offset===
+65
+end_offset===
+72
+Python OUTPUT===
+PhraseElement theHouse = phraseFactory.createNounPhrase("the", "house");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"s2\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+SPhraseSpec s1, s2, s3, s4, s5;
+red_line===
+s2
+start_offset===
+17
+end_offset===
+19
+Python OUTPUT===
+SPhraseSpec s1, s2, s3, s4, s5;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"lexicon\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private Lexicon    lexicon       = null;
+red_line===
+lexicon
+start_offset===
+20
+end_offset===
+27
+Python OUTPUT===
+ private Lexicon lexnull; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(realisation);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(realisation); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(realiser.realiseSentence(clause));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(realiser.realiseSentence(clause)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"beautiful\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+SPhraseSpec p2 = this.phraseFactory.createClause("Mary", "be", "beautiful");
+red_line===
+"beautiful"
+start_offset===
+65
+end_offset===
+76
+Python OUTPUT===
+SPhraseSpec p2 = this.phraseFactory.createClause("Mary", "be", "beautiful");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"tomorrow\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s4.addFrontModifier("tomorrow");
+red_line===
+"tomorrow"
+start_offset===
+27
+end_offset===
+37
+Python OUTPUT===
+this.s4.addFrontModifier("tomorrow");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"in the shop\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s4.addPostModifier("in the shop");
+red_line===
+"in the shop"
+start_offset===
+26
+end_offset===
+39
+Python OUTPUT===
+this.s4.addPostModifier("in the shop");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"upset\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+SPhraseSpec p = this.phraseFactory.createClause(this.dog, "upset", this.man);
+red_line===
+"upset"
+start_offset===
+60
+end_offset===
+67
+Python OUTPUT===
+SPhraseSpec p = this.phraseFactory.createClause(this.dog, "upset", this.man);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"woman\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+PhraseElement _woman = this.phraseFactory.createNounPhrase("the", "woman");
+red_line===
+"woman"
+start_offset===
+68
+end_offset===
+75
+Python OUTPUT===
+PhraseElement _woman = this.phraseFactory.createNounPhrase("the", "woman");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"flower\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+PhraseElement flower = this.phraseFactory.createNounPhrase(john, "flower");
+red_line===
+"flower"
+start_offset===
+67
+end_offset===
+75
+Python OUTPUT===
+PhraseElement flower = this.phraseFactory.createNounPhrase(john, "flower");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"however\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+this.s4.setFeature(Feature.CUE_PHRASE, "however");
+red_line===
+"however"
+start_offset===
+41
+end_offset===
+50
+Python OUTPUT===
+this.s4.setFeature(Feature.CUE_PHRASE, "however");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _woman = this.phraseFactory.createNounPhrase("the", "woman");
+red_line===
+_woman
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+PhraseElement _woman = this.phraseFactory.createNounPhrase("the", "woman");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_FILENAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String DB_FILENAME = "src/test/resources/NIHLexicon/lexAccess2013.data";
+red_line===
+DB_FILENAME
+start_offset===
+22
+end_offset===
+33
+Python OUTPUT===
+private final String DB_FILENAME = "src/test/resources/NIHLexicon/lexAccess2013.data";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"these\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+nounPhrase_1.setDeterminer("these");
+red_line===
+"these"
+start_offset===
+29
+end_offset===
+36
+Python OUTPUT===
+nounPhrase_1.setDeterminer("these");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"That monkey.\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("That monkey.", this.realiser.realiseSentence(sentence_1));
+red_line===
+"That monkey."
+start_offset===
+22
+end_offset===
+36
+Python OUTPUT===
+Assert.assertEquals("That monkey.", this.realiser.realiseSentence(sentence_1));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"monkey\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("this", "monkey");
+red_line===
+"monkey"
+start_offset===
+74
+end_offset===
+82
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("this", "monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"These monkeys.\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("These monkeys.", this.realiser.realiseSentence(sentence_1));
+red_line===
+"These monkeys."
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+Assert.assertEquals("These monkeys.", this.realiser.realiseSentence(sentence_1));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"those\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+nounPhrase_1.setDeterminer("those");
+red_line===
+"those"
+start_offset===
+29
+end_offset===
+36
+Python OUTPUT===
+nounPhrase_1.setDeterminer("those");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"This monkey.\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("This monkey.", this.realiser.realiseSentence(sentence_1));
+red_line===
+"This monkey."
+start_offset===
+22
+end_offset===
+36
+Python OUTPUT===
+Assert.assertEquals("This monkey.", this.realiser.realiseSentence(sentence_1));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Those monkeys.\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("Those monkeys.", this.realiser.realiseSentence(sentence_1));
+red_line===
+"Those monkeys."
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+Assert.assertEquals("Those monkeys.", this.realiser.realiseSentence(sentence_1));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("that", "monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("that", "monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+red_line===
+sentence_1
+start_offset===
+14
+end_offset===
+24
+Python OUTPUT===
+SPhraseSpec sentence_1 = this.phraseFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+red_line===
+nounPhrase_1
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+NPPhraseSpec nounPhrase_1 = this.phraseFactory.createNounPhrase("monkey");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(realisation);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(realisation); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.format("Loading XML lexicon took %d ms%n", stopTime - startTime);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.format("Loading XML lexicon took %d ms%n", stopTime - startTime); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PhraseElement _dog = this.phraseFactory.createNounPhrase("a", "dog");
+red_line===
+_dog
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+PhraseElement _dog = this.phraseFactory.createNounPhrase("a", "dog");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"lexicon\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private Lexicon    lexicon;
+red_line===
+lexicon
+start_offset===
+20
+end_offset===
+27
+Python OUTPUT===
+ private Lexicon lex
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<NLGElement> elements = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+48
+end_offset===
+60
+Python OUTPUT===
+<> elements = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<NLGElement> elements = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+48
+end_offset===
+60
+Python OUTPUT===
+<> elements = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec subject_1 = nlgFactory.createNounPhrase("the", "cat");
+red_line===
+subject_1
+start_offset===
+15
+end_offset===
+24
+Python OUTPUT===
+NPPhraseSpec subject_1 = nlgFactory.createNounPhrase("the", "cat");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+VPPhraseSpec verb_1 = nlgFactory.createVerbPhrase("jump");
+red_line===
+verb_1
+start_offset===
+15
+end_offset===
+21
+Python OUTPUT===
+VPPhraseSpec verb_1 = nlgFactory.createVerbPhrase("jump");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PPPhraseSpec prep_1 = nlgFactory.createPrepositionPhrase();
+red_line===
+prep_1
+start_offset===
+15
+end_offset===
+21
+Python OUTPUT===
+PPPhraseSpec prep_1 = nlgFactory.createPrepositionPhrase();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec object_1 = nlgFactory.createNounPhrase();
+red_line===
+object_1
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+NPPhraseSpec object_1 = nlgFactory.createNounPhrase();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec clause_1 = nlgFactory.createClause();
+red_line===
+clause_1
+start_offset===
+14
+end_offset===
+22
+Python OUTPUT===
+SPhraseSpec clause_1 = nlgFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec subject_2 = nlgFactory.createNounPhrase("the", "dog");
+red_line===
+subject_2
+start_offset===
+15
+end_offset===
+24
+Python OUTPUT===
+NPPhraseSpec subject_2 = nlgFactory.createNounPhrase("the", "dog");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+VPPhraseSpec verb_2 = nlgFactory.createVerbPhrase("run");
+red_line===
+verb_2
+start_offset===
+15
+end_offset===
+21
+Python OUTPUT===
+VPPhraseSpec verb_2 = nlgFactory.createVerbPhrase("run");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+PPPhraseSpec prep_2 = nlgFactory.createPrepositionPhrase();
+red_line===
+prep_2
+start_offset===
+15
+end_offset===
+21
+Python OUTPUT===
+PPPhraseSpec prep_2 = nlgFactory.createPrepositionPhrase();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+NPPhraseSpec object_2 = nlgFactory.createNounPhrase();
+red_line===
+object_2
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+NPPhraseSpec object_2 = nlgFactory.createNounPhrase();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+SPhraseSpec clause_2 = nlgFactory.createClause();
+red_line===
+clause_2
+start_offset===
+14
+end_offset===
+22
+Python OUTPUT===
+SPhraseSpec clause_2 = nlgFactory.createClause();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(e.getMessage());
+red_line===
+System.err
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.err.println(e.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+e.printSta
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_FILENAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+static String DB_FILENAME  = "src/test/resources/NIHLexicon/lexAccess2013.data";
+red_line===
+DB_FILENAME
+start_offset===
+15
+end_offset===
+26
+Python OUTPUT===
+static String DB_FILENAME  = "src/test/resources/NIHLexicon/lexAccess2013.data";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"XML_FILENAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+static String XML_FILENAME = "src/main/resources/default-lexicon.xml";
+red_line===
+XML_FILENAME
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+static String XML_FILENAME = "src/main/resources/default-lexicon.xml";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Connecting to " + serverAddress + " on port " + port);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Connecting to " + serverAddress + " on port " + port); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+byte[] tmp = request.getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+33
+end_offset===
+40
+Python OUTPUT===
+ byte[] tmp = request.getBytes("UTF-8"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+String text = new String(data, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+34
+end_offset===
+41
+Python OUTPUT===
+ String text = new String(data, "UTF-8"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Realisation: " + text);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("Realisation: " + text); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(e.getMessage());
+red_line===
+System.err
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.err.println(e.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+WordElement UK = lexicon.getWord("UK");
+red_line===
+UK
+start_offset===
+14
+end_offset===
+16
+Python OUTPUT===
+WordElement UK = lexicon.getWord("UK");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+kT
+start_offset===
+14
+end_offset===
+16
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"Socket\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+Socket client = new Socket(serverAddress, port);
+red_line===
+new Socket(serverAddress, port)
+start_offset===
+19
+end_offset===
+50
+Python OUTPUT===
+Socket client = new Socket(serverAddress, port);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileReader reader = new FileReader(new File("./src/main/resources/lexicon.properties"));
+red_line===
+new FileReader(new File("./src/main/resources/lexicon.properties"))
+start_offset===
+23
+end_offset===
+90
+Python OUTPUT===
+FileReader reader = new FileReader(new File("./src/main/resources/lexicon.properties"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"qs2\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+SPhraseSpec qs2 = this.phraseFactory.createClause();
+red_line===
+= this.phraseFactory.createClause()
+start_offset===
+18
+end_offset===
+53
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<NLGElement> ss = new ArrayList<NLGElement>();
+red_line===
+<NLGElement>
+start_offset===
+37
+end_offset===
+49
+Python OUTPUT===
+<> ss = new ArrayList < NLGElement > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<String> ret = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+39
+end_offset===
+47
+Python OUTPUT===
+<> ret = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"I see an\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String expected = "I see an";
+red_line===
+"I see an"
+start_offset===
+20
+end_offset===
+30
+Python OUTPUT===
+String expected = "I see an";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"I see a\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String cannedText = "I see a";
+red_line===
+"I see a"
+start_offset===
+22
+end_offset===
+31
+Python OUTPUT===
+String cannedText = "I see a";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(recordingTestCase.get("Test"));
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println(recordingTestCase.get("Test")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Expected: " + expectedResult);
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println("Expected: " + expectedResult); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Realisation: " + realisation);
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+ System.out.println("Realisation: " + realisation); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Fix this reluctant quantifier that will only ever match the empty string.
+scn.ruleId===
+6019
+scn.suspCodeStr===
+expectedResult = expectedResult.replaceAll("\\s{2,}?", "");
+red_line===
+\\s{2,}?
+start_offset===
+49
+end_offset===
+57
+Python OUTPUT===
+expectedResult = expectedResult.replaceAll("\\s{2,}?", "");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Fix this reluctant quantifier that will only ever match the empty string.
+scn.ruleId===
+6019
+scn.suspCodeStr===
+String[] bulletpointList = expectedResult.split("\\s{2,}?");
+red_line===
+\\s{2,}?
+start_offset===
+54
+end_offset===
+62
+Python OUTPUT===
+String[] bulletpointList = expectedResult.split("\\s{2,}?");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Expected\" 14 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+testCase.put("Expected", test.getRealisation().trim());
+red_line===
+"Expected"
+start_offset===
+17
+end_offset===
+27
+Python OUTPUT===
+testCase.put("Expected", test.getRealisation().trim());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Realisation\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+testResults.put("Realisation", new ArrayList<>());
+red_line===
+"Realisation"
+start_offset===
+18
+end_offset===
+31
+Python OUTPUT===
+testResults.put("Realisation", new ArrayList<>());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_FILENAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+static String DB_FILENAME = "src/test/resources/NIHLexicon/lexAccess2013.data";
+red_line===
+DB_FILENAME
+start_offset===
+15
+end_offset===
+26
+Python OUTPUT===
+static String DB_FILENAME = "src/test/resources/NIHLexicon/lexAccess2013.data";
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"output\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+output.writeInt(tmp.length);
+red_line===
+output.writeInt
+start_offset===
+4
+end_offset===
+19
+Python OUTPUT===
+output.writeInt(tmp.length);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+\"runner1\" is a \"Thread\".
+scn.ruleId===
+2438
+scn.suspCodeStr===
+service.schedule(runner1, 0, TimeUnit.MILLISECONDS);
+red_line===
+runner1
+start_offset===
+19
+end_offset===
+26
+Python OUTPUT===
+service.schedule(runner1, 0, TimeUnit.MILLISECONDS);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+\"runner2\" is a \"Thread\".
+scn.ruleId===
+2438
+scn.suspCodeStr===
+service.schedule(runner2, 0, TimeUnit.MILLISECONDS);
+red_line===
+runner2
+start_offset===
+19
+end_offset===
+26
+Python OUTPUT===
+service.schedule(runner2, 0, TimeUnit.MILLISECONDS);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"realisedElement\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+String realisation = realisedElement.getRealisation();
+red_line===
+realisedElement.getRealisation
+start_offset===
+25
+end_offset===
+55
+Python OUTPUT===
+String realisation = realisedElement.getRealisation();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_FILENAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+static String DB_FILENAME = "src/test/resources/NIHLexicon/lexAccess2013.data";
+red_line===
+DB_FILENAME
+start_offset===
+15
+end_offset===
+26
+Python OUTPUT===
+static String DB_FILENAME = "src/test/resources/NIHLexicon/lexAccess2013.data";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Adams Stokes disease\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertTrue(spellVars.contains("Adams Stokes disease"));
+red_line===
+"Adams Stokes disease"
+start_offset===
+39
+end_offset===
+61
+Python OUTPUT===
+Assert.assertTrue(spellVars.contains("Adams Stokes disease"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Adams-Stokes disease\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+WordElement asd = lexicon.getWord("Adams-Stokes disease");
+red_line===
+"Adams-Stokes disease"
+start_offset===
+36
+end_offset===
+58
+Python OUTPUT===
+WordElement asd = lexicon.getWord("Adams-Stokes disease");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"etherise\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+WordElement eth = (WordElement) factory.createWord("etherise", LexicalCategory.VERB);
+red_line===
+"etherise"
+start_offset===
+53
+end_offset===
+63
+Python OUTPUT===
+WordElement eth = (WordElement) factory.createWord("etherise", LexicalCategory.VERB);
+isFixed===
+false
+==================

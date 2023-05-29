@@ -1,0 +1,779 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use the built-in formatting to construct this argument.
+scn.ruleId===
+2629
+scn.suspCodeStr===
+if (removed > 0) logger.fine(removed + " objects were scavenged.");
+red_line===
+removed + " objects were scavenged."
+start_offset===
+37
+end_offset===
+73
+Python OUTPUT===
+if (removed > 0) logger.fine(removed + " objects were scavenged.");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Cannot find a valid object");
+red_line===
+RuntimeException
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+throw new RuntimeException("Cannot find a valid object");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Cannot get a free object from the pool");
+red_line===
+RuntimeException
+start_offset===
+34
+end_offset===
+50
+Python OUTPUT===
+throw new RuntimeException("Cannot get a free object from the pool");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+26
+end_offset===
+42
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use the built-in formatting to construct this argument.
+scn.ruleId===
+2629
+scn.suspCodeStr===
+logger.fine("scavenge sub pool " + partition);
+red_line===
+"scavenge sub pool " + partition
+start_offset===
+32
+end_offset===
+64
+Python OUTPUT===
+logger.fine("scavenge sub pool " + partition);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("slots:" + slots.size());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("slots:" + slots.size()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+@Override public void destroyObject(PooledObject<StringBuilder> pooledObject) throws Exception { }
+red_line===
+destroyObject
+start_offset===
+34
+end_offset===
+47
+Python OUTPUT===
+@Override public void destroyObject(PooledObject<StringBuilder> pooledObject) throws Exception { }
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+@Override public void activateObject(PooledObject<StringBuilder> pooledObject) throws Exception { }
+red_line===
+activateObject
+start_offset===
+34
+end_offset===
+48
+Python OUTPUT===
+@Override public void activateObject(PooledObject<StringBuilder> pooledObject) throws Exception { }
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+@Override public void passivateObject(PooledObject<StringBuilder> pooledObject) throws Exception { }
+red_line===
+passivateObject
+start_offset===
+34
+end_offset===
+49
+Python OUTPUT===
+@Override public void passivateObject(PooledObject<StringBuilder> pooledObject) throws Exception { }
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+final private int workerCount;
+red_line===
+private
+start_offset===
+10
+end_offset===
+17
+Python OUTPUT===
+private final int workerCount ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+final private int loop;
+red_line===
+private
+start_offset===
+10
+end_offset===
+17
+Python OUTPUT===
+private final int loop ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Benchmark with " + workerCount + " concurrent threads");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Benchmark with " + workerCount + " concurrent threads"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Average Response Time:" + new DecimalFormat("0.0000").format(stats / workerCount));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Average Response Time:" + new DecimalFormat("0.0000").format(stats / workerCount)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Error Ratio:" + new DecimalFormat("0.00%").format(stats * 100 / workerCount / loop));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Error Ratio:" + new DecimalFormat("0.00%").format(stats * 100 / workerCount / loop)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Average Throughput Per Second:" + new DecimalFormat("0").format(((double) loop * workerCount) / (t2 - t1) ) + "k");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Average Throughput Per Second:" + new DecimalFormat("0").format(((double) loop * workerCount) / (t2 - t1) ) + "k"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Objects created:" + created.get());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Objects created:" + created.get()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----------warm up------------");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----------warm up------------"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----------fast object pool------------");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----------fast object pool------------"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----------fast object pool with disruptor------------");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----------fast object pool with disruptor------------"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----------stormpot object pool------------");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----------stormpot object pool------------"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("-----------furious object pool------------");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("-----------furious object pool------------"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("------------Apache commons pool-----------");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("------------Apache commons pool-----------"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("cleaning up ...");
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("cleaning up ..."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Don\u0027t try to be smarter than the JVM, remove this call to run the garbage collector.
+scn.ruleId===
+1215
+scn.suspCodeStr===
+System.gc();
+red_line===
+gc
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+System.gc();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Don\u0027t try to be smarter than the JVM, remove this call to run the garbage collector.
+scn.ruleId===
+1215
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+St
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+Logger.getLogger("").setLevel(Level.ALL);
+red_line===
+Logger.get
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ Logger.getLogger("").setLevel(Level.ALL); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("pool size:" + pool.getSize());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("pool size:" + pool.getSize()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("test borrow");
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("test borrow"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("pool size:" + pool.getSize());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("pool size:" + pool.getSize()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("test return");
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("test return"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("pool size:" + pool.getSize());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("pool size:" + pool.getSize()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("scavenged, pool size=" + pool.getSize());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("scavenged, pool size=" + pool.getSize()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("pool size:" + pool.getSize());
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("pool size:" + pool.getSize()); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Either re-interrupt this method or rethrow the \"InterruptedException\" that can be caught here.
+scn.ruleId===
+2142
+scn.suspCodeStr===
+try { Thread.sleep(10000); } catch (InterruptedException ignored) { }
+red_line===
+InterruptedException ignored
+start_offset===
+48
+end_offset===
+76
+Python OUTPUT===
+try { Thread.sleep(10000); } catch (InterruptedException ignored) { }
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("pool size:" + pool.getSize());
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("pool size:" + pool.getSize()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("All done");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("All done"); 
+isFixed===
+false
+==================

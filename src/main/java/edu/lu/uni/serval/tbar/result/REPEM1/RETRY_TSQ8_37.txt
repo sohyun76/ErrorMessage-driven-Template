@@ -1,0 +1,1691 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+return;
+red_line===
+return;
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Document> ldoc = new LinkedList<Document>();
+red_line===
+<Document>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List result = flattenOrsOrAnds(new ArrayList(), leftExpression, leftExpression, rightExpression);
+red_line===
+List
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List result = flattenOrsOrAnds(arrayList, firstExpression, left, right);
+red_line===
+List
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty collection instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty collection instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$regex\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Document regexDocument = new Document("$regex", regexFunction.getRegex());
+red_line===
+"$regex"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$expr\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+query.put("$expr", doc);
+red_line===
+"$expr"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"expression\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Object expression = parseExpression(new Document(), parenthesis.getExpression(), null);
+red_line===
+parseExpression(new Document(), parenthesis.getExpression(), null)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Refactor this repetition that can lead to a stack overflow for large inputs.
+scn.ruleId===
+5998
+scn.suspCodeStr===
+private static final Pattern SURROUNDED_IN_QUOTES = Pattern.compile("^\"(.+)*\"$");
+red_line===
+(.+)*
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of a reluctant quantifier with \"[^\\\\]]++\".
+scn.ruleId===
+5857
+scn.suspCodeStr===
+private static final Pattern LIKE_RANGE_REGEX = Pattern.compile("(\\[.+?\\])");
+red_line===
+.+?
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+return regex.replaceAll("''", "'");
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+return (alias == null ? functionName + "_" + field.replaceAll("\\.", "_") : alias);
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use isEmpty() to check whether the collection is empty or not.
+scn.ruleId===
+1155
+scn.suspCodeStr===
+return parameters.size() > 0 ? Iterables.get(parameters, 0) : null;
+red_line===
+parameters.size() > 0
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<Document> joinPipeline = new ArrayList<Document>();
+red_line===
+<Document>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+projectField = "_id." + projectField.replaceAll("\\.", "_");
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+idDocument.put(columnName.replaceAll("\\.", "_"), "$" + columnName);
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+document.put(nameOrAlias, "$_id." + columnName.replaceAll("\\.", "_"));
+red_line===
+replaceAll
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this usage of \"List.class.isInstance()\" with \"instanceof List\".
+scn.ruleId===
+6202
+scn.suspCodeStr===
+boolean isAggregation = queryDocument.get("query") != null && List.class.isInstance(queryDocument.get("query"));
+red_line===
+List.class.isInstance(queryDocument.get("query"))
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"mongoDBQueryHolder\" which hides the field declared at line 68.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+MongoDBQueryHolder mongoDBQueryHolder = getMongoQuery();
+red_line===
+mongoDBQueryHolder
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"mongoDBQueryHolder\" which hides the field declared at line 68.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+MongoDBQueryHolder mongoDBQueryHolder = getMongoQuery();
+red_line===
+mongoDBQueryHolder
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+documents = new LinkedList<Document>();
+red_line===
+<Document>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"collection\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String collectionName = queryDocument.getString("collection");
+red_line===
+"collection"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace(System.err);
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(e.getMessage());
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(formatException.getMessage());
+red_line===
+System.err
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+outputStream = new NonCloseableBufferedOutputStream(System.out);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(ENTER_SQL_TEXT);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.print(question);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+final Pattern hostAndPort = Pattern.compile("^(.[^:]*){1}([:]){0,1}(\\d+){0,1}$");
+red_line===
+ttern host
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"Scanner\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+Scanner scanner = new Scanner(new UncloseableInputStream(System.in), Charsets.UTF_8.displayName());
+red_line===
+new Scanner(new UncloseableInputStream(System.in), Charsets.UTF_8.displayName())
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+void run() throws Exception;
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove duplicates in this character class.
+scn.ruleId===
+5869
+scn.suspCodeStr===
+assertEquals(document("column", document("$not", Pattern.compile("^[ae\"gaf]+$"))).toJson(),mongoDBQueryHolder.getQuery().toJson());
+red_line===
+a
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"byteArrayOutputStream\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+red_line===
+= new ByteArrayOutputStream()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"byteArrayOutputStream\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+red_line===
+= new ByteArrayOutputStream()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Cast this argument to \u0027Object\u0027 to pass a single element to the vararg method.
+scn.ruleId===
+5669
+scn.suspCodeStr===
+assertEquals(documentValuesArray("$and", document("$QUICKSEARCH", null), document("foo", "bar") ), mongoDBQueryHolder.getQuery());
+red_line===
+null
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this array creation and simply pass the elements.
+scn.ruleId===
+3878
+scn.suspCodeStr===
+assertEquals(Arrays.asList(new String[]{"aa"}),mongoDBQueryHolder.getGroupBys());
+red_line===
+new String[]{"aa"}
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this array creation and simply pass the elements.
+scn.ruleId===
+3878
+scn.suspCodeStr===
+assertEquals(Arrays.asList(new String[]{"aa","cc"}),mongoDBQueryHolder.getGroupBys());
+red_line===
+new String[]{"aa","cc"}
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this array creation and simply pass the elements.
+scn.ruleId===
+3878
+scn.suspCodeStr===
+assertEquals(Arrays.asList(new String[]{"aa","cc"}),mongoDBQueryHolder.getGroupBys());
+red_line===
+new String[]{"aa","cc"}
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this array creation and simply pass the elements.
+scn.ruleId===
+3878
+scn.suspCodeStr===
+assertEquals(Arrays.asList(new String[]{"aa","cc"}),mongoDBQueryHolder.getGroupBys());
+red_line===
+new String[]{"aa","cc"}
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"column\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("column",document("$regex","^[ae\"gaf]+$")),mongoDBQueryHolder.getQuery());
+red_line===
+"column"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"count\" 13 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+final String key  = "count";
+red_line===
+"count"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"53102b43bf1044ed8b0ba36b\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(documentValuesArray("$and", document("_id", new ObjectId("53102b43bf1044ed8b0ba36b")), document("foo", "bar") ), mongoDBQueryHolder.getQuery());
+red_line===
+"53102b43bf1044ed8b0ba36b"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"booleanField\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("booleanField",true),mongoDBQueryHolder.getQuery());
+red_line===
+"booleanField"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"theValue1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("$expr",documentValuesArray("$in","$value",objsToList("theValue1","theValue2","theValue3"))),mongoDBQueryHolder.getQuery());
+red_line===
+"theValue1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"field\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(documentValuesArray("$and", document("$fin", document("function", document("$someFunction", "field")).append("list", Lists.newArrayList("1234"))), document("foo", "bar") ), mongoDBQueryHolder.getQuery());
+red_line===
+"field"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"orders\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("orders",mongoDBQueryHolder.getCollection());
+red_line===
+"orders"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$QUICKSEARCH\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(documentValuesArray("$and", document("$QUICKSEARCH", "123"), document("foo", "bar") ), mongoDBQueryHolder.getQuery());
+red_line===
+"$QUICKSEARCH"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$_id.aa\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("bb","$_id.aa").append("cc", "$_id.cc").append("_id", 0).append("dd", 1),mongoDBQueryHolder.getAliasProjection());
+red_line===
+"$_id.aa"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$someFunction\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(documentValuesArray("$and", documentValuesArray("$eq", document("$someFunction", "123"), "1234"), document("foo", "bar") ), mongoDBQueryHolder.getQuery());
+red_line===
+"$someFunction"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"value2\" 9 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("$and",document("value",1L),document("value2","theValue")),mongoDBQueryHolder.getQuery());
+red_line===
+"value2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$exists\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("value",document("$exists",true)),mongoDBQueryHolder.getQuery());
+red_line===
+"$exists"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"field1\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("$or", objsToList(documentValuesArray("$ignoreCaseMatch", "field1", "value"), document("field1", "value"))), mongoDBQueryHolder.getQuery());
+red_line===
+"field1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"^AW.{1}.*$\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("agent_code",document("$regex","^AW.{1}.*$")),mongoDBQueryHolder.getQuery());
+red_line===
+"^AW.{1}.*$"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"field_1\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("field_1",1).append("field_2",-1),mongoDBQueryHolder.getSort());
+red_line===
+"field_1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"column1\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("column1",1),mongoDBQueryHolder.getProjection());
+red_line===
+"column1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"my_table\" 79 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("my_table",mongoDBQueryHolder.getCollection());
+red_line===
+"my_table"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"^start.*$\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+likeTest("start%","^start.*$");
+red_line===
+"^start.*$"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"theValue\" 13 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("value","theValue"),mongoDBQueryHolder.getQuery());
+red_line===
+"theValue"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"agent_code\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(Arrays.asList("agent_code"),mongoDBQueryHolder.getGroupBys());
+red_line===
+"agent_code"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$agent_code\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(document("_id","$agent_code").append("count",document("$sum",1)),mongoDBQueryHolder.getProjection());
+red_line===
+"$agent_code"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+void run() throws Exception;
+red_line===
+Exception
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"delete\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+sourceFile.delete();
+red_line===
+sourceFile.delete();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"delete\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+destinationFile.delete();
+red_line===
+destinationFile.delete();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"delete\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+destinationFile.delete();
+red_line===
+destinationFile.delete();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"delete\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+destinationFile.delete();
+red_line===
+destinationFile.delete();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"select column1 from my_table where value IN (\\\"theValue1\\\",\\\"theValue2\\\",\\\"theValue3\\\")\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+systemInMock.provideLines("select column1 from my_table where value IN (\"theValue1\",\"theValue2\",\"theValue3\")");
+red_line===
+"select column1 from my_table where value IN (\"theValue1\",\"theValue2\",\"theValue3\")"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"public static mongoRule\" field final
+scn.ruleId===
+1444
+scn.suspCodeStr===
+public static MongoRule mongoRule = new MongoRule(Version.V3_4_15);
+red_line===
+mongoRule
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+queryConverter.write(System.out);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"select borough, count(borough) from \" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+QueryConverter queryConverter = new QueryConverter.Builder().sqlString("select borough, count(borough) from "+COLLECTION+" GROUP BY borough").build();
+red_line===
+"select borough, count(borough) from "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"select * from \" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+QueryConverter queryConverter = new QueryConverter.Builder().sqlString("select * from "+COLLECTION+" where address.street LIKE '%Street'").build();
+red_line===
+"select * from "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"54651022bffebc03098b4568\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+mongoCollection.insertOne(new Document("_id", new ObjectId("54651022bffebc03098b4568")).append("key", "value2"));
+red_line===
+"54651022bffebc03098b4568"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"54651022bffebc03098b4567\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+mongoCollection.insertOne(new Document("_id", new ObjectId("54651022bffebc03098b4567")).append("key", "value1"));
+red_line===
+"54651022bffebc03098b4567"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Brooklyn\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(Arrays.asList("Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"),results);
+red_line===
+"Brooklyn"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \" GROUP BY borough, cuisine\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+QueryConverter queryConverter = new QueryConverter.Builder().sqlString("select borough, cuisine, count(*) from "+COLLECTION+" GROUP BY borough, cuisine").build();
+red_line===
+" GROUP BY borough, cuisine"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"select c.cuisine, sum(c.c) as c  from(select borough, cuisine, count(*) as c from \" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+QueryConverter queryConverter = new QueryConverter.Builder().sqlString("select c.cuisine, sum(c.c) as c  from(select borough, cuisine, count(*) as c from "+COLLECTION+" group by borough, cuisine) as c where c.cuisine = 'Italian' group by cuisine").build();
+red_line===
+"select c.cuisine, sum(c.c) as c  from(select borough, cuisine, count(*) as c from "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"select borough, cuisine from \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+QueryConverter queryConverter = new QueryConverter.Builder().sqlString("select borough, cuisine from "+COLLECTION+" limit 6").build();
+red_line===
+"select borough, cuisine from "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \" where Category \u003d \u0027Sports\u0027\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+QueryConverter queryConverter = new QueryConverter.Builder().sqlString("select sum(_id) as s from "+COLLECTION_FILMS+" where Category = 'Sports'").build();
+red_line===
+" where Category = 'Sports'"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"select borough as b, cuisine as c from \" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+QueryConverter queryConverter = new QueryConverter.Builder().sqlString("select borough as b, cuisine as c from "+COLLECTION+" limit 6").build();
+red_line===
+"select borough as b, cuisine as c from "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"value\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+newCollection.insertOne(new Document("_id", "1").append("key", "value"));
+red_line===
+"value"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Unable to find port");
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Save and re-use this \"Random\".
+scn.ruleId===
+2119
+scn.suspCodeStr===
+Random r = new Random();
+red_line===
+Random
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"mongoDatabase\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private MongoDatabase mongoDatabase;
+red_line===
+mongoDatabase
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"mongoCollection\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private MongoCollection mongoCollection;
+red_line===
+mongoCollection
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+queryConverter.write(System.out);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"54651022bffebc03098b4567\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+mongoCollection.insertOne(new Document("_id", new ObjectId("54651022bffebc03098b4567")).append("key", "value1"));
+red_line===
+"54651022bffebc03098b4567"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \" as r inner join (select cuisine, count(*) as totalrestaurats from \" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+QueryConverter queryConverter = new QueryConverter.Builder().sqlString("select t.cuisine as cuisine, max(t.total) as maxi, count(*) as coxi from "+COLLECTION+" as r inner join (select r.cuisine as cuisine, r.borough as borough, trest.totalrestaurats as total from "+COLLECTION+" as r inner join (select cuisine, count(*) as totalrestaurats from "+COLLECTION+" group by cuisine) as trest on r.cuisine = trest.cuisine order by trest.totalrestaurats desc, cuisine asc, borough limit 15) as t on r.cuisine = t.cuisine and r.borough = t.borough group by t.cuisine").build();
+red_line===
+" as r inner join (select cuisine, count(*) as totalrestaurats from "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"public static mongoRule\" field final
+scn.ruleId===
+1444
+scn.suspCodeStr===
+public static MongoRule mongoRule = new MongoRule(Version.Main.V4_0);
+red_line===
+mongoRule
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================

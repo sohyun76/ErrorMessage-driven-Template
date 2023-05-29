@@ -1,0 +1,893 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+method.setAccessible(true);
+red_line===
+method.setAccessible(true)
+start_offset===
+3
+end_offset===
+29
+Python OUTPUT===
+method.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use a StringBuilder instead.
+scn.ruleId===
+1643
+scn.suspCodeStr===
+uniqueDescription += '\u200B';
+red_line===
+uniqueDescription
+start_offset===
+3
+end_offset===
+20
+Python OUTPUT===
+uniqueDescription += '\u200B';
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this object instantiation and use \"Object.class\" instead.
+scn.ruleId===
+2133
+scn.suspCodeStr===
+Method method = new Object(){}.getClass().getEnclosingMethod();
+red_line===
+new Object(){}
+start_offset===
+18
+end_offset===
+32
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"steps\" which hides the field declared at line 75.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<Steps> steps = new ArrayList<>();
+red_line===
+steps
+start_offset===
+14
+end_offset===
+19
+Python OUTPUT===
+List<Steps> steps = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"displayName\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(firstChild(description), hasProperty("displayName", is("GivenStory\u2024story")));
+red_line===
+"displayName"
+start_offset===
+50
+end_offset===
+63
+Python OUTPUT===
+assertThat(firstChild(description), hasProperty("displayName", is("GivenStory\u2024story")));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"givenStep\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+reporter.beforeStep("givenStep");
+red_line===
+"givenStep"
+start_offset===
+22
+end_offset===
+33
+Python OUTPUT===
+reporter.beforeStep("givenStep");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"testState\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TestState testState = this.testState.get();
+red_line===
+testState
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+TestState testState = this.testState.get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"newInstance\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+configurableEmbedder = testClass.newInstance();
+red_line===
+newInstance
+start_offset===
+35
+end_offset===
+46
+Python OUTPUT===
+ configurableEmbedder = testClass.n); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("verified start " + displayName);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("verified start " + displayName); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("verified finish " + displayName);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println("verified finish " + displayName); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingBeforeStories()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingBeforeStories()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingBeforeGivenStories()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingBeforeGivenStories()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingBeforeRegularStories()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingBeforeRegularStories()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingBeforeNormalScenario()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingBeforeNormalScenario()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingAfterAnyNormalScenario()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingAfterAnyNormalScenario()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingAfterAnyExampleScenario()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingAfterAnyExampleScenario()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingAfterFailedExampleScenario()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingAfterFailedExampleScenario()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingAfterAnyNormalScenario()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingAfterAnyNormalScenario()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingAfterFailedNormalScenario()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingAfterFailedNormalScenario()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingAfterRegularStories()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingAfterRegularStories()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingAfterGivenStories()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingAfterGivenStories()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("InitSteps.doSomethingAfterStories()");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("InitSteps.doSomethingAfterStories()"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Init");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("Init"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Hello " + somebody);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("Hello " + somebody); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"steps\" which hides the field declared at line 75.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<Steps> steps = new ArrayList<>();
+red_line===
+steps
+start_offset===
+14
+end_offset===
+19
+Python OUTPUT===
+List<Steps> steps = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"stepCandidate\" which hides the field declared at line 73.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+StepCandidate stepCandidate = mock(StepCandidate.class);
+red_line===
+stepCandidate
+start_offset===
+16
+end_offset===
+29
+Python OUTPUT===
+StepCandidate stepCandidate = mock(StepCandidate.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String storyPath = "/path/story.story";
+red_line===
+"/path/story.story"
+start_offset===
+21
+end_offset===
+40
+Python OUTPUT===
+String storyPath = "/path/story.story";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"scenario step\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Description child = addTestToScenario("scenario step");
+red_line===
+"scenario step"
+start_offset===
+40
+end_offset===
+55
+Python OUTPUT===
+Description child = addTestToScenario("scenario step");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"aGivenStory\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+givenStory.namedAs("aGivenStory");
+red_line===
+"aGivenStory"
+start_offset===
+21
+end_offset===
+34
+Python OUTPUT===
+givenStory.namedAs("aGivenStory");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"comp2\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Description comp2 = Description.createTestDescription(this.getClass(), "comp2");
+red_line===
+"comp2"
+start_offset===
+73
+end_offset===
+80
+Python OUTPUT===
+Description comp2 = Description.createTestDescription(this.getClass(), "comp2");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"comp1\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Description comp1 = Description.createTestDescription(this.getClass(), "comp1");
+red_line===
+"comp1"
+start_offset===
+73
+end_offset===
+80
+Python OUTPUT===
+Description comp1 = Description.createTestDescription(this.getClass(), "comp1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"BeforeStories\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+beforeStoriesStory.namedAs("BeforeStories");
+red_line===
+"BeforeStories"
+start_offset===
+29
+end_offset===
+44
+Python OUTPUT===
+beforeStoriesStory.namedAs("BeforeStories");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"child\" 17 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Description child1 = addTestToScenario("child");
+red_line===
+"child"
+start_offset===
+41
+end_offset===
+48
+Python OUTPUT===
+Description child1 = addTestToScenario("child");
+isFixed===
+false
+==================

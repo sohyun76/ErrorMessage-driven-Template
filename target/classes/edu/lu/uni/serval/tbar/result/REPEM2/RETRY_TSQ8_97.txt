@@ -1,0 +1,4579 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+EnumSet versionFlags = EnumSet.noneOf(VersionFlag.class);
+red_line===
+EnumSet
+start_offset===
+8
+end_offset===
+15
+Python OUTPUT===
+EnumSet versionFlags = EnumSet.noneOf(VersionFlag.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<String> fieldNames = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+51
+end_offset===
+59
+Python OUTPUT===
+<> > fieldNames = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Unable to create URI.\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new IllegalArgumentException("Unable to create URI.", e);
+red_line===
+"Unable to create URI."
+start_offset===
+47
+end_offset===
+70
+Python OUTPUT===
+throw new IllegalArgumentException("Unable to create URI.", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Unable to create URI.\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new IllegalArgumentException("Unable to create URI.", e);
+red_line===
+"Unable to create URI."
+start_offset===
+47
+end_offset===
+70
+Python OUTPUT===
+throw new IllegalArgumentException("Unable to create URI.", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+66
+end_offset===
+85
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+nodes = new HashSet<JsonNode>();
+red_line===
+<JsonNode>
+start_offset===
+31
+end_offset===
+41
+Python OUTPUT===
+<> < JsonNode > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+tupleSchema = new ArrayList<JsonSchema>();
+red_line===
+<JsonSchema>
+start_offset===
+39
+end_offset===
+51
+Python OUTPUT===
+<> < JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+HashSet<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+67
+end_offset===
+86
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"propertyNode\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+JsonNode propertyNode = node.get(entry.getKey());
+red_line===
+= node.get(entry.getKey())
+start_offset===
+38
+end_offset===
+64
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+schemas = new HashMap<String, JsonSchema>();
+red_line===
+<String, JsonSchema>
+start_offset===
+33
+end_offset===
+53
+Python OUTPUT===
+<> JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<ShortcutValidator> schemas = new ArrayList<ShortcutValidator>();
+red_line===
+<ShortcutValidator>
+start_offset===
+59
+end_offset===
+78
+Python OUTPUT===
+<> > schemas = new ArrayList < ShortcutValidator > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> joined = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+52
+end_offset===
+68
+Python OUTPUT===
+<> joined = new HashMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> result = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+52
+end_offset===
+68
+Python OUTPUT===
+<> result = new HashMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+42
+end_offset===
+61
+Python OUTPUT===
+<> < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<JsonSchema> childJsonSchemas = new ArrayList<JsonSchema>();
+red_line===
+<JsonSchema>
+start_offset===
+54
+end_offset===
+66
+Python OUTPUT===
+<> childJsonSchemas = new ArrayList < JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DATE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String DATE = "date";
+red_line===
+DATE
+start_offset===
+25
+end_offset===
+29
+Python OUTPUT===
+private final String DATE = "date";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DATETIME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String DATETIME = "date-time";
+red_line===
+DATETIME
+start_offset===
+25
+end_offset===
+33
+Python OUTPUT===
+private final String DATETIME = "date-time";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use a StringBuilder instead.
+scn.ruleId===
+1643
+scn.suspCodeStr===
+milliseconds += "0";
+red_line===
+milliseconds
+start_offset===
+24
+end_offset===
+36
+Python OUTPUT===
+milliseconds += "0";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<Pattern, JsonSchema> schemas = new IdentityHashMap<Pattern, JsonSchema>();
+red_line===
+<Pattern, JsonSchema>
+start_offset===
+66
+end_offset===
+87
+Python OUTPUT===
+<> schemas = new IdentityHashMap < Pattern , JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+JsonValidator newValidator(String schemaPath, JsonNode schemaNode, JsonSchema parentSchema, ValidationContext validationContext) throws JsonSchemaException, Exception;
+red_line===
+Exception
+start_offset===
+161
+end_offset===
+170
+Python OUTPUT===
+JsonValidator newValidator(String schemaPath, JsonNode schemaNode, JsonSchema parentSchema, ValidationContext validationContext) throws JsonSchemaException, Exception;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final List<Pattern> patternProperties = new ArrayList<Pattern>();
+red_line===
+<Pattern>
+start_offset===
+65
+end_offset===
+74
+Python OUTPUT===
+<> Pattern > patternProperties = new ArrayList < Pattern > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+allowedProperties = new HashSet<String>();
+red_line===
+<String>
+start_offset===
+39
+end_offset===
+47
+Python OUTPUT===
+<> < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+63
+end_offset===
+82
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private static final ArrayList<String> KEYWORDS = new ArrayList<String>(Arrays.asList("if", "then", "else"));
+red_line===
+<String>
+start_offset===
+67
+end_offset===
+75
+Python OUTPUT===
+<> < String > KEYWORDS = new ArrayList < String > ( Arrays.asList ( " if " , " then " , " else " ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private final Class validator;
+red_line===
+Class
+start_offset===
+18
+end_offset===
+23
+Python OUTPUT===
+private final Class validator;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private static Map<String, ValidatorTypeCode> constants = new HashMap<String, ValidatorTypeCode>();
+red_line===
+<String, ValidatorTypeCode>
+start_offset===
+73
+end_offset===
+100
+Python OUTPUT===
+<> > constants = new HashMap < String , ValidatorTypeCode > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final List<ValidatorTypeCode> result = new ArrayList<ValidatorTypeCode>();
+red_line===
+<ValidatorTypeCode>
+start_offset===
+60
+end_offset===
+79
+Python OUTPUT===
+<> > result = new ArrayList < ValidatorTypeCode > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<JsonNode> set = new HashSet<JsonNode>();
+red_line===
+<JsonNode>
+start_offset===
+43
+end_offset===
+53
+Python OUTPUT===
+<> set = new HashSet < JsonNode > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"validators\" which hides the field declared at line 39.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Map<String, JsonValidator> validators = new HashMap<String, JsonValidator>();
+red_line===
+validators
+start_offset===
+35
+end_offset===
+45
+Python OUTPUT===
+Map<String, JsonValidator> validators = new HashMap<String, JsonValidator>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literals.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+return requiredValidator != null ? true : false;
+red_line===
+true
+start_offset===
+43
+end_offset===
+47
+Python OUTPUT===
+ return requiredValidator != null ? true : e; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+63
+end_offset===
+82
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"validationResult\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+ValidationResult validationResult = new ValidationResult(errors, collectorContext);
+red_line===
+new ValidationResult(errors, collectorContext)
+start_offset===
+48
+end_offset===
+94
+Python OUTPUT===
+ValidationResult validationResult = new ValidationResult(errors, collectorContext);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"validationResult\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+ValidationResult validationResult = new ValidationResult(errors, collectorContext);
+red_line===
+new ValidationResult(errors, collectorContext)
+start_offset===
+38
+end_offset===
+84
+Python OUTPUT===
+ValidationResult validationResult = new ValidationResult(errors, collectorContext);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DATE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String DATE = "date";
+red_line===
+DATE
+start_offset===
+25
+end_offset===
+29
+Python OUTPUT===
+private final String DATE = "date";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DATE_TIME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String DATE_TIME = "date-time";
+red_line===
+DATE_TIME
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+private final String DATE_TIME = "date-time";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"UUID\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String UUID = "uuid";
+red_line===
+UUID
+start_offset===
+25
+end_offset===
+29
+Python OUTPUT===
+private final String UUID = "uuid";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"EMAIL\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String EMAIL = "email";
+red_line===
+EMAIL
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+private final String EMAIL = "email";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"validationContext\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private ValidationContext validationContext;
+red_line===
+validationContext
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"refValue\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String refValue;
+red_line===
+refValue
+start_offset===
+19
+end_offset===
+27
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<JsonSchema> schemas = new ArrayList<JsonSchema>();
+red_line===
+<JsonSchema>
+start_offset===
+52
+end_offset===
+64
+Python OUTPUT===
+<> > schemas = new ArrayList < JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> allErrors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+60
+end_offset===
+79
+Python OUTPUT===
+<> allErrors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<String, String> uriMappings = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+57
+end_offset===
+73
+Python OUTPUT===
+<> > uriMappings = new HashMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use an \"AtomicReferenceArray\" instead.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private static volatile String[] genericTLDsMinus = EMPTY_STRING_ARRAY;
+red_line===
+volatile String[]
+start_offset===
+19
+end_offset===
+36
+Python OUTPUT===
+private static volatile String[] genericTLDsMinus = EMPTY_STRING_ARRAY;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final Map<String, List<JsonSchemaWalkListener>> keywordWalkListenersMap = new HashMap<String, List<JsonSchemaWalkListener>>();
+red_line===
+<String, List<JsonSchemaWalkListener>>
+start_offset===
+97
+end_offset===
+135
+Python OUTPUT===
+<> keywordWalkListenersMap = new HashMap < String , List < JsonSchemaWalkListener >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final List<JsonSchemaWalkListener> propertyWalkListeners = new ArrayList<JsonSchemaWalkListener>();
+red_line===
+<JsonSchemaWalkListener>
+start_offset===
+81
+end_offset===
+105
+Python OUTPUT===
+<> JsonSchemaWalkListener > propertyWalkListeners = new ArrayList < JsonSchemaWalkListener > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new HashMap<String, String>(uriMappings);
+red_line===
+<String, String>
+start_offset===
+26
+end_offset===
+42
+Python OUTPUT===
+<> String > ( uriMappings ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<JsonSchemaWalkListener> keywordWalkListeners = new ArrayList<JsonSchemaWalkListener>();
+red_line===
+<JsonSchemaWalkListener>
+start_offset===
+68
+end_offset===
+92
+Python OUTPUT===
+<> keywordWalkListeners = new ArrayList < JsonSchemaWalkListener > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<JsonSchemaWalkListener> keywordWalkListeners = new ArrayList<JsonSchemaWalkListener>();
+red_line===
+<JsonSchemaWalkListener>
+start_offset===
+68
+end_offset===
+92
+Python OUTPUT===
+<> keywordWalkListeners = new ArrayList < JsonSchemaWalkListener > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<JsonSchemaWalkListener> ikeywordWalkListeners = new ArrayList<JsonSchemaWalkListener>();
+red_line===
+<JsonSchemaWalkListener>
+start_offset===
+69
+end_offset===
+93
+Python OUTPUT===
+<> ikeywordWalkListeners = new ArrayList < JsonSchemaWalkListener > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<JsonSchemaWalkListener> ikeywordWalkListeners = new ArrayList<JsonSchemaWalkListener>();
+red_line===
+<JsonSchemaWalkListener>
+start_offset===
+69
+end_offset===
+93
+Python OUTPUT===
+<> ikeywordWalkListeners = new ArrayList < JsonSchemaWalkListener > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final Map<String, List<String>> propertyDeps = new HashMap<String, List<String>>();
+red_line===
+<String, List<String>>
+start_offset===
+70
+end_offset===
+92
+Python OUTPUT===
+<> propertyDeps = new HashMap < String , List < String >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<String, JsonSchema> schemaDeps = new HashMap<String, JsonSchema>();
+red_line===
+<String, JsonSchema>
+start_offset===
+60
+end_offset===
+80
+Python OUTPUT===
+<> schemaDeps = new HashMap < String , JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+depsProps = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+45
+end_offset===
+53
+Python OUTPUT===
+<> < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this \"Map.get()\" and condition with a call to \"Map.computeIfAbsent()\".
+scn.ruleId===
+3824
+scn.suspCodeStr===
+List<String> depsProps = propertyDeps.get(pname);
+red_line===
+propertyDeps.get(pname)
+start_offset===
+41
+end_offset===
+64
+Python OUTPUT===
+List < String > depsProps = propertyDeps.get ( pname ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String regex = "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$";
+red_line===
+regex
+start_offset===
+32
+end_offset===
+37
+Python OUTPUT===
+private static final String regex = "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<String> fieldNames = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+51
+end_offset===
+59
+Python OUTPUT===
+<> > fieldNames = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+schemas = new HashMap<String, JsonSchema>();
+red_line===
+<String, JsonSchema>
+start_offset===
+29
+end_offset===
+49
+Python OUTPUT===
+<> JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+HashSet<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+67
+end_offset===
+86
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+63
+end_offset===
+82
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final char CHAR_e = 'e';
+red_line===
+CHAR_e
+start_offset===
+30
+end_offset===
+36
+Python OUTPUT===
+private static final char CHAR_e = 'e';
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> octetList = new ArrayList<String>(Arrays.asList(octets));
+red_line===
+<String>
+start_offset===
+50
+end_offset===
+58
+Python OUTPUT===
+<> octetList = new ArrayList < String > ( Arrays.asList ( octets ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final boolean allowLocal = false;
+red_line===
+allowLocal
+start_offset===
+26
+end_offset===
+36
+Python OUTPUT===
+private static final boolean allowLocal = false ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final boolean allowTld = false;
+red_line===
+allowTld
+start_offset===
+26
+end_offset===
+34
+Python OUTPUT===
+private static final boolean allowTld = false ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Refactor this repetition that can lead to a stack overflow for large inputs.
+scn.ruleId===
+5998
+scn.suspCodeStr===
+private static final String WORD = "((" + VALID_CHARS + "|')+|" + QUOTED_USER + ")";
+red_line===
+(
+start_offset===
+41
+end_offset===
+42
+Python OUTPUT===
+private static final String WORD = "((" + VALID_CHARS + "|')+|" + QUOTED_USER + ")";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor this repetition that can lead to a stack overflow for large inputs.
+scn.ruleId===
+5998
+scn.suspCodeStr===
+private static final Pattern EMAIL_PATTERN = Pattern.compile(EMAIL_REGEX);
+red_line===
+T
+start_offset===
+41
+end_offset===
+42
+Python OUTPUT===
+private static final Pattern EMAIL_PATTERN = Pattern.compile(EMAIL_REGEX);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+15
+end_offset===
+19
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use an \"AtomicReferenceArray\" instead.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private static volatile String[] countryCodeTLDsPlus = EMPTY_STRING_ARRAY;
+red_line===
+volatile String[]
+start_offset===
+19
+end_offset===
+36
+Python OUTPUT===
+private static volatile String[] countryCodeTLDsPlus = EMPTY_STRING_ARRAY;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use an \"AtomicReferenceArray\" instead.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private static volatile String[] genericTLDsPlus = EMPTY_STRING_ARRAY;
+red_line===
+volatile String[]
+start_offset===
+19
+end_offset===
+36
+Python OUTPUT===
+private static volatile String[] genericTLDsPlus = EMPTY_STRING_ARRAY;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use an \"AtomicReferenceArray\" instead.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private static volatile String[] countryCodeTLDsMinus = EMPTY_STRING_ARRAY;
+red_line===
+volatile String[]
+start_offset===
+19
+end_offset===
+36
+Python OUTPUT===
+private static volatile String[] countryCodeTLDsMinus = EMPTY_STRING_ARRAY;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+final String array[];
+red_line===
+[]
+start_offset===
+26
+end_offset===
+28
+Python OUTPUT===
+final String array[];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+protected final static ThreadLocal<ValidatorState> validatorState = new ThreadLocal<ValidatorState>();
+red_line===
+static
+start_offset===
+20
+end_offset===
+26
+Python OUTPUT===
+protected static final ThreadLocal < ValidatorState > validatorState = new ThreadLocal < ValidatorState > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+63
+end_offset===
+82
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+<> > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<String> fieldNames = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+51
+end_offset===
+59
+Python OUTPUT===
+<> > fieldNames = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"parentSchema\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private JsonSchema parentSchema;
+red_line===
+parentSchema
+start_offset===
+23
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"validationContext\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private ValidationContext validationContext;
+red_line===
+validationContext
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+HashSet<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+67
+end_offset===
+86
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"validationMessage\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+private ValidationMessage validationMessage;
+red_line===
+validationMessage
+start_offset===
+30
+end_offset===
+47
+Python OUTPUT===
+private final ValidationMessage validationMessage ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final Map<String, URIFactory> uriFactoryMap = new HashMap<String, URIFactory>();
+red_line===
+<String, URIFactory>
+start_offset===
+73
+end_offset===
+93
+Python OUTPUT===
+<> > uriFactoryMap = new HashMap < String , URIFactory > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final Map<String, URIFetcher> uriFetcherMap = new HashMap<String, URIFetcher>();
+red_line===
+<String, URIFetcher>
+start_offset===
+73
+end_offset===
+93
+Python OUTPUT===
+<> > uriFetcherMap = new HashMap < String , URIFetcher > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final Map<String, JsonMetaSchema> jsonMetaSchemas = new HashMap<String, JsonMetaSchema>();
+red_line===
+<String, JsonMetaSchema>
+start_offset===
+79
+end_offset===
+103
+Python OUTPUT===
+<> > jsonMetaSchemas = new HashMap < String , JsonMetaSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final Map<String, String> uriMap = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+62
+end_offset===
+78
+Python OUTPUT===
+<> String > uriMap = new HashMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final ConcurrentMap<URI, JsonSchema> uriSchemaCache = new ConcurrentHashMap<URI, JsonSchema>();
+red_line===
+<URI, JsonSchema>
+start_offset===
+87
+end_offset===
+104
+Python OUTPUT===
+<> > uriSchemaCache = new ConcurrentHashMap < URI , JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final Map<String, String> map = (config != null) ? config.getUriMappings() : new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+100
+end_offset===
+116
+Python OUTPUT===
+<> > map = ( config != null ) ? config.getUriMappings ( ) : new HashMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Failed to load json schema!\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.error("Failed to load json schema!", ioe);
+red_line===
+"Failed to load json schema!"
+start_offset===
+25
+end_offset===
+54
+Python OUTPUT===
+logger.error("Failed to load json schema!", ioe);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private List<JsonSchema> schemas = new ArrayList<JsonSchema>();
+red_line===
+<JsonSchema>
+start_offset===
+52
+end_offset===
+64
+Python OUTPUT===
+<> > schemas = new ArrayList < JsonSchema > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> validationMessages = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+63
+end_offset===
+82
+Python OUTPUT===
+<> validationMessages = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"UNKNOWN_KEYWORDS\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static Map<String, String> UNKNOWN_KEYWORDS = new ConcurrentHashMap<String, String>();
+red_line===
+UNKNOWN_KEYWORDS
+start_offset===
+39
+end_offset===
+55
+Python OUTPUT===
+private static Map<String, String> UNKNOWN_KEYWORDS = new ConcurrentHashMap<String, String>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"URI\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String URI = "https://json-schema.org/draft-04/schema";
+red_line===
+URI
+start_offset===
+30
+end_offset===
+33
+Python OUTPUT===
+private static String URI = "https://json-schema.org/draft-04/schema";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"URI\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String URI = "https://json-schema.org/draft-06/schema";
+red_line===
+URI
+start_offset===
+30
+end_offset===
+33
+Python OUTPUT===
+private static String URI = "https://json-schema.org/draft-06/schema";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"URI\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String URI = "https://json-schema.org/draft-07/schema";
+red_line===
+URI
+start_offset===
+30
+end_offset===
+33
+Python OUTPUT===
+private static String URI = "https://json-schema.org/draft-07/schema";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"URI\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String URI = "https://json-schema.org/draft/2019-09/schema";
+red_line===
+URI
+start_offset===
+30
+end_offset===
+33
+Python OUTPUT===
+private static String URI = "https://json-schema.org/draft/2019-09/schema";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+public static final List<Format> COMMON_BUILTIN_FORMATS = new ArrayList<Format>();
+red_line===
+<Format>
+start_offset===
+75
+end_offset===
+83
+Python OUTPUT===
+<> < Format > COMMON_BUILTIN_FORMATS = new ArrayList < Format > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+public static final List<Format> BUILTIN_FORMATS = new ArrayList<Format>(JsonMetaSchema.COMMON_BUILTIN_FORMATS);
+red_line===
+<Format>
+start_offset===
+72
+end_offset===
+80
+Python OUTPUT===
+<> < Format > BUILTIN_FORMATS = new ArrayList < Format > ( JsonMetaSchema.COMMON_BUILTIN_FORMATS ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+public static final List<Format> BUILTIN_FORMATS = new ArrayList<Format>(JsonMetaSchema.COMMON_BUILTIN_FORMATS);
+red_line===
+<Format>
+start_offset===
+72
+end_offset===
+80
+Python OUTPUT===
+<> < Format > BUILTIN_FORMATS = new ArrayList < Format > ( JsonMetaSchema.COMMON_BUILTIN_FORMATS ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+public static final List<Format> BUILTIN_FORMATS = new ArrayList<Format>(JsonMetaSchema.COMMON_BUILTIN_FORMATS);
+red_line===
+<Format>
+start_offset===
+72
+end_offset===
+80
+Python OUTPUT===
+<> < Format > BUILTIN_FORMATS = new ArrayList < Format > ( JsonMetaSchema.COMMON_BUILTIN_FORMATS ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+public static final List<Format> BUILTIN_FORMATS = new ArrayList<Format>(JsonMetaSchema.COMMON_BUILTIN_FORMATS);
+red_line===
+<Format>
+start_offset===
+72
+end_offset===
+80
+Python OUTPUT===
+<> < Format > BUILTIN_FORMATS = new ArrayList < Format > ( JsonMetaSchema.COMMON_BUILTIN_FORMATS ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<String, Keyword> keywords = new HashMap<String, Keyword>();
+red_line===
+<String, Keyword>
+start_offset===
+59
+end_offset===
+76
+Python OUTPUT===
+<> keywords = new HashMap < String , Keyword > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<String, Format> formats = new HashMap<String, Format>();
+red_line===
+<String, Format>
+start_offset===
+57
+end_offset===
+73
+Python OUTPUT===
+<> formats = new HashMap < String , Format > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+final Map<String, Keyword> map = new HashMap<String, Keyword>();
+red_line===
+<String, Keyword>
+start_offset===
+56
+end_offset===
+73
+Python OUTPUT===
+<> map = new HashMap < String , Keyword > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+schemas = new ArrayList<JsonValidator>();
+red_line===
+<JsonValidator>
+start_offset===
+31
+end_offset===
+46
+Python OUTPUT===
+<> < JsonValidator > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private final Map<String, JsonSchemaRef> refParsingInProgress = new HashMap<String, JsonSchemaRef>();
+red_line===
+<String, JsonSchemaRef>
+start_offset===
+79
+end_offset===
+102
+Python OUTPUT===
+<> > refParsingInProgress = new HashMap < String , JsonSchemaRef > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<String, Object> collectorMap = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+58
+end_offset===
+74
+Python OUTPUT===
+<> collectorMap = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private Map<String, Object> collectorLoadMap = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+62
+end_offset===
+78
+Python OUTPUT===
+<> collectorLoadMap = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> mergedMap = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+51
+end_offset===
+67
+Python OUTPUT===
+<> = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.collectorMap = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+39
+end_offset===
+55
+Python OUTPUT===
+<> String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.collectorLoadMap = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+43
+end_offset===
+59
+Python OUTPUT===
+<> String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<ValidationMessage> errors = new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+57
+end_offset===
+76
+Python OUTPUT===
+<> errors = new LinkedHashSet < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+config.setTypeLoose((typeLooseNode == null) ? false : typeLooseNode.asBoolean());
+red_line===
+false
+start_offset===
+66
+end_offset===
+71
+Python OUTPUT===
+ config.setTypeLoose((typeLooseNode == null) ? false : typeLooseNoBoolean()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema.toString());
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("schema: " + schema.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema);
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("schema: " + schema); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema);
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("schema: " + schema); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("errors: " + errors);
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("errors: " + errors); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<ValidationMessage> errors = new ArrayList<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+66
+end_offset===
+85
+Python OUTPUT===
+<> errors = new ArrayList < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Set versionFlags = ds.getVersionFlags(numericVersionCode);
+red_line===
+Set
+start_offset===
+8
+end_offset===
+11
+Python OUTPUT===
+Set versionFlags = ds.getVersionFlags(numericVersionCode);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+config.setTypeLoose((typeLooseNode == null) ? false : typeLooseNode.asBoolean());
+red_line===
+false
+start_offset===
+66
+end_offset===
+71
+Python OUTPUT===
+ config.setTypeLoose((typeLooseNode == null) ? false : typeLooseNoBoolean()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+config.setTypeLoose((typeLooseNode == null) ? false : typeLooseNode.asBoolean());
+red_line===
+false
+start_offset===
+66
+end_offset===
+71
+Python OUTPUT===
+ config.setTypeLoose((typeLooseNode == null) ? false : typeLooseNoBoolean()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema.toString());
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("schema: " + schema.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema);
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("schema: " + schema); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema);
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("schema: " + schema); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("errors: " + errors);
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("errors: " + errors); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<ValidationMessage> errors = new ArrayList<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+66
+end_offset===
+85
+Python OUTPUT===
+<> errors = new ArrayList < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+mapper = new ObjectMapper();
+red_line===
+mapper
+start_offset===
+8
+end_offset===
+14
+Python OUTPUT===
+final mapper = new ObjectMapper ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+bigDecimalMapper = new ObjectMapper().enable(DeserializationFeature.USE_BIG_DECIMAL_FOR_FLOATS);
+red_line===
+bigDecimalMapper
+start_offset===
+8
+end_offset===
+24
+Python OUTPUT===
+final bigDecimalMapper = new ObjectMapper ( ) . enable ( DeserializationFeature . USE_BIG_DECIMAL_FOR_FLOATS ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+bigIntegerMapper = new ObjectMapper().enable(DeserializationFeature.USE_BIG_INTEGER_FOR_INTS);
+red_line===
+bigIntegerMapper
+start_offset===
+8
+end_offset===
+24
+Python OUTPUT===
+final bigIntegerMapper = new ObjectMapper ( ) . enable ( DeserializationFeature . USE_BIG_INTEGER_FOR_INTS ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String schemaPath = "/schema/issue313-2019-09.json";
+red_line===
+"/schema/issue313-2019-09.json"
+start_offset===
+28
+end_offset===
+59
+Python OUTPUT===
+String schemaPath = "/schema/issue313-2019-09.json";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String dataPath = "/data/issue313.json";
+red_line===
+"/data/issue313.json"
+start_offset===
+26
+end_offset===
+47
+Python OUTPUT===
+String dataPath = "/data/issue313.json";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String schemaPath = "/schema/issue313-v7.json";
+red_line===
+"/schema/issue313-v7.json"
+start_offset===
+28
+end_offset===
+54
+Python OUTPUT===
+String schemaPath = "/schema/issue313-v7.json";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String dataPath = "/data/issue313.json";
+red_line===
+"/data/issue313.json"
+start_offset===
+26
+end_offset===
+47
+Python OUTPUT===
+String dataPath = "/data/issue313.json";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"node\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+JsonNode node = mapper.readTree(content);
+red_line===
+mapper.readTree(content)
+start_offset===
+24
+end_offset===
+48
+Python OUTPUT===
+JsonNode node = mapper.readTree(content);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("node = " + node);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("node = " + node); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final double threshold = 1797693.134E+5D;
+red_line===
+threshold
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+private static final double threshold = 1797693.134E+5D ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final double value = threshold + 1;
+red_line===
+value
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+private static final double value = threshold + 1 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final int executeTimes = 200000;
+red_line===
+executeTimes
+start_offset===
+22
+end_offset===
+34
+Python OUTPUT===
+private static final int executeTimes = 200000 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final boolean excludeEqual = false;
+red_line===
+excludeEqual
+start_offset===
+26
+end_offset===
+38
+Python OUTPUT===
+private static final boolean excludeEqual = false ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use \"BigDecimal.valueOf\" instead.
+scn.ruleId===
+2111
+scn.suspCodeStr===
+private final DecimalNode valueDecimal = new DecimalNode(new BigDecimal(value));
+red_line===
+new BigDecimal(value)
+start_offset===
+61
+end_offset===
+82
+Python OUTPUT===
+private final DecimalNode valueDecimal = new DecimalNode(new BigDecimal(value));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+%n should be used in place of \\n to produce the platform-specific line separator.
+scn.ruleId===
+3457
+scn.suspCodeStr===
+out.println(format("Base execution time (comparing two LongeNodes) %f ns \n", baseTimeForDouble));
+red_line===
+format("Base execution time (comparing two LongeNodes) %f ns \n", baseTimeForDouble)
+start_offset===
+20
+end_offset===
+104
+Python OUTPUT===
+out.println(format("Base execution time (comparing two LongeNodes) %f ns \n", baseTimeForDouble));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+%n should be used in place of \\n to produce the platform-specific line separator.
+scn.ruleId===
+3457
+scn.suspCodeStr===
+out.println(format("Cumulative average: %f\n\n", (currentAvgTimeOnDouble + currentAvgTimeOnDecimal + currentAvgTimeOnText + currentAvgTimeDecimalOnDouble + currentAvgTimeDecimalOnDecimal + currentAvgTimeDecimalOnText) / 6.0d));
+red_line===
+format("Cumulative average: %f\n\n", (currentAvgTimeOnDouble + currentAvgTimeOnDecimal + currentAvgTimeOnText + currentAvgTimeDecimalOnDouble + currentAvgTimeDecimalOnDecimal + currentAvgTimeDecimalOnText) / 6.0d)
+start_offset===
+20
+end_offset===
+233
+Python OUTPUT===
+out.println(format("Cumulative average: %f\n\n", (currentAvgTimeOnDouble + currentAvgTimeOnDecimal + currentAvgTimeOnText + currentAvgTimeDecimalOnDouble + currentAvgTimeDecimalOnDecimal + currentAvgTimeDecimalOnText) / 6.0d));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+%n should be used in place of \\n to produce the platform-specific line separator.
+scn.ruleId===
+3457
+scn.suspCodeStr===
+out.println(format("Cumulative average: %f\n\n", (allInOneDoubleOnDouble + allInOneDoubleOnDecimal + allInOneDoubleOnText + allInOneDecimalOnDouble + allInOneDecimalOnDecimal + allInOneDecimalOnText) / 6.0d));
+red_line===
+format("Cumulative average: %f\n\n", (allInOneDoubleOnDouble + allInOneDoubleOnDecimal + allInOneDoubleOnText + allInOneDecimalOnDouble + allInOneDecimalOnDecimal + allInOneDecimalOnText) / 6.0d)
+start_offset===
+20
+end_offset===
+215
+Python OUTPUT===
+out.println(format("Cumulative average: %f\n\n", (allInOneDoubleOnDouble + allInOneDoubleOnDecimal + allInOneDoubleOnText + allInOneDecimalOnDouble + allInOneDecimalOnDecimal + allInOneDecimalOnText) / 6.0d));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+%n should be used in place of \\n to produce the platform-specific line separator.
+scn.ruleId===
+3457
+scn.suspCodeStr===
+out.println(format("Cumulative average: %f\n\n", (doubleValueAvgTime + decimalValueAvgTime + textValueAvgTime) / 3.0d));
+red_line===
+format("Cumulative average: %f\n\n", (doubleValueAvgTime + decimalValueAvgTime + textValueAvgTime) / 3.0d)
+start_offset===
+20
+end_offset===
+126
+Python OUTPUT===
+out.println(format("Cumulative average: %f\n\n", (doubleValueAvgTime + decimalValueAvgTime + textValueAvgTime) / 3.0d));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"value\" which hides the field declared at line 46.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+BigDecimal value = node.decimalValue();
+red_line===
+value
+start_offset===
+27
+end_offset===
+32
+Python OUTPUT===
+BigDecimal value = node.decimalValue();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"value\" which hides the field declared at line 46.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+BigDecimal value = new BigDecimal(node.asText());
+red_line===
+value
+start_offset===
+23
+end_offset===
+28
+Python OUTPUT===
+BigDecimal value = new BigDecimal(node.asText());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"max\" which hides the field declared at line 52.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final BigDecimal max = new BigDecimal(maximumText);
+red_line===
+max
+start_offset===
+29
+end_offset===
+32
+Python OUTPUT===
+final BigDecimal max = new BigDecimal(maximumText);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"value\" which hides the field declared at line 46.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+BigDecimal value = new BigDecimal(node.asText());
+red_line===
+value
+start_offset===
+23
+end_offset===
+28
+Python OUTPUT===
+BigDecimal value = new BigDecimal(node.asText());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"max\" which hides the field declared at line 52.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final BigDecimal max = new BigDecimal(maximumText);
+red_line===
+max
+start_offset===
+29
+end_offset===
+32
+Python OUTPUT===
+final BigDecimal max = new BigDecimal(maximumText);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"value\" which hides the field declared at line 46.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+BigDecimal value = new BigDecimal(node.asText());
+red_line===
+value
+start_offset===
+23
+end_offset===
+28
+Python OUTPUT===
+BigDecimal value = new BigDecimal(node.asText());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"value\" which hides the field declared at line 46.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+BigDecimal value = new BigDecimal(node.asText());
+red_line===
+value
+start_offset===
+23
+end_offset===
+28
+Python OUTPUT===
+BigDecimal value = new BigDecimal(node.asText());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"excludeEqual\" which hides the field declared at line 55.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+boolean excludeEqual = false;
+red_line===
+excludeEqual
+start_offset===
+16
+end_offset===
+28
+Python OUTPUT===
+boolean excludeEqual = false;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"maximumBigInt\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final BigIntegerNode maximumBigInt = new BigIntegerNode(BigInteger.valueOf(thresholdIntegral));
+red_line===
+maximumBigInt
+start_offset===
+33
+end_offset===
+46
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"valueBigInt\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final BigIntegerNode valueBigInt = new BigIntegerNode(BigInteger.valueOf(Long.MAX_VALUE));
+red_line===
+valueBigInt
+start_offset===
+33
+end_offset===
+44
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Typed threshold execution time %f ns, %f times slower\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+out.println(format("Typed threshold execution time %f ns, %f times slower", doubleValueAvgTime, (doubleValueAvgTime / baseTimeForDouble)));
+red_line===
+"Typed threshold execution time %f ns, %f times slower"
+start_offset===
+27
+end_offset===
+82
+Python OUTPUT===
+out.println(format("Typed threshold execution time %f ns, %f times slower", doubleValueAvgTime, (doubleValueAvgTime / baseTimeForDouble)));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+HashMap<String, String> map = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+49
+end_offset===
+65
+Python OUTPUT===
+<> map = new HashMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"urlFactory\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final URLFactory urlFactory = new URLFactory();
+red_line===
+urlFactory
+start_offset===
+27
+end_offset===
+37
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String schemaPath = "/schema/issue327-v7.json";
+red_line===
+"/schema/issue327-v7.json"
+start_offset===
+28
+end_offset===
+54
+Python OUTPUT===
+String schemaPath = "/schema/issue327-v7.json";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String dataPath = "/data/issue327.json";
+red_line===
+"/data/issue327.json"
+start_offset===
+26
+end_offset===
+47
+Python OUTPUT===
+String dataPath = "/data/issue327.json";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"node\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+JsonNode node = mapper.readTree(content);
+red_line===
+mapper.readTree(content)
+start_offset===
+24
+end_offset===
+48
+Python OUTPUT===
+JsonNode node = mapper.readTree(content);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"flag\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+SpecVersion.VersionFlag flag = SpecVersionDetector.detect(node);
+red_line===
+= SpecVersionDetector.detect(node)
+start_offset===
+37
+end_offset===
+71
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"flag\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+SpecVersion.VersionFlag flag = SpecVersionDetector.detect(node);
+red_line===
+= SpecVersionDetector.detect(node)
+start_offset===
+37
+end_offset===
+71
+Python OUTPUT===
+ 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("time to execute all tests using:" + (end - start) + "ms");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("time to execute all tests using:" + (end - start) + "ms"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Method> testMethods = new ArrayList<Method>();
+red_line===
+<Method>
+start_offset===
+48
+end_offset===
+56
+Python OUTPUT===
+<> testMethods = new ArrayList < Method > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Collection<Method> listOfMethodNames = new ArrayList<Method>();
+red_line===
+<Method>
+start_offset===
+68
+end_offset===
+76
+Python OUTPUT===
+<> listOfMethodNames = new ArrayList < Method > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String schemaPath = "/draft2019-09/issue255.json";
+red_line===
+"/draft2019-09/issue255.json"
+start_offset===
+28
+end_offset===
+57
+Python OUTPUT===
+String schemaPath = "/draft2019-09/issue255.json";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String dataPath = "/data/issue255.json";
+red_line===
+"/data/issue255.json"
+start_offset===
+26
+end_offset===
+47
+Python OUTPUT===
+String dataPath = "/data/issue255.json";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"node\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+JsonNode node = mapper.readTree(content);
+red_line===
+mapper.readTree(content)
+start_offset===
+24
+end_offset===
+48
+Python OUTPUT===
+JsonNode node = mapper.readTree(content);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Validation should succeed as by default double values are used by mapper\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue("Validation should succeed as by default double values are used by mapper", messages.isEmpty());
+red_line===
+"Validation should succeed as by default double values are used by mapper"
+start_offset===
+19
+end_offset===
+93
+Python OUTPUT===
+assertTrue("Validation should succeed as by default double values are used by mapper", messages.isEmpty());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"String\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+returnList.add(referenceMap.get((String) object));
+red_line===
+String
+start_offset===
+45
+end_offset===
+51
+Python OUTPUT===
+ returnList.add(referenceMap.get((String) obj 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new TreeSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+30
+end_offset===
+49
+Python OUTPUT===
+<> ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> returnList = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+47
+end_offset===
+55
+Python OUTPUT===
+<> returnList = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new TreeSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+30
+end_offset===
+49
+Python OUTPUT===
+<> ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, String> map = new HashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+45
+end_offset===
+61
+Python OUTPUT===
+<> map = new HashMap < String , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"actual_value_added_to_context1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(contextValues.get(0), "actual_value_added_to_context1");
+red_line===
+"actual_value_added_to_context1"
+start_offset===
+50
+end_offset===
+82
+Python OUTPUT===
+Assert.assertEquals(contextValues.get(0), "actual_value_added_to_context1");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"actual_value_added_to_context2\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(contextValues.get(1), "actual_value_added_to_context2");
+red_line===
+"actual_value_added_to_context2"
+start_offset===
+50
+end_offset===
+82
+Python OUTPUT===
+Assert.assertEquals(contextValues.get(1), "actual_value_added_to_context2");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema.toString());
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("schema: " + schema.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ArrayList<String> result = new ArrayList<String>(node.size());
+red_line===
+<String>
+start_offset===
+52
+end_offset===
+60
+Python OUTPUT===
+<> result = new ArrayList < String > ( node.size ( ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new TreeSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+34
+end_offset===
+53
+Python OUTPUT===
+<> ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new LinkedHashSet<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+40
+end_offset===
+59
+Python OUTPUT===
+<> ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027CUSTOM_KEYWORD\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return "custom-keyword";
+red_line===
+"custom-keyword"
+start_offset===
+19
+end_offset===
+35
+Python OUTPUT===
+return "custom-keyword";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(error.getMessage());
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println(error.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(error.getMessage());
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println(error.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(error.getMessage());
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println(error.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema);
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("schema: " + schema); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema);
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("schema: " + schema); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("errors: " + errors);
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("errors: " + errors); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<ValidationMessage> errors = new ArrayList<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+66
+end_offset===
+85
+Python OUTPUT===
+<> errors = new ArrayList < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+config.setTypeLoose((typeLooseNode == null) ? false : typeLooseNode.asBoolean());
+red_line===
+false
+start_offset===
+66
+end_offset===
+71
+Python OUTPUT===
+ config.setTypeLoose((typeLooseNode == null) ? false : typeLooseNoBoolean()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema.toString());
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("schema: " + schema.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema);
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("schema: " + schema); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("---- test case failed ----");
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("---- test case failed ----"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("schema: " + schema);
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("schema: " + schema); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("data: " + test.get("data"));
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("data: " + test.get("data")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("errors: " + errors);
+red_line===
+System.out
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+ System.out.println("errors: " + errors); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<ValidationMessage> errors = new ArrayList<ValidationMessage>();
+red_line===
+<ValidationMessage>
+start_offset===
+66
+end_offset===
+85
+Python OUTPUT===
+<> errors = new ArrayList < ValidationMessage > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"product.schema.json\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+validateFailingFastSchemaFor("product.schema.json", "product-all-errors-data.json");
+red_line===
+"product.schema.json"
+start_offset===
+41
+end_offset===
+62
+Python OUTPUT===
+validateFailingFastSchemaFor("product.schema.json", "product-all-errors-data.json");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Exception must be thrown\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+fail("Exception must be thrown");
+red_line===
+"Exception must be thrown"
+start_offset===
+17
+end_offset===
+43
+Python OUTPUT===
+fail("Exception must be thrown");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("\n" + Arrays.toString(validationMessages.toArray()));
+red_line===
+System.err
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.err.println("\n" + Arrays.toString(validationMessages.toArray())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+URI uri = new URI("https://json-schema.org/draft/2019-09/schema");
+red_line===
+"https://json-schema.org/draft/2019-09/schema"
+start_offset===
+26
+end_offset===
+72
+Python OUTPUT===
+URI uri = new URI("https://json-schema.org/draft/2019-09/schema");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("\n" + Arrays.toString(validationMessages.toArray()));
+red_line===
+System.err
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.err.println("\n" + Arrays.toString(validationMessages.toArray())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+URI uri = new URI("https://json-schema.org/draft/2019-09/schema");
+red_line===
+"https://json-schema.org/draft/2019-09/schema"
+start_offset===
+26
+end_offset===
+72
+Python OUTPUT===
+URI uri = new URI("https://json-schema.org/draft/2019-09/schema");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("\n" + Arrays.toString(validationMessages.toArray()));
+red_line===
+System.err
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.err.println("\n" + Arrays.toString(validationMessages.toArray())); 
+isFixed===
+false
+==================

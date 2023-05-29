@@ -1,0 +1,1140 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+supportedFileAttributeViews = new HashSet<String>();
+red_line===
+<String>
+start_offset===
+49
+end_offset===
+57
+Python OUTPUT===
+<> < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this redundant jump.
+scn.ruleId===
+3626
+scn.suspCodeStr===
+continue;
+red_line===
+continue;
+start_offset===
+16
+end_offset===
+25
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove or correct this useless self-assignment.
+scn.ruleId===
+1656
+scn.suspCodeStr===
+this.parts = parts;
+red_line===
+=
+start_offset===
+27
+end_offset===
+28
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove or correct this useless self-assignment.
+scn.ruleId===
+1656
+scn.suspCodeStr===
+this.parts = parts;
+red_line===
+=
+start_offset===
+27
+end_offset===
+28
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"await\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+runImmediately.await( pollingInterval, pollingIntervalTimeUnit );
+red_line===
+runImmediately.await( pollingInterval, pollingIntervalTimeUnit );
+start_offset===
+20
+end_offset===
+85
+Python OUTPUT===
+runImmediately.await( pollingInterval, pollingIntervalTimeUnit );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"invalid glob \u0027\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new IllegalArgumentException( "invalid glob '" + patternString + "'" );
+red_line===
+"invalid glob '"
+start_offset===
+64
+end_offset===
+80
+Python OUTPUT===
+throw new IllegalArgumentException( "invalid glob '" + patternString + "'" );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException( "filesystem already exists for " + uri.toString() + " at " + existing.toString() );
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException( "filesystem already exists for " + uri.toString() + " at " + existing.toString() );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.
+scn.ruleId===
+1157
+scn.suspCodeStr===
+return "symbolic link".equals( value.toLowerCase() );
+red_line===
+"symbolic link".equals( value.toLowerCase() )
+start_offset===
+23
+end_offset===
+68
+Python OUTPUT===
+ return "symbolic link".equals( value.toLowerCase() ); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.
+scn.ruleId===
+1157
+scn.suspCodeStr===
+return "regular file".equals( value.toLowerCase() );
+red_line===
+"regular file".equals( value.toLowerCase() )
+start_offset===
+23
+end_offset===
+67
+Python OUTPUT===
+ return "regular file".equals( value.toLowerCase() ); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<String> expectedEntries = new HashSet<String>();
+red_line===
+<String>
+start_offset===
+49
+end_offset===
+57
+Python OUTPUT===
+<> expectedEntries = new HashSet < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"failed for {}: {}\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.error( "failed for {}: {}", filePath, e );
+red_line===
+"failed for {}: {}"
+start_offset===
+26
+end_offset===
+45
+Python OUTPUT===
+logger.error( "failed for {}: {}", filePath, e );
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+String rootFilePath = filesystemPath + "/" + root;
+red_line===
+"/"
+start_offset===
+47
+end_offset===
+50
+Python OUTPUT===
+ String rootFilePath = filesystemPath + " / " + r; 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this throw statement from this finally block.
+scn.ruleId===
+1143
+scn.suspCodeStr===
+throw new IOException( "dd failed " + exitCode );
+red_line===
+throw
+start_offset===
+20
+end_offset===
+25
+Python OUTPUT===
+ throw new IOExceptidd failed " + exitCode ); 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileSystem\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+FileSystem fileSystem = FileSystems.newFileSystem( uri, environment );
+red_line===
+FileSystems.newFileSystem( uri, environment )
+start_offset===
+36
+end_offset===
+81
+Python OUTPUT===
+FileSystem fileSystem = FileSystems.newFileSystem( uri, environment );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException( e );
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException( e );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"parts\" which hides the field declared at line 28.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+String[] parts = path.split( PATH_SEPARATOR + "+", 0 );
+red_line===
+parts
+start_offset===
+21
+end_offset===
+26
+Python OUTPUT===
+String[] parts = path.split( PATH_SEPARATOR + "+", 0 );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException( "default directory must be absolute" );
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException( "default directory must be absolute" );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+i++;
+red_line===
+i
+start_offset===
+24
+end_offset===
+25
+Python OUTPUT===
+i++;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.fileSystemMap = new HashMap<URI, UnixSshSftpHybridFileSystem>();
+red_line===
+<URI, UnixSshSftpHybridFileSystem>
+start_offset===
+40
+end_offset===
+74
+Python OUTPUT===
+<> URI , UnixSshSftpHybridFileSystem > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+accepted = new ArrayList<Path>();
+red_line===
+<Path>
+start_offset===
+40
+end_offset===
+46
+Python OUTPUT===
+<> < Path > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> environment = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+53
+end_offset===
+69
+Python OUTPUT===
+<> = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace Charset.forName() call with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+public static final Charset UTF8 = Charset.forName( "UTF-8" );
+red_line===
+Charset.forName( "UTF-8" )
+start_offset===
+39
+end_offset===
+65
+Python OUTPUT===
+ public static final Charset UTF8 = Charset.forName( "UTF-8" ); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+UnixSshPathWatchEvent<Path> event = new UnixSshPathWatchEvent<Path>( StandardWatchEventKinds.ENTRY_MODIFY, path );
+red_line===
+<Path>
+start_offset===
+81
+end_offset===
+87
+Python OUTPUT===
+<> event = new UnixSshPathWatchEvent < Path > ( StandardWatchEventKinds.ENTRY_MODIFY , path ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"await\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+initializationComplete.await( time, timeUnit );
+red_line===
+initializationComplete.await( time, timeUnit );
+start_offset===
+12
+end_offset===
+59
+Python OUTPUT===
+initializationComplete.await( time, timeUnit );
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"ReadableByteChannel\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+ReadableByteChannel inChannel = Channels.newChannel( in );
+red_line===
+Channels.newChannel( in )
+start_offset===
+48
+end_offset===
+73
+Python OUTPUT===
+ReadableByteChannel inChannel = Channels.newChannel( in );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException( "filesystem already exists for " + uri.toString() + " at " + existing.toString() );
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException( "filesystem already exists for " + uri.toString() + " at " + existing.toString() );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"result\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+private ExecuteResult result;
+red_line===
+result
+start_offset===
+30
+end_offset===
+36
+Python OUTPUT===
+private final ExecuteResult result ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+options = new HashSet<OpenOption>( Arrays.asList( openOptions ) );
+red_line===
+<OpenOption>
+start_offset===
+33
+end_offset===
+45
+Python OUTPUT===
+<> < OpenOption > ( Arrays.asList ( openOptions ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+lookup = new HashMap<String, SupportedAttribute>();
+red_line===
+<String, SupportedAttribute>
+start_offset===
+32
+end_offset===
+60
+Python OUTPUT===
+<> SupportedAttribute > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.fileSystemMap = new HashMap<URI, UnixSshFileSystem>();
+red_line===
+<URI, UnixSshFileSystem>
+start_offset===
+40
+end_offset===
+64
+Python OUTPUT===
+<> URI , UnixSshFileSystem > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"outputstreamtest.txt\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String filename = "outputstreamtest.txt";
+red_line===
+"outputstreamtest.txt"
+start_offset===
+26
+end_offset===
+48
+Python OUTPUT===
+String filename = "outputstreamtest.txt";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"creationTime,size,fileKey\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Map<String, Object> map = path.getFileSystem().provider().readAttributes( path, "creationTime,size,fileKey" );
+red_line===
+"creationTime,size,fileKey"
+start_offset===
+92
+end_offset===
+119
+Python OUTPUT===
+Map<String, Object> map = path.getFileSystem().provider().readAttributes( path, "creationTime,size,fileKey" );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String expected = "Lets give em something to talk about.";
+red_line===
+expected
+start_offset===
+32
+end_offset===
+40
+Python OUTPUT===
+private static final String expected = "Lets give em something to talk about.";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"failed:\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.debug( "failed:", e );
+red_line===
+"failed:"
+start_offset===
+26
+end_offset===
+35
+Python OUTPUT===
+logger.debug( "failed:", e );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"could not read attribues from {}: {}\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.error( "could not read attribues from {}: {}", path, e );
+red_line===
+"could not read attribues from {}: {}"
+start_offset===
+26
+end_offset===
+64
+Python OUTPUT===
+logger.error( "could not read attribues from {}: {}", path, e );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"could not read attributes from \" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+fail( "could not read attributes from " + path + ": " + e.getMessage() );
+red_line===
+"could not read attributes from "
+start_offset===
+18
+end_offset===
+51
+Python OUTPUT===
+fail( "could not read attributes from " + path + ": " + e.getMessage() );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"could not read attributes:\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.debug( "could not read attributes:", e );
+red_line===
+"could not read attributes:"
+start_offset===
+26
+end_offset===
+54
+Python OUTPUT===
+logger.debug( "could not read attributes:", e );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"failed for {}: {}\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.error( "failed for {}: {}", path, e );
+red_line===
+"failed for {}: {}"
+start_offset===
+26
+end_offset===
+45
+Python OUTPUT===
+logger.error( "failed for {}: {}", path, e );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"silly.txt\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String filename = "silly.txt";
+red_line===
+"silly.txt"
+start_offset===
+26
+end_offset===
+37
+Python OUTPUT===
+String filename = "silly.txt";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"failed for \" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+fail( "failed for " + path + ": " + e.getMessage() );
+red_line===
+"failed for "
+start_offset===
+18
+end_offset===
+31
+Python OUTPUT===
+fail( "failed for " + path + ": " + e.getMessage() );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"could not write to file:\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+logger.debug( "could not write to file:", e );
+red_line===
+"could not write to file:"
+start_offset===
+26
+end_offset===
+52
+Python OUTPUT===
+logger.debug( "could not write to file:", e );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"failed for \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+fail( "failed for " + filePath + ": " + e.getMessage() );
+red_line===
+"failed for "
+start_offset===
+18
+end_offset===
+31
+Python OUTPUT===
+fail( "failed for " + filePath + ": " + e.getMessage() );
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> partsList = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+46
+end_offset===
+54
+Python OUTPUT===
+<> partsList = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"parts\" which hides the field declared at line 28.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+String[] parts = new String[end - start];
+red_line===
+parts
+start_offset===
+17
+end_offset===
+22
+Python OUTPUT===
+String[] parts = new String[end - start];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Set<String> supportedFileAttributeViews = new HashSet<String>();
+red_line===
+<String>
+start_offset===
+61
+end_offset===
+69
+Python OUTPUT===
+<> supportedFileAttributeViews = new HashSet < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this array creation and simply pass the elements.
+scn.ruleId===
+3878
+scn.suspCodeStr===
+supportedFileAttributeViews.addAll( Arrays.asList( new String[] { "basic", "posix" } ) );
+red_line===
+new String[] { "basic", "posix" }
+start_offset===
+59
+end_offset===
+92
+Python OUTPUT===
+ supportedFileAttributeViews.addAll( Arrays.asList( new Str
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException( "default directory must be absolute" );
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException( "default directory must be absolute" );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.
+scn.ruleId===
+1157
+scn.suspCodeStr===
+return "directory".equals( value.toLowerCase() );
+red_line===
+"directory".equals( value.toLowerCase() )
+start_offset===
+23
+end_offset===
+64
+Python OUTPUT===
+ return "directory".equals( value.toLowerCase() ); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.
+scn.ruleId===
+1157
+scn.suspCodeStr===
+return "other".equals( value.toLowerCase() );
+red_line===
+"other".equals( value.toLowerCase() )
+start_offset===
+23
+end_offset===
+60
+Python OUTPUT===
+ return "other".equals( value.toLowerCase() ); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor this code to not throw exceptions in finally blocks.
+scn.ruleId===
+1163
+scn.suspCodeStr===
+throw new IOException( "dd failed " + exitCode );
+red_line===
+throw new IOException( "dd failed " + exitCode );
+start_offset===
+20
+end_offset===
+69
+Python OUTPUT===
+throw new IOException( "dd failed " + exitCode );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<SupportedAttribute> attributeList = new ArrayList<SupportedAttribute>();
+red_line===
+<SupportedAttribute>
+start_offset===
+62
+end_offset===
+82
+Python OUTPUT===
+<> attributeList = new ArrayList < SupportedAttribute > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new HashSet<T>( Arrays.asList( array ) );
+red_line===
+<T>
+start_offset===
+26
+end_offset===
+29
+Python OUTPUT===
+<> T > ( Arrays.asList ( array ) ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"WritableByteChannel\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+WritableByteChannel outChannel = Channels.newChannel( out );
+red_line===
+Channels.newChannel( out )
+start_offset===
+53
+end_offset===
+79
+Python OUTPUT===
+WritableByteChannel outChannel = Channels.newChannel( out );
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make \"TOUCH_DATE_FORMAT\" an instance variable.
+scn.ruleId===
+2885
+scn.suspCodeStr===
+private static final SimpleDateFormat TOUCH_DATE_FORMAT = new SimpleDateFormat( "yyyyMMddHHmm.ss" );
+red_line===
+TOUCH_DATE_FORMAT
+start_offset===
+42
+end_offset===
+59
+Python OUTPUT===
+private static final SimpleDateFormat TOUCH_DATE_FORMAT = new SimpleDateFormat ( " yyyyMMddHHmm.ss " ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"FileAttributeView\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+return (V)null;
+red_line===
+V
+start_offset===
+16
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"touch\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String command = path.getFileSystem().getCommand( "touch" ) + " " + path.toAbsolutePath().quotedString();
+red_line===
+"touch"
+start_offset===
+58
+end_offset===
+65
+Python OUTPUT===
+String command = path.getFileSystem().getCommand( "touch" ) + " " + path.toAbsolutePath().quotedString();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"BasicFileAttributes\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+return (A)null;
+red_line===
+A
+start_offset===
+16
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"command\" field final.
+scn.ruleId===
+1165
+scn.suspCodeStr===
+private String command;
+red_line===
+command
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+private final String command ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Object> map = new HashMap<String, Object>();
+red_line===
+<String, Object>
+start_offset===
+45
+end_offset===
+61
+Python OUTPUT===
+<> = new HashMap < String , Object > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"sshChannel\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+int exitCode = sshChannel.close();
+red_line===
+sshChannel.close
+start_offset===
+31
+end_offset===
+47
+Python OUTPUT===
+int exitCode = sshChannel.close();
+isFixed===
+false
+==================

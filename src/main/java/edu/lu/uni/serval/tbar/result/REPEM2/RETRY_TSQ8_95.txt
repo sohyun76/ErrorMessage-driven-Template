@@ -1,0 +1,285 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Failed to acquire a random free port", e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Failed to acquire a random free port", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String versionEnumName = this.version.toUpperCase().replaceAll("\\.", "_");
+red_line===
+replaceAll
+start_offset===
+60
+end_offset===
+70
+Python OUTPUT===
+String versionEnumName = this.version.toUpperCase ( ).replaceAll ( " \\. " , " _ " ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"features\" which hides the field declared at line 71.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Feature[] features = new Feature[0];
+red_line===
+features
+start_offset===
+18
+end_offset===
+26
+Python OUTPUT===
+Feature[] features = new Feature[0];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> mongodArgs = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+47
+end_offset===
+55
+Python OUTPUT===
+<> mongodArgs = new ArrayList < String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<MongoImportProcess> pendingMongoProcess = new ArrayList<MongoImportProcess>();
+red_line===
+<MongoImportProcess>
+start_offset===
+68
+end_offset===
+88
+Python OUTPUT===
+<> pendingMongoProcess = new ArrayList < MongoImportProcess > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"GOAL_LIST\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private List<String> GOAL_LIST = Arrays.asList("start", "mongo-scripts", "mongo-import", "stop");
+red_line===
+GOAL_LIST
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+private List<String> GOAL_LIST = Arrays.asList("start", "mongo-scripts", "mongo-import", "stop");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Port " + port + " cannot be bind!");
+red_line===
+RuntimeException
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+throw new RuntimeException("Port " + port + " cannot be bind!");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+final Random randomGenerator = new Random();
+red_line===
+erator = new Ran
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+final Random randomGenerator = new Random();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"await\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+allocationsCounter.await(10, TimeUnit.SECONDS);
+red_line===
+allocationsCounter.await(10, TimeUnit.SECONDS);
+start_offset===
+8
+end_offset===
+55
+Python OUTPUT===
+allocationsCounter.await(10, TimeUnit.SECONDS);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"ServerSocket\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+new ServerSocket(port);
+red_line===
+new ServerSocket(port)
+start_offset===
+20
+end_offset===
+42
+Python OUTPUT===
+new ServerSocket(port);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int PORT = 27017;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final int PORT = 27017 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+tStack
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+final e . printStackTrace ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"GOAL_LIST\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private List<String> GOAL_LIST = Arrays.asList("start", "mongo-scripts", "mongo-import", "stop");
+red_line===
+GOAL_LIST
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+private List<String> GOAL_LIST = Arrays.asList("start", "mongo-scripts", "mongo-import", "stop");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty collection instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+15
+end_offset===
+19
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================

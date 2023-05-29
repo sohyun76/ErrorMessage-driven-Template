@@ -1,0 +1,3629 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return match(__ -> otherFn0.apply(), id());
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return match(__ -> pure.apply((TravB) Maybe.<B>nothing()), a -> (AppTrav) fn.apply(a).fmap(Maybe::just));
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_1\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _1 _1;
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_2\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _2 _2;
+red_line===
+_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_3\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _3 _3;
+red_line===
+_3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_4\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _4 _4;
+red_line===
+_4
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_5\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _5 _5;
+red_line===
+_5
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_6\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _6 _6;
+red_line===
+_6
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_7\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _7 _7;
+red_line===
+_7
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return fn.apply(_7).fmap(_7Prime -> fmap(constantly(_7Prime))).<TravB>fmap(Applicative::coerce).coerce();
+red_line===
+_7Prime
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_1\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _1 _1;
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_2\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _2 _2;
+red_line===
+_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_3\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _3 _3;
+red_line===
+_3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return fn.apply(_3).fmap(_3Prime -> fmap(constantly(_3Prime))).<TravB>fmap(Applicative::coerce).coerce();
+red_line===
+_3Prime
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_1\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _1 _1;
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_2\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _2 _2;
+red_line===
+_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_3\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _3 _3;
+red_line===
+_3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_4\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _4 _4;
+red_line===
+_4
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_5\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _5 _5;
+red_line===
+_5
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_6\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _6 _6;
+red_line===
+_6
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_7\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _7 _7;
+red_line===
+_7
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_8\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _8 _8;
+red_line===
+_8
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return fn.apply(_8).fmap(_8Prime -> fmap(constantly(_8Prime))).<TravB>fmap(Applicative::coerce).coerce();
+red_line===
+_8Prime
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_1\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _1 _1;
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_2\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _2 _2;
+red_line===
+_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_3\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _3 _3;
+red_line===
+_3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_4\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _4 _4;
+red_line===
+_4
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_5\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _5 _5;
+red_line===
+_5
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return fn.apply(_5).fmap(_3Prime -> fmap(constantly(_3Prime))).<TravB>fmap(Applicative::coerce).coerce();
+red_line===
+_3Prime
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_1\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _1 _1;
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_2\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _2 _2;
+red_line===
+_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return fn.apply(_2).fmap(_2Prime -> fmap(constantly(_2Prime))).<TravB>fmap(Applicative::coerce).coerce();
+red_line===
+_2Prime
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_1\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _1 _1;
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_2\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _2 _2;
+red_line===
+_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_3\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _3 _3;
+red_line===
+_3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_4\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _4 _4;
+red_line===
+_4
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_5\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _5 _5;
+red_line===
+_5
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_6\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _6 _6;
+red_line===
+_6
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return fn.apply(_6).fmap(_6Prime -> fmap(constantly(_6Prime))).<TravB>fmap(Applicative::coerce).coerce();
+red_line===
+_6Prime
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_1\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _1 _1;
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_2\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _2 _2;
+red_line===
+_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_3\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _3 _3;
+red_line===
+_3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_4\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final _4 _4;
+red_line===
+_4
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return fn.apply(_4).fmap(_4Prime -> fmap(constantly(_4Prime))).<TravB>fmap(Applicative::coerce).coerce();
+red_line===
+_4Prime
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3) -> product(_2, _3, _1));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3) -> product(_3, _1, _2));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3) -> product(_2, _1, _3));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_2, _3, _4, _5, _6, _7, _1));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_7, _1, _2, _3, _4, _5, _6));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_2, _3, _4, _5, _6, _1, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_6, _1, _2, _3, _4, _5, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_2, _3, _4, _5, _1, _6, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_5, _1, _2, _3, _4, _6, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_2, _3, _4, _1, _5, _6, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_4, _1, _2, _3, _5, _6, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_2, _3, _1, _4, _5, _6, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_3, _1, _2, _4, _5, _6, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7) -> product(_2, _1, _3, _4, _5, _6, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2) -> product(_2, _1));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5) -> product(_2, _3, _4, _5, _1));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5) -> product(_5, _1, _2, _3, _4));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5) -> product(_2, _3, _4, _1, _5));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5) -> product(_4, _1, _2, _3, _5));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5) -> product(_2, _3, _1, _4, _5));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5) -> product(_3, _1, _2, _4, _5));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5) -> product(_2, _1, _3, _4, _5));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_2, _3, _4, _5, _6, _7, _8, _1));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_8, _1, _2, _3, _4, _5, _6, _7));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_2, _3, _4, _5, _6, _7, _1, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_7, _1, _2, _3, _4, _5, _6, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_2, _3, _4, _5, _6, _1, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_6, _1, _2, _3, _4, _5, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_2, _3, _4, _5, _1, _6, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_5, _1, _2, _3, _4, _6, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_2, _3, _4, _1, _5, _6, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_4, _1, _2, _3, _5, _6, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_2, _3, _1, _4, _5, _6, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_3, _1, _2, _4, _5, _6, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6, _7, _8) -> product(_2, _1, _3, _4, _5, _6, _7, _8));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4) -> product(_2, _3, _4, _1));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4) -> product(_4, _1, _2, _3));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4) -> product(_2, _3, _1, _4));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4) -> product(_3, _1, _2, _4));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4) -> product(_2, _1, _3, _4));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_2, _3, _4, _5, _6, _1));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_6, _1, _2, _3, _4, _5));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_2, _3, _4, _5, _1, _6));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_5, _1, _2, _3, _4, _6));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_2, _3, _4, _1, _5, _6));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_4, _1, _2, _3, _5, _6));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_2, _3, _1, _4, _5, _6));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_3, _1, _2, _4, _5, _6));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return into((_1, _2, _3, _4, _5, _6) -> product(_2, _1, _3, _4, _5, _6));
+red_line===
+_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return filter(pred, __ -> leftFn0.apply());
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"both\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private final Tuple2<A, B> both;
+red_line===
+both
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return match(__ -> nothing(), Maybe::just);
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return snoc(emptyList(), zipWith((a, __) -> a, unfoldr(k -> just(tuple(drop(k, as), k + 1)), 0), as));
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+m.computeIfAbsent(keyFn.apply(v), __ -> new ArrayList<>()).add(v);
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+<A> Functor<A, ? extends F> checkedApply(A a) throws Throwable;
+red_line===
+Throwable
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract this nested ternary operation into an independent statement.
+scn.ruleId===
+3358
+scn.suspCodeStr===
+return signifier > 0 ? greaterThan() : signifier == 0 ? equal() : lessThan();
+red_line===
+signifier == 0 ? equal() : lessThan()
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"d\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return (d) -> apply(a, b, c, d);
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"c\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return (c) -> apply(a, b, c);
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"h\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return (h) -> apply(a, b, c, d, e, f, g, h);
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"f\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return (f) -> apply(a, b, c, d, e, f);
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return __ -> c;
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"e\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return (e) -> apply(a, b, c, d, e);
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"b\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return (b) -> apply(a, b);
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"ab\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return (ab) -> apply(ab._1(), ab._2());
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"g\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return (g) -> apply(a, b, c, d, e, f, g);
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"predicates\" which hides the field declared at line 13.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<Fn1<? super A, ? extends Boolean>> predicates = new ArrayList<>(singletonList(predicate));
+red_line===
+predicates
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"snocs\" which hides the field declared at line 11.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Iterable<A> snocs = cons(a, Collections::emptyIterator);
+red_line===
+snocs
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"predicates\" which hides the field declared at line 13.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<Fn1<? super A, ? extends Boolean>> predicates = new ArrayList<>(singletonList(predicate));
+red_line===
+predicates
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"cache\" which hides the field declared at line 47.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+A cache = this.cache;
+red_line===
+cache
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"cache\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private A cache;
+red_line===
+cache
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"predicates\" which hides the field declared at line 13.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<Fn1<? super A, ? extends Boolean>> predicates = new ArrayList<>(singletonList(predicate));
+red_line===
+predicates
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"reversingIterator\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private final ListIterator<A> reversingIterator;
+red_line===
+reversingIterator
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract the assignment out of this expression.
+scn.ruleId===
+1121
+scn.suspCodeStr===
+return (prependNext = !prependNext) ? iterator.next() : antecedent;
+red_line===
+=
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"reverse\" which hides the field declared at line 7.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+boolean reverse = true;
+red_line===
+reverse
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract the assignment out of this expression.
+scn.ruleId===
+1121
+scn.suspCodeStr===
+return stillTaking = true;
+red_line===
+=
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract the assignment out of this expression.
+scn.ruleId===
+1121
+scn.suspCodeStr===
+return stillTaking = false;
+red_line===
+=
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"iterables\" which hides the field declared at line 11.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+ImmutableQueue<Iterable<A>> iterables = ((ConcatenatingIterable<A>) xs).iterables;
+red_line===
+iterables
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"mappers\" which hides the field declared at line 14.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<Fn1<?, ?>> mappers = new ArrayList<>(singletonList(fn));
+red_line===
+mappers
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return fold((__, a) -> fn.apply(a), runIterateT().pure(UNIT));
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return stateT(s -> runStateT(s).flatMap(into((a, s_) -> f.apply(a).<StateT<S, M, B>>coerce().runStateT(s_))));
+red_line===
+s_
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return readerT(__ -> pureM.apply(a));
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return simpleLens(copyFn, (__, copy) -> copy);
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+return lens(copyFn, (__, copy) -> copy);
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor this code to use the more specialised Functional Interface \u0027IntUnaryOperator\u0027
+scn.ruleId===
+4276
+scn.suspCodeStr===
+Function<Integer, Integer> function = add1.toFunction();
+red_line===
+Function<Integer, Integer>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"error\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Either<String, Integer> f = liftA2(add, left("error"), right(2));
+red_line===
+"error"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"kaboom\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+IllegalStateException thrown = new IllegalStateException("kaboom");
+red_line===
+"kaboom"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"three\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(just("three"), find(s -> s.length() > 3, asList("one", "two", "three", "four")));
+red_line===
+"three"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Do something with the \"boolean\" value returned by \"hasNext\".
+scn.ruleId===
+899
+scn.suspCodeStr===
+lazyIterable.hasNext();
+red_line===
+lazyIterable.hasNext();
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"e\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+Fn4<String, String, String, String, Fn1<String, String>> fn4 = (a, b, c, d) -> (e) -> a + b + c + d + e;
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"abcde\" 11 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(APPEND.apply("a").apply("b").apply("c").apply("d").apply("e"), is("abcde"));
+red_line===
+"abcde"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor this code to use the more specialised Functional Interface \u0027BiPredicate\u003cString, Integer\u003e\u0027
+scn.ruleId===
+4276
+scn.suspCodeStr===
+BiFunction<String, Integer, Boolean> biFunction = CHECK_LENGTH.toBiFunction();
+red_line===
+BiFunction<String, Integer, Boolean>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"x\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+Fn1<String, Fn1<String, String>> curriedFn1 = (x) -> (y) -> String.format(x, y);
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor this code to use the more specialised Functional Interface \u0027BinaryOperator\u003cString\u003e\u0027
+scn.ruleId===
+4276
+scn.suspCodeStr===
+BiFunction<String, String, String> biFunction = String::format;
+red_line===
+BiFunction<String, String, String>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"foo bar\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("foo bar", Fn2.curried(curriedFn1).apply("foo %s", "bar"));
+red_line===
+"foo bar"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"g\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+Fn6<String, String, String, String, String, String, Fn1<String, String>> fn6 = (a, b, c, d, e, f) -> (g) -> a + b + c + d + e + f + g;
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"abcdefg\" 15 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(APPEND.apply("a").apply("b").apply("c").apply("d").apply("e").apply("f").apply("g"), is("abcdefg"));
+red_line===
+"abcdefg"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"d\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+Fn3<String, String, String, Fn1<String, String>> fn3 = (a, b, c) -> (d) -> a + b + c + d;
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"h\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+Fn7<String, String, String, String, String, String, String, Fn1<String, String>> fn7 = (a, b, c, d, e, f, g) -> (h) -> a + b + c + d + e + f + g + h;
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"abcdefgh\" 17 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(APPEND.apply("a").apply("b").apply("c").apply("d").apply("e").apply("f").apply("g").apply("h"), is("abcdefgh"));
+red_line===
+"abcdefgh"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor this code to use the more specialised Functional Interface \u0027IntSupplier\u0027
+scn.ruleId===
+4276
+scn.suspCodeStr===
+Supplier<Integer> supplier = fn0.toSupplier();
+red_line===
+Supplier<Integer>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"f\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+Fn5<String, String, String, String, String, Fn1<String, String>> fn5 = (a, b, c, d, e) -> (f) -> a + b + c + d + e + f;
+red_line===
+(
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"abcdef\" 13 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(APPEND.apply("a").apply("b").apply("c").apply("d").apply("e").apply("f"), is("abcdef"));
+red_line===
+"abcdef"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"tuple5\" which hides the field declared at line 33.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Tuple5<String, String, String, String, String> tuple5    = new Tuple5<>("first", spiedTail);
+red_line===
+tuple5
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"plain cons\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("plain cons", string5Deep.get(cons('c', cons(true, cons(1d, cons(2, cons("plain cons", nil())))))));
+red_line===
+"plain cons"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"consing cons\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("consing cons", string5Deep.get(cons("consing cons", nil()).cons(2).cons(1d).cons(true).cons('c')));
+red_line===
+"consing cons"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"nil cons\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("nil cons", stringAtHead.get(nil().cons("nil cons")));
+red_line===
+"nil cons"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"deeper still\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("unnecessarily deep HList", string5Deep.get(tuple(1d, 2, "unnecessarily deep HList", "deeper", "deeper still").cons(true).cons('c')));
+red_line===
+"deeper still"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"consing nil\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("consing nil", string5Deep.get(nil().cons("consing nil").cons(2).cons(1d).cons(true).cons('c')));
+red_line===
+"consing nil"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"5-tuple\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("5-tuple", stringAtHead.get(tuple("5-tuple", 1, 1, 1, 1)));
+red_line===
+"5-tuple"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"old head\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("new head", nil().cons("old head").cons("new head").head());
+red_line===
+"old head"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"tuple3\" which hides the field declared at line 33.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Tuple3<String, String, String> tuple3    = new Tuple3<>("first", spiedTail);
+red_line===
+tuple3
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"tuple6\" which hides the field declared at line 33.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Tuple6<String, String, String, String, String, String> tuple6    = new Tuple6<>("first", spiedTail);
+red_line===
+tuple6
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"tuple7\" which hides the field declared at line 33.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Tuple7<String, String, String, String, String, String, String> tuple7    = new Tuple7<>("first", spiedTail);
+red_line===
+tuple7
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"singletonHList\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+SingletonHList<Integer> singletonHList = pureSingletonHList().apply(1);
+red_line===
+singletonHList
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"tuple4\" which hides the field declared at line 32.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Tuple4<String, String, String, String> tuple4    = new Tuple4<>("first", spiedTail);
+red_line===
+tuple4
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"tuple2\" which hides the field declared at line 37.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Tuple2<String, String> tuple2    = new Tuple2<>("first", spiedTail);
+red_line===
+tuple2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"string\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+HMap hMap = singletonHMap(stringKey1, "string");
+red_line===
+"string"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"f\" which hides the field declared at line 36.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Fn1<Long, CoProduct5<Integer, String, Boolean, Double, Character, ?>> convergenceFn = f -> Choice5.b(f.toString());
+red_line===
+f
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"g\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Fn1<Float, CoProduct6<Integer, String, Boolean, Double, Character, Long, ?>> convergenceFn = g -> Choice6.b(g.toString());
+red_line===
+g
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"d\" which hides the field declared at line 30.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice3.<Integer, String, Boolean>a(1), a.converge(d -> Choice3.b(d.toString())));
+red_line===
+d
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"d\" which hides the field declared at line 30.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice3.<Integer, String, Boolean>b("two"), b.converge(d -> Choice3.b(d.toString())));
+red_line===
+d
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"d\" which hides the field declared at line 30.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice3.<Integer, String, Boolean>c(true), c.converge(d -> Choice3.b(d.toString())));
+red_line===
+d
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"d\" which hides the field declared at line 30.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice3.<Integer, String, Boolean>b("4.0"), d.converge(d -> Choice3.b(d.toString())));
+red_line===
+d
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"e\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice4.a(1), a.converge(e -> Choice4.b(e.toString())));
+red_line===
+e
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"e\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice4.b("two"), b.converge(e -> Choice4.b(e.toString())));
+red_line===
+e
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"e\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice4.c(true), c.converge(e -> Choice4.b(e.toString())));
+red_line===
+e
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"e\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice4.d(4d), d.converge(e -> Choice4.b(e.toString())));
+red_line===
+e
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"e\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice4.b("z"), e.converge(e -> Choice4.b(e.toString())));
+red_line===
+e
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"c\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice2.a(1), a.converge(c -> Choice2.b(c.toString())));
+red_line===
+c
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"c\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice2.b("two"), b.converge(c -> Choice2.b(c.toString())));
+red_line===
+c
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"c\" which hides the field declared at line 23.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+assertEquals(Choice2.b("true"), c.converge(c -> Choice2.b(c.toString())));
+red_line===
+c
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"expected\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Exception checkedException = new Exception("expected");
+red_line===
+"expected"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"thrown\" which hides the field declared at line 49.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Throwable thrown = failure.recover(id());
+red_line===
+thrown
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+assertEquals(expected, Try.failure(expected).forfeit(__ -> new IllegalArgumentException()));
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+assertEquals(expected, Try.<Object>success(1).forfeit(__ -> expected));
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+assertEquals(right(1), success(1).toEither(__ -> "fail"));
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Try<Integer> try_ = pureTry().apply(1);
+red_line===
+try_
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"empty\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(right(1), just(1).toEither(() -> "empty"));
+red_line===
+"empty"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"thrown\" which hides the field declared at line 65.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+IllegalStateException thrown = new IllegalStateException("kaboom");
+red_line===
+thrown
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"thrown\" which hides the field declared at line 65.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+IllegalStateException thrown = new IllegalStateException("kaboom");
+red_line===
+thrown
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Save and re-use this \"Random\".
+scn.ruleId===
+2119
+scn.suspCodeStr===
+Random  random    = new Random();
+red_line===
+Random
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new StateTMatcher<S, M, A>(initialState, left(extendMatcher(bothMatcher)));
+red_line===
+<S, M, A>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new StateTMatcher<S, M, A>(initialState, right(b(extendMatcher(stateMatcher))));
+red_line===
+<S, M, A>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new StateTMatcher<S, M, A>(initialState, right(a(extendMatcher(valueMatcher))));
+red_line===
+<S, M, A>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"as\" which hides the field declared at line 14.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+LinkedList<A> as = fold.runIdentity();
+red_line===
+as
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+xs.forEach(__ -> clock.saveLastInstant());
+red_line===
+__
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract the assignment out of this expression.
+scn.ruleId===
+1121
+scn.suspCodeStr===
+return lastInstant = clock.instant();
+red_line===
+=
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================

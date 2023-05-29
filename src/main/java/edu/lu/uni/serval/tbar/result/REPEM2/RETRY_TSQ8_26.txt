@@ -1,0 +1,1672 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty map instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+23
+end_offset===
+27
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"translation_ids\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private List<String> translation_ids;
+red_line===
+translation_ids
+start_offset===
+25
+end_offset===
+40
+Python OUTPUT===
+private List<String> translation_ids;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_default\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private Boolean _default;
+red_line===
+_default
+start_offset===
+20
+end_offset===
+28
+Python OUTPUT===
+private Boolean _default;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map map = new HashMap<String, Object>();
+red_line===
+Map
+start_offset===
+8
+end_offset===
+11
+Python OUTPUT===
+Map map = new HashMap<String, Object>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ticketId\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return complete(submit(req("GET", tmpl("/tickets/{ticketId}/metrics.json").set("ticketId", id)), handle(Metric.class, "ticket_metric")));
+red_line===
+"ticketId"
+start_offset===
+87
+end_offset===
+97
+Python OUTPUT===
+return complete(submit(req("GET", tmpl("/tickets/{ticketId}/metrics.json").set("ticketId", id)), handle(Metric.class, "ticket_metric")));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"source\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+private Map<String, Object> source;
+red_line===
+source
+start_offset===
+32
+end_offset===
+38
+Python OUTPUT===
+private final Map < String , Object > source ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"organizationFields\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+private Map<String, Object> organizationFields;
+red_line===
+organizationFields
+start_offset===
+32
+end_offset===
+50
+Python OUTPUT===
+private final Map < String , Object > or ganizationFields ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+assertEquals(new Long(123L), ((AgentMacroReferenceEvent) ev).getMacroId());
+red_line===
+Long
+start_offset===
+21
+end_offset===
+25
+Python OUTPUT===
+ assertEquals(new Lon3L), ((AgentMacroReferenceEvent) ev).getMacroId()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"DELETE\" 35 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+complete(submit(req("DELETE", tmpl("/tickets/{id}.json").set("id", id)), handleStatus()));
+red_line===
+"DELETE"
+start_offset===
+28
+end_offset===
+36
+Python OUTPUT===
+complete(submit(req("DELETE", tmpl("/tickets/{id}.json").set("id", id)), handleStatus()));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"article\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+result.put("article", Article.class);
+red_line===
+"article"
+start_offset===
+19
+end_offset===
+28
+Python OUTPUT===
+result.put("article", Article.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"trigger\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return complete(submit(req("GET", tmpl("/triggers/{id}.json").set("id", id)), handle(Trigger.class, "trigger")));
+red_line===
+"trigger"
+start_offset===
+107
+end_offset===
+116
+Python OUTPUT===
+return complete(submit(req("GET", tmpl("/triggers/{id}.json").set("id", id)), handle(Trigger.class, "trigger")));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"ticket\" 14 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+result.put("ticket", Ticket.class);
+red_line===
+"ticket"
+start_offset===
+18
+end_offset===
+26
+Python OUTPUT===
+result.put("ticket", Ticket.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"topics\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new PagedIterable<>(cnst("/topics.json"), handleList(Topic.class, "topics"));
+red_line===
+"topics"
+start_offset===
+81
+end_offset===
+89
+Python OUTPUT===
+return new PagedIterable<>(cnst("/topics.json"), handleList(Topic.class, "topics"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"group\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+result.put("group", Group.class);
+red_line===
+"group"
+start_offset===
+18
+end_offset===
+25
+Python OUTPUT===
+result.put("group", Group.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"macro\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return complete(submit(req("GET", tmpl("/macros/{id}.json").set("id", macroId)), handle(Macro.class, "macro")));
+red_line===
+"macro"
+start_offset===
+107
+end_offset===
+114
+Python OUTPUT===
+return complete(submit(req("GET", tmpl("/macros/{id}.json").set("id", macroId)), handle(Macro.class, "macro")));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"pg\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(PermissionGroup.class, pg.getClass());
+red_line===
+pg.getClass
+start_offset===
+44
+end_offset===
+55
+Python OUTPUT===
+assertEquals(PermissionGroup.class, pg.getClass());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"userSegment\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(UserSegment.class, userSegment.getClass());
+red_line===
+userSegment.getClass
+start_offset===
+40
+end_offset===
+60
+Python OUTPUT===
+assertEquals(UserSegment.class, userSegment.getClass());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"action\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(1, action.getValue().length);
+red_line===
+action.getValue
+start_offset===
+24
+end_offset===
+39
+Python OUTPUT===
+assertEquals(1, action.getValue().length);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"action\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals("huuhaa", action.getValue()[0]);
+red_line===
+action.getValue
+start_offset===
+31
+end_offset===
+46
+Python OUTPUT===
+assertEquals("huuhaa", action.getValue()[0]);
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals( new Long(10593649089L), ev.getId() );
+red_line===
+ev.getId
+start_offset===
+42
+end_offset===
+50
+Python OUTPUT===
+assertEquals( new Long(10593649089L), ev.getId() );
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Long\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+assertEquals( new Long(315988189L), ((AttachmentRedactionEvent) ev).getAttachmentId() );
+red_line===
+Long
+start_offset===
+22
+end_offset===
+26
+Python OUTPUT===
+ assertEquals( new Lon5988189L), ((AttachmentRedactionEvent) ev).getAttachmentId() ); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Long\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+assertEquals( new Long(21337631753L), ev.getId() );
+red_line===
+Long
+start_offset===
+22
+end_offset===
+26
+Python OUTPUT===
+ assertEquals( new Lon337631753L), ev.getId() ); 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals("NotARealEventType", ((UnknownEvent) ev).getType());
+red_line===
+((UnknownEvent) ev).getType
+start_offset===
+38
+end_offset===
+65
+Python OUTPUT===
+assertEquals("NotARealEventType", ((UnknownEvent) ev).getType());
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals( new Long(18231937759L), ev.getId() );
+red_line===
+ev.getId
+start_offset===
+42
+end_offset===
+50
+Python OUTPUT===
+assertEquals( new Long(18231937759L), ev.getId() );
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+assertEquals(json, new String(writeJson(trigger)));
+red_line===
+String
+start_offset===
+31
+end_offset===
+37
+Python OUTPUT===
+ assertEquals(json, new String(son(trigger))); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"trigger\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals("Test Trigger", trigger.getTitle());
+red_line===
+trigger.getTitle
+start_offset===
+37
+end_offset===
+53
+Python OUTPUT===
+assertEquals("Test Trigger", trigger.getTitle());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals( AttachmentRedactionEvent.class, ev.getClass() );
+red_line===
+ev.getClass
+start_offset===
+50
+end_offset===
+61
+Python OUTPUT===
+assertEquals( AttachmentRedactionEvent.class, ev.getClass() );
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"trigger\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(2, trigger.getActions().size());
+red_line===
+trigger.getActions
+start_offset===
+24
+end_offset===
+42
+Python OUTPUT===
+assertEquals(2, trigger.getActions().size());
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use the original value instead.
+scn.ruleId===
+2676
+scn.suspCodeStr===
+expectedTicket1.setId(Math.abs(r.nextLong()));
+red_line===
+r.nextLong()
+start_offset===
+39
+end_offset===
+51
+Python OUTPUT===
+expectedTicket1.setId(Math.abs(r.nextLong()));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use the original value instead.
+scn.ruleId===
+2676
+scn.suspCodeStr===
+Random r = new Random(System.currentTimeMillis());
+red_line===
+rrentTimeMil
+start_offset===
+39
+end_offset===
+51
+Python OUTPUT===
+Random r = new Random(System.currentTimeMillis());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use the original value instead.
+scn.ruleId===
+2676
+scn.suspCodeStr===
+expectedTicket2.setId(Math.abs(r.nextLong()));
+red_line===
+r.nextLong()
+start_offset===
+39
+end_offset===
+51
+Python OUTPUT===
+expectedTicket2.setId(Math.abs(r.nextLong()));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no details entry\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no details entry", jobResult.getDetails(), nullValue());
+red_line===
+"The job result has no details entry"
+start_offset===
+23
+end_offset===
+60
+Python OUTPUT===
+assertThat("The job result has no details entry", jobResult.getDetails(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no index entry\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no index entry", jobResult.getIndex(), nullValue());
+red_line===
+"The job result has no index entry"
+start_offset===
+23
+end_offset===
+58
+Python OUTPUT===
+assertThat("The job result has no index entry", jobResult.getIndex(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"testSuspendUser\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String externalId = "testSuspendUser";
+red_line===
+"testSuspendUser"
+start_offset===
+28
+end_offset===
+45
+Python OUTPUT===
+String externalId = "testSuspendUser";
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"testSuspendUser\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String name = "testSuspendUser";
+red_line===
+"testSuspendUser"
+start_offset===
+22
+end_offset===
+39
+Python OUTPUT===
+String name = "testSuspendUser";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Created\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has a status entry", jobResult.getStatus(), is("Created"));
+red_line===
+"Created"
+start_offset===
+90
+end_offset===
+99
+Python OUTPUT===
+assertThat("The job result has a status entry", jobResult.getStatus(), is("Created"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Updated\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has a status entry", jobResult.getStatus(), is("Updated"));
+red_line===
+"Updated"
+start_offset===
+90
+end_offset===
+99
+Python OUTPUT===
+assertThat("The job result has a status entry", jobResult.getStatus(), is("Updated"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"update\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has an action entry", jobResult.getAction(), is("update"));
+red_line===
+"update"
+start_offset===
+91
+end_offset===
+99
+Python OUTPUT===
+assertThat("The job result has an action entry", jobResult.getAction(), is("update"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"requester.name\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assumeThat("Must have a requester name", config.getProperty("requester.name"), notNullValue());
+red_line===
+"requester.name"
+start_offset===
+68
+end_offset===
+84
+Python OUTPUT===
+assumeThat("Must have a requester name", config.getProperty("requester.name"), notNullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"username\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assumeThat("We have a username", config.getProperty("username"), notNullValue());
+red_line===
+"username"
+start_offset===
+60
+end_offset===
+70
+Python OUTPUT===
+assumeThat("We have a username", config.getProperty("username"), notNullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Job is completed\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("Job is completed", status.getStatus(), is(JobStatus.JobStatusEnum.completed));
+red_line===
+"Job is completed"
+start_offset===
+23
+end_offset===
+41
+Python OUTPUT===
+assertThat("Job is completed", status.getStatus(), is(JobStatus.JobStatusEnum.completed));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"translation_ids\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private List<String> translation_ids;
+red_line===
+translation_ids
+start_offset===
+25
+end_offset===
+40
+Python OUTPUT===
+private List<String> translation_ids;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"author\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+private Object author;
+red_line===
+author
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+private final Object author ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+public ZendeskComboMinutes() {}
+red_line===
+ZendeskComboMinutes
+start_offset===
+15
+end_offset===
+34
+Python OUTPUT===
+public ZendeskComboMinutes() {}
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"metadata\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+private Map<String, Object> metadata;
+red_line===
+metadata
+start_offset===
+32
+end_offset===
+40
+Python OUTPUT===
+private final Map < String , Object > metadata ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"conditions\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+private Conditions   conditions;
+red_line===
+conditions
+start_offset===
+24
+end_offset===
+34
+Python OUTPUT===
+private final Conditions conditions ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+public Macro() {}
+red_line===
+Macro
+start_offset===
+11
+end_offset===
+16
+Python OUTPUT===
+public Macro() {}
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_default\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private Boolean _default;
+red_line===
+_default
+start_offset===
+20
+end_offset===
+28
+Python OUTPUT===
+private Boolean _default;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/users/{id}.json\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return complete(submit(req("GET", tmpl("/users/{id}.json").set("id", id)), handle(User.class, "user")));
+red_line===
+"/users/{id}.json"
+start_offset===
+47
+end_offset===
+65
+Python OUTPUT===
+return complete(submit(req("GET", tmpl("/users/{id}.json").set("id", id)), handle(User.class, "user")));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"target\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return complete(submit(req("GET", tmpl("/targets/{id}.json").set("id", id)), handle(Target.class, "target")));
+red_line===
+"target"
+start_offset===
+105
+end_offset===
+113
+Python OUTPUT===
+return complete(submit(req("GET", tmpl("/targets/{id}.json").set("id", id)), handle(Target.class, "target")));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/dynamic_content/items/{id}.json\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return complete(submit(req("GET", tmpl("/dynamic_content/items/{id}.json").set("id", id)), handle(DynamicContentItem.class, "item")));
+red_line===
+"/dynamic_content/items/{id}.json"
+start_offset===
+47
+end_offset===
+81
+Python OUTPUT===
+return complete(submit(req("GET", tmpl("/dynamic_content/items/{id}.json").set("id", id)), handle(DynamicContentItem.class, "item")));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"organization\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+result.put("organization", Organization.class);
+red_line===
+"organization"
+start_offset===
+18
+end_offset===
+32
+Python OUTPUT===
+result.put("organization", Organization.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"topic\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+result.put("topic", Topic.class);
+red_line===
+"topic"
+start_offset===
+18
+end_offset===
+25
+Python OUTPUT===
+result.put("topic", Topic.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/users.json\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new PagedIterable<>(cnst("/users.json"), handleList(User.class, "users"));
+red_line===
+"/users.json"
+start_offset===
+40
+end_offset===
+53
+Python OUTPUT===
+return new PagedIterable<>(cnst("/users.json"), handleList(User.class, "users"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+assertEquals("{\"field\":\"21337631753\",\"value\":\"huuhaa\"}", new String(writeJson(action)));
+red_line===
+String
+start_offset===
+77
+end_offset===
+83
+Python OUTPUT===
+ assertEquals("{\"field\":\"21337631753\",\"value\":\"huuhaa\"}", new String(son(action))); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"action\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(2, action.getValue().length);
+red_line===
+action.getValue
+start_offset===
+24
+end_offset===
+39
+Python OUTPUT===
+assertEquals(2, action.getValue().length);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals( OrganizationActivityEvent.class, ev.getClass() );
+red_line===
+ev.getClass
+start_offset===
+51
+end_offset===
+62
+Python OUTPUT===
+assertEquals( OrganizationActivityEvent.class, ev.getClass() );
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(TicketResult.class, ev.getClass());
+red_line===
+ev.getClass
+start_offset===
+41
+end_offset===
+52
+Python OUTPUT===
+assertEquals(TicketResult.class, ev.getClass());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"trigger\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals("Test Trigger", trigger.getTitle());
+red_line===
+trigger.getTitle
+start_offset===
+37
+end_offset===
+53
+Python OUTPUT===
+assertEquals("Test Trigger", trigger.getTitle());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+assertEquals(json, new String(writeJson(trigger)));
+red_line===
+String
+start_offset===
+31
+end_offset===
+37
+Python OUTPUT===
+ assertEquals(json, new String(son(trigger))); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"article\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(Article.class, article.getClass());
+red_line===
+article.getClass
+start_offset===
+36
+end_offset===
+52
+Python OUTPUT===
+assertEquals(Article.class, article.getClass());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"password\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assumeThat("We have a password", config.getProperty("password"), notNullValue());
+red_line===
+"password"
+start_offset===
+60
+end_offset===
+70
+Python OUTPUT===
+assumeThat("We have a password", config.getProperty("password"), notNullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has a success entry\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has a success entry", jobResult.getSuccess(), is(TRUE));
+red_line===
+"The job result has a success entry"
+start_offset===
+23
+end_offset===
+59
+Python OUTPUT===
+assertThat("The job result has a success entry", jobResult.getSuccess(), is(TRUE));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Must have a requester email\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assumeThat("Must have a requester email", requesterEmail, notNullValue());
+red_line===
+"Must have a requester email"
+start_offset===
+19
+end_offset===
+48
+Python OUTPUT===
+assumeThat("Must have a requester email", requesterEmail, notNullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no external_id entry\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no external_id entry", jobResult.getExternalId(), nullValue());
+red_line===
+"The job result has no external_id entry"
+start_offset===
+23
+end_offset===
+64
+Python OUTPUT===
+assertThat("The job result has no external_id entry", jobResult.getExternalId(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no account_id entry\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no account_id entry", jobResult.getAccountId(), nullValue());
+red_line===
+"The job result has no account_id entry"
+start_offset===
+23
+end_offset===
+63
+Python OUTPUT===
+assertThat("The job result has no account_id entry", jobResult.getAccountId(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no error entry\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no error entry", jobResult.getError(), nullValue());
+red_line===
+"The job result has no error entry"
+start_offset===
+23
+end_offset===
+58
+Python OUTPUT===
+assertThat("The job result has no error entry", jobResult.getError(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no success entry\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no success entry", jobResult.getSuccess(), nullValue());
+red_line===
+"The job result has no success entry"
+start_offset===
+27
+end_offset===
+64
+Python OUTPUT===
+assertThat("The job result has no success entry", jobResult.getSuccess(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"token\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assumeThat("We have a token", config.getProperty("token"), notNullValue());
+red_line===
+"token"
+start_offset===
+57
+end_offset===
+64
+Python OUTPUT===
+assumeThat("We have a token", config.getProperty("token"), notNullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no action entry\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no action entry", jobResult.getAction(), nullValue());
+red_line===
+"The job result has no action entry"
+start_offset===
+23
+end_offset===
+59
+Python OUTPUT===
+assertThat("The job result has no action entry", jobResult.getAction(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has an id entry\" 9 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has an id entry", jobResult.getId(), notNullValue());
+red_line===
+"The job result has an id entry"
+start_offset===
+27
+end_offset===
+59
+Python OUTPUT===
+assertThat("The job result has an id entry", jobResult.getId(), notNullValue());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+final long ONE_WEEK = 7*24*60*60*1000;
+red_line===
+*
+start_offset===
+40
+end_offset===
+41
+Python OUTPUT===
+ final long ONE_WEEK = 7*24*60*60*1000;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no email entry\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no email entry", jobResult.getEmail(), nullValue());
+red_line===
+"The job result has no email entry"
+start_offset===
+23
+end_offset===
+58
+Python OUTPUT===
+assertThat("The job result has no email entry", jobResult.getEmail(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"requester.email\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String requesterEmail = config.getProperty("requester.email");
+red_line===
+"requester.email"
+start_offset===
+51
+end_offset===
+68
+Python OUTPUT===
+String requesterEmail = config.getProperty("requester.email");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Job is completed\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("Job is completed", jobStatus.getStatus(), is(JobStatus.JobStatusEnum.completed));
+red_line===
+"Job is completed"
+start_offset===
+19
+end_offset===
+37
+Python OUTPUT===
+assertThat("Job is completed", jobStatus.getStatus(), is(JobStatus.JobStatusEnum.completed));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"The job result has no status entry\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat("The job result has no status entry", jobResult.getStatus(), nullValue());
+red_line===
+"The job result has no status entry"
+start_offset===
+23
+end_offset===
+59
+Python OUTPUT===
+assertThat("The job result has no status entry", jobResult.getStatus(), nullValue());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/t/test\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("/t/test", templateUri.toString());
+red_line===
+"/t/test"
+start_offset===
+21
+end_offset===
+30
+Python OUTPUT===
+assertEquals("/t/test", templateUri.toString());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/{foo:1}{/foo}\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+UriTemplate uriTemplate = UriTemplate.fromTemplate("/{foo:1}{/foo}");
+red_line===
+"/{foo:1}{/foo}"
+start_offset===
+59
+end_offset===
+75
+Python OUTPUT===
+UriTemplate uriTemplate = UriTemplate.fromTemplate("/{foo:1}{/foo}");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+assertEquals( new Long(18974155255L), ((CommentRedactionEvent) ev).getCommentId() );
+red_line===
+Long
+start_offset===
+22
+end_offset===
+26
+Python OUTPUT===
+ assertEquals( new Lon974155255L), ((CommentRedactionEvent) ev).getCommentId() ); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+assertEquals(new Long(789L), ev.getId());
+red_line===
+Long
+start_offset===
+21
+end_offset===
+25
+Python OUTPUT===
+ assertEquals(new Lon9L), ev.getId()); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+assertEquals( new Long(10591294149L), ((AttachmentRedactionEvent) ev).getCommentId() );
+red_line===
+Long
+start_offset===
+22
+end_offset===
+26
+Python OUTPUT===
+ assertEquals( new Lon591294149L), ((AttachmentRedactionEvent) ev).getCommentId() ); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Long\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+assertEquals( new Long(568628833L), ((OrganizationActivityEvent) ev).getRecipients().get(0) );
+red_line===
+Long
+start_offset===
+22
+end_offset===
+26
+Python OUTPUT===
+ assertEquals( new Lon8628833L), ((OrganizationActivityEvent) ev).getRecipients().get(0) ); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty map instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+23
+end_offset===
+27
+Python OUTPUT===
+return null;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(UnknownEvent.class, ev.getClass());
+red_line===
+ev.getClass
+start_offset===
+37
+end_offset===
+48
+Python OUTPUT===
+assertEquals(UnknownEvent.class, ev.getClass());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals(AgentMacroReferenceEvent.class, ev.getClass());
+red_line===
+ev.getClass
+start_offset===
+49
+end_offset===
+60
+Python OUTPUT===
+assertEquals(AgentMacroReferenceEvent.class, ev.getClass());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"ev\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals( CommentRedactionEvent.class, ev.getClass() );
+red_line===
+ev.getClass
+start_offset===
+47
+end_offset===
+58
+Python OUTPUT===
+assertEquals( CommentRedactionEvent.class, ev.getClass() );
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"userFields\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+private Map<String, Object> userFields;
+red_line===
+userFields
+start_offset===
+32
+end_offset===
+42
+Python OUTPUT===
+private final Map < String , Object > userFields ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String newKey = key.substring(ZENDESK_VARIABLE_PREFIX.length()).toLowerCase().replaceAll("_",".");
+red_line===
+replaceAll
+start_offset===
+98
+end_offset===
+108
+Python OUTPUT===
+String new Key = key.substring ( ZENDESK_VARIABLE_PREFIX.length ( ) ).toLowerCase ( ).replaceAll ( " _ " , "." ) ;
+isFixed===
+true
+==================

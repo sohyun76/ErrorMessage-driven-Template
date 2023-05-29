@@ -1,0 +1,646 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"as400\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(connectionInfo.getDbType(), is(equalTo("as400")));
+red_line===
+"as400"
+start_offset===
+58
+end_offset===
+65
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"orcl[oracle(localhost:1521)]\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("orcl[oracle(localhost:1521)]", connectionInfo.getPeerService());
+red_line===
+"orcl[oracle(localhost:1521)]"
+start_offset===
+17
+end_offset===
+47
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"MYINSTANCE\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(connectionInfo.getDbInstance(), is(equalTo("MYINSTANCE")));
+red_line===
+"MYINSTANCE"
+start_offset===
+62
+end_offset===
+74
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"statement\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Statement statement = connection.createStatement();
+red_line===
+statement
+start_offset===
+16
+end_offset===
+25
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"CREATE TABLE employer (id INTEGER2)\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+statement.executeUpdate("CREATE TABLE employer (id INTEGER2)");
+red_line===
+"CREATE TABLE employer (id INTEGER2)"
+start_offset===
+32
+end_offset===
+69
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"driver\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+final Driver driver = getUnderlyingDriver(originalURL);
+red_line===
+driver
+start_offset===
+17
+end_offset===
+23
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"Statement\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+Statement statement = connection.createStatement();
+red_line===
+connection.createStatement()
+start_offset===
+28
+end_offset===
+56
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"Statement\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+Statement statement = connection.createStatement();
+red_line===
+connection.createStatement()
+start_offset===
+28
+end_offset===
+56
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+withActiveSpanOnly = TracingDriver.withActiveSpanOnly;
+red_line===
+withActiveSpanOnly
+start_offset===
+6
+end_offset===
+24
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+withActiveSpanOnly = url.contains(WITH_ACTIVE_SPAN_ONLY);
+red_line===
+withActiveSpanOnly
+start_offset===
+6
+end_offset===
+24
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty array instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+return null;
+red_line===
+null
+start_offset===
+13
+end_offset===
+17
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"CallableStatement\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+final CallableStatement statement = connection.prepareCall(sql);
+red_line===
+connection.prepareCall(sql)
+start_offset===
+40
+end_offset===
+67
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"myhost\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(connectionInfo.getDbPeer(), is(equalTo("myhost")));
+red_line===
+"myhost"
+start_offset===
+58
+end_offset===
+66
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"myhost.mydomain.com\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(connectionInfo.getDbPeer(), is(equalTo("myhost.mydomain.com")));
+red_line===
+"myhost.mydomain.com"
+start_offset===
+58
+end_offset===
+79
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"localhost:-1\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("localhost:-1", connectionInfo.getDbPeer());
+red_line===
+"localhost:-1"
+start_offset===
+17
+end_offset===
+31
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"primaryhost:3306\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("primaryhost:3306", connectionInfo.getDbPeer());
+red_line===
+"primaryhost:3306"
+start_offset===
+17
+end_offset===
+35
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"localhost:1521\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("localhost:1521", connectionInfo.getDbPeer());
+red_line===
+"localhost:1521"
+start_offset===
+17
+end_offset===
+33
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this \"public static slowQueryThresholdMs\" field final
+scn.ruleId===
+1444
+scn.suspCodeStr===
+public static int slowQueryThresholdMs = Integer.getInteger("io.opentracing.contrib.jdbc.slowQueryThresholdMs", 0);
+red_line===
+slowQueryThresholdMs
+start_offset===
+20
+end_offset===
+40
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"driver\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+assertEquals("org.h2.Driver", driver.getClass().getName());
+red_line===
+driver.getClass
+start_offset===
+34
+end_offset===
+49
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"Statement\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+Statement statement = connection.createStatement();
+red_line===
+connection.createStatement()
+start_offset===
+28
+end_offset===
+56
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"Statement\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+Statement statement = connection.createStatement();
+red_line===
+connection.createStatement()
+start_offset===
+28
+end_offset===
+56
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"Statement\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+Statement statement = connection.createStatement();
+red_line===
+connection.createStatement()
+start_offset===
+28
+end_offset===
+56
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"Statement\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+Statement statement = connection.createStatement();
+red_line===
+connection.createStatement()
+start_offset===
+28
+end_offset===
+56
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"DB_CONNECTION_SPAN_COUNT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final int DB_CONNECTION_SPAN_COUNT = 2;
+red_line===
+DB_CONNECTION_SPAN_COUNT
+start_offset===
+20
+end_offset===
+44
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<String> hosts = new ArrayList<String>();
+red_line===
+<String>
+start_offset===
+38
+end_offset===
+46
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"withActiveSpanOnly\" which hides the field declared at line 120.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final boolean withActiveSpanOnly;
+red_line===
+withActiveSpanOnly
+start_offset===
+18
+end_offset===
+36
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this method and declare a constant for this value.
+scn.ruleId===
+3400
+scn.suspCodeStr===
+return "jdbc:tracing:";
+red_line===
+"jdbc:tracing:"
+start_offset===
+11
+end_offset===
+26
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"ignoreStatements\" which hides the field declared at line 131.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final Set<String> ignoreStatements;
+red_line===
+ignoreStatements
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+ignoreForTracing.append(query.replaceAll("\"", "\\\""));
+red_line===
+replaceAll
+start_offset===
+36
+end_offset===
+46
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return createSessionFactory(traceWithActiveSpanOnly, new ArrayList<String>());
+red_line===
+<String>
+start_offset===
+70
+end_offset===
+78
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"parent\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+final MockSpan parent = mockTracer.buildSpan("parent").start();
+red_line===
+"parent"
+start_offset===
+49
+end_offset===
+57
+Python OUTPUT===
+
+isFixed===
+false
+==================

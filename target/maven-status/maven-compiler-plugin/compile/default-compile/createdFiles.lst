@@ -1,0 +1,5 @@
+edu/lu/uni/serval/AST/ASTGenerator$1.class
+edu/lu/uni/serval/entity/EntityType$1.class
+edu/lu/uni/serval/tbar/utils/SuspiciousCodeParser$1.class
+edu/lu/uni/serval/tbar/fixpatterns/OperatorMutator$1.class
+edu/lu/uni/serval/tbar/fixpatterns/RangeChecker$1.class

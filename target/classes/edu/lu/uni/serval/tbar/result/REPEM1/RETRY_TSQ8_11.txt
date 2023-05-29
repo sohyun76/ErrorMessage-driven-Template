@@ -1,0 +1,1235 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"salt\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String salt = "salt";
+red_line===
+= "salt"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Hash hash = strategy.hash(password, salt);
+red_line===
+sh =
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Hash hash1 = strategy1.hash(password, salt);
+red_line===
+sh1 
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Hash hash2 = strategy2.hash(password, salt);
+red_line===
+sh2 
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Hash hashWithSalt = strategy.hash(password, salt);
+red_line===
+h ha
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+strategy.hash(password, salt);
+red_line===
+y.ha
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Assert.assertTrue(strategy.check(userSubmittedPassword, hashed));
+red_line===
+asse
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Assert.assertTrue(strategy.check(userSubmittedPassword, badHash));
+red_line===
+asse
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"userSubmittedPassword\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String userSubmittedPassword = "password";
+red_line===
+= "password"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"userSubmittedPassword\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Assert.assertTrue(strategy.check(userSubmittedPassword, hashed));
+red_line===
+assertTrue(strategy.c
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$3$42949672960256$YWJj$/WTQfTTc8Hg8GlplP0LthpgdElUG+I3MyuvK8MI4MnQ\u003d\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String hashed = "$3$42949672960256$YWJj$/WTQfTTc8Hg8GlplP0LthpgdElUG+I3MyuvK8MI4MnQ=";
+red_line===
+"$3$42949672960256$YWJj$/WTQfTTc8Hg8GlplP0LthpgdElUG+I3MyuvK8MI4MnQ="
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"password\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String password = "password";
+red_line===
+"password"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(path);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(path);
+red_line===
+System.out
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"psw4j.configuration\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+System.clearProperty("psw4j.configuration");
+red_line===
+"psw4j.configuration"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"default string\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String testString = PropertyReader.readString(key, "default string", null);
+red_line===
+"default string"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027PEPPER\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String pepper = "pepper";
+red_line===
+"pepper"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027PASSWORD\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String password = "password";
+red_line===
+"password"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"global.pepper\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(PropertyReader.readString("global.pepper", null, null), hash.getPepper());
+red_line===
+"global.pepper"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"a password\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Hash hash = Password.hash("a password").addRandomSalt().withCompressedPBKDF2();
+red_line===
+"a password"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"a password\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Hash hash = new SCryptFunction(16384, 8, 1).hash(password, salt);
+red_line===
+tion(16384, 
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"salt\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String salt = "salt";
+red_line===
+= "salt"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+boolean result = new SCryptFunction(16384, 8, 1).check(password, "$s0$e0801$c2FsdA==$dFcxr0SE8yOWiWntoomu7gBbWQOsVh5kpayhIXl793NO+f1YQi4uIhg7ysup7Ie6DIO3oueI8Dzg2gZGNDPNpg==");
+red_line===
+ res
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+boolean result = new SCryptFunction(16384, 8, 1).check(password, "$s0$e0801$c2FsdA==$c2FsdA==");
+red_line===
+ res
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Hash hash = new SCryptFunction(16384, 8, 1).hash(password, salt);
+red_line===
+sh =
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Assert.assertFalse(hash.getHashingFunction().check(password, "$s0$e0801$c2FsdA==$YXNkYXNkYXNkYXNk"));
+red_line===
+asse
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"p\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int p = 5;
+red_line===
+= 5
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"p\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+new SCryptFunction(16384, 8, 1).check("password", "$s1$e0801$c2FsdA==$dFcxr0SE8yOWiWntoomu7gBbWQOsVh5kpayhIXl793NO+f1YQi4uIhg7ysup7Ie6DIO3oueI8Dzg2gZGNDPNpg==");
+red_line===
+S
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"p\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int p = 5;
+red_line===
+= 5
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"p\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+new SCryptFunction(16384, 8, 1).check("password", "$s0e0801$c2FsdA==$dFcxr0SE8yOWiWntoomu7gBbWQOsVh5kpayhIXl793NO+f1YQi4uIhg7ysup7Ie6DIO3oueI8Dzg2gZGNDPNpg==");
+red_line===
+S
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"password\" 10 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+scrypt.hash("password", "salt");
+red_line===
+"password"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int N = 2;
+red_line===
+N
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Hash hash = strategy.hash(password, salt);
+red_line===
+ 
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Hash hash = strategy.hash(password, salt);
+red_line===
+H
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+strategy.hash(password, salt);
+red_line===
+t
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+strategy.hash(password, salt);
+red_line===
+t
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Hash hash = strategy.hash(password, salt);
+red_line===
+ 
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Assert.assertTrue(strategy.check(userSubmittedPassword, hashed));
+red_line===
+r
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Assert.assertTrue(strategy.check(userSubmittedPassword, badHash));
+red_line===
+r
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"userSubmittedPassword\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+String userSubmittedPassword = "password";
+red_line===
+= "password"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"userSubmittedPassword\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Assert.assertTrue(strategy.check(userSubmittedPassword, hashed));
+red_line===
+assertTrue(strategy.c
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$3$42949672960256$YWJj$/WTQfTTc8Hg8GlplP0LthpgdElUG+I3MyuvK8MI4MnQ\u003d\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals("$3$42949672960256$YWJj$/WTQfTTc8Hg8GlplP0LthpgdElUG+I3MyuvK8MI4MnQ=", hash.getResult());
+red_line===
+"$3$42949672960256$YWJj$/WTQfTTc8Hg8GlplP0LthpgdElUG+I3MyuvK8MI4MnQ="
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"notAnAlgorithm\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+HashingFunction strategy = PBKDF2Function.getInstance("notAnAlgorithm", 10_000, 256);
+red_line===
+"notAnAlgorithm"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"password\" 12 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String password = "password";
+red_line===
+"password"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"myPassword\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Hash hash = Password.hash("myPassword").withCompressedPBKDF2();
+red_line===
+"myPassword"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"salt\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+byte[] salt = SaltGenerator.generate(-3);
+red_line===
+= SaltGenerator.generate(-3)
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+String password1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor";
+red_line===
+pass
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+String password2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 7€Mp0R";
+red_line===
+pass
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+BCryptFunction.getInstance(10).hash(password, badSalt1);
+red_line===
+unct
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+BCryptFunction.getInstance(6).hash(password, badSalt2);
+red_line===
+unct
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+BCryptFunction.getInstance(6).hash(password, badSalt3);
+red_line===
+unct
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+BCryptFunction.getInstance(10).hash(password, badSalt3);
+red_line===
+unct
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+BCryptFunction.getInstance(3).hash("password", "$2a$03$......................");
+red_line===
+unct
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+BCryptFunction.getInstance(32).hash("password", "$2a$32$......................");
+red_line===
+unct
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+Assert.assertEquals("$2$05$......................bvpG2UfzdyW/S0ny/4YyEZrmczoJfVm", BCryptFunction.getInstance(5).hash("password", "$2$05$......................").getResult());
+red_line===
+asse
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"salt\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+BCryptFunction.getInstance(10).hash("password", "$2a$10$123456789012345678901");
+red_line===
+unct
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"password\" 13 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String password = "password";
+red_line===
+"password"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"......\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Assert.assertEquals(3, BCryptFunction.decodeBase64("......", 3).length);
+red_line===
+"......"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int broken_index = (i + 8) % testObjectsString.size();
+red_line===
+broken_index
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+private static final String SALT = new String(SaltGenerator.generate());
+red_line===
+String
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"double\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+int workFactor = (int) Math.pow(2.0D, (double) (params >> 16 & 65535L));
+red_line===
+double
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+return INDEX_64[(int) c];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"int\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+words[1] = (words[1] << 8) | (int) data[off];
+red_line===
+int
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+this.salt = new String(SaltGenerator.generate());
+red_line===
+String
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+this.salt = new String(SaltGenerator.generate(length));
+red_line===
+String
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================

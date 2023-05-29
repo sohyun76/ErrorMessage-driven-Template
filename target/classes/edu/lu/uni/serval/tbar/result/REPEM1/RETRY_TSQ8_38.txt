@@ -1,0 +1,1539 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"build\" which hides the field declared at line 16.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+String build = null;
+red_line===
+build
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"minor\" which hides the field declared at line 13.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Integer minor = null;
+red_line===
+minor
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"patch\" which hides the field declared at line 14.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Integer patch = null;
+red_line===
+patch
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+int t1 = Integer.valueOf(tokens1[i]);
+red_line===
+Integer.valueOf(tokens1[i])
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+int t2 = Integer.valueOf(tokens2[i]);
+red_line===
+Integer.valueOf(tokens2[i])
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"minor\" which hides the field declared at line 13.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Integer minor = this.minor != null ? this.minor : 0;
+red_line===
+minor
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"patch\" which hides the field declared at line 14.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Integer patch = this.patch != null ? this.patch : 0;
+red_line===
+patch
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"minor\" which hides the field declared at line 13.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Integer minor = this.minor;
+red_line===
+minor
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"patch\" which hides the field declared at line 14.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Integer patch = this.patch;
+red_line===
+patch
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"suffixTokens\" which hides the field declared at line 15.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+String[] suffixTokens = suffix ? this.suffixTokens : null;
+red_line===
+suffixTokens
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Invalid version (no patch version): \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new SemverException("Invalid version (no patch version): " + value);
+red_line===
+"Invalid version (no patch version): "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Invalid version (no minor version): \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new SemverException("Invalid version (no minor version): " + value);
+red_line===
+"Invalid version (no minor version): "
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Strings and Boxed types should be compared using \"equals()\".
+scn.ruleId===
+4973
+scn.suspCodeStr===
+if (this.getMajor() != version.getMajor()) return false;
+red_line===
+!=
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Code error. Unknown RangeOperator: " + this.op);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Code error. Unknown RequirementOperator: " + this.op);
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("OR in AND not allowed");
+red_line===
+RuntimeException
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"Stack\" by an unsynchronized one such as \"Deque\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+Stack<Tokenizer.Token> stack = new Stack<Tokenizer.Token>();
+red_line===
+Stack<Tokenizer.Token>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+int major = Integer.valueOf(matcher.group(1));
+red_line===
+Integer.valueOf(matcher.group(1))
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+int minor = Integer.valueOf(matcher.group(2));
+red_line===
+Integer.valueOf(matcher.group(2))
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+int major = Integer.valueOf(matcher.group(1));
+red_line===
+Integer.valueOf(matcher.group(1))
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+private static final Pattern IVY_DYNAMIC_PATCH_PATTERN = Pattern.compile("(\\d+)\\.(\\d+)\\.\\+");
+red_line===
+ Pattern IVY_DYNAMIC_PATCH_PATTER
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Integer.parseInt\" for this string-to-int conversion.
+scn.ruleId===
+2130
+scn.suspCodeStr===
+private static final Pattern IVY_DYNAMIC_MINOR_PATTERN = Pattern.compile("(\\d+)\\.\\+");
+red_line===
+ Pattern IVY_DYNAMIC_MINOR_PATTER
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Token> result = new ArrayList<Token>();
+red_line===
+<Token>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Token> result = new ArrayList<Token>();
+red_line===
+<Token>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+LinkedList<Tokenizer.Token> queue = new LinkedList<Tokenizer.Token>();
+red_line===
+<Tokenizer.Token>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Range> set = getAllRanges(this, new ArrayList<Range>());
+red_line===
+<Range>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Invalid requirement\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new SemverException("Invalid requirement");
+red_line===
+"Invalid requirement"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+i += 2;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+i++;
+red_line===
+i
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+SPECIAL_CHARS = new HashMap<Semver.SemverType, Map<Character, Token>>();
+red_line===
+<Semver.SemverType, Map<Character, Token>>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+LinkedList<Token> tokens = new LinkedList<Token>();
+red_line===
+<Token>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make value a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public String value;
+red_line===
+value
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.2\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertFalse(range.isSatisfiedBy("1.2.2"));
+red_line===
+"1.2.2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.3\" 20 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Range range = new Range("1.2.3", Range.RangeOperator.EQ);
+red_line===
+"1.2.3"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.4\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertFalse(range.isSatisfiedBy("1.2.4"));
+red_line===
+"1.2.4"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"0.2.3\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("0.2.3", "0.2.3", "0.3.0", Semver.SemverType.NPM);
+red_line===
+"0.2.3"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"0.2.0\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("0.2", "0.2.0", "0.3.0", Semver.SemverType.NPM);
+red_line===
+"0.2.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.x.x\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("1.x.x", "1.0.0", "2.0.0", Semver.SemverType.NPM);
+red_line===
+"1.x.x"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"0.0.0\" 17 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("0", "0.0.0", "1.0.0", Semver.SemverType.NPM);
+red_line===
+"0.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u003e1.0.0\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(">1.0.0", Requirement.buildNPM(">1.0.0").toString());
+red_line===
+">1.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"2.5.2\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(req.isSatisfiedBy("2.5.2"));
+red_line===
+"2.5.2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"2.3.4\" 19 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+hyphenTest("1.2.3", "2.3.4", "1.2.3", "2.3.4", false);
+red_line===
+"2.3.4"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.3.0\" 7 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("1.2.3", "1.2.3", "1.3.0", Semver.SemverType.NPM);
+red_line===
+"1.3.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.3-beta.2\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("1.2.3-beta.2", "1.2.3-beta.2", "1.3.0", Semver.SemverType.NPM);
+red_line===
+"1.2.3-beta.2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.x\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("1.2.x", "1.2.0", "1.3.0", Semver.SemverType.NPM);
+red_line===
+"1.2.x"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u003d1.2.3\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertIsRange(Requirement.buildNPM("=1.2.3"), "1.2.3", Range.RangeOperator.EQ);
+red_line===
+"=1.2.3"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u003d1.0.0\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("=1.0.0", Requirement.buildNPM("1.0.0").toString());
+red_line===
+"=1.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"0.1.0\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+caretTest("0.0", "0.0.0", "0.1.0");
+red_line===
+"0.1.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"3.0.0\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("3.0.0", req2_2.range.version.getValue());
+red_line===
+"3.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u003e\u003d1.0.0 \u003c2.0.0\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(">=1.0.0 <2.0.0", Requirement.buildNPM("1.*").toString());
+red_line===
+">=1.0.0 <2.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"2.0.0\" 24 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("2.0.0", req2_1.range.version.getValue());
+red_line===
+"2.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.*.*\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("1.*.*", "1.0.0", "2.0.0", Semver.SemverType.NPM);
+red_line===
+"1.*.*"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"2.4.0\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+hyphenTest("1.2.3", "2.3", "1.2.3", "2.4.0", true);
+red_line===
+"2.4.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.3\" 51 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String version = "1.2.3";
+red_line===
+"1.2.3"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"\u003e\u003d1.0.0\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals(">=1.0.0", Requirement.buildNPM(">=1.0.0").toString());
+red_line===
+">=1.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.*\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("1.2.*", "1.2.0", "1.3.0", Semver.SemverType.NPM);
+red_line===
+"1.2.*"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0\" 35 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("1", "1.0.0", "2.0.0", Semver.SemverType.NPM);
+red_line===
+"1.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.0\" 11 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+tildeTest("1.2", "1.2.0", "1.3.0", Semver.SemverType.NPM);
+red_line===
+"1.2.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Requirement req1_1 = req1.req1;
+red_line===
+req1_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Requirement req1_2 = req1.req2;
+red_line===
+req1_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Requirement req2_1 = req2.req1;
+red_line===
+req2_1
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Requirement req2_2 = req2.req2;
+red_line===
+req2_2
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"2.0.0\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("2.0.0", tokens.get(4).value);
+red_line===
+"2.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.7\" 14 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("1.2.7", tokens.get(1).value);
+red_line===
+"1.2.7"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+List<Semver> list = new ArrayList<Semver>(len);
+red_line===
+<Semver>
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0-alpha\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(new Semver("1.0.0-alpha.1").isGreaterThan("1.0.0-alpha"));
+red_line===
+"1.0.0-alpha"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"SHA987654321\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Semver result = semver.withBuild("SHA987654321");
+red_line===
+"SHA987654321"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.3-Beta.4+SHA123456789\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Semver semver = new Semver("1.2.3-Beta.4+SHA123456789");
+red_line===
+"1.2.3-Beta.4+SHA123456789"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0-beta\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(new Semver("1.0.0-beta").isGreaterThan("1.0.0-alpha.beta"));
+red_line===
+"1.0.0-beta"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0-beta.2\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(new Semver("1.0.0-beta.2").isGreaterThan("1.0.0-beta"));
+red_line===
+"1.0.0-beta.2"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"sha.0nsfgkjkjsdf\" 11 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertIsSemver(semver, version, 1, 2, 3, new String[]{"beta", "11"}, "sha.0nsfgkjkjsdf");
+red_line===
+"sha.0nsfgkjkjsdf"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2-beta.11+sha.0nsfgkjkjsdf\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String version = "1.2-beta.11+sha.0nsfgkjkjsdf";
+red_line===
+"1.2-beta.11+sha.0nsfgkjkjsdf"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1-beta.11+sha.0nsfgkjkjsdf\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String version = "1-beta.11+sha.0nsfgkjkjsdf";
+red_line===
+"1-beta.11+sha.0nsfgkjkjsdf"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0-rc.1\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(new Semver("1.0.0-rc.1").isGreaterThan("1.0.0-beta.11"));
+red_line===
+"1.0.0-rc.1"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.3-beta.4+sha123456789\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Semver semver = new Semver("1.2.3-beta.4+sha123456789");
+red_line===
+"1.2.3-beta.4+sha123456789"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0-beta.11\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(new Semver("1.0.0-beta.11").isGreaterThan("1.0.0-beta.2"));
+red_line===
+"1.0.0-beta.11"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.3-beta.11+sha.0nsfgkjkjsdf\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String version = "1.2.3-beta.11+sha.0nsfgkjkjsdf";
+red_line===
+"1.2.3-beta.11+sha.0nsfgkjkjsdf"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0-alpha.12\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertFalse(new Semver("1.0.0-alpha.12").isGreaterThan("1.0.0-alpha.12"));
+red_line===
+"1.0.0-alpha.12"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0-alpha.beta\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(new Semver("1.0.0-alpha.beta").isGreaterThan("1.0.0-alpha.1"));
+red_line===
+"1.0.0-alpha.beta"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.2.3\" 9 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String version = "1.2.3";
+red_line===
+"1.2.3"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"1.0.0\" 8 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertTrue(new Semver("1.0.0").isGreaterThan("1.0.0-rc.1"));
+red_line===
+"1.0.0"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+true
+==================

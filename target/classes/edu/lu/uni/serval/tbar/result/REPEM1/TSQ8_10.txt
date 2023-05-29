@@ -1,0 +1,133 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+20
+end_offset===
+36
+Python OUTPUT===
+ throw new RuntimeException(e); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Refactor this repetition that can lead to a stack overflow for large inputs.
+scn.ruleId===
+5998
+scn.suspCodeStr===
+private static final Pattern METHOD = Pattern.compile("^(?:get|is|has)([A-Z][a-zA-Z0-9]*)+$");
+red_line===
+([A-Z][a-zA-Z0-9]*)+
+start_offset===
+72
+end_offset===
+92
+Python OUTPUT===
+ private static final Pattern METHOD = Pattern.compile("^(?:get|is|has)([A-Z][a-zA-Z0-9]*)+$"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+declaratedMethod.setAccessible(true);
+red_line===
+declaratedMethod.setAccessible(true)
+start_offset===
+6
+end_offset===
+42
+Python OUTPUT===
+ declaratedMethod.setAccessible(true); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"emptyWidth\" which hides the field declared at line 43.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+int emptyWidth = 3 * (columns - 1);
+red_line===
+emptyWidth
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ int empemptyWidth3 * (columns - 1); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Format specifiers should be used instead of string concatenation.
+scn.ruleId===
+3457
+scn.suspCodeStr===
+return String.format(" %1$-" + width + "s ", data);
+red_line===
+String.format(" %1$-" + width + "s ", data)
+start_offset===
+11
+end_offset===
+54
+Python OUTPUT===
+ return String.format(" %1$-" + width + "s ", data); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+lines = Math.max(lines, cellLines.length);
+red_line===
+lines
+start_offset===
+8
+end_offset===
+13
+Python OUTPUT===
+ lines = Math.max(lines, cellLines.length); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Headers\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+String[] headers = { "Test", "Headers", "Are", "The", "Best" };
+red_line===
+"Headers"
+start_offset===
+33
+end_offset===
+42
+Python OUTPUT===
+ String[] headers = { "Test", "Headers", "Are", "The", "Best" }; 
+isFixed===
+false
+==================

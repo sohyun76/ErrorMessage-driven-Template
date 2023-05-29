@@ -1,0 +1,2964 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"alpha\" which hides the field declared at line 29.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+double alpha = parameters.getDouble(Params.ALPHA);
+red_line===
+alpha
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+double alpha = parameters.getDouble(Params.ALPHA);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"alpha\" which hides the field declared at line 24.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+double alpha = parameters.getDouble("alpha");
+red_line===
+alpha
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+double alpha = parameters.getDouble("alpha");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"test\" which hides the field declared at line 30.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+IndependenceTest test = this.test.getTest(dataSet, parameters);
+red_line===
+test
+start_offset===
+20
+end_offset===
+24
+Python OUTPUT===
+IndependenceTest test = this.test.getTest(dataSet, parameters);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"score\" which hides the field declared at line 49.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+BdeuScoreImages score = new BdeuScoreImages(dataModels);
+red_line===
+score
+start_offset===
+28
+end_offset===
+33
+Python OUTPUT===
+BdeuScoreImages score = new BdeuScoreImages(dataModels);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"knowledge\" which hides the field declared at line 51.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+IKnowledge knowledge = dataModels.get(0).getKnowledge();
+red_line===
+knowledge
+start_offset===
+19
+end_offset===
+28
+Python OUTPUT===
+IKnowledge knowledge = dataModels.get(0).getKnowledge();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"algorithm\" which hides the field declared at line 42.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TsGfci algorithm = new TsGfci(test, score);
+red_line===
+algorithm
+start_offset===
+19
+end_offset===
+28
+Python OUTPUT===
+TsGfci algorithm = new TsGfci(test, score);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"test\" which hides the field declared at line 32.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+IndependenceTest test = this.test.getTest(dataSet, parameters);
+red_line===
+test
+start_offset===
+29
+end_offset===
+33
+Python OUTPUT===
+IndependenceTest test = this.test.getTest(dataSet, parameters);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+edu.pitt.dbmi.algo.bayesian.constraint.search.RfciBsc RfciBsc = new edu.pitt.dbmi.algo.bayesian.constraint.search.RfciBsc(search);
+red_line===
+RfciBsc
+start_offset===
+62
+end_offset===
+69
+Python OUTPUT===
+edu.pitt.dbmi.algo.bayesian.constraint.search.RfciBsc RfciBsc = new edu.pitt.dbmi.algo.bayesian.constraint.search.RfciBsc(search);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"algorithm\" which hides the field declared at line 36.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Fci algorithm = new Fci(test);
+red_line===
+algorithm
+start_offset===
+16
+end_offset===
+25
+Python OUTPUT===
+Fci algorithm = new Fci(test);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"_knowledge\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+IKnowledge _knowledge = dataSet.getKnowledge() != null ? dataSet.getKnowledge() : new Knowledge2();
+red_line===
+= dataSet.getKnowledge() != null ? dataSet.getKnowledge() : new Knowledge2()
+start_offset===
+34
+end_offset===
+110
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+edu.cmu.tetrad.search.FasStable fas = new edu.cmu.tetrad.search.FasStable(new IndTestFisherZ(cov, 0.001));
+red_line===
+parameters.getDouble("alpha")));
+start_offset===
+120
+end_offset===
+152
+Python OUTPUT===
+edu.cmu.tetrad.search.FasStable fas = new edu.cmu.tetrad.search.FasStable(new IndTestFisherZ(cov, 0.001));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+DataSet _dataSet = (DataSet) dataSet;
+red_line===
+_dataSet
+start_offset===
+20
+end_offset===
+28
+Python OUTPUT===
+DataSet _dataSet = (DataSet) dataSet;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"algorithm\" which hides the field declared at line 35.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Pc algorithm = new Pc(test);
+red_line===
+algorithm
+start_offset===
+15
+end_offset===
+24
+Python OUTPUT===
+Pc algorithm = new Pc(test);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Bound graph done");
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Bound graph done"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"score\" which hides the field declared at line 39.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Score score = this.score.getScore(covFa, parameters);
+red_line===
+score
+start_offset===
+18
+end_offset===
+23
+Python OUTPUT===
+Score score = this.score.getScore(covFa, parameters);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"fa_threshold\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+output += tableString(rotated, nf, parameters.getDouble("fa_threshold"));
+red_line===
+"fa_threshold"
+start_offset===
+76
+end_offset===
+90
+Python OUTPUT===
+output += tableString(rotated, nf, parameters.getDouble("fa_threshold"));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Matrix L;
+red_line===
+L
+start_offset===
+19
+end_offset===
+20
+Python OUTPUT===
+Matrix L;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(nf.format(vars[indices.get(i)]) + " ");
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println(nf.format(vars[indices.get(i)]) + " "); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("knowledge2 = " + knowledge2);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("knowledge2 = " + knowledge2); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(output);
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println(output); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("residual = " + residual);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("residual = " + residual); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this addition operation to a \"double\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+int cutoff = (int) (n * ((sqrt(8 * n + 1) - 1) / (2 * n)));
+red_line===
++
+start_offset===
+49
+end_offset===
+50
+Python OUTPUT===
+ int cutoff = ( int) (n * ( (sqrt (8 *n + 1) - 1)  /  (2 *n)));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"test\" which hides the field declared at line 40.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+IndependenceTest test = this.test.getTest(dataSet, parameters);
+red_line===
+test
+start_offset===
+29
+end_offset===
+33
+Python OUTPUT===
+IndependenceTest test = this.test.getTest(dataSet, parameters);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+DataSet _data = (DataSet) ds;
+red_line===
+_data
+start_offset===
+16
+end_offset===
+21
+Python OUTPUT===
+DataSet _data = (DataSet) ds;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+DataSet _ds = DataUtils.getMixedDataSet(ds);
+red_line===
+_ds
+start_offset===
+20
+end_offset===
+23
+Python OUTPUT===
+DataSet _ds = DataUtils.getMixedDataSet(ds);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+DataSet _dataSet = DataUtils.getDiscreteDataSet(dataSet);
+red_line===
+_dataSet
+start_offset===
+20
+end_offset===
+28
+Python OUTPUT===
+DataSet _dataSet = DataUtils.getDiscreteDataSet(dataSet);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"algorithm\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private Algorithm algorithm = null;
+red_line===
+algorithm
+start_offset===
+22
+end_offset===
+31
+Python OUTPUT===
+ private Algorithm algnull; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"algorithm\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+FindOneFactorClusters.Algorithm algorithm;
+red_line===
+algorithm
+start_offset===
+44
+end_offset===
+53
+Python OUTPUT===
+FindOneFactorClusters.Algorithm algorithm;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"algorithm\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private Algorithm algorithm = null;
+red_line===
+algorithm
+start_offset===
+22
+end_offset===
+31
+Python OUTPUT===
+ private Algorithm algnull; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"algorithm\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Fofc algorithm = new Fofc();
+red_line===
+algorithm
+start_offset===
+17
+end_offset===
+26
+Python OUTPUT===
+Fofc algorithm = new Fofc();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"algorithm\" which hides the field declared at line 38.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+ntStackTr
+start_offset===
+17
+end_offset===
+26
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader r = new BufferedReader(new FileReader(file));
+red_line===
+new BufferedReader(new FileReader(file))
+start_offset===
+31
+end_offset===
+71
+Python OUTPUT===
+BufferedReader r = new BufferedReader(new FileReader(file));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader r = new BufferedReader(new FileReader(nodes));
+red_line===
+new BufferedReader(new FileReader(nodes))
+start_offset===
+31
+end_offset===
+72
+Python OUTPUT===
+BufferedReader r = new BufferedReader(new FileReader(nodes));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader r = new BufferedReader(new FileReader(inEdges));
+red_line===
+new BufferedReader(new FileReader(inEdges))
+start_offset===
+31
+end_offset===
+74
+Python OUTPUT===
+BufferedReader r = new BufferedReader(new FileReader(inEdges));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader r = new BufferedReader(new FileReader(file));
+red_line===
+new BufferedReader(new FileReader(file))
+start_offset===
+31
+end_offset===
+71
+Python OUTPUT===
+BufferedReader r = new BufferedReader(new FileReader(file));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Couldn't parse graph.");
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Couldn't parse graph.");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader r = new BufferedReader(new FileReader(file));
+red_line===
+new BufferedReader(new FileReader(file))
+start_offset===
+31
+end_offset===
+71
+Python OUTPUT===
+BufferedReader r = new BufferedReader(new FileReader(file));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Couldn't parse graph.", e);
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Couldn't parse graph.", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File file = new File(path, "/elapsed/" + extDir + "/" + (simIndex + 1) + "/graph." + index + ".txt");
+red_line===
+"/"
+start_offset===
+58
+end_offset===
+61
+Python OUTPUT===
+ File file = new File(path, " / elapsed / " + extDir + " / " + (Index + 1) + " / graph." + index + ".txt"); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File file = new File(path, "/results/" + extDir + "/" + (simIndex + 1) + "/graph." + index + ".txt");
+red_line===
+"/"
+start_offset===
+58
+end_offset===
+61
+Python OUTPUT===
+ File file = new File(path, " / results / " + extDir + " / " + (Index + 1) + " / graph." + index + ".txt"); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(file.getAbsolutePath());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(file.getAbsolutePath()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File file = new File(path, "/elapsed/" + extDir + "/" + (simIndex +  1) + "/graph." + index + ".txt");
+red_line===
+"/"
+start_offset===
+58
+end_offset===
+61
+Python OUTPUT===
+ File file = new File(path, " / elapsed / " + extDir + " / " + (Index + 1) + " / graph." + index + ".txt"); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(file.getAbsolutePath());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(file.getAbsolutePath()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File file = new File(path, "/results/" + extDir + "/" + (simIndex + 1) + "/graph." + index + ".txt");
+red_line===
+"/"
+start_offset===
+58
+end_offset===
+61
+Python OUTPUT===
+ File file = new File(path, " / results / " + extDir + " / " + (Index + 1) + " / graph." + index + ".txt"); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(file.getAbsolutePath());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(file.getAbsolutePath()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Loading graph from " + file.getAbsolutePath());
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Loading graph from " + file.getAbsolutePath()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File file = new File(path, "/results/" + extDir + "/" + (simIndex + 1) + "/graph." + index + ".txt");
+red_line===
+"/"
+start_offset===
+58
+end_offset===
+61
+Python OUTPUT===
+ File file = new File(path, " / results / " + extDir + " / " + (Index + 1) + " / graph." + index + ".txt"); 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader r = new BufferedReader(new FileReader(file));
+red_line===
+new BufferedReader(new FileReader(file))
+start_offset===
+31
+end_offset===
+71
+Python OUTPUT===
+BufferedReader r = new BufferedReader(new FileReader(file));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Couldn't parse graph.");
+red_line===
+RuntimeException
+start_offset===
+22
+end_offset===
+38
+Python OUTPUT===
+throw new RuntimeException("Couldn't parse graph.");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use or store the value returned from \"readLine\" instead of throwing it away.
+scn.ruleId===
+2677
+scn.suspCodeStr===
+r.readLine();
+red_line===
+readLine
+start_offset===
+14
+end_offset===
+22
+Python OUTPUT===
+r.readLine();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader r = new BufferedReader(new FileReader(file));
+red_line===
+new BufferedReader(new FileReader(file))
+start_offset===
+31
+end_offset===
+71
+Python OUTPUT===
+BufferedReader r = new BufferedReader(new FileReader(file));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+BufferedReader r = new BufferedReader(new FileReader(file));
+red_line===
+new BufferedReader(new FileReader(file))
+start_offset===
+31
+end_offset===
+71
+Python OUTPUT===
+BufferedReader r = new BufferedReader(new FileReader(file));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"algorithms\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private List<Algorithm> algorithms = new ArrayList<>();
+red_line===
+algorithms
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+private List<Algorithm> algorithms = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Loading graph from " + file.getAbsolutePath());
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Loading graph from " + file.getAbsolutePath()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File file = new File(path, "/results/" + extDir + "/" + (simIndex + 1) + "/graph." + index + ".txt");
+red_line===
+"/"
+start_offset===
+58
+end_offset===
+61
+Python OUTPUT===
+ File file = new File(path, " / results / " + extDir + " / " + (Index + 1) + " / graph." + index + ".txt"); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(file.getAbsolutePath());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(file.getAbsolutePath()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this hard-coded path-delimiter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+File file = new File(path, "/elapsed/" + extDir + "/" + (simIndex + 1) + "/graph." + index + ".txt");
+red_line===
+"/"
+start_offset===
+58
+end_offset===
+61
+Python OUTPUT===
+ File file = new File(path, " / elapsed / " + extDir + " / " + (Index + 1) + " / graph." + index + ".txt"); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"adjFp\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int adjFp = adjConfusion.getAdjFp();
+red_line===
+= adjConfusion.getAdjFp()
+start_offset===
+18
+end_offset===
+43
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_dataSet\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private DataSet _dataSet;
+red_line===
+_dataSet
+start_offset===
+20
+end_offset===
+28
+Python OUTPUT===
+private DataSet _dataSet;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_dataSet\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final DataSet _dataSet;
+red_line===
+_dataSet
+start_offset===
+30
+end_offset===
+38
+Python OUTPUT===
+private final DataSet _dataSet;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_previous\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+Graph _previous = null;
+red_line===
+_previous
+start_offset===
+14
+end_offset===
+23
+Python OUTPUT===
+Graph _previous = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(parameter + " = " + _value);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(parameter + " = " + _value); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment; \"intialGraph\" already holds the assigned value along all execution paths.
+scn.ruleId===
+4165
+scn.suspCodeStr===
+this.intialGraph = intialGraph;
+red_line===
+this.intialGraph = intialGraph
+start_offset===
+2
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+value = getValue(value, parameters);
+red_line===
+value
+start_offset===
+20
+end_offset===
+25
+Python OUTPUT===
+value = getValue(value, parameters);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+value = getValue(value, parameters);
+red_line===
+value
+start_offset===
+20
+end_offset===
+25
+Python OUTPUT===
+value = getValue(value, parameters);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Parameters _parameters = new Parameters(parameters);
+red_line===
+_parameters
+start_offset===
+19
+end_offset===
+30
+Python OUTPUT===
+Parameters _parameters = new Parameters(parameters);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Graph _previous = null;
+red_line===
+_previous
+start_offset===
+14
+end_offset===
+23
+Python OUTPUT===
+Graph _previous = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+int _prevDiff = Integer.MAX_VALUE;
+red_line===
+_prevDiff
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+int _prevDiff = Integer.MAX_VALUE;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double _value = 0.0;
+red_line===
+_value
+start_offset===
+15
+end_offset===
+21
+Python OUTPUT===
+double _value = 0.0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double _p1 = getValue(p1, params);
+red_line===
+_p1
+start_offset===
+19
+end_offset===
+22
+Python OUTPUT===
+double _p1 = getValue(p1, params);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double _p2 = getValue(p2, params);
+red_line===
+_p2
+start_offset===
+19
+end_offset===
+22
+Python OUTPUT===
+double _p2 = getValue(p2, params);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"_previous\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+intialGraph = GraphUtils.replaceNodes(intialGraph, _previous.getNodes());
+red_line===
+_previous.getNodes
+start_offset===
+71
+end_offset===
+89
+Python OUTPUT===
+intialGraph = GraphUtils.replaceNodes(intialGraph, _previous.getNodes());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"_previous\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+intialGraph = GraphUtils.replaceNodes(intialGraph, _previous.getNodes());
+red_line===
+_previous.getNodes
+start_offset===
+71
+end_offset===
+89
+Python OUTPUT===
+intialGraph = GraphUtils.replaceNodes(intialGraph, _previous.getNodes());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"dataSet\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private DataSet dataSet;
+red_line===
+dataSet
+start_offset===
+24
+end_offset===
+31
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+DataSet _dataSet = (DataSet) dataSet;
+red_line===
+_dataSet
+start_offset===
+16
+end_offset===
+24
+Python OUTPUT===
+DataSet _dataSet = (DataSet) dataSet;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"_dataSet\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private DataSet _dataSet;
+red_line===
+_dataSet
+start_offset===
+20
+end_offset===
+28
+Python OUTPUT===
+private DataSet _dataSet;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+_dataSet = (DataSet) dataSet;
+red_line===
+.subsetColumns(cols);
+start_offset===
+39
+end_offset===
+60
+Python OUTPUT===
+_dataSet = (DataSet) dataSet;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("pFrom = " + pFrom + " pTo = " + pTo + " pMid = " + pMid + " D = " + D);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("pFrom = " + pFrom + " pTo = " + pTo + " pMid = " + pMid + " D = " + D); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(parameter + " = " + _p);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(parameter + " = " + _p); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"double\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+D /= (double) (p * (p - 1) / 2);
+red_line===
+double
+start_offset===
+14
+end_offset===
+20
+Python OUTPUT===
+ D  / = (double)(p - 1)  /  2); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(paramName + " = " + paramValue + " D = " + D);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(paramName + " = " + paramValue + " D = " + D); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"initialGuess\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final double initialGuess;
+red_line===
+initialGuess
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"knowledge\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private IKnowledge knowledge = new Knowledge2();
+red_line===
+knowledge
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"statistics\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private List<Statistic> statistics = new ArrayList<>();
+red_line===
+statistics
+start_offset===
+28
+end_offset===
+38
+Python OUTPUT===
+private List<Statistic> statistics = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Parameters _parameters = new Parameters(parameters);
+red_line===
+_parameters
+start_offset===
+19
+end_offset===
+30
+Python OUTPUT===
+Parameters _parameters = new Parameters(parameters);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double D = getD(parameters, parameter, pMid, samples, samples.size(), algorithm, archive);
+red_line===
+D
+start_offset===
+19
+end_offset===
+20
+Python OUTPUT===
+double D = getD(parameters, parameter, pMid, samples, samples.size(), algorithm, archive);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double _p = getValue(pMid, parameters);
+red_line===
+_p
+start_offset===
+15
+end_offset===
+17
+Python OUTPUT===
+double _p = getValue(pMid, parameters);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double D = 0.0;
+red_line===
+D
+start_offset===
+15
+end_offset===
+16
+Python OUTPUT===
+double D = 0.0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"TCtp\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private int TCtp;
+red_line===
+TCtp
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+private int TCtp;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"TCfn\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private int TCfn;
+red_line===
+TCfn
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+private int TCfn;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"TCfp\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private int TCfp;
+red_line===
+TCfp
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+private int TCfp;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Edge> TwoCycle1 = this.truth.getEdges(edge.getNode1(), edge.getNode2());
+red_line===
+TwoCycle1
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+List<Edge> TwoCycle1 = this.truth.getEdges(edge.getNode1(), edge.getNode2());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Edge> TwoCycle2 = this.est.getEdges(edge.getNode1(), edge.getNode2());
+red_line===
+TwoCycle2
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+List<Edge> TwoCycle2 = this.est.getEdges(edge.getNode1(), edge.getNode2());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Edge> TwoCycle1 = this.truth.getEdges(edge.getNode1(), edge.getNode2());
+red_line===
+TwoCycle1
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+List<Edge> TwoCycle1 = this.truth.getEdges(edge.getNode1(), edge.getNode2());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Edge> TwoCycle2 = this.est.getEdges(edge.getNode1(), edge.getNode2());
+red_line===
+TwoCycle2
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+List<Edge> TwoCycle2 = this.est.getEdges(edge.getNode1(), edge.getNode2());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"TCtp\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private int TCtp;
+red_line===
+TCtp
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+private int TCtp;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"TCfn\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private int TCfn;
+red_line===
+TCfn
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+private int TCfn;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"TCfp\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private int TCfp;
+red_line===
+TCfp
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+private int TCfp;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Edge> TwoCycle1 = this.truth.getEdges(edge.getNode1(), edge.getNode2());
+red_line===
+TwoCycle1
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+List<Edge> TwoCycle1 = this.truth.getEdges(edge.getNode1(), edge.getNode2());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Edge> TwoCycle2 = this.est.getEdges(edge.getNode1(), edge.getNode2());
+red_line===
+TwoCycle2
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+List<Edge> TwoCycle2 = this.est.getEdges(edge.getNode1(), edge.getNode2());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Edge> TwoCycle1 = this.truth.getEdges(edge.getNode1(), edge.getNode2());
+red_line===
+TwoCycle1
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+List<Edge> TwoCycle1 = this.truth.getEdges(edge.getNode1(), edge.getNode2());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Edge> TwoCycle2 = this.est.getEdges(edge.getNode1(), edge.getNode2());
+red_line===
+TwoCycle2
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+List<Edge> TwoCycle2 = this.est.getEdges(edge.getNode1(), edge.getNode2());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"est\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+double est = SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(estGraph), dataModel);
+red_line===
+SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(estGraph), dataModel)
+start_offset===
+21
+end_offset===
+96
+Python OUTPUT===
+double est = SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(estGraph), dataModel);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"double\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+return (double) twoCycleTp;
+red_line===
+double
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+ return (double)cleTp; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Node> _adj = GraphUtils.asList(choice, adjb);
+red_line===
+_adj
+start_offset===
+27
+end_offset===
+31
+Python OUTPUT===
+List<Node> _adj = GraphUtils.asList(choice, adjb);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make sure this expression can\u0027t be zero before doing this division.
+scn.ruleId===
+3518
+scn.suspCodeStr===
+return numAmbiguous / (double) numTriples;
+red_line===
+(double) numTriples
+start_offset===
+30
+end_offset===
+49
+Python OUTPUT===
+final return numAmbiguous ( double ) numTriples ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make sure this expression can\u0027t be zero before doing this division.
+scn.ruleId===
+3518
+scn.suspCodeStr===
+return numBidirected / (double) numTotal;
+red_line===
+(double) numTotal
+start_offset===
+31
+end_offset===
+48
+Python OUTPUT===
+final return numBidirected ( double ) numTotal ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"adjFn\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int adjFn = adjConfusion.getAdjFn();
+red_line===
+= adjConfusion.getAdjFn()
+start_offset===
+18
+end_offset===
+43
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"adjTp\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int adjTp = adjConfusion.getAdjTp();
+red_line===
+= adjConfusion.getAdjTp()
+start_offset===
+18
+end_offset===
+43
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double TwoCycleTp = adjConfusion.getTwoCycleTp();
+red_line===
+TwoCycleTp
+start_offset===
+15
+end_offset===
+25
+Python OUTPUT===
+double TwoCycleTp = adjConfusion.getTwoCycleTp();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double TwoCycleFp = adjConfusion.getTwoCycleFp();
+red_line===
+TwoCycleFp
+start_offset===
+15
+end_offset===
+25
+Python OUTPUT===
+double TwoCycleFp = adjConfusion.getTwoCycleFp();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"precision\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+double precision = TwoCycleTp / (TwoCycleTp + TwoCycleFp);
+red_line===
+TwoCycleTp / (TwoCycleTp + TwoCycleFp)
+start_offset===
+27
+end_offset===
+65
+Python OUTPUT===
+double precision = TwoCycleTp / (TwoCycleTp + TwoCycleFp);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"adjTn\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int adjTn = adjConfusion.getAdjTn();
+red_line===
+= adjConfusion.getAdjTn()
+start_offset===
+18
+end_offset===
+43
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double _true = SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(trueGraph), dataModel);
+red_line===
+_true
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+double _true = SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(trueGraph), dataModel);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double _true = SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(trueGraph), dataModel);
+red_line===
+_true
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+double _true = SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(trueGraph), dataModel);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double _true = SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(trueGraph), dataModel);
+red_line===
+_true
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+double _true = SemBicScorer.scoreDag(SearchGraphUtils.dagFromPattern(trueGraph), dataModel);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"arrowTn\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int arrowTn = arrowConfusion.getArrowsTn();
+red_line===
+= arrowConfusion.getArrowsTn()
+start_offset===
+20
+end_offset===
+50
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"adjTn\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int adjTn = adjConfusion.getAdjTn();
+red_line===
+= adjConfusion.getAdjTn()
+start_offset===
+18
+end_offset===
+43
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double TwoCycleTp = adjConfusion.getTwoCycleTp();
+red_line===
+TwoCycleTp
+start_offset===
+15
+end_offset===
+25
+Python OUTPUT===
+double TwoCycleTp = adjConfusion.getTwoCycleTp();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double TwoCycleFn = adjConfusion.getTwoCycleFn();
+red_line===
+TwoCycleFn
+start_offset===
+15
+end_offset===
+25
+Python OUTPUT===
+double TwoCycleFn = adjConfusion.getTwoCycleFn();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"recall\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+double recall = TwoCycleTp / (TwoCycleTp + TwoCycleFn);
+red_line===
+TwoCycleTp / (TwoCycleTp + TwoCycleFn)
+start_offset===
+24
+end_offset===
+62
+Python OUTPUT===
+double recall = TwoCycleTp / (TwoCycleTp + TwoCycleFn);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"numTotal\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int numTotal = 0;
+red_line===
+numTotal
+start_offset===
+12
+end_offset===
+20
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"arrowTn\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+int arrowTn = arrowConfusion.getArrowsTn();
+red_line===
+= arrowConfusion.getArrowsTn()
+start_offset===
+20
+end_offset===
+50
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+GraphUtils.GraphComparison comparison = SearchGraphUtils.getGraphComparison3(estGraph, trueGraph, System.out);
+red_line===
+System.out
+start_offset===
+106
+end_offset===
+116
+Python OUTPUT===
+ GraphUtils.GraphComparison comparison = SearchGraphUtils.getGraphComparison3(estGraph, trueGraph, System.out); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Simulating dataset #" + (i + 1));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Simulating dataset #" + (i + 1)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(pm);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(pm); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(im);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(im); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"pm\" which hides the field declared at line 28.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+GeneralizedSemPm pm = new GeneralizedSemPm(graph);
+red_line===
+pm
+start_offset===
+25
+end_offset===
+27
+Python OUTPUT===
+GeneralizedSemPm pm = new GeneralizedSemPm(graph);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(e);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println(e); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Simulating dataset #" + (i + 1));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Simulating dataset #" + (i + 1)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"im\" which hides the field declared at line 27.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+BayesIm im = this.im;
+red_line===
+im
+start_offset===
+20
+end_offset===
+22
+Python OUTPUT===
+BayesIm im = this.im;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"pm\" which hides the field declared at line 26.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+BayesPm pm = this.pm;
+red_line===
+pm
+start_offset===
+24
+end_offset===
+26
+Python OUTPUT===
+BayesPm pm = this.pm;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"pm\" which hides the field declared at line 26.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+Tr
+start_offset===
+24
+end_offset===
+26
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"dataSets\" which hides the field declared at line 28.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<DataSet> dataSets = new ArrayList<>();
+red_line===
+dataSets
+start_offset===
+22
+end_offset===
+30
+Python OUTPUT===
+List<DataSet> dataSets = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"graph\" which hides the field declared at line 29.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+TimeLagGraph graph = new TimeLagGraph();
+red_line===
+graph
+start_offset===
+21
+end_offset===
+26
+Python OUTPUT===
+TimeLagGraph graph = new TimeLagGraph();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Couldn't find " + _node);
+red_line===
+System.out
+start_offset===
+20
+end_offset===
+30
+Python OUTPUT===
+ System.out.println("Couldn't find " + _node); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+RandomActiveLagGraph _graph = new RandomActiveLagGraph(params);
+red_line===
+_graph
+start_offset===
+29
+end_offset===
+35
+Python OUTPUT===
+RandomActiveLagGraph _graph = new RandomActiveLagGraph(params);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String _factor = laggedFactor.getFactor();
+red_line===
+_factor
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+String _factor = laggedFactor.getFactor();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Node _node = graph.getNode(id.getName(), lag);
+red_line===
+_node
+start_offset===
+21
+end_offset===
+26
+Python OUTPUT===
+Node _node = graph.getNode(id.getName(), lag);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Simulating dataset #" + (i + 1));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Simulating dataset #" + (i + 1)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"pm\" which hides the field declared at line 24.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+SemPm pm = this.pm;
+red_line===
+pm
+start_offset===
+18
+end_offset===
+20
+Python OUTPUT===
+SemPm pm = this.pm;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Simulating dataset #" + (i + 1));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Simulating dataset #" + (i + 1)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(e);
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println(e); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+String _template = TemplateExpander.getInstance().expandTemplate("U(-.5,.5)", pm, node);
+red_line===
+_template
+start_offset===
+23
+end_offset===
+32
+Python OUTPUT===
+String _template = TemplateExpander.getInstance().expandTemplate("U(-.5,.5)", pm, node);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Simulating dataset #" + (i + 1));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Simulating dataset #" + (i + 1)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Simulating dataset #" + (i + 1));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Simulating dataset #" + (i + 1)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Node> X = new ArrayList<>();
+red_line===
+X
+start_offset===
+19
+end_offset===
+20
+Python OUTPUT===
+List<Node> X = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+List<Node> A = new ArrayList<>();
+red_line===
+A
+start_offset===
+19
+end_offset===
+20
+Python OUTPUT===
+List<Node> A = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Graph AG = G.subgraph(A);
+red_line===
+AG
+start_offset===
+14
+end_offset===
+16
+Python OUTPUT===
+Graph AG = G.subgraph(A);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Graph XG = G.subgraph(X);
+red_line===
+XG
+start_offset===
+14
+end_offset===
+16
+Python OUTPUT===
+Graph XG = G.subgraph(X);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+DiscreteVariable _parent = (DiscreteVariable) bayesParent;
+red_line===
+_parent
+start_offset===
+41
+end_offset===
+48
+Python OUTPUT===
+DiscreteVariable _parent = (DiscreteVariable) bayesParent;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"simulations\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private List<Simulation> simulations = new ArrayList<>();
+red_line===
+simulations
+start_offset===
+29
+end_offset===
+40
+Python OUTPUT===
+private List<Simulation> simulations = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Couldn't find " + _node);
+red_line===
+System.out
+start_offset===
+20
+end_offset===
+30
+Python OUTPUT===
+ System.out.println("Couldn't find " + _node); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+Node _node = graph.getNode(id.getName(), lag);
+red_line===
+_node
+start_offset===
+21
+end_offset===
+26
+Python OUTPUT===
+Node _node = graph.getNode(id.getName(), lag);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Simulating dataset #" + (i + 1));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("Simulating dataset #" + (i + 1)); 
+isFixed===
+false
+==================

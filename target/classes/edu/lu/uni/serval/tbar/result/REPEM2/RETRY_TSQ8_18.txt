@@ -1,0 +1,6232 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this assignment of \"classTranslator\".
+scn.ruleId===
+3010
+scn.suspCodeStr===
+this.classTranslator = classTranslator;
+red_line===
+classTranslator
+start_offset===
+17
+end_offset===
+32
+Python OUTPUT===
+ this.classTranslator =;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027onFinished::run\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+runInEDT(() -> onFinished.run());
+red_line===
+->
+start_offset===
+16
+end_offset===
+18
+Python OUTPUT===
+ runInEDT(() -> onFinished.run()); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile Runnable onRepaintTick;
+red_line===
+volatile Runnable
+start_offset===
+9
+end_offset===
+26
+Python OUTPUT===
+private volatile Runnable onRepaintTick;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<WorldFilterJson_Structure> structureFilters = Collections.emptyList();
+red_line===
+volatile List<WorldFilterJson_Structure>
+start_offset===
+9
+end_offset===
+49
+Python OUTPUT===
+private volatile List<WorldFilterJson_Structure> structureFilters = Collections.emptyList();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile SKINJson SKIN;
+red_line===
+volatile SKINJson
+start_offset===
+9
+end_offset===
+26
+Python OUTPUT===
+private volatile SKINJson SKIN;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile LibraryRuleOsJson os;
+red_line===
+volatile LibraryRuleOsJson
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile LibraryRuleOsJson os;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<LibraryJson> libraries = Collections.emptyList();
+red_line===
+volatile List<LibraryJson>
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile List<LibraryJson> libraries = Collections.emptyList();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<ReleaseType> allowedReleaseTypes = ProfileType.LATEST_RELEASE.getAllowedReleaseTypes().get();
+red_line===
+volatile List<ReleaseType>
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile List<ReleaseType> allowedReleaseTypes = ProfileType.LATEST_RELEASE.getAllowedReleaseTypes().get();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"java.awt.geom.Point2D\" for \"distanceSq\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+return Point.distanceSq(xInWorld, yInWorld, other.xInWorld, other.yInWorld);
+red_line===
+distanceSq
+start_offset===
+15
+end_offset===
+25
+Python OUTPUT===
+return Point.distanceSq(xInWorld, yInWorld, other.xInWorld, other.yInWorld);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make client a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile Download client;
+red_line===
+client
+start_offset===
+27
+end_offset===
+33
+Python OUTPUT===
+public static final volatile Download client ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"cache\" which hides the field declared at line 15.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+List<WorldIcon> cache = getCache();
+red_line===
+cache
+start_offset===
+18
+end_offset===
+23
+Python OUTPUT===
+List<WorldIcon> cache = getCache();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile WorldPlayerType worldPlayerType;
+red_line===
+volatile WorldPlayerType
+start_offset===
+9
+end_offset===
+33
+Python OUTPUT===
+private volatile WorldPlayerType worldPlayerType;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"players\" which hides the field declared at line 28.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+ConcurrentLinkedQueue<Player> players = new ConcurrentLinkedQueue<>();
+red_line===
+players
+start_offset===
+33
+end_offset===
+40
+Python OUTPUT===
+ConcurrentLinkedQueue<Player> players = new ConcurrentLinkedQueue<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"currentCoordinates\" which hides the field declared at line 15.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+PlayerCoordinates currentCoordinates = this.currentCoordinates;
+red_line===
+currentCoordinates
+start_offset===
+20
+end_offset===
+38
+Python OUTPUT===
+PlayerCoordinates currentCoordinates = this.currentCoordinates;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int swampland            = 6;
+red_line===
+swampland
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int swampland            = 6;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int hell                 = 8;
+red_line===
+hell
+start_offset===
+25
+end_offset===
+29
+Python OUTPUT===
+public static final int hell                 = 8;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int coldBeach            = 26;
+red_line===
+coldBeach
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int coldBeach            = 26;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int birchForestHills     = 28;
+red_line===
+birchForestHills
+start_offset===
+25
+end_offset===
+41
+Python OUTPUT===
+public static final int birchForestHills     = 28;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int coldTaiga            = 30;
+red_line===
+coldTaiga
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int coldTaiga            = 30;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int lukewarmDeepOcean    = 48;
+red_line===
+lukewarmDeepOcean
+start_offset===
+25
+end_offset===
+42
+Python OUTPUT===
+public static final int lukewarmDeepOcean    = 48;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int frozenDeepOcean      = 50;
+red_line===
+frozenDeepOcean
+start_offset===
+25
+end_offset===
+40
+Python OUTPUT===
+public static final int frozenDeepOcean      = 50;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int sunflowerPlains      = plains + Biome.SPECIAL_BIOMES_START;
+red_line===
+sunflowerPlains
+start_offset===
+25
+end_offset===
+40
+Python OUTPUT===
+public static final int sunflowerPlains      = plains + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int mesaBryce            = mesa + Biome.SPECIAL_BIOMES_START;
+red_line===
+mesaBryce
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int mesaBryce            = mesa + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int bambooJungleHills    = 169;
+red_line===
+bambooJungleHills
+start_offset===
+25
+end_offset===
+42
+Python OUTPUT===
+public static final int bambooJungleHills    = 169;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this addition operation to a \"float\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+float adjustedY = (this.chunkY - chunkY) * 2 + Y_ADJUSTMENT;
+red_line===
++
+start_offset===
+47
+end_offset===
+48
+Python OUTPUT===
+ float adjustedY = (this.chunkY -chunkY) * 2 + Y_ADJUSTMENT;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double Y0 = j - t;
+red_line===
+Y0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double Y0 = j - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.setAccessible(true);
+red_line===
+field.setAccessible(true)
+start_offset===
+16
+end_offset===
+41
+Python OUTPUT===
+field.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility bypass should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.set(providerSettings, worldTypeObj);
+red_line===
+field.set(providerSettings, worldTypeObj)
+start_offset===
+16
+end_offset===
+57
+Python OUTPUT===
+field.set(providerSettings, worldTypeObj);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"supportedDimensions\" which hides the field declared at line 337.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Set<Dimension> supportedDimensions = EnumSet.of(Dimension.OVERWORLD);
+red_line===
+supportedDimensions
+start_offset===
+21
+end_offset===
+40
+Python OUTPUT===
+Set<Dimension> supportedDimensions = EnumSet.of(Dimension.OVERWORLD);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+15
+end_offset===
+31
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"result\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Method result = clazz.getDeclaredMethod(realName, parameterClasses);
+red_line===
+clazz.getDeclaredMethod(realName, parameterClasses)
+start_offset===
+18
+end_offset===
+69
+Python OUTPUT===
+Method result = clazz.getDeclaredMethod(realName, parameterClasses);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"result\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Constructor<?> result = clazz.getConstructor(parameterClasses);
+red_line===
+clazz.getConstructor(parameterClasses)
+start_offset===
+26
+end_offset===
+64
+Python OUTPUT===
+Constructor<?> result = clazz.getConstructor(parameterClasses);
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+result.setAccessible(true);
+red_line===
+result.setAccessible(true)
+start_offset===
+2
+end_offset===
+28
+Python OUTPUT===
+result.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"skip\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+stream.skip(2);
+red_line===
+skip
+start_offset===
+10
+end_offset===
+14
+Python OUTPUT===
+stream.skip(2);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+stream.skip(2 * stream.readUnsignedShort());
+red_line===
+*
+start_offset===
+16
+end_offset===
+17
+Python OUTPUT===
+ stream.skip(2 * stream.readUnsignedShort());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ViewerFacade viewerFacade;
+red_line===
+volatile ViewerFacade
+start_offset===
+9
+end_offset===
+30
+Python OUTPUT===
+private volatile ViewerFacade viewerFacade;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use isEmpty() to check whether the collection is empty or not.
+scn.ruleId===
+1155
+scn.suspCodeStr===
+isVisible = newTextLines != null && newTextLines.size() > 0;
+red_line===
+newTextLines.size() > 0
+start_offset===
+38
+end_offset===
+61
+Python OUTPUT===
+isVisible = newTextLines != null && newTextLines.size() > 0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+throw new RuntimeException(e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"Hashtable\" by an unsynchronized one such as \"HashMap\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+Hashtable<Integer, JLabel> table = new Hashtable<Integer, JLabel>(3);
+red_line===
+Hashtable<Integer, JLabel>
+start_offset===
+2
+end_offset===
+28
+Python OUTPUT===
+HashMap < Integer , JLabel > table = new HashMap < Integer , JLabel > ( 3 ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this subtraction operation to a \"float\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+float timeDifference = currentTime - lastTime;
+red_line===
+-
+start_offset===
+37
+end_offset===
+38
+Python OUTPUT===
+ float timeDifference = currentTime - lastTime;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"isVisibleSetting\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final Setting<Boolean> isVisibleSetting;
+red_line===
+isVisibleSetting
+start_offset===
+32
+end_offset===
+48
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"w 400!, wrap\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+result.add(new JLabel("Enter your seed:"), "w 400!, wrap");
+red_line===
+"w 400!, wrap"
+start_offset===
+45
+end_offset===
+59
+Python OUTPUT===
+result.add(new JLabel("Enter your seed:"), "w 400!, wrap");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int DEFAULT_BATCH_HEIGHT = 16;
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final int DEFAULT_BATCH_HEIGHT = 16 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"topSpinner\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+private final JSpinner leftSpinner, topSpinner, rightSpinner, bottomSpinner;
+red_line===
+topSpinner
+start_offset===
+37
+end_offset===
+47
+Python OUTPUT===
+private final JSpinner leftSpinner, topSpinner, rightSpinner, bottomSpinner;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile FragmentGraphItem rightFragment = null;
+red_line===
+volatile FragmentGraphItem
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile FragmentGraphItem rightFragment = null;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile FragmentGraphItem aboveFragment = null;
+red_line===
+volatile FragmentGraphItem
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile FragmentGraphItem aboveFragment = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"OS_VERSION\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String OS_VERSION = System.getProperty("os.version");
+red_line===
+OS_VERSION
+start_offset===
+23
+end_offset===
+33
+Python OUTPUT===
+private static String OS_VERSION = System.getProperty("os.version");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile Path minecraftJarFile;
+red_line===
+volatile Path
+start_offset===
+8
+end_offset===
+21
+Python OUTPUT===
+public volatile Path minecraftJarFile;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"isVisible\" which hides the field declared at line 18.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+boolean isVisible = isEnabled && isVisibleSetting.get();
+red_line===
+isVisible
+start_offset===
+10
+end_offset===
+19
+Python OUTPUT===
+boolean isVisible = isEnabled && isVisibleSetting.get();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile Path biomeProfilesDirectory;
+red_line===
+volatile Path
+start_offset===
+8
+end_offset===
+21
+Python OUTPUT===
+public volatile Path biomeProfilesDirectory;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile CoordinatesInWorld corner;
+red_line===
+volatile CoordinatesInWorld
+start_offset===
+9
+end_offset===
+36
+Python OUTPUT===
+private volatile CoordinatesInWorld corner;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+LockSupport.parkNanos(PARK_MILLIS * 1000000);
+red_line===
+*
+start_offset===
+38
+end_offset===
+39
+Python OUTPUT===
+ LockSupport.parkNanos(PARK_MILLIS * 1000000);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"profileSelectWindow\" which hides the field declared at line 31.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+ProfileSelectWindow profileSelectWindow = this.profileSelectWindow;
+red_line===
+profileSelectWindow
+start_offset===
+22
+end_offset===
+41
+Python OUTPUT===
+ProfileSelectWindow profileSelectWindow = this.profileSelectWindow;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"mainWindow\" which hides the field declared at line 32.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+MainWindow mainWindow = this.mainWindow;
+red_line===
+mainWindow
+start_offset===
+13
+end_offset===
+23
+Python OUTPUT===
+MainWindow mainWindow = this.mainWindow;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile RecognisedVersion recognisedVersion;
+red_line===
+volatile RecognisedVersion
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile RecognisedVersion recognisedVersion;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile SortedSet<CoordinatesInWorld> coordinates;
+red_line===
+volatile SortedSet<CoordinatesInWorld>
+start_offset===
+9
+end_offset===
+47
+Python OUTPUT===
+private volatile SortedSet<CoordinatesInWorld> coordinates;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile SortedMap<AreaJson, short[]> biomeData;
+red_line===
+volatile SortedMap<AreaJson, short[]>
+start_offset===
+9
+end_offset===
+46
+Python OUTPUT===
+private volatile SortedMap<AreaJson, short[]> biomeData;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+String actualFilename = zipInputStream.getNextEntry().getName();
+red_line===
+ actualFilename = zipInputStream.getN
+start_offset===
+9
+end_offset===
+46
+Python OUTPUT===
+String actualFilename = zipInputStream.getNextEntry().getName();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+ConcurrentHashMap<Integer, BiomeColor> result = new ConcurrentHashMap<Integer, BiomeColor>();
+red_line===
+<Integer, BiomeColor>
+start_offset===
+71
+end_offset===
+92
+Python OUTPUT===
+<> = new ConcurrentHashMap < Integer , BiomeColor > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer buffer = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+4
+end_offset===
+16
+Python OUTPUT===
+StringBuilder buffer = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make isQuarterResolution a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile boolean isQuarterResolution;
+red_line===
+isQuarterResolution
+start_offset===
+25
+end_offset===
+44
+Python OUTPUT===
+public static final volatile boolean isQuarterResolution ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make duration a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile long duration;
+red_line===
+duration
+start_offset===
+22
+end_offset===
+30
+Python OUTPUT===
+public static final volatile long duration ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"renderer\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private VersionStateRenderer renderer = new VersionStateRenderer();
+red_line===
+renderer
+start_offset===
+30
+end_offset===
+38
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(line);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(line); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new AbstractMap.SimpleImmutableEntry<K, V>(key, value);
+red_line===
+<K, V>
+start_offset===
+45
+end_offset===
+51
+Python OUTPUT===
+<> , V > ( key , value ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean reload = isVisible == true && this.isVisible == false;
+red_line===
+true
+start_offset===
+32
+end_offset===
+36
+Python OUTPUT===
+ boolean reload = isVisible == t&& this.isVisible == false; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.state = new AtomicReference<State>(State.UNINITIALIZED);
+red_line===
+<State>
+start_offset===
+34
+end_offset===
+41
+Python OUTPUT===
+<> new AtomicReference < State > ( State.UNINITIALIZED ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile Map<String, BiomeColorJson> colorMap;
+red_line===
+volatile Map<String, BiomeColorJson>
+start_offset===
+9
+end_offset===
+45
+Python OUTPUT===
+private volatile Map<String, BiomeColorJson> colorMap;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Unable to convert biome profile: Biome " + entry.getKey() + " not found");
+red_line===
+RuntimeException
+start_offset===
+14
+end_offset===
+30
+Python OUTPUT===
+throw new RuntimeException("Unable to convert biome profile: Biome " + entry.getKey() + " not found");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+SortedMap<Integer, BiomeColorJson> newMap = new TreeMap<Integer, BiomeColorJson>(Integer::compare);
+red_line===
+<Integer, BiomeColorJson>
+start_offset===
+57
+end_offset===
+82
+Python OUTPUT===
+<> Map = new TreeMap < Integer , BiomeColorJson > ( Integer :: compare ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+Map<String, Integer> conversionMap = new HashMap<String, Integer>();
+red_line===
+<String, Integer>
+start_offset===
+50
+end_offset===
+67
+Python OUTPUT===
+<> = new HashMap < String , Integer > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027onFinished::run\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+runInEDT(() -> onFinished.run());
+red_line===
+->
+start_offset===
+15
+end_offset===
+17
+Python OUTPUT===
+ runInEDT(() -> onFinished.run()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027onFinished::run\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+runInEDT(() -> onFinished.run());
+red_line===
+->
+start_offset===
+15
+end_offset===
+17
+Python OUTPUT===
+ runInEDT(() -> onFinished.run()); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile Runnable onFragmentLoadTick;
+red_line===
+volatile Runnable
+start_offset===
+9
+end_offset===
+26
+Python OUTPUT===
+private volatile Runnable onFragmentLoadTick;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<WorldFilterJson_Biome> biomeFilters = Collections.emptyList();
+red_line===
+volatile List<WorldFilterJson_Biome>
+start_offset===
+9
+end_offset===
+45
+Python OUTPUT===
+private volatile List<WorldFilterJson_Biome> biomeFilters = Collections.emptyList();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile TexturesJson textures;
+red_line===
+volatile TexturesJson
+start_offset===
+9
+end_offset===
+30
+Python OUTPUT===
+private volatile TexturesJson textures;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile MetadataJson metadata;
+red_line===
+volatile MetadataJson
+start_offset===
+9
+end_offset===
+30
+Python OUTPUT===
+private volatile MetadataJson metadata;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<PropertyJson> properties = Collections.emptyList();
+red_line===
+volatile List<PropertyJson>
+start_offset===
+9
+end_offset===
+36
+Python OUTPUT===
+private volatile List<PropertyJson> properties = Collections.emptyList();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<VersionListEntryJson> versions = Collections.emptyList();
+red_line===
+volatile List<VersionListEntryJson>
+start_offset===
+9
+end_offset===
+44
+Python OUTPUT===
+private volatile List<VersionListEntryJson> versions = Collections.emptyList();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ReleaseType type;
+red_line===
+volatile ReleaseType
+start_offset===
+9
+end_offset===
+29
+Python OUTPUT===
+private volatile ReleaseType type;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile Inner downloads;
+red_line===
+volatile Inner
+start_offset===
+9
+end_offset===
+23
+Python OUTPUT===
+private volatile Inner downloads;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ReleaseType type;
+red_line===
+volatile ReleaseType
+start_offset===
+9
+end_offset===
+29
+Python OUTPUT===
+private volatile ReleaseType type;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile Download server;
+red_line===
+volatile Download
+start_offset===
+9
+end_offset===
+26
+Python OUTPUT===
+public volatile Download server;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make url a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile URL url;
+red_line===
+url
+start_offset===
+22
+end_offset===
+25
+Python OUTPUT===
+public static final volatile URL url ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<LibraryRuleJson> rules = Collections.emptyList();
+red_line===
+volatile List<LibraryRuleJson>
+start_offset===
+9
+end_offset===
+39
+Python OUTPUT===
+private volatile List<LibraryRuleJson> rules = Collections.emptyList();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile Map<String, LauncherProfileJson> profiles = Collections.emptyMap();
+red_line===
+volatile Map<String, LauncherProfileJson>
+start_offset===
+9
+end_offset===
+50
+Python OUTPUT===
+private volatile Map<String, LauncherProfileJson> profiles = Collections.emptyMap();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ProfileType type = ProfileType.LEGACY;
+red_line===
+volatile ProfileType
+start_offset===
+9
+end_offset===
+29
+Python OUTPUT===
+private volatile ProfileType type = ProfileType.LEGACY;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile VersionList remote;
+red_line===
+volatile VersionList
+start_offset===
+9
+end_offset===
+29
+Python OUTPUT===
+private volatile VersionList remote;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"remote\" which hides the field declared at line 33.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+VersionList remote = this.remote;
+red_line===
+remote
+start_offset===
+14
+end_offset===
+20
+Python OUTPUT===
+VersionList remote = this.remote;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"currentFile\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+currentFile = currentFile.getParent();
+red_line===
+= currentFile.getParent()
+start_offset===
+16
+end_offset===
+41
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String[] parsedCoordinates = coordinates.replaceAll(" ", "").split(",");
+red_line===
+replaceAll
+start_offset===
+43
+end_offset===
+53
+Python OUTPUT===
+String [ ] parsedCoordinates = coordinates.replaceAll ( " " , " " ).split ( " , " ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"java.awt.geom.Point2D\" for \"distance\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+return Point.distance(this.xInWorld, this.yInWorld, xInWorld, yInWorld);
+red_line===
+distance
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+return Point.distance(this.xInWorld, this.yInWorld, xInWorld, yInWorld);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"java.awt.geom.Point2D\" for \"distanceSq\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+return Point.distanceSq(this.xInWorld, this.yInWorld, xInWorld, yInWorld);
+red_line===
+distanceSq
+start_offset===
+15
+end_offset===
+25
+Python OUTPUT===
+return Point.distanceSq(this.xInWorld, this.yInWorld, xInWorld, yInWorld);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<WorldIcon> cache;
+red_line===
+volatile List<WorldIcon>
+start_offset===
+9
+end_offset===
+33
+Python OUTPUT===
+private volatile List<WorldIcon> cache;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ConcurrentLinkedQueue<Player> players = new ConcurrentLinkedQueue<>();
+red_line===
+volatile ConcurrentLinkedQueue<Player>
+start_offset===
+9
+end_offset===
+47
+Python OUTPUT===
+private volatile ConcurrentLinkedQueue<Player> players = new ConcurrentLinkedQueue<>();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile PlayerCoordinates savedCoordinates;
+red_line===
+volatile PlayerCoordinates
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile PlayerCoordinates savedCoordinates;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile PlayerCoordinates currentCoordinates;
+red_line===
+volatile PlayerCoordinates
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile PlayerCoordinates currentCoordinates;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Can't retrieve BiomeDataOracle for dimension " + dimension);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+throw new RuntimeException("Can't retrieve BiomeDataOracle for dimension " + dimension);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+End this switch case with an unconditional break, return or throw statement.
+scn.ruleId===
+128
+scn.suspCodeStr===
+case NETHER:
+red_line===
+case NETHER:
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+case NETHER:
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int ocean                = 0;
+red_line===
+ocean
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+public static final int ocean                = 0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int plains               = 1;
+red_line===
+plains
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+public static final int plains               = 1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int desert               = 2;
+red_line===
+desert
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+public static final int desert               = 2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int extremeHills         = 3;
+red_line===
+extremeHills
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int extremeHills         = 3;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int forest               = 4;
+red_line===
+forest
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+public static final int forest               = 4;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int taiga                = 5;
+red_line===
+taiga
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+public static final int taiga                = 5;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int river                = 7;
+red_line===
+river
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+public static final int river                = 7;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int theEnd               = 9;
+red_line===
+theEnd
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+public static final int theEnd               = 9;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int frozenOcean          = 10;
+red_line===
+frozenOcean
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final int frozenOcean          = 10;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int frozenRiver          = 11;
+red_line===
+frozenRiver
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final int frozenRiver          = 11;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int icePlains            = 12;
+red_line===
+icePlains
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int icePlains            = 12;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int iceMountains         = 13;
+red_line===
+iceMountains
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int iceMountains         = 13;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int mushroomIsland       = 14;
+red_line===
+mushroomIsland
+start_offset===
+25
+end_offset===
+39
+Python OUTPUT===
+public static final int mushroomIsland       = 14;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int mushroomIslandShore  = 15;
+red_line===
+mushroomIslandShore
+start_offset===
+25
+end_offset===
+44
+Python OUTPUT===
+public static final int mushroomIslandShore  = 15;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int beach                = 16;
+red_line===
+beach
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+public static final int beach                = 16;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int desertHills          = 17;
+red_line===
+desertHills
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final int desertHills          = 17;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int forestHills          = 18;
+red_line===
+forestHills
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final int forestHills          = 18;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int taigaHills           = 19;
+red_line===
+taigaHills
+start_offset===
+25
+end_offset===
+35
+Python OUTPUT===
+public static final int taigaHills           = 19;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int extremeHillsEdge     = 20;
+red_line===
+extremeHillsEdge
+start_offset===
+25
+end_offset===
+41
+Python OUTPUT===
+public static final int extremeHillsEdge     = 20;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int jungle               = 21;
+red_line===
+jungle
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+public static final int jungle               = 21;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int jungleHills          = 22;
+red_line===
+jungleHills
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final int jungleHills          = 22;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int jungleEdge           = 23;
+red_line===
+jungleEdge
+start_offset===
+25
+end_offset===
+35
+Python OUTPUT===
+public static final int jungleEdge           = 23;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int deepOcean            = 24;
+red_line===
+deepOcean
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int deepOcean            = 24;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int stoneBeach           = 25;
+red_line===
+stoneBeach
+start_offset===
+25
+end_offset===
+35
+Python OUTPUT===
+public static final int stoneBeach           = 25;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int birchForest          = 27;
+red_line===
+birchForest
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final int birchForest          = 27;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int roofedForest         = 29;
+red_line===
+roofedForest
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int roofedForest         = 29;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int coldTaigaHills       = 31;
+red_line===
+coldTaigaHills
+start_offset===
+25
+end_offset===
+39
+Python OUTPUT===
+public static final int coldTaigaHills       = 31;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int megaTaiga            = 32;
+red_line===
+megaTaiga
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int megaTaiga            = 32;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int megaTaigaHills       = 33;
+red_line===
+megaTaigaHills
+start_offset===
+25
+end_offset===
+39
+Python OUTPUT===
+public static final int megaTaigaHills       = 33;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int extremeHillsPlus     = 34;
+red_line===
+extremeHillsPlus
+start_offset===
+25
+end_offset===
+41
+Python OUTPUT===
+public static final int extremeHillsPlus     = 34;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int savanna              = 35;
+red_line===
+savanna
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+public static final int savanna              = 35;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int savannaPlateau       = 36;
+red_line===
+savannaPlateau
+start_offset===
+25
+end_offset===
+39
+Python OUTPUT===
+public static final int savannaPlateau       = 36;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int mesa                 = 37;
+red_line===
+mesa
+start_offset===
+25
+end_offset===
+29
+Python OUTPUT===
+public static final int mesa                 = 37;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int mesaPlateauF         = 38;
+red_line===
+mesaPlateauF
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int mesaPlateauF         = 38;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int mesaPlateau          = 39;
+red_line===
+mesaPlateau
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final int mesaPlateau          = 39;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int theEndLow            = 40;
+red_line===
+theEndLow
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int theEndLow            = 40;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int theEndMedium         = 41;
+red_line===
+theEndMedium
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int theEndMedium         = 41;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int theEndHigh           = 42;
+red_line===
+theEndHigh
+start_offset===
+25
+end_offset===
+35
+Python OUTPUT===
+public static final int theEndHigh           = 42;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int theEndBarren         = 43;
+red_line===
+theEndBarren
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int theEndBarren         = 43;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int warmOcean            = 44;
+red_line===
+warmOcean
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int warmOcean            = 44;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int lukewarmOcean        = 45;
+red_line===
+lukewarmOcean
+start_offset===
+25
+end_offset===
+38
+Python OUTPUT===
+public static final int lukewarmOcean        = 45;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int coldOcean            = 46;
+red_line===
+coldOcean
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+public static final int coldOcean            = 46;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int warmDeepOcean        = 47;
+red_line===
+warmDeepOcean
+start_offset===
+25
+end_offset===
+38
+Python OUTPUT===
+public static final int warmDeepOcean        = 47;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int coldDeepOcean        = 49;
+red_line===
+coldDeepOcean
+start_offset===
+25
+end_offset===
+38
+Python OUTPUT===
+public static final int coldDeepOcean        = 49;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int theVoid              = 127;
+red_line===
+theVoid
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+public static final int theVoid              = 127;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int desertM              = desert + Biome.SPECIAL_BIOMES_START;
+red_line===
+desertM
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+public static final int desertM              = desert + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int extremeHillsM        = extremeHills + Biome.SPECIAL_BIOMES_START;
+red_line===
+extremeHillsM
+start_offset===
+25
+end_offset===
+38
+Python OUTPUT===
+public static final int extremeHillsM        = extremeHills + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int flowerForest         = forest + Biome.SPECIAL_BIOMES_START;
+red_line===
+flowerForest
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int flowerForest         = forest + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int taigaM               = taiga + Biome.SPECIAL_BIOMES_START;
+red_line===
+taigaM
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+public static final int taigaM               = taiga + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int swamplandM           = swampland + Biome.SPECIAL_BIOMES_START;
+red_line===
+swamplandM
+start_offset===
+25
+end_offset===
+35
+Python OUTPUT===
+public static final int swamplandM           = swampland + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int icePlainsSpikes      = icePlains + Biome.SPECIAL_BIOMES_START;
+red_line===
+icePlainsSpikes
+start_offset===
+25
+end_offset===
+40
+Python OUTPUT===
+public static final int icePlainsSpikes      = icePlains + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int jungleM              = jungle + Biome.SPECIAL_BIOMES_START;
+red_line===
+jungleM
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+public static final int jungleM              = jungle + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int jungleEdgeM          = jungleEdge + Biome.SPECIAL_BIOMES_START;
+red_line===
+jungleEdgeM
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final int jungleEdgeM          = jungleEdge + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int birchForestM         = birchForest + Biome.SPECIAL_BIOMES_START;
+red_line===
+birchForestM
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int birchForestM         = birchForest + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int birchForestHillsM    = birchForestHills + Biome.SPECIAL_BIOMES_START;
+red_line===
+birchForestHillsM
+start_offset===
+25
+end_offset===
+42
+Python OUTPUT===
+public static final int birchForestHillsM    = birchForestHills + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int roofedForestM        = roofedForest + Biome.SPECIAL_BIOMES_START;
+red_line===
+roofedForestM
+start_offset===
+25
+end_offset===
+38
+Python OUTPUT===
+public static final int roofedForestM        = roofedForest + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int coldTaigaM           = coldTaiga + Biome.SPECIAL_BIOMES_START;
+red_line===
+coldTaigaM
+start_offset===
+25
+end_offset===
+35
+Python OUTPUT===
+public static final int coldTaigaM           = coldTaiga + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int megaSpruceTaiga      = megaTaiga + Biome.SPECIAL_BIOMES_START;
+red_line===
+megaSpruceTaiga
+start_offset===
+25
+end_offset===
+40
+Python OUTPUT===
+public static final int megaSpruceTaiga      = megaTaiga + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int megaSpruceTaigaHills = megaTaigaHills + Biome.SPECIAL_BIOMES_START;
+red_line===
+megaSpruceTaigaHills
+start_offset===
+25
+end_offset===
+45
+Python OUTPUT===
+public static final int megaSpruceTaigaHills = megaTaigaHills + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int extremeHillsPlusM    = extremeHillsPlus + Biome.SPECIAL_BIOMES_START;
+red_line===
+extremeHillsPlusM
+start_offset===
+25
+end_offset===
+42
+Python OUTPUT===
+public static final int extremeHillsPlusM    = extremeHillsPlus + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int savannaM             = savanna + Biome.SPECIAL_BIOMES_START;
+red_line===
+savannaM
+start_offset===
+25
+end_offset===
+33
+Python OUTPUT===
+public static final int savannaM             = savanna + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int savannaPlateauM      = savannaPlateau + Biome.SPECIAL_BIOMES_START;
+red_line===
+savannaPlateauM
+start_offset===
+25
+end_offset===
+40
+Python OUTPUT===
+public static final int savannaPlateauM      = savannaPlateau + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int mesaPlateauFM        = mesaPlateauF + Biome.SPECIAL_BIOMES_START;
+red_line===
+mesaPlateauFM
+start_offset===
+25
+end_offset===
+38
+Python OUTPUT===
+public static final int mesaPlateauFM        = mesaPlateauF + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int bambooJungle         = 168;
+red_line===
+bambooJungle
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int bambooJungle         = 168;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int soulSandValley       = 170;
+red_line===
+soulSandValley
+start_offset===
+25
+end_offset===
+39
+Python OUTPUT===
+public static final int soulSandValley       = 170;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int crimsonForest        = 171;
+red_line===
+crimsonForest
+start_offset===
+25
+end_offset===
+38
+Python OUTPUT===
+public static final int crimsonForest        = 171;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int warpedForest         = 172;
+red_line===
+warpedForest
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int warpedForest         = 172;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int basaltDeltas         = 173;
+red_line===
+basaltDeltas
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int basaltDeltas         = 173;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Error\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+AmidstMessageBox.displayError("Error", e);
+red_line===
+"Error"
+start_offset===
+33
+end_offset===
+40
+Python OUTPUT===
+AmidstMessageBox.displayError("Error", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make quarterResOverride a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public boolean quarterResOverride = true;
+red_line===
+quarterResOverride
+start_offset===
+17
+end_offset===
+35
+Python OUTPUT===
+public static final boolean quarterResOverride = true ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make middleOfChunkOffset a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int middleOfChunkOffset = 9;
+red_line===
+middleOfChunkOffset
+start_offset===
+13
+end_offset===
+32
+Python OUTPUT===
+public static final int middleOfChunkOffset = 9 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make accurateLocationCount a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public boolean accurateLocationCount = true;
+red_line===
+accurateLocationCount
+start_offset===
+17
+end_offset===
+38
+Python OUTPUT===
+public static final boolean accurateLocationCount = true ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"chunkY\" which hides the field declared at line 12.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+float chunkY = (y + 8) / 16.0f;
+red_line===
+chunkY
+start_offset===
+8
+end_offset===
+14
+Python OUTPUT===
+float chunkY = (y + 8) / 16.0f;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+private short perm[];
+red_line===
+[]
+start_offset===
+19
+end_offset===
+21
+Python OUTPUT===
+private short perm[];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+private short permMod12[];
+red_line===
+[]
+start_offset===
+24
+end_offset===
+26
+Python OUTPUT===
+private short permMod12[];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"n1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+double n0, n1, n2;
+red_line===
+n1
+start_offset===
+13
+end_offset===
+15
+Python OUTPUT===
+double n0, n1, n2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"j1\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int i1, j1;
+red_line===
+j1
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+int i1, j1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"n1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+double n0, n1, n2, n3;
+red_line===
+n1
+start_offset===
+13
+end_offset===
+15
+Python OUTPUT===
+double n0, n1, n2, n3;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"j1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int i1, j1, k1;
+red_line===
+j1
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+int i1, j1, k1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"j2\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int i2, j2, k2;
+red_line===
+j2
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+int i2, j2, k2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"n1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+double n0, n1, n2, n3, n4;
+red_line===
+n1
+start_offset===
+13
+end_offset===
+15
+Python OUTPUT===
+double n0, n1, n2, n3, n4;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"j1\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int i1, j1, k1, l1;
+red_line===
+j1
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+int i1, j1, k1, l1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"j2\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int i2, j2, k2, l2;
+red_line===
+j2
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+int i2, j2, k2, l2;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"j3\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+int i3, j3, k3, l3;
+red_line===
+j3
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+int i3, j3, k3, l3;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"y\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+double x, y, z, w;
+red_line===
+y
+start_offset===
+12
+end_offset===
+13
+Python OUTPUT===
+double x, y, z, w;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double X0 = i - t;
+red_line===
+X0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double X0 = i - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027biomeList::getByIdOrNull\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+return idList.stream().map(i -> biomeList.getByIdOrNull(i)).collect(Collectors.toList());
+red_line===
+->
+start_offset===
+31
+end_offset===
+33
+Python OUTPUT===
+ return idList.stream().map(i -> biomeList.getByIdOrNull(i)).collect(Collectors.toList()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double X0 = i - t;
+red_line===
+X0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double X0 = i - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double Z0 = k - t;
+red_line===
+Z0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double Z0 = k - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double X0 = i - t;
+red_line===
+X0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double X0 = i - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double Y0 = j - t;
+red_line===
+Y0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double Y0 = j - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double Z0 = k - t;
+red_line===
+Z0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double Z0 = k - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double W0 = l - t;
+red_line===
+W0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double W0 = l - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("exception while duplicating the RunningLauncherProfile", e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+throw new RuntimeException("exception while duplicating the RunningLauncherProfile", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"biomeRegistryObj\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+Object biomeRegistryObj = metaRegistry.callMethod(getByKey, biomeRegistryKey);
+red_line===
+metaRegistry.callMethod(getByKey, biomeRegistryKey)
+start_offset===
+28
+end_offset===
+79
+Python OUTPUT===
+Object biomeRegistryObj = metaRegistry.callMethod(getByKey, biomeRegistryKey);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment; \"biomeRegistry\" already holds the assigned value along all execution paths.
+scn.ruleId===
+4165
+scn.suspCodeStr===
+biomeRegistry = Objects.requireNonNull(biomeRegistry);
+red_line===
+biomeRegistry = Objects.requireNonNull(biomeRegistry)
+start_offset===
+10
+end_offset===
+63
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literal.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+boolean isPrimitive = newType.isPrimitive() || (isArray ? newType.getComponentType().isPrimitive() : false);
+red_line===
+false
+start_offset===
+103
+end_offset===
+108
+Python OUTPUT===
+ boolean isPrimitive = newType.isPrimitive() || (isArray ? newType.getComponentType().isPrimitive() : f; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.setAccessible(true);
+red_line===
+field.setAccessible(true)
+start_offset===
+4
+end_offset===
+29
+Python OUTPUT===
+field.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+End this switch case with an unconditional break, return or throw statement.
+scn.ruleId===
+128
+scn.suspCodeStr===
+case NETHER:
+red_line===
+case NETHER:
+start_offset===
+3
+end_offset===
+15
+Python OUTPUT===
+case NETHER:
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"createMethod\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+return createMethod.invoke(providerType, providerSettings);
+red_line===
+createMethod.invoke
+start_offset===
+15
+end_offset===
+34
+Python OUTPUT===
+return createMethod.invoke(providerType, providerSettings);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.setAccessible(true);
+red_line===
+field.setAccessible(true)
+start_offset===
+4
+end_offset===
+29
+Python OUTPUT===
+field.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make classTranslator a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public ClassTranslator classTranslator;
+red_line===
+classTranslator
+start_offset===
+31
+end_offset===
+46
+Python OUTPUT===
+public static final ClassTranslator classTranslator ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make factory a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public BiFunction<Map<String, SymbolicClass>, RecognisedVersion, MinecraftInterface> factory;
+red_line===
+factory
+start_offset===
+93
+end_offset===
+100
+Python OUTPUT===
+public static final BiFunction < Map < String , SymbolicClass > , RecognisedVersion , MinecraftInterface > factory ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"skip\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+stream.skip(2);
+red_line===
+skip
+start_offset===
+9
+end_offset===
+13
+Python OUTPUT===
+stream.skip(2);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"skip\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+stream.skip(4);
+red_line===
+skip
+start_offset===
+10
+end_offset===
+14
+Python OUTPUT===
+stream.skip(4);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+result.setAccessible(true);
+red_line===
+result.setAccessible(true)
+start_offset===
+2
+end_offset===
+28
+Python OUTPUT===
+result.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+result.setAccessible(true);
+red_line===
+result.setAccessible(true)
+start_offset===
+2
+end_offset===
+28
+Python OUTPUT===
+result.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use a StringBuilder instead.
+scn.ruleId===
+1643
+scn.suspCodeStr===
+result += typeString.substring(6);
+red_line===
+result
+start_offset===
+4
+end_offset===
+10
+Python OUTPUT===
+result += typeString.substring(6);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Call \"remove()\" on \"rawThreadedAccessor\".
+scn.ruleId===
+5164
+scn.suspCodeStr===
+private final ThreadLocal<WorldAccessor> rawThreadedAccessor;
+red_line===
+rawThreadedAccessor
+start_offset===
+42
+end_offset===
+61
+Python OUTPUT===
+private final ThreadLocal<WorldAccessor> rawThreadedAccessor;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"read\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+theStream.read(classData);
+red_line===
+read
+start_offset===
+14
+end_offset===
+18
+Python OUTPUT===
+theStream.read(classData);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+scn.ruleId===
+127
+scn.suspCodeStr===
+q++;
+red_line===
+q
+start_offset===
+4
+end_offset===
+5
+Python OUTPUT===
+q++;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new RealClassConstant<Void>(type, null);
+red_line===
+<Void>
+start_offset===
+30
+end_offset===
+36
+Python OUTPUT===
+<> Void > ( type , null ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"getMenuShortcutKeyMask\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+keymask |= Toolkit.getDefaultToolkit().getMenuShortcutKeyMask();
+red_line===
+getMenuShortcutKeyMask
+start_offset===
+42
+end_offset===
+64
+Python OUTPUT===
+ keymask |= Toolkit.getDefaultToolkit().ge; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.progressEntryHolder = new AtomicReference<Entry<ProgressEntryType, Integer>>();
+red_line===
+<Entry<ProgressEntryType, Integer>>
+start_offset===
+48
+end_offset===
+83
+Python OUTPUT===
+<> , Integer >> ( ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this subtraction operation to a \"double\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+double dX = currentMouse.x - lastMouse.x;
+red_line===
+-
+start_offset===
+31
+end_offset===
+32
+Python OUTPUT===
+ double dX = currentMouse.x - lastMouse.x;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this subtraction operation to a \"double\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+double dY = currentMouse.y - lastMouse.y;
+red_line===
+-
+start_offset===
+31
+end_offset===
+32
+Python OUTPUT===
+ double dY = currentMouse.y - lastMouse.y;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"yOffset\" on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+private volatile int xOffset, yOffset;
+red_line===
+yOffset
+start_offset===
+31
+end_offset===
+38
+Python OUTPUT===
+private volatile int xOffset, yOffset;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile WorldIcon selection;
+red_line===
+volatile WorldIcon
+start_offset===
+9
+end_offset===
+27
+Python OUTPUT===
+private volatile WorldIcon selection;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"javax.swing.WindowConstants\" for \"DO_NOTHING_ON_CLOSE\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+red_line===
+DO_NOTHING_ON_CLOSE
+start_offset===
+40
+end_offset===
+59
+Python OUTPUT===
+frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+m1.setAccessible(true);
+red_line===
+m1.setAccessible(true)
+start_offset===
+3
+end_offset===
+25
+Python OUTPUT===
+m1.setAccessible(true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"javax.swing.WindowConstants\" for \"DISPOSE_ON_CLOSE\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+red_line===
+DISPOSE_ON_CLOSE
+start_offset===
+40
+end_offset===
+56
+Python OUTPUT===
+frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile LauncherProfile resolvedProfile;
+red_line===
+volatile LauncherProfile
+start_offset===
+9
+end_offset===
+33
+Python OUTPUT===
+private volatile LauncherProfile resolvedProfile;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"arial\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private static final Font STATUS_FONT = new Font("arial", Font.BOLD, 10);
+red_line===
+"arial"
+start_offset===
+50
+end_offset===
+57
+Python OUTPUT===
+private static final Font STATUS_FONT = new Font("arial", Font.BOLD, 10);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"frame\" which hides the field declared at line 44.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+JFrame frame = new JFrame("Profile Selector");
+red_line===
+frame
+start_offset===
+9
+end_offset===
+14
+Python OUTPUT===
+JFrame frame = new JFrame("Profile Selector");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"javax.swing.ScrollPaneConstants\" for \"VERTICAL_SCROLLBAR_AS_NEEDED\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+result.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+red_line===
+VERTICAL_SCROLLBAR_AS_NEEDED
+start_offset===
+48
+end_offset===
+76
+Python OUTPUT===
+result.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"javax.swing.ScrollPaneConstants\" for \"HORIZONTAL_SCROLLBAR_NEVER\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+result.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+red_line===
+HORIZONTAL_SCROLLBAR_NEVER
+start_offset===
+50
+end_offset===
+76
+Python OUTPUT===
+result.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"component\" which hides the field declared at line 98.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+Component component = new Component();
+red_line===
+component
+start_offset===
+12
+end_offset===
+21
+Python OUTPUT===
+Component component = new Component();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"javax.swing.WindowConstants\" for \"HIDE_ON_CLOSE\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+result.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+red_line===
+HIDE_ON_CLOSE
+start_offset===
+41
+end_offset===
+54
+Python OUTPUT===
+result.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"growx, pushx, wrap\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+result.add(new JLabel("Search Query:"), "growx, pushx, wrap");
+red_line===
+"growx, pushx, wrap"
+start_offset===
+42
+end_offset===
+62
+Python OUTPUT===
+result.add(new JLabel("Search Query:"), "growx, pushx, wrap");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Declare \"worldY\" and all following declarations on a separate line.
+scn.ruleId===
+1659
+scn.suspCodeStr===
+private final int worldX, worldY, width, height;
+red_line===
+worldY
+start_offset===
+28
+end_offset===
+34
+Python OUTPUT===
+private final int worldX, worldY, width, height;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027previewLabel::repaint\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+SwingUtilities.invokeLater(() -> previewLabel.repaint());
+red_line===
+->
+start_offset===
+34
+end_offset===
+36
+Python OUTPUT===
+ SwingUtilities.invokeLater(() -> previewLabel.repaint()); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this integer division to a \"double\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+int imgXOffset = (int) (((worldLongestSide - worldWidth) / 2) / imgToWorldFactor);
+red_line===
+(worldLongestSide - worldWidth) / 2
+start_offset===
+29
+end_offset===
+64
+Python OUTPUT===
+ int imgXOffset = ( int) ( ( (worldLongestSide - worldWidth)  /  2)  /  imgToWorldFactor);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this integer division to a \"double\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+int imgYOffset = (int) (((worldLongestSide - worldHeight) / 2) / imgToWorldFactor);
+red_line===
+(worldLongestSide - worldHeight) / 2
+start_offset===
+29
+end_offset===
+65
+Python OUTPUT===
+ int imgYOffset = ( int) ( ( (worldLongestSide - worldHeight)  /  2)  /  imgToWorldFactor);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"exportButton\" which hides the field declared at line 91.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+JButton exportButton = new JButton("Export");
+red_line===
+exportButton
+start_offset===
+10
+end_offset===
+22
+Python OUTPUT===
+JButton exportButton = new JButton("Export");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"javax.swing.WindowConstants\" for \"DO_NOTHING_ON_CLOSE\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+newDialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+red_line===
+DO_NOTHING_ON_CLOSE
+start_offset===
+45
+end_offset===
+64
+Python OUTPUT===
+newDialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Error\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+AmidstMessageBox.displayError(dialog, "Error", message);
+red_line===
+"Error"
+start_offset===
+42
+end_offset===
+49
+Python OUTPUT===
+AmidstMessageBox.displayError(dialog, "Error", message);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+private final StringBuffer textBuffer = new StringBuffer(128);
+red_line===
+StringBuffer
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+private final StringBuilder textBuffer = new StringBuilder ( 128 ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile FragmentGraphItem leftFragment = null;
+red_line===
+volatile FragmentGraphItem
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile FragmentGraphItem leftFragment = null;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<EndIsland> endIslands;
+red_line===
+volatile List<EndIsland>
+start_offset===
+9
+end_offset===
+33
+Python OUTPUT===
+private volatile List<EndIsland> endIslands;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use an \"AtomicReferenceArray\" instead.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile short[][] biomeData;
+red_line===
+volatile short[][]
+start_offset===
+9
+end_offset===
+27
+Python OUTPUT===
+private volatile short[][] biomeData;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+private StringBuffer buffer = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+9
+end_offset===
+21
+Python OUTPUT===
+private StringBuilder buffer = new StringBuilder ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("[" + tag + "] " + message);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("[" + tag + "] " + message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this array creation and simply pass the elements.
+scn.ruleId===
+3878
+scn.suspCodeStr===
+method.invoke(comp, new Object[] { listeners[j] });
+red_line===
+new Object[] { listeners[j] }
+start_offset===
+27
+end_offset===
+56
+Python OUTPUT===
+ method.invoke(comp, new Ob
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile FragmentGraphItem belowFragment = null;
+red_line===
+volatile FragmentGraphItem
+start_offset===
+9
+end_offset===
+35
+Python OUTPUT===
+private volatile FragmentGraphItem belowFragment = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"OS_NAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static String OS_NAME = System.getProperty("os.name").toLowerCase();
+red_line===
+OS_NAME
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+private static String OS_NAME = System.getProperty("os.name").toLowerCase();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+0 is a valid index, but is ignored by this check.
+scn.ruleId===
+2692
+scn.suspCodeStr===
+return OS_NAME.indexOf("nix") >= 0 || OS_NAME.indexOf("nux") >= 0 || OS_NAME.indexOf("aix") > 0;
+red_line===
+OS_NAME.indexOf("aix") > 0
+start_offset===
+71
+end_offset===
+97
+Python OUTPUT===
+return OS_NAME.indexOf("nix") >= 0 || OS_NAME.indexOf("nux") >= 0 || OS_NAME.indexOf("aix") > 0;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile Path dotMinecraftDirectory;
+red_line===
+volatile Path
+start_offset===
+8
+end_offset===
+21
+Python OUTPUT===
+public volatile Path dotMinecraftDirectory;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(metadata.getVersion().createLongVersionString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(metadata.getVersion().createLongVersionString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(e.getMessage());
+red_line===
+System.err
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.err.println(e.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+parser.printUsage(System.out);
+red_line===
+System.out
+start_offset===
+21
+end_offset===
+31
+Python OUTPUT===
+ parser.printUsage(System.out); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(versionString);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(versionString); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+parser.printUsage(System.out);
+red_line===
+System.out
+start_offset===
+21
+end_offset===
+31
+Python OUTPUT===
+ parser.printUsage(System.out); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(versionString);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(versionString); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Amidst crashed!");
+red_line===
+System.err
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.err.println("Amidst crashed!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(message);
+red_line===
+System.err
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.err.println(message); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile Path minecraftJsonFile;
+red_line===
+volatile Path
+start_offset===
+8
+end_offset===
+21
+Python OUTPUT===
+public volatile Path minecraftJsonFile;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile Path seedHistoryFile;
+red_line===
+volatile Path
+start_offset===
+8
+end_offset===
+21
+Python OUTPUT===
+public volatile Path seedHistoryFile;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile Path logFile;
+red_line===
+volatile Path
+start_offset===
+8
+end_offset===
+21
+Python OUTPUT===
+public volatile Path logFile;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile WorldSeed initialSeed;
+red_line===
+volatile WorldSeed
+start_offset===
+8
+end_offset===
+26
+Python OUTPUT===
+public volatile WorldSeed initialSeed;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+public volatile WorldType initialWorldType;
+red_line===
+volatile WorldType
+start_offset===
+8
+end_offset===
+26
+Python OUTPUT===
+public volatile WorldType initialWorldType;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Unexpected exception while restarting Amidst", e);
+red_line===
+RuntimeException
+start_offset===
+14
+end_offset===
+30
+Python OUTPUT===
+throw new RuntimeException("Unexpected exception while restarting Amidst", e);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile ProfileSelectWindow profileSelectWindow;
+red_line===
+volatile ProfileSelectWindow
+start_offset===
+9
+end_offset===
+37
+Python OUTPUT===
+private volatile ProfileSelectWindow profileSelectWindow;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile MainWindow mainWindow;
+red_line===
+volatile MainWindow
+start_offset===
+9
+end_offset===
+28
+Python OUTPUT===
+private volatile MainWindow mainWindow;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile Optional<LauncherProfile> selectedLauncherProfile;
+red_line===
+volatile Optional<LauncherProfile>
+start_offset===
+9
+end_offset===
+43
+Python OUTPUT===
+private volatile Optional<LauncherProfile> selectedLauncherProfile;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Invalid biome profile conversion file");
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+throw new RuntimeException("Invalid biome profile conversion file");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Unable to get biome profile conversion file", e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+throw new RuntimeException("Unable to get biome profile conversion file", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Invalid biome profile conversion file", e);
+red_line===
+RuntimeException
+start_offset===
+17
+end_offset===
+33
+Python OUTPUT===
+throw new RuntimeException("Invalid biome profile conversion file", e);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile T value;
+red_line===
+volatile T
+start_offset===
+9
+end_offset===
+19
+Python OUTPUT===
+private volatile T value;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+byte buf[] = new byte[4096];
+red_line===
+[]
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+byte buf[] = new byte[4096];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"unable to load resource: \u0027\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new IllegalArgumentException("unable to load resource: '" + name + "'");
+red_line===
+"unable to load resource: '"
+start_offset===
+38
+end_offset===
+66
+Python OUTPUT===
+throw new IllegalArgumentException("unable to load resource: '" + name + "'");
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use an \"AtomicReferenceArray\" instead.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile boolean[][] isSlimeChunk;
+red_line===
+volatile boolean[][]
+start_offset===
+9
+end_offset===
+29
+Python OUTPUT===
+private volatile boolean[][] isSlimeChunk;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make y a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile int y;
+red_line===
+y
+start_offset===
+21
+end_offset===
+22
+Python OUTPUT===
+public static final volatile int y ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make height a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile int height;
+red_line===
+height
+start_offset===
+21
+end_offset===
+27
+Python OUTPUT===
+public static final volatile int height ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile WorldType worldType;
+red_line===
+volatile WorldType
+start_offset===
+9
+end_offset===
+27
+Python OUTPUT===
+private volatile WorldType worldType;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile SortedMap<CoordinatesInWorld, List<EndIsland>> endIslands;
+red_line===
+volatile SortedMap<CoordinatesInWorld, List<EndIsland>>
+start_offset===
+9
+end_offset===
+64
+Python OUTPUT===
+private volatile SortedMap<CoordinatesInWorld, List<EndIsland>> endIslands;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"Arrays.copyOf\", \"Arrays.asList\", \"Collections.addAll\" or \"System.arraycopy\" instead.
+scn.ruleId===
+3012
+scn.suspCodeStr===
+result[i] = in[i];
+red_line===
+result[i] = in[i];
+start_offset===
+3
+end_offset===
+21
+Python OUTPUT===
+result[i] = in[i];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("unable to load testdata", e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+throw new RuntimeException("unable to load testdata", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Couldn't create test worlds directory", e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+throw new RuntimeException("Couldn't create test worlds directory", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make startTime a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile long startTime;
+red_line===
+startTime
+start_offset===
+22
+end_offset===
+31
+Python OUTPUT===
+public static final volatile long startTime ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(renderer.render(version, hasServer, hasClient));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(renderer.render(version, hasServer, hasClient)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(b.toString());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(b.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(message);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(version.getId());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(version.getId()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(message);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(version.getId());
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(version.getId()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use a StringBuilder instead.
+scn.ruleId===
+1643
+scn.suspCodeStr===
+result += c;
+red_line===
+result
+start_offset===
+3
+end_offset===
+9
+Python OUTPUT===
+result += c;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(title);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(title); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(renderer.render(version, hasServer, hasClient));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(renderer.render(version, hasServer, hasClient)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Versions without a match are probably removed from the launcher.");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println("Versions without a match are probably removed from the launcher."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(GSON.toJson(json));
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(GSON.toJson(json)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(title);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(title); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(line);
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+ System.out.println(line); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(profile.serialize());
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+ System.out.println(profile.serialize()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make x a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile int x;
+red_line===
+x
+start_offset===
+21
+end_offset===
+22
+Python OUTPUT===
+public static final volatile int x ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make width a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile int width;
+red_line===
+width
+start_offset===
+21
+end_offset===
+26
+Python OUTPUT===
+public static final volatile int width ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make threadName a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public volatile String threadName;
+red_line===
+threadName
+start_offset===
+24
+end_offset===
+34
+Python OUTPUT===
+public static final volatile String threadName ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile List<String> biomes = Collections.emptyList();
+red_line===
+volatile List<String>
+start_offset===
+9
+end_offset===
+30
+Python OUTPUT===
+private volatile List<String> biomes = Collections.emptyList();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"java.awt.geom.Point2D\" for \"distance\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+return Point.distance(xInWorld, yInWorld, other.xInWorld, other.yInWorld);
+red_line===
+distance
+start_offset===
+15
+end_offset===
+23
+Python OUTPUT===
+return Point.distance(xInWorld, yInWorld, other.xInWorld, other.yInWorld);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final int mesaPlateauM         = mesaPlateau + Biome.SPECIAL_BIOMES_START;
+red_line===
+mesaPlateauM
+start_offset===
+25
+end_offset===
+37
+Python OUTPUT===
+public static final int mesaPlateauM         = mesaPlateau + Biome.SPECIAL_BIOMES_START;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"chunkX\" which hides the field declared at line 11.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+float chunkX = (x + 8) / 16.0f;
+red_line===
+chunkX
+start_offset===
+8
+end_offset===
+14
+Python OUTPUT===
+float chunkX = (x + 8) / 16.0f;
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this addition operation to a \"double\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+return getResult(adjustedX * adjustedX + adjustedY * adjustedY);
+red_line===
++
+start_offset===
+41
+end_offset===
+42
+Python OUTPUT===
+ return getResult(adjustedX *adjustedX + adjustedY * adjustedY);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double Y0 = j - t;
+red_line===
+Y0
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+double Y0 = j - t;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Parameters to compareNewerIsLower have the same names but not the same order as the method arguments.
+scn.ruleId===
+2234
+scn.suspCodeStr===
+return compareNewerIsLower(version2, version1);
+red_line===
+(version2, version1)
+start_offset===
+28
+end_offset===
+48
+Python OUTPUT===
+return compareNewerIsLower(version2, version1);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Parameters to compareNewerIsLower have the same names but not the same order as the method arguments.
+scn.ruleId===
+2234
+scn.suspCodeStr===
+private static final Pattern ARG_PATTERN = Pattern.compile("([\\[]+)?([BCDFIJSZV]|L[^;]+)");
+red_line===
+n ARG_PATTERN = Patt
+start_offset===
+28
+end_offset===
+48
+Python OUTPUT===
+private static final Pattern ARG_PATTERN = Pattern.compile("([\\[]+)?([BCDFIJSZV]|L[^;]+)");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new RealClassConstant<Void>(type, null);
+red_line===
+<Void>
+start_offset===
+30
+end_offset===
+36
+Python OUTPUT===
+<> Void > ( type , null ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Don\u0027t try to be smarter than the JVM, remove this call to run the garbage collector.
+scn.ruleId===
+1215
+scn.suspCodeStr===
+System.gc();
+red_line===
+gc
+start_offset===
+11
+end_offset===
+13
+Python OUTPUT===
+System.gc();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Export Biomes to Image ...\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+menuBarSupplier.get().setMenuItemsEnabled(new String[] { "Export Biomes to Image ...", "Biome Profile" }, true);
+red_line===
+"Export Biomes to Image ..."
+start_offset===
+61
+end_offset===
+89
+Python OUTPUT===
+menuBarSupplier.get().setMenuItemsEnabled(new String[] { "Export Biomes to Image ...", "Biome Profile" }, true);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+private TreeMap<Integer, Biome> biomes = new TreeMap<Integer, Biome>(Biome.biomeIdComparator());
+red_line===
+<Integer, Biome>
+start_offset===
+53
+end_offset===
+69
+Python OUTPUT===
+<> biomes = new TreeMap < Integer , Biome > ( Biome.biomeIdComparator ( ) ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"skip\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+stream.skip(1);
+red_line===
+skip
+start_offset===
+11
+end_offset===
+15
+Python OUTPUT===
+stream.skip(1);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+return new RealClassConstant<Void>(type, null);
+red_line===
+<Void>
+start_offset===
+30
+end_offset===
+36
+Python OUTPUT===
+<> Void > ( type , null ) ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"skip\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+stream.skip(2);
+red_line===
+skip
+start_offset===
+10
+end_offset===
+14
+Python OUTPUT===
+stream.skip(2);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"javax.swing.SwingConstants\" for \"VERTICAL\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+JSlider slider = new JSlider(JSlider.VERTICAL, 1, cores, settings.threads.get());
+red_line===
+VERTICAL
+start_offset===
+39
+end_offset===
+47
+Python OUTPUT===
+JSlider slider = new JSlider(JSlider.VERTICAL, 1, cores, settings.threads.get());
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use a thread-safe type; adding \"volatile\" is not enough to make this field thread-safe.
+scn.ruleId===
+3077
+scn.suspCodeStr===
+private volatile Map<Integer, BiomeColorJson> colorMap;
+red_line===
+volatile Map<Integer, BiomeColorJson>
+start_offset===
+9
+end_offset===
+46
+Python OUTPUT===
+private volatile Map<Integer, BiomeColorJson> colorMap;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("Unable to create default biome profile", e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+throw new RuntimeException("Unable to create default biome profile", e);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027onFinished::run\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+runInEDT(() -> onFinished.run());
+red_line===
+->
+start_offset===
+16
+end_offset===
+18
+Python OUTPUT===
+ runInEDT(() -> onFinished.run()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Change this instance-reference to a static reference.
+scn.ruleId===
+2209
+scn.suspCodeStr===
+this.quarterResOverride = config.quarterResOverride;
+red_line===
+config
+start_offset===
+28
+end_offset===
+34
+Python OUTPUT===
+ this.quarterResOverride = config.quarterResOverride; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Change this instance-reference to a static reference.
+scn.ruleId===
+2209
+scn.suspCodeStr===
+this.middleOfChunkOffset = config.middleOfChunkOffset;
+red_line===
+config
+start_offset===
+29
+end_offset===
+35
+Python OUTPUT===
+ this.middleOfChunkOffset = config.middleOfChunkOffset; 
+isFixed===
+true
+==================

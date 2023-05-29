@@ -1,0 +1,19 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"classification\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+File targetDirectory = testResource("classification");
+red_line===
+"classification"
+start_offset===
+0
+end_offset===
+0
+Python OUTPUT===
+
+isFixed===
+false
+==================

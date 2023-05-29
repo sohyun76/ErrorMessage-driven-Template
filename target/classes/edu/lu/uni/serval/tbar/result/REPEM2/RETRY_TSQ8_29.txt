@@ -1,0 +1,4313 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+return (new Double(o1.position)).compareTo(new Double(o2.position));
+red_line===
+Double
+start_offset===
+28
+end_offset===
+34
+Python OUTPUT===
+ return (new Double (o1.position)).compareTo (new  (o2.position));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Double\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+Double d2 = new Double(o2.getQuantity(Quantity.TOTAL_SIMULATION_TIME));
+red_line===
+Double
+start_offset===
+40
+end_offset===
+46
+Python OUTPUT===
+ Double d2 = new (o2.getQuantity(Quantity.TOTAL_SIMULATION_TIME));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"appFrame\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+AppFrame appFrame = new AppFrame(resourceBundle, projectMetaData, properties);
+red_line===
+appFrame
+start_offset===
+17
+end_offset===
+25
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("# XML SCHEMA VALIDATION FAILED: ");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("# XML SCHEMA VALIDATION FAILED: "); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("SEVERITY:  " + event.getSeverity());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("SEVERITY: " + event.getSeverity()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+    e.prin
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+    e.prin
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ e.printStackTrace(); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"writer\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+writer.println(line);
+red_line===
+writer.println
+start_offset===
+16
+end_offset===
+30
+Python OUTPUT===
+writer.println(line);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"writer\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+writer.close();
+red_line===
+writer.close
+start_offset===
+12
+end_offset===
+24
+Python OUTPUT===
+writer.close();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+A \"NullPointerException\" could be thrown; \"writer\" is nullable here.
+scn.ruleId===
+2259
+scn.suspCodeStr===
+writer.println(line);
+red_line===
+writer.println
+start_offset===
+16
+end_offset===
+30
+Python OUTPUT===
+writer.println(line);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+String line;
+red_line===
+line
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+rand = new Random(randomSeed);
+red_line===
+Rand
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+private static Random rand = new Random();
+red_line===
+Rand
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int r = (int) (Math.random() * 256);
+red_line===
+t) (
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int g = (int) (Math.random() * 256);
+red_line===
+t) (
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int b = (int) (Math.random() * 256);
+red_line===
+t) (
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+Stac
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"line\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+Stac
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("option -h. Exit Programm");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("option -h. Exit Programm"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+private static final String LOG4J_PATH = "/config/";
+red_line===
+"/config/"
+start_offset===
+45
+end_offset===
+55
+Python OUTPUT===
+private static final String LOG4J_PATH = "/config/";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+private final LaneSegment laneSegments[];
+red_line===
+[]
+start_offset===
+42
+end_offset===
+44
+Python OUTPUT===
+private final LaneSegment laneSegments[];
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert roadLength > 0;
+red_line===
+assert roadLength > 0;
+start_offset===
+8
+end_offset===
+30
+Python OUTPUT===
+ assert roadLength > 0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"roadMapping\" which hides the field declared at line 132.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final RoadMapping roadMapping = roadMapping();
+red_line===
+roadMapping
+start_offset===
+26
+end_offset===
+37
+Python OUTPUT===
+final RoadMapping roadMapping = roadMapping();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.getSpeed() >= 0.0 : "vehicleSpeed=" + vehicle.getSpeed();
+red_line===
+assert vehicle.getSpeed() >= 0.0 : "vehicleSpeed=" + vehicle.getSpeed();
+start_offset===
+8
+end_offset===
+80
+Python OUTPUT===
+ assert vehicle.getSpeed() >= 0.0 : "vehicleSpeed=" + vehicle.getSpeed(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.roadSegmentId() == roadSegment.id();
+red_line===
+assert vehicle.roadSegmentId() == roadSegment.id();
+start_offset===
+8
+end_offset===
+59
+Python OUTPUT===
+ assert vehicle.roadSegmentId() == roadSegment.id(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.getSpeed() >= 0.0;
+red_line===
+assert vehicle.getSpeed() >= 0.0;
+start_offset===
+8
+end_offset===
+41
+Python OUTPUT===
+ assert vehicle.getSpeed() >= 0.0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+public static final int TO_LEFT = -1;
+red_line===
+    public static final int TO_LEFT = -1; // TODO decrease index
+start_offset===
+0
+end_offset===
+64
+Python OUTPUT===
+public static final int TO_LEFT = -1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+private final Predicate<Vehicle> predicate;
+red_line===
+    private final Predicate<Vehicle> predicate; // TODO measure performance for this vehicle iterator
+start_offset===
+0
+end_offset===
+101
+Python OUTPUT===
+private final Predicate<Vehicle> predicate;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert fromRoad1.laneCount() + fromRoad2.laneCount() == toRoad.laneCount();
+red_line===
+assert fromRoad1.laneCount() + fromRoad2.laneCount() == toRoad.laneCount();
+start_offset===
+8
+end_offset===
+83
+Python OUTPUT===
+ assert fromRoad1.laneCount() + fromRoad2.laneCount() == toRoad.laneCount(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"accResult\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final double accResult = frac * Math.min(accInOwnLane, accLeft) + (1 - frac) * accInOwnLane;
+red_line===
+frac * Math.min(accInOwnLane, accLeft) + (1 - frac) * accInOwnLane
+start_offset===
+33
+end_offset===
+99
+Python OUTPUT===
+final double accResult = frac * Math.min(accInOwnLane, accLeft) + (1 - frac) * accInOwnLane;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"aWanted\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final double aWanted = (vNew - v) / TLocal;
+red_line===
+(vNew - v) / TLocal
+start_offset===
+31
+end_offset===
+50
+Python OUTPUT===
+final double aWanted = (vNew - v) / TLocal;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"aWanted\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final double aWanted = (vNew - v) / TLocal;
+red_line===
+(vNew - v) / TLocal
+start_offset===
+31
+end_offset===
+50
+Python OUTPUT===
+final double aWanted = (vNew - v) / TLocal;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"aWanted\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+double aWanted = (vNew - v) / dtLocal;
+red_line===
+(vNew - v) / dtLocal
+start_offset===
+25
+end_offset===
+45
+Python OUTPUT===
+double aWanted = (vNew - v) / dtLocal;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final double dtCA = 1;
+red_line===
+dtCA
+start_offset===
+32
+end_offset===
+36
+Python OUTPUT===
+private static final double dtCA = 1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract this nested ternary operation into an independent statement.
+scn.ruleId===
+3358
+scn.suspCodeStr===
+final int xi = (r1 < pb) ? -1 : (r1 < pb + pa) ? 1 : 0;
+red_line===
+(r1 < pb + pa) ? 1 : 0
+start_offset===
+40
+end_offset===
+62
+Python OUTPUT===
+final int xi = (r1 < pb) ? -1 : (r1 < pb + pa) ? 1 : 0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"pa\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+final double pa = (vLoc < param.getVp()) ? param.getPa1() : param.getPa2();
+red_line===
+= (vLoc < param.getVp()) ? param.getPa1() : param.getPa2()
+start_offset===
+24
+end_offset===
+82
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"pb\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+final double pb = (vLoc < 1) ? param.getPb0() : param.getPb1();
+red_line===
+= (vLoc < 1) ? param.getPb0() : param.getPb1()
+start_offset===
+24
+end_offset===
+70
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"r1\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+final double r1 = MyRandom.nextDouble();
+red_line===
+= MyRandom.nextDouble()
+start_offset===
+24
+end_offset===
+47
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"length\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final double length;
+red_line===
+length
+start_offset===
+25
+end_offset===
+31
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double a_max = 4 * getP0() / (v_c * param.getMass());
+red_line===
+a_max
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+double a_max = 4 * getP0() / (v_c * param.getMass());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double F_diagonal = (4 * getP0() / v_c) * (1 - v / v_c) * ((v < v_c) ? 1 : 0);
+red_line===
+F_diagonal
+start_offset===
+15
+end_offset===
+25
+Python OUTPUT===
+double F_diagonal = (4 * getP0() / v_c) * (1 - v / v_c) * ((v < v_c) ? 1 : 0);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"gradientSlip\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+double gradientSlip = a_max / EARTH_GRAVITY;
+red_line===
+= a_max / EARTH_GRAVITY
+start_offset===
+28
+end_offset===
+51
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double b_kin = 0.5 * v * dv * ((dv > 0) ? 1 : 0) / Math.max(s, 0.00001 * s0);
+red_line===
+b_kin
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+double b_kin = 0.5 * v * dv * ((dv > 0) ? 1 : 0) / Math.max(s, 0.00001 * s0);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"distanceBeforeExitWantsToChangeLanes\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static double distanceBeforeExitWantsToChangeLanes = 500.0;
+red_line===
+distanceBeforeExitWantsToChangeLanes
+start_offset===
+26
+end_offset===
+62
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"bias\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+double bias = me.getMaxDeceleration() * interactionDistance / Math.max(distanceToRoadSegmentEnd, 10.0);
+red_line===
+me.getMaxDeceleration() * interactionDistance / Math.max(distanceToRoadSegmentEnd, 10.0)
+start_offset===
+22
+end_offset===
+110
+Python OUTPUT===
+double bias = me.getMaxDeceleration() * interactionDistance / Math.max(distanceToRoadSegmentEnd, 10.0);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"back\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+final Vehicle back = laneSegment.rearVehicle(subjectVehicle);
+red_line===
+= laneSegment.rearVehicle(subjectVehicle)
+start_offset===
+27
+end_offset===
+68
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"front\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+final Vehicle front = laneSegment.frontVehicle(subjectVehicle);
+red_line===
+= laneSegment.frontVehicle(subjectVehicle)
+start_offset===
+28
+end_offset===
+70
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+final String ignoreLabel = "Obstacle";
+red_line===
+        final String ignoreLabel = "Obstacle"; // quick hack TODO remove hack
+start_offset===
+0
+end_offset===
+77
+Python OUTPUT===
+final String ignoreLabel = "Obstacle";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"nextTemplateId\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static long nextTemplateId = INITIAL_TEMPLATE_ID;
+red_line===
+nextTemplateId
+start_offset===
+24
+end_offset===
+38
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert alphaT > 0;
+red_line===
+assert alphaT > 0;
+start_offset===
+8
+end_offset===
+26
+Python OUTPUT===
+ assert alphaT > 0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String extensionFormat = ".serviceprov_%s.csv";
+red_line===
+extensionFormat
+start_offset===
+32
+end_offset===
+47
+Python OUTPUT===
+private static final String extensionFormat = ".serviceprov_%s.csv";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Unexpected end of simulator: perform ShutdownHooks");
+red_line===
+System.err
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.err.println("Unexpected end of simulator: perform ShutdownHooks"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+private static final double DEFAULT_LANE_WIDTH = 5;
+red_line===
+        private static final double DEFAULT_LANE_WIDTH = 5; // TODO
+start_offset===
+0
+end_offset===
+67
+Python OUTPUT===
+private static final double DEFAULT_LANE_WIDTH = 5;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double Q = 0.0;
+red_line===
+Q
+start_offset===
+15
+end_offset===
+16
+Python OUTPUT===
+double Q = 0.0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+LOG.warn("creating of RoadMappingPoly not well tested, needs revision.");
+red_line===
+        LOG.warn("creating of RoadMappingPoly not well tested, needs revision."); // TODO
+start_offset===
+0
+end_offset===
+89
+Python OUTPUT===
+LOG.warn("creating of RoadMappingPoly not well tested, needs revision.");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"road\u003d\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+throw new IllegalArgumentException("road=" + road.getId() + " defined without lanes.");
+red_line===
+"road="
+start_offset===
+47
+end_offset===
+54
+Python OUTPUT===
+throw new IllegalArgumentException("road=" + road.getId() + " defined without lanes.");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(String.format("time=%s --> dateTime=%s", time, dateTime));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(String.format("time=%s --> dateTime=%s", time, dateTime)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("startPos=" + roadMapping.startPos(lateralOffset));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("startPos=" + roadMapping.startPos(lateralOffset)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("startPos=" + roadMapping.endPos(lateralOffset));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("startPos=" + roadMapping.endPos(lateralOffset)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"vehicleLane1\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+Vehicle vehicleLane1 = new Vehicle(0, 0, Lanes.LANE1, 10, 3);
+red_line===
+= new Vehicle(0, 0, Lanes.LANE1, 10, 3)
+start_offset===
+29
+end_offset===
+68
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"vehicleLane2\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+Vehicle vehicleLane2 = new Vehicle(0, 0, Lanes.LANE2, 10, 3);
+red_line===
+= new Vehicle(0, 0, Lanes.LANE2, 10, 3)
+start_offset===
+29
+end_offset===
+68
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final double delta = 0.00001;
+red_line===
+delta
+start_offset===
+25
+end_offset===
+30
+Python OUTPUT===
+private static final double delta = 0.00001 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"trafficSource\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private TrafficSourceMacro trafficSource;
+red_line===
+trafficSource
+start_offset===
+31
+end_offset===
+44
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"FileInputStream\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+final InputStream in = new FileInputStream(file);
+red_line===
+new FileInputStream(file)
+start_offset===
+39
+end_offset===
+64
+Python OUTPUT===
+final InputStream in = new FileInputStream(file);
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Change this condition so that it does not always evaluate to \"true\"
+scn.ruleId===
+2583
+scn.suspCodeStr===
+float vRelative = (vmax > vmin) ? (float) ((v - vmin) / (vmax - vmin)) : 0;
+red_line===
+vmax > vmin
+start_offset===
+27
+end_offset===
+38
+Python OUTPUT===
+true vmin ) ? ( float ) ( ( v - vmin ) ( vmax - vmin ) ) : 0 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final boolean draggingAllowed = true;
+red_line===
+draggingAllowed
+start_offset===
+26
+end_offset===
+41
+Python OUTPUT===
+private static final boolean draggingAllowed = true ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert !roadMapping.isPeer() : "should not be painted twice";
+red_line===
+assert !roadMapping.isPeer() : "should not be painted twice";
+start_offset===
+8
+end_offset===
+69
+Python OUTPUT===
+ assert !roadMapping.isPeer() : "should not be painted twice"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"idleConsumptionRate\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final double idleConsumptionRate;
+red_line===
+idleConsumptionRate
+start_offset===
+25
+end_offset===
+44
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make sure this expression can\u0027t be zero before doing this division.
+scn.ruleId===
+3518
+scn.suspCodeStr===
+final double consump_100km = 1e8 * fuelFlow / Math.max(v, 0.001);
+red_line===
+Math.max(v, 0.001)
+start_offset===
+62
+end_offset===
+80
+Python OUTPUT===
+final double consump_100km = 1e8 * fuelFlow Math . max ( v , 0.001 ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Double\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+final Double pos1 = new Double((o1).doubleValue());
+red_line===
+Double
+start_offset===
+40
+end_offset===
+46
+Python OUTPUT===
+ final Double pos1 = new ((o1).doubleValue());
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Double\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+final Double pos2 = new Double((o2).doubleValue());
+red_line===
+Double
+start_offset===
+40
+end_offset===
+46
+Python OUTPUT===
+ final Double pos2 = new ((o2).doubleValue());
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"defaultGears\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+List<Double> defaultGears = Lists.newArrayList(13.9, 7.8, 5.26, 3.79, 3.09);
+red_line===
+Lists.newArrayList(13.9, 7.8, 5.26, 3.79, 3.09)
+start_offset===
+36
+end_offset===
+83
+Python OUTPUT===
+List<Double> defaultGears = Lists.newArrayList(13.9, 7.8, 5.26, 3.79, 3.09);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final double POW_ERROR = 1e7;
+red_line===
+POW_ERROR
+start_offset===
+25
+end_offset===
+34
+Python OUTPUT===
+private static final double POW_ERROR = 1e7 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+ConsumptionDataRecord record = records.get(i);
+red_line===
+record
+start_offset===
+34
+end_offset===
+40
+Python OUTPUT===
+ConsumptionDataRecord record = records.get(i);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"parser\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+InputDataParser parser = new InputDataParser(batchInput.getColumns(), batchInput.getConversions());
+red_line===
+= new InputDataParser(batchInput.getColumns(), batchInput.getConversions())
+start_offset===
+31
+end_offset===
+106
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"index\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int index = 0;
+red_line===
+index
+start_offset===
+12
+end_offset===
+17
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+VULNERABILITY
+scn.errorMessage===
+Disable access to external entities in XML parsing.
+scn.ruleId===
+2755
+scn.suspCodeStr===
+SchemaFactory sf = SchemaFactory.newInstance(W3C_XML_SCHEMA_NS_URI);
+red_line===
+newInstance
+start_offset===
+41
+end_offset===
+52
+Python OUTPUT===
+SchemaFactory sf = SchemaFactory.newInstance(W3C_XML_SCHEMA_NS_URI);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("EVENT");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("EVENT"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("MESSAGE:  " + event.getMessage());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("MESSAGE: " + event.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("LINKED EXCEPTION:  " + event.getLinkedException());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("LINKED EXCEPTION: " + event.getLinkedException()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("LOCATOR");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("LOCATOR"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("    LINE NUMBER:  " + event.getLocator().getLineNumber());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(" LINE NUMBER: " + event.getLocator().getLineNumber()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("    COLUMN NUMBER:  " + event.getLocator().getColumnNumber());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(" COLUMN NUMBER: " + event.getLocator().getColumnNumber()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("    OFFSET:  " + event.getLocator().getOffset());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(" OFFSET: " + event.getLocator().getOffset()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("    OBJECT:  " + event.getLocator().getObject());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(" OBJECT: " + event.getLocator().getObject()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("    NODE:  " + event.getLocator().getNode());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(" NODE: " + event.getLocator().getNode()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("    URL:  " + event.getLocator().getURL());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(" URL: " + event.getLocator().getURL()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"XMLReaderFactory\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+final XMLReader myXMLReader = XMLReaderFactory.createXMLReader();
+red_line===
+XMLReaderFactory
+start_offset===
+50
+end_offset===
+66
+Python OUTPUT===
+ final XMLReader myXMLReader = XMLReaderFactory.cr 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"input\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final InputSource input = new InputSource(is);
+red_line===
+new InputSource(is)
+start_offset===
+54
+end_offset===
+73
+Python OUTPUT===
+final InputSource input = new InputSource(is);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("perform shutdown callbacks=" + callbacks.size());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("perform shutdown callbacks=" + callbacks.size()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"LOG\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+3008
+scn.suspCodeStr===
+private static Logger LOG = LoggerFactory.getLogger(FileUtils.class);
+red_line===
+LOG
+start_offset===
+26
+end_offset===
+29
+Python OUTPUT===
+private static Logger LOG = LoggerFactory.getLogger(FileUtils.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+final boolean success = file.delete();
+red_line===
+delete
+start_offset===
+41
+end_offset===
+47
+Python OUTPUT===
+final boolean success = file.delete();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+return dir.delete();
+red_line===
+delete
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+return dir.delete();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+StackT
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+StackT
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+StackT
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+StackT
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+StackT
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use \"java.nio.file.Files#delete\" here for better messages on error conditions.
+scn.ruleId===
+4042
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+StackT
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+e.printStackTrace();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"fstr\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final PrintWriter fstr = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
+red_line===
+new PrintWriter(new BufferedWriter(new FileWriter(filename, false)))
+start_offset===
+37
+end_offset===
+105
+Python OUTPUT===
+final PrintWriter fstr = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"reader\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final BufferedReader reader = new BufferedReader(new FileReader(filename));
+red_line===
+new BufferedReader(new FileReader(filename))
+start_offset===
+42
+end_offset===
+86
+Python OUTPUT===
+final BufferedReader reader = new BufferedReader(new FileReader(filename));
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make sure \"norm\" can\u0027t be zero before doing this division.
+scn.ruleId===
+3518
+scn.suspCodeStr===
+return result / norm;
+red_line===
+norm
+start_offset===
+24
+end_offset===
+28
+Python OUTPUT===
+final return result norm ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+return (a << 24) | (r << 16) | (g << 8) | (b << 0);
+red_line===
+<<
+start_offset===
+53
+end_offset===
+55
+Python OUTPUT===
+ return (a << 24) | (r << 16) | (g << 8) | (b << 0); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+return 0xFF000000 | (r << 16) | (g << 8) | (b << 0);
+red_line===
+<<
+start_offset===
+54
+end_offset===
+56
+Python OUTPUT===
+ return 0xFF000000 | (r << 16) | (g << 8) | (b << 0); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+return (a << 24) | (gray << 16) | (gray << 8) | (gray << 0);
+red_line===
+<<
+start_offset===
+62
+end_offset===
+64
+Python OUTPUT===
+ return (a << 24) | (gray << 16) | (gray << 8) | (gray << 0); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+return 0xFF000000 | (gray << 16) | (gray << 8) | (gray << 0);
+red_line===
+<<
+start_offset===
+63
+end_offset===
+65
+Python OUTPUT===
+ return 0xFF000000 | (gray << 16) | (gray << 8) | (gray << 0); 
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Remove this useless shift
+scn.ruleId===
+2183
+scn.suspCodeStr===
+return (rgba >> 0) & 0xFF;
+red_line===
+>>
+start_offset===
+21
+end_offset===
+23
+Python OUTPUT===
+ return (rgba >> 0) &xFF; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"LOG\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+public final Logger LOG = LoggerFactory.getLogger(this.getClass());
+red_line===
+LOG
+start_offset===
+24
+end_offset===
+27
+Python OUTPUT===
+public final Logger LOG = LoggerFactory.getLogger(this.getClass());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Parsing failed.  Reason: " + e.getMessage());
+red_line===
+System.err
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.err.println("Parsing failed. Reason: " + e.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("No output path provided via option. Set output path to current directory!");
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("No output path provided via option. Set output path to current directory!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("logger properties file written to " + ProjectMetaData.getLog4jFilename());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("logger properties file written to " + ProjectMetaData.getLog4jFilename()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Not working implemented!");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Not working implemented!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("No configuration file provided! Please specify a file via the option -f.");
+red_line===
+System.err
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.err.println("No configuration file provided! Please specify a file via the option -f."); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println("Configuration file \"" + filename + "\" not found!");
+red_line===
+System.err
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.err.println("Configuration file \"" + filename + "\" not found!"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("set projectname to = " + projectName);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("set projectname to = " + projectName); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("log4j configuration read from=" + file.getAbsolutePath());
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("log4j configuration read from=" + file.getAbsolutePath()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"regulators\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private final List<Regulator> regulators = new ArrayList<>();
+red_line===
+regulators
+start_offset===
+34
+end_offset===
+44
+Python OUTPUT===
+private final List<Regulator> regulators = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"roadObjects\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+final Map<RoadObjectType, SortedSet<RoadObject>> roadObjects = new EnumMap<>(RoadObjectType.class);
+red_line===
+roadObjects
+start_offset===
+53
+end_offset===
+64
+Python OUTPUT===
+final Map<RoadObjectType, SortedSet<RoadObject>> roadObjects = new EnumMap<>(RoadObjectType.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+this.signalType = checkNotNull(checkTypesAndExtractSignalType());
+red_line===
+        this.signalType = checkNotNull(checkTypesAndExtractSignalType());  // TODO fix sonar
+start_offset===
+0
+end_offset===
+92
+Python OUTPUT===
+this.signalType = checkNotNull(checkTypesAndExtractSignalType());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"signalType\" which hides the field declared at line 63.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+String signalType = null;
+red_line===
+signalType
+start_offset===
+15
+end_offset===
+25
+Python OUTPUT===
+String signalType = null;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert roadLength > 0.0;
+red_line===
+assert roadLength > 0.0;
+start_offset===
+8
+end_offset===
+32
+Python OUTPUT===
+ assert roadLength > 0.0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert laneCount >= 1 : "laneCount=" + laneCount;
+red_line===
+assert laneCount >= 1 : "laneCount=" + laneCount;
+start_offset===
+8
+end_offset===
+57
+Python OUTPUT===
+ assert laneCount >= 1 : "laneCount=" + laneCount; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Take the required action to fix the issue indicated by this comment.
+scn.ruleId===
+1134
+scn.suspCodeStr===
+double maxRoadSpeed = freeFlowSpeed;
+red_line===
+            double maxRoadSpeed = freeFlowSpeed; // FIXME consider speedlimits
+start_offset===
+0
+end_offset===
+78
+Python OUTPUT===
+double maxRoadSpeed = freeFlowSpeed;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert obstacle.type() == Vehicle.Type.OBSTACLE;
+red_line===
+assert obstacle.type() == Vehicle.Type.OBSTACLE;
+start_offset===
+8
+end_offset===
+56
+Python OUTPUT===
+ assert obstacle.type() == Vehicle.Type.OBSTACLE; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"lane\u003d\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Preconditions.checkArgument(lane >= Lanes.LANE1 && lane <= laneCount, "lane=" + lane);
+red_line===
+"lane="
+start_offset===
+78
+end_offset===
+85
+Python OUTPUT===
+Preconditions.checkArgument(lane >= Lanes.LANE1 && lane <= laneCount, "lane=" + lane);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make s a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public double s = 0.0;
+red_line===
+s
+start_offset===
+22
+end_offset===
+23
+Python OUTPUT===
+public static final double s = 0.0 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make vdiff a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public double vdiff = 0.0;
+red_line===
+vdiff
+start_offset===
+22
+end_offset===
+27
+Python OUTPUT===
+public static final double vdiff = 0.0 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make vel a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public double vel = 0.0;
+red_line===
+vel
+start_offset===
+22
+end_offset===
+25
+Python OUTPUT===
+public static final double vel = 0.0 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make acc a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public double acc = 0.0;
+red_line===
+acc
+start_offset===
+22
+end_offset===
+25
+Python OUTPUT===
+public static final double acc = 0.0 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+Vehicle rearVehicle = laneSegment.rearVehicle(vehicle.getRearPosition() - 1);
+red_line===
+        Vehicle rearVehicle = laneSegment.rearVehicle(vehicle.getRearPosition() - 1); // TODO finds not rear vehicle but
+start_offset===
+0
+end_offset===
+120
+Python OUTPUT===
+Vehicle rearVehicle = laneSegment.rearVehicle(vehicle.getRearPosition() - 1);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.lane() == lane;
+red_line===
+assert vehicle.lane() == lane;
+start_offset===
+8
+end_offset===
+38
+Python OUTPUT===
+ assert vehicle.lane() == lane; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.getSpeed() >= 0.0;
+red_line===
+assert vehicle.getSpeed() >= 0.0;
+start_offset===
+8
+end_offset===
+41
+Python OUTPUT===
+ assert vehicle.getSpeed() >= 0.0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.lane() == lane;
+red_line===
+assert vehicle.lane() == lane;
+start_offset===
+8
+end_offset===
+38
+Python OUTPUT===
+ assert vehicle.lane() == lane; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.getFrontPosition() >= 0.0;
+red_line===
+assert vehicle.getFrontPosition() >= 0.0;
+start_offset===
+8
+end_offset===
+49
+Python OUTPUT===
+ assert vehicle.getFrontPosition() >= 0.0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.lane() == lane;
+red_line===
+assert vehicle.lane() == lane;
+start_offset===
+8
+end_offset===
+38
+Python OUTPUT===
+ assert vehicle.lane() == lane; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vehicle.roadSegmentId() == roadSegment.id();
+red_line===
+assert vehicle.roadSegmentId() == roadSegment.id();
+start_offset===
+8
+end_offset===
+59
+Python OUTPUT===
+ assert vehicle.roadSegmentId() == roadSegment.id(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+public static final int TO_RIGHT = 1;
+red_line===
+    public static final int TO_RIGHT = 1; // TODO increase index
+start_offset===
+0
+end_offset===
+64
+Python OUTPUT===
+public static final int TO_RIGHT = 1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"signalPoints\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private final List<SignalPoint> signalPoints = new ArrayList<>();
+red_line===
+signalPoints
+start_offset===
+36
+end_offset===
+48
+Python OUTPUT===
+private final List<SignalPoint> signalPoints = new ArrayList<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert roadSegment != null;
+red_line===
+assert roadSegment != null;
+start_offset===
+8
+end_offset===
+35
+Python OUTPUT===
+ assert roadSegment != null; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert roadSegment.eachLaneIsSorted();
+red_line===
+assert roadSegment.eachLaneIsSorted();
+start_offset===
+8
+end_offset===
+46
+Python OUTPUT===
+ assert roadSegment.eachLaneIsSorted(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert fromRoad.laneCount() == toRoad1.laneCount() + toRoad2.laneCount();
+red_line===
+assert fromRoad.laneCount() == toRoad1.laneCount() + toRoad2.laneCount();
+start_offset===
+8
+end_offset===
+81
+Python OUTPUT===
+ assert fromRoad.laneCount() == toRoad1.laneCount() + toRoad2.laneCount(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"LOG\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger LOG = LoggerFactory.getLogger(LongitudinalModelFactory.class);
+red_line===
+LOG
+start_offset===
+32
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"LOG\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger LOG = LoggerFactory.getLogger(ModelParameters.class);
+red_line===
+LOG
+start_offset===
+32
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"T\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final double T;
+red_line===
+T
+start_offset===
+25
+end_offset===
+26
+Python OUTPUT===
+private final double T;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+final static Logger logger = LoggerFactory.getLogger(Krauss.class);
+red_line===
+static
+start_offset===
+10
+end_offset===
+16
+Python OUTPUT===
+static final Logger logger = LoggerFactory . getLogger ( Krauss . class ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"LOG\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger LOG = LoggerFactory.getLogger(Gipps.class);
+red_line===
+LOG
+start_offset===
+32
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"vIteration\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+double vIteration = v0;
+red_line===
+= v0
+start_offset===
+26
+end_offset===
+30
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"LOG\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger LOG = LoggerFactory.getLogger(Newell.class);
+red_line===
+LOG
+start_offset===
+32
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract this nested ternary operation into an independent statement.
+scn.ruleId===
+3358
+scn.suspCodeStr===
+final double accIIDM = (v < v0Local) ? (z < 1) ? accPos : accInt : (z < 1) ? accEmpty : accInt + accEmpty;
+red_line===
+(z < 1) ? accPos : accInt
+start_offset===
+47
+end_offset===
+72
+Python OUTPUT===
+final double accIIDM = (v < v0Local) ? (z < 1) ? accPos : accInt : (z < 1) ? accEmpty : accInt + accEmpty;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final double dtCA = 1;
+red_line===
+dtCA
+start_offset===
+32
+end_offset===
+36
+Python OUTPUT===
+private static final double dtCA = 1;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract this nested ternary operation into an independent statement.
+scn.ruleId===
+3358
+scn.suspCodeStr===
+final int dvSign = (dv < -0.5) ? 1 : (dv > 0.5) ? -1 : 0;
+red_line===
+(dv > 0.5) ? -1 : 0
+start_offset===
+45
+end_offset===
+64
+Python OUTPUT===
+final int dvSign = (dv < -0.5) ? 1 : (dv > 0.5) ? -1 : 0;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"LOG\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger LOG = LoggerFactory.getLogger(KKW.class);
+red_line===
+LOG
+start_offset===
+32
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double F = (gradient < 0.5 * gradientSlip) ? F_diagonal : Math.max(F_diagonal, F_herringbone);
+red_line===
+F
+start_offset===
+15
+end_offset===
+16
+Python OUTPUT===
+double F = (gradient < 0.5 * gradientSlip) ? F_diagonal : Math.max(F_diagonal, F_herringbone);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this local variable to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+117
+scn.suspCodeStr===
+double s_rel = (v * param.getT() + 0.5 * s0) / Math.max(s - 0.5 * s0, 0.00001 * s0);
+red_line===
+s_rel
+start_offset===
+15
+end_offset===
+20
+Python OUTPUT===
+double s_rel = (v * param.getT() + 0.5 * s0) / Math.max(s - 0.5 * s0, 0.00001 * s0);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert !alreadyAdded(trafficLight);
+red_line===
+assert !alreadyAdded(trafficLight);
+start_offset===
+8
+end_offset===
+43
+Python OUTPUT===
+ assert !alreadyAdded(trafficLight); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"LOG\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger LOG = LoggerFactory.getLogger(TrafficCompositionGenerator.class);
+red_line===
+LOG
+start_offset===
+32
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make sure \"sumFractions\" can\u0027t be zero before doing this division.
+scn.ruleId===
+3518
+scn.suspCodeStr===
+typeConfig.setFraction(typeConfig.getFraction() / sumFractions);
+red_line===
+sumFractions
+start_offset===
+62
+end_offset===
+74
+Python OUTPUT===
+final typeConfig . setFraction ( typeConfig . getFraction ( ) sumFractions ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+++countReroutings;
+red_line===
+countReroutings
+start_offset===
+14
+end_offset===
+29
+Python OUTPUT===
+final ++ countReroutings ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"rhoScale\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final double rhoScale;
+red_line===
+rhoScale
+start_offset===
+25
+end_offset===
+33
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"changeSafe\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final boolean changeSafe = checkSafetyCriterion(subjectVehicle, front, back);
+red_line===
+checkSafetyCriterion(subjectVehicle, front, back)
+start_offset===
+35
+end_offset===
+84
+Python OUTPUT===
+final boolean changeSafe = checkSafetyCriterion(subjectVehicle, front, back);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert newLane >= Lanes.MOST_INNER_LANE && newLane <= roadSegment.laneCount();
+red_line===
+assert newLane >= Lanes.MOST_INNER_LANE && newLane <= roadSegment.laneCount();
+start_offset===
+8
+end_offset===
+86
+Python OUTPUT===
+ assert newLane >= Lanes.MOST_INNER_LANE && newLane <= roadSegment.laneCount(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+final String ignoreLabel = "Obstacle";
+red_line===
+        final String ignoreLabel = "Obstacle"; // quick hack TODO remove hack
+start_offset===
+0
+end_offset===
+77
+Python OUTPUT===
+final String ignoreLabel = "Obstacle";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static double THRESHOLD_BRAKELIGHT_ON = 0.2;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final double THRESHOLD_BRAKELIGHT_ON = 0.2 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static double THRESHOLD_BRAKELIGHT_OFF = 0.1;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final double THRESHOLD_BRAKELIGHT_OFF = 0.1 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static double FINITE_LANE_CHANGE_TIME_S = 7;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final double FINITE_LANE_CHANGE_TIME_S = 7 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert rearPosition >= 0.0;
+red_line===
+assert rearPosition >= 0.0;
+start_offset===
+8
+end_offset===
+35
+Python OUTPUT===
+ assert rearPosition >= 0.0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert speed >= 0.0;
+red_line===
+assert speed >= 0.0;
+start_offset===
+8
+end_offset===
+28
+Python OUTPUT===
+ assert speed >= 0.0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"acc\" which hides the field declared at line 133.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+double acc;
+red_line===
+acc
+start_offset===
+15
+end_offset===
+18
+Python OUTPUT===
+double acc;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert lane >= Lanes.MOST_INNER_LANE || lane == Lanes.OVERTAKING;
+red_line===
+assert lane >= Lanes.MOST_INNER_LANE || lane == Lanes.OVERTAKING;
+start_offset===
+8
+end_offset===
+73
+Python OUTPUT===
+ assert lane >= Lanes.MOST_INNER_LANE || lane == Lanes.OVERTAKING; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert this.lane != lane;
+red_line===
+assert this.lane != lane;
+start_offset===
+8
+end_offset===
+33
+Python OUTPUT===
+ assert this.lane != lane; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"lcDecision\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+LaneChangeDecision lcDecision = LaneChangeDecision.NONE;
+red_line===
+= LaneChangeDecision.NONE
+start_offset===
+38
+end_offset===
+63
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+updateLaneChangeDelay(dt);
+red_line===
+        updateLaneChangeDelay(dt); // TODO hack that updateLaneChangeDelay must
+start_offset===
+0
+end_offset===
+79
+Python OUTPUT===
+updateLaneChangeDelay(dt);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+exitRoadSegmentId = nextRouteRoadSegment.id();
+red_line===
+roadSegmentId;
+start_offset===
+74
+end_offset===
+88
+Python OUTPUT===
+exitRoadSegmentId = nextRouteRoadSegment.id();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert alphaV0 > 0;
+red_line===
+assert alphaV0 > 0;
+start_offset===
+8
+end_offset===
+27
+Python OUTPUT===
+ assert alphaV0 > 0; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String outputHeadingTime = String.format("%s%9s,", COMMENT_CHAR, "t[s]");
+red_line===
+outputHeadingTime
+start_offset===
+32
+end_offset===
+49
+Python OUTPUT===
+private static final String outputHeadingTime = String.format("%s%9s,", COMMENT_CHAR, "t[s]");
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String outputHeading = "%10s, %10s, %10s ";
+red_line===
+outputHeading
+start_offset===
+32
+end_offset===
+45
+Python OUTPUT===
+private static final String outputHeading = "%10s, %10s, %10s ";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String outputInformation = "%s %10s %.2f %n";
+red_line===
+outputInformation
+start_offset===
+32
+end_offset===
+49
+Python OUTPUT===
+private static final String outputInformation = "%s %10s %.2f %n";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String outputFormatTime = "%10.2f,";
+red_line===
+outputFormatTime
+start_offset===
+32
+end_offset===
+48
+Python OUTPUT===
+private static final String outputFormatTime = "%10.2f,";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String outputFormat = "%10.2f, %10.4f, %10.4f,";
+red_line===
+outputFormat
+start_offset===
+32
+end_offset===
+44
+Python OUTPUT===
+private static final String outputFormat = "%10.2f, %10.4f, %10.4f,";
+isFixed===
+false
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Make sure \"denom\" can\u0027t be zero before doing this division.
+scn.ruleId===
+3518
+scn.suspCodeStr===
+return 1. / denom;
+red_line===
+denom
+start_offset===
+20
+end_offset===
+25
+Python OUTPUT===
+final return 1. denom ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"serviceProviders\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private final Map<String, ServiceProvider> serviceProviders = new HashMap<>();
+red_line===
+serviceProviders
+start_offset===
+47
+end_offset===
+63
+Python OUTPUT===
+private final Map<String, ServiceProvider> serviceProviders = new HashMap<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literals.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+serverUpdate = (iterationCount % (serverUpdateInterval / dt) == 0) ? true : false;
+red_line===
+true
+start_offset===
+81
+end_offset===
+85
+Python OUTPUT===
+ serverUpdate = (iterationCount % (serverUpdateInterval  /  dt) == 0) ? true : fals
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"LOG\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private static final Logger LOG = LoggerFactory.getLogger(ServiceProvider.class);
+red_line===
+LOG
+start_offset===
+32
+end_offset===
+35
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literals.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+isWienerProcess = (tau != 0) ? true : false;
+red_line===
+true
+start_offset===
+39
+end_offset===
+43
+Python OUTPUT===
+ isWienerProcess = (tau != 0) ? true : e; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"randomMu0Sigma1\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final double randomMu0Sigma1 = SQRT12 * (randomVar - 0.5);
+red_line===
+SQRT12 * (randomVar - 0.5)
+start_offset===
+39
+end_offset===
+65
+Python OUTPUT===
+final double randomMu0Sigma1 = SQRT12 * (randomVar - 0.5);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"decisionPoints\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+private final SortedMap<String, DecisionPoint> decisionPoints = new TreeMap<>();
+red_line===
+decisionPoints
+start_offset===
+51
+end_offset===
+65
+Python OUTPUT===
+private final SortedMap<String, DecisionPoint> decisionPoints = new TreeMap<>();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+ShutdownHooks.INSTANCE.clear();
+red_line===
+        ShutdownHooks.INSTANCE.clear(); // TODO move to better place
+start_offset===
+0
+end_offset===
+68
+Python OUTPUT===
+ShutdownHooks.INSTANCE.clear();
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+projectMetaData.setXodrNetworkFilename(movsimInput.getScenario().getNetworkFilename());
+red_line===
+        projectMetaData.setXodrNetworkFilename(movsimInput.getScenario().getNetworkFilename()); // TODO
+start_offset===
+0
+end_offset===
+103
+Python OUTPUT===
+projectMetaData.setXodrNetworkFilename(movsimInput.getScenario().getNetworkFilename());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert index > 1 && index <= roadMappings.size() - 2;
+red_line===
+assert index > 1 && index <= roadMappings.size() - 2;
+start_offset===
+8
+end_offset===
+61
+Python OUTPUT===
+ assert index > 1 && index <= roadMappings.size() - 2; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"S_COUNT\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+protected int S_COUNT = 10;
+red_line===
+S_COUNT
+start_offset===
+18
+end_offset===
+25
+Python OUTPUT===
+protected int S_COUNT = 10;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"ret\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+final double ret = (index + prop - 1) / (S_COUNT - 1);
+red_line===
+(index + prop - 1) / (S_COUNT - 1)
+start_offset===
+27
+end_offset===
+61
+Python OUTPUT===
+final double ret = (index + prop - 1) / (S_COUNT - 1);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert index > 1 && index <= roadMappings.size() - 2;
+red_line===
+assert index > 1 && index <= roadMappings.size() - 2;
+start_offset===
+8
+end_offset===
+61
+Python OUTPUT===
+ assert index > 1 && index <= roadMappings.size() - 2; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"posTheta\" which hides the field declared at line 62.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+PosTheta posTheta;
+red_line===
+posTheta
+start_offset===
+17
+end_offset===
+25
+Python OUTPUT===
+PosTheta posTheta;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make pointCount a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public int pointCount;
+red_line===
+pointCount
+start_offset===
+19
+end_offset===
+29
+Python OUTPUT===
+public static final int pointCount ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"LOG\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+public final Logger LOG = LoggerFactory.getLogger(this.getClass());
+red_line===
+LOG
+start_offset===
+24
+end_offset===
+27
+Python OUTPUT===
+public final Logger LOG = LoggerFactory.getLogger(this.getClass());
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Complete the task associated to this TODO comment.
+scn.ruleId===
+1135
+scn.suspCodeStr===
+private double totalConsumption;
+red_line===
+    private double totalConsumption; // TODO unit liters or more general approach
+start_offset===
+0
+end_offset===
+81
+Python OUTPUT===
+private double totalConsumption;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("localDateTime = " + localDateTime);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("localDateTime = " + localDateTime); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final double delta = 0.00001;
+red_line===
+delta
+start_offset===
+32
+end_offset===
+37
+Python OUTPUT===
+private static final double delta = 0.00001;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final double delta = 0.00001;
+red_line===
+delta
+start_offset===
+32
+end_offset===
+37
+Python OUTPUT===
+private static final double delta = 0.00001;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(roadMapping.map(0));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(roadMapping.map(0)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(roadMapping.map(0, laneWidth));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(roadMapping.map(0, laneWidth)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(roadMapping.map(0, 2 * laneWidth));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(roadMapping.map(0, 2 * laneWidth)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("lane=" + lane + " --> laneOffset=" + roadMapping.laneOffset(lane));
+red_line===
+System.out
+start_offset===
+12
+end_offset===
+22
+Python OUTPUT===
+ System.out.println("lane=" + lane + " --> laneOffset=" + roadMapping.laneOffset(lane)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(roadMapping.mapFloat(vehicleLane1));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(roadMapping.mapFloat(vehicleLane1)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(roadMapping.mapFloat(vehicleLane2));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(roadMapping.mapFloat(vehicleLane2)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final double delta = 0.00001;
+red_line===
+delta
+start_offset===
+32
+end_offset===
+37
+Python OUTPUT===
+private static final double delta = 0.00001;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Double\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+Double d1 = new Double(o1.getQuantity(Quantity.TOTAL_SIMULATION_TIME));
+red_line===
+Double
+start_offset===
+40
+end_offset===
+46
+Python OUTPUT===
+ Double d1 = new (o1.getQuantity(Quantity.TOTAL_SIMULATION_TIME));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert !roadMapping.isPeer() : "should not be painted twice";
+red_line===
+assert !roadMapping.isPeer() : "should not be painted twice";
+start_offset===
+8
+end_offset===
+69
+Python OUTPUT===
+ assert !roadMapping.isPeer() : "should not be painted twice"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert clipPath.getWindingRule() == Path2D.WIND_EVEN_ODD;
+red_line===
+assert clipPath.getWindingRule() == Path2D.WIND_EVEN_ODD;
+start_offset===
+12
+end_offset===
+69
+Python OUTPUT===
+ assert clipPath.getWindingRule() == Path2D.WIND_EVEN_ODD; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final String extensionFormatJante = ".jante_%s.csv";
+red_line===
+extensionFormatJante
+start_offset===
+31
+end_offset===
+51
+Python OUTPUT===
+public static final String extensionFormatJante = ".jante_%s.csv";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final String extensionFormatZeroAcceleration = ".constAccel_%s.csv";
+red_line===
+extensionFormatZeroAcceleration
+start_offset===
+31
+end_offset===
+62
+Python OUTPUT===
+public static final String extensionFormatZeroAcceleration = ".constAccel_%s.csv";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+public static final String extensionFormatSpecificConsumption = ".specCons_%s.csv";
+red_line===
+extensionFormatSpecificConsumption
+start_offset===
+31
+end_offset===
+65
+Python OUTPUT===
+public static final String extensionFormatSpecificConsumption = ".specCons_%s.csv";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String outputFormatJante = "%.2f, %.2f, %.2f, %.6f, %.5f, %.5f, %d%n";
+red_line===
+outputFormatJante
+start_offset===
+32
+end_offset===
+49
+Python OUTPUT===
+private static final String outputFormatJante = "%.2f, %.2f, %.2f, %.6f, %.5f, %.5f, %d%n";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String outputFormatZeroAcceleration = "%.3f, %.8f,  %.8f,  %d,  %.8f%n";
+red_line===
+outputFormatZeroAcceleration
+start_offset===
+32
+end_offset===
+60
+Python OUTPUT===
+private static final String outputFormatZeroAcceleration = "%.3f, %.8f,  %.8f,  %d,  %.8f%n";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"fuelFlow\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+double fuelFlow = 100000;
+red_line===
+= 100000
+start_offset===
+32
+end_offset===
+40
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the unnecessary boolean literals.
+scn.ruleId===
+1125
+scn.suspCodeStr===
+final boolean determineOptimalGear = (gearTest == 0) ? true : false;
+red_line===
+true
+start_offset===
+63
+end_offset===
+67
+Python OUTPUT===
+ final boolean determineOptimalGear = (gearTest == 0) ? true : e; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This block of commented-out lines of code should be removed.
+scn.ruleId===
+125
+scn.suspCodeStr===
+final double indMoment = MomentsHelper.getMoment(pow, f);
+red_line===
++ getModelLossMoment(f);
+start_offset===
+77
+end_offset===
+101
+Python OUTPUT===
+final double indMoment = MomentsHelper.getMoment(pow, f);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static Logger LOG = LoggerFactory.getLogger(EngineRotationModel.class);
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final Logger LOG = LoggerFactory . getLogger ( EngineRotationModel . class ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+tStack
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+final e . printStackTrace ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"resourceBundle\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+private final ResourceBundle resourceBundle;
+red_line===
+resourceBundle
+start_offset===
+33
+end_offset===
+47
+Python OUTPUT===
+private final ResourceBundle resourceBundle ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make \"resourceBundle\" transient or serializable.
+scn.ruleId===
+1948
+scn.suspCodeStr===
+final ResourceBundle resourceBundle;
+red_line===
+resourceBundle
+start_offset===
+25
+end_offset===
+39
+Python OUTPUT===
+final ResourceBundle resourceBundle ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"minEffPressure\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final double minEffPressure;
+red_line===
+minEffPressure
+start_offset===
+25
+end_offset===
+39
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+ConsumptionDataRecord record = records.get(i);
+red_line===
+record
+start_offset===
+34
+end_offset===
+40
+Python OUTPUT===
+ConsumptionDataRecord record = records.get(i);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this variable to not match a restricted identifier.
+scn.ruleId===
+6213
+scn.suspCodeStr===
+ConsumptionDataRecord record = parser.parse(index, line);
+red_line===
+record
+start_offset===
+38
+end_offset===
+44
+Python OUTPUT===
+ConsumptionDataRecord record = parser.parse(index, line);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+this.records = new LinkedList<ConsumptionDataRecord>();
+red_line===
+<ConsumptionDataRecord>
+start_offset===
+37
+end_offset===
+60
+Python OUTPUT===
+<> new LinkedList < ConsumptionDataRecord > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this assert with a proper check.
+scn.ruleId===
+4274
+scn.suspCodeStr===
+assert vmax > vmin;
+red_line===
+assert vmax > vmin;
+start_offset===
+8
+end_offset===
+27
+Python OUTPUT===
+ assert vmax > vmin; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+final static int MIN_COLUMNS = 4;
+red_line===
+static
+start_offset===
+10
+end_offset===
+16
+Python OUTPUT===
+static final int MIN_COLUMNS = 4 ;
+isFixed===
+true
+==================

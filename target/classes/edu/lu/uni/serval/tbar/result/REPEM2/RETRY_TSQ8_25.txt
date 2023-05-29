@@ -1,0 +1,304 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\"). (sonar.java.source not set. Assuming 7 or greater.)
+scn.ruleId===
+2293
+scn.suspCodeStr===
+properties = new ConcurrentHashMap<String, String>();
+red_line===
+<String, String>
+start_offset===
+42
+end_offset===
+58
+Python OUTPUT===
+<> , String > ( ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Received one message: " + message);
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("Received one message: " + message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Send transaction message OK, message id is: " + result.messageId());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Send transaction message OK, message id is: " + result.messageId()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("execute local transaction");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("execute local transaction"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make specVersion a static final constant or non-public and provide accessors if needed.
+scn.ruleId===
+1104
+scn.suspCodeStr===
+public static String specVersion = "UnKnown";
+red_line===
+specVersion
+start_offset===
+25
+end_offset===
+36
+Python OUTPUT===
+public static final String specVersion = " UnKnown " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this constant name to match the regular expression \u0027^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$\u0027.
+scn.ruleId===
+115
+scn.suspCodeStr===
+private static final String refBase = "http://openmessaging.cloud/internal/code";
+red_line===
+refBase
+start_offset===
+32
+end_offset===
+39
+Python OUTPUT===
+private static final String refBase = "http://openmessaging.cloud/internal/code";
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Constructor constructor = driverImplClass.getConstructor(KeyValue.class);
+red_line===
+Constructor
+start_offset===
+12
+end_offset===
+23
+Python OUTPUT===
+Constructor constructor = driverImplClass.getConstructor(KeyValue.class);
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Received message: " + message);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Received message: " + message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("PreSend message: " + message);
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("PreSend message: " + message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("SendResult: " + sendResult);
+red_line===
+System.out
+start_offset===
+9
+end_offset===
+19
+Python OUTPUT===
+ System.out.println("SendResult: " + sendResult); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("PostSend message: " + message);
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("PostSend message: " + message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"sendResult\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+SendResult sendResult = producer.send(message);
+red_line===
+= producer.send(message)
+start_offset===
+30
+end_offset===
+54
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this useless assignment to local variable \"sendResult\".
+scn.ruleId===
+1854
+scn.suspCodeStr===
+sendResult = sendResultFuture.get(1000);
+red_line===
+= sendResultFuture.get(1000)
+start_offset===
+19
+end_offset===
+47
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("SendResult: " + sendResult);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("SendResult: " + sendResult); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Received a red message: " + message);
+red_line===
+System.out
+start_offset===
+16
+end_offset===
+26
+Python OUTPUT===
+ System.out.println("Received a red message: " + message); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("transactionId: " + result.transactionId());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("transactionId: " + result.transactionId()); 
+isFixed===
+false
+==================

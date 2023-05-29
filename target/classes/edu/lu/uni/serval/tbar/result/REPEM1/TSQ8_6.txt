@@ -1,0 +1,57 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"bytes \u003c 0: -1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("bytes < 0: -1", e.getMessage());
+red_line===
+"bytes < 0: -1"
+start_offset===
+19
+end_offset===
+34
+Python OUTPUT===
+ assertEquals("bytes < 0: -1", e.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"bytes \u003c 0: -1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("bytes < 0: -1", e.getMessage());
+red_line===
+"bytes < 0: -1"
+start_offset===
+19
+end_offset===
+34
+Python OUTPUT===
+ assertEquals("bytes < 0: -1", e.getMessage()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"bits \u003c 0: -1\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertEquals("bits < 0: -1", e.getMessage());
+red_line===
+"bits < 0: -1"
+start_offset===
+19
+end_offset===
+33
+Python OUTPUT===
+ assertEquals("bits < 0: -1", e.getMessage()); 
+isFixed===
+false
+==================

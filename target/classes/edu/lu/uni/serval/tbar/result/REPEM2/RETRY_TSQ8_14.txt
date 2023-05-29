@@ -1,0 +1,1995 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Integer\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+return (String) vendorsByCode.get(new Integer(vendorId));
+red_line===
+Integer
+start_offset===
+40
+end_offset===
+47
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List proxyStateAttrs = request.getAttributes(33);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List attrs = getSubAttributes(type);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List proxyStates = packet.getAttributes(33);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Answer:\n" + packet);
+red_line===
+System.out
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Map proxyConnections = new HashMap();
+red_line===
+Map
+start_offset===
+9
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+uhe.printStackTrace();
+red_line===
+int
+start_offset===
+9
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("encoding not supported for " + AUTH_EAP);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+byte bn[] = md5.digest();
+red_line===
+[]
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Integer\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+vendorsByCode.put(new Integer(vendorId), vendorName);
+red_line===
+Integer
+start_offset===
+24
+end_offset===
+31
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+this(type, getNextPacketIdentifier(), new ArrayList());
+red_line===
+ArrayList
+start_offset===
+44
+end_offset===
+53
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("md5 digest not available", nsae);
+red_line===
+RuntimeException
+start_offset===
+14
+end_offset===
+30
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer s = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Integer\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+return (String) enumeration.get(new Integer(value));
+red_line===
+Integer
+start_offset===
+39
+end_offset===
+46
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use the opposite operator (\"\u003e\u003d\") instead.
+scn.ruleId===
+1940
+scn.suspCodeStr===
+return !(receiveTime < intervalStart);
+red_line===
+!(receiveTime < intervalStart)
+start_offset===
+11
+end_offset===
+41
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+LinkedList result = new LinkedList();
+red_line===
+LinkedList
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List attrs = getAttributes(USER_NAME);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Iterator i = attributes.iterator();
+red_line===
+Iterator
+start_offset===
+2
+end_offset===
+10
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List vsas = getVendorAttributes(attribute.getVendorId());
+red_line===
+List
+start_offset===
+3
+end_offset===
+7
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+LinkedList result = new LinkedList();
+red_line===
+LinkedList
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+subAttributes = new ArrayList(count);
+red_line===
+ArrayList
+start_offset===
+22
+end_offset===
+31
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private List subAttributes = new ArrayList();
+red_line===
+List
+start_offset===
+9
+end_offset===
+13
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer sb = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this \"Map.get()\" and condition with a call to \"Map.computeIfAbsent()\".
+scn.ruleId===
+3824
+scn.suspCodeStr===
+Map vendorAttributes = (Map) attributesByCode.get(vendorId);
+red_line===
+attributesByCode.get(vendorId)
+start_offset===
+31
+end_offset===
+61
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this member \"protected\".
+scn.ruleId===
+2386
+scn.suspCodeStr===
+public static final Set AUTH_PROTOCOLS = new HashSet(Arrays.asList(AUTH_PAP, AUTH_CHAP, AUTH_MS_CHAP_V2, AUTH_EAP));
+red_line===
+AUTH_PROTOCOLS
+start_offset===
+25
+end_offset===
+39
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+LinkedList result = new LinkedList();
+red_line===
+LinkedList
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List sas = vsa.getSubAttributes();
+red_line===
+List
+start_offset===
+3
+end_offset===
+7
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List vsas = getVendorAttributes(vendorId);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private List attributes = new ArrayList();
+red_line===
+List
+start_offset===
+9
+end_offset===
+13
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List attrs = getAttributes(vendorId, type);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+LinkedList result = new LinkedList();
+red_line===
+LinkedList
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List attrs = getAttributes(type);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List sas = vsa.getSubAttributes();
+red_line===
+List
+start_offset===
+4
+end_offset===
+8
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"attributes\" which hides the field declared at line 1149.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+byte[] attributes = getAttributeBytes();
+red_line===
+attributes
+start_offset===
+9
+end_offset===
+19
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"authenticator\" which hides the field declared at line 1159.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+byte[] authenticator = createResponseAuthenticator(sharedSecret, packetLength, attributes, requestAuthenticator);
+red_line===
+authenticator
+start_offset===
+9
+end_offset===
+22
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"read\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+in.read(authenticator);
+red_line===
+read
+start_offset===
+5
+end_offset===
+9
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"attributeCount\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+int attributeCount = 0;
+red_line===
+attributeCount
+start_offset===
+6
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("multiple attributes of requested type " + type);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+this(type, identifier, new ArrayList());
+red_line===
+ArrayList
+start_offset===
+29
+end_offset===
+38
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"read\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+in.read(attributeData);
+red_line===
+read
+start_offset===
+5
+end_offset===
+9
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List vsas = getVendorAttributes(vendorId);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List sas = vsa.getSubAttributes();
+red_line===
+List
+start_offset===
+3
+end_offset===
+7
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println((int)bigValue);
+red_line===
+System.err
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+				e.prin
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+md5Digest = MessageDigest.getInstance("MD5");
+red_line===
+		md5Diges
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+e.printStackTrace();
+red_line===
+				e.prin
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+ar.addAttribute("NAS-IP-Address", "192.168.0.100");
+red_line===
+ar.addAttr
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer hex = new StringBuffer("0x");
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+return new String(utf8, "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+27
+end_offset===
+34
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Change this instance-reference to a static reference.
+scn.ruleId===
+2209
+scn.suspCodeStr===
+return rc.communicate(request, remoteServer.getEndpointAddress().getPort());
+red_line===
+rc
+start_offset===
+9
+end_offset===
+11
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"datagram\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+DatagramPacket datagram = new DatagramPacket(data, data.length, address, port);
+red_line===
+new DatagramPacket(data, data.length, address, port)
+start_offset===
+28
+end_offset===
+80
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"transient\" modifier from this field.
+scn.ruleId===
+2065
+scn.suspCodeStr===
+protected transient boolean closing = false;
+red_line===
+transient
+start_offset===
+11
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"authenticator\" local variable.
+scn.ruleId===
+1481
+scn.suspCodeStr===
+byte[] authenticator = packet.getAuthenticator();
+red_line===
+authenticator
+start_offset===
+9
+end_offset===
+22
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Immediately return this expression instead of assigning it to the temporary variable \"datagram\".
+scn.ruleId===
+1488
+scn.suspCodeStr===
+DatagramPacket datagram = new DatagramPacket(data, data.length, address, port);
+red_line===
+new DatagramPacket(data, data.length, address, port)
+start_offset===
+28
+end_offset===
+80
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"java.net.InetAddress\" for \"getByAddress\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+Inet6Address addr = (Inet6Address)Inet6Address.getByAddress(null, data);
+red_line===
+getByAddress
+start_offset===
+50
+end_offset===
+62
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use static access with \"java.net.InetAddress\" for \"getByName\".
+scn.ruleId===
+3252
+scn.suspCodeStr===
+final Inet6Address addr = (Inet6Address)Inet6Address.getByName(value);
+red_line===
+getByName
+start_offset===
+56
+end_offset===
+65
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("multiple sub-attributes of requested type " + type);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("error writing data", ioe);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+return new String(getAttributeData(), "UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+41
+end_offset===
+48
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+return new String(getAttributeData());
+red_line===
+String
+start_offset===
+14
+end_offset===
+20
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+setAttributeData(value.getBytes("UTF-8"));
+red_line===
+"UTF-8"
+start_offset===
+35
+end_offset===
+42
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unnecessary cast to \"long\".
+scn.ruleId===
+1905
+scn.suspCodeStr===
+return Long.toString(((long)value & 0xffffffffl));
+red_line===
+long
+start_offset===
+25
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace the synchronized class \"StringBuffer\" by an unsynchronized one such as \"StringBuilder\".
+scn.ruleId===
+1149
+scn.suspCodeStr===
+StringBuffer ip = new StringBuffer();
+red_line===
+StringBuffer
+start_offset===
+2
+end_offset===
+14
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+if (data == null)	throw new RuntimeException("ipv6 prefix attribute: expected 2-18 bytes attribute data and got null.");
+red_line===
+RuntimeException
+start_offset===
+30
+end_offset===
+46
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("cannot set the value of attribute " + attributeType + " as a string");
+red_line===
+RuntimeException
+start_offset===
+12
+end_offset===
+28
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Usage: TestClient hostName sharedSecret userName password");
+red_line===
+System.out
+start_offset===
+3
+end_offset===
+13
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Packet before it is sent\n" + ar + "\n");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Packet after it was sent\n" + ar + "\n");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Response\n" + response + "\n");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(acc + "\n");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Response: " + response);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(ar);
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Ignore packet.");
+red_line===
+System.out
+start_offset===
+5
+end_offset===
+15
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Server started.");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Stop server");
+red_line===
+System.out
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Cast one of the operands of this multiplication operation to a \"long\".
+scn.ruleId===
+2184
+scn.suspCodeStr===
+Thread.sleep(1000 * 60 * 30);
+red_line===
+*
+start_offset===
+25
+end_offset===
+26
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map.Entry e = (Map.Entry) i.next();
+red_line===
+Entry
+start_offset===
+7
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map vendorAttributes = (Map) attributesByCode.get(new Integer(vendorCode));
+red_line===
+Map
+start_offset===
+2
+end_offset===
+5
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Integer\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+Integer vendorId = new Integer(attributeType.getVendorId());
+red_line===
+Integer
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("default dictionary unavailable", e);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Class type;
+red_line===
+Class
+start_offset===
+2
+end_offset===
+7
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Class type = getAttributeTypeClass(code, typeStr);
+red_line===
+Class
+start_offset===
+2
+end_offset===
+7
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Class type = RadiusAttribute.class;
+red_line===
+Class
+start_offset===
+2
+end_offset===
+7
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("encoding not supported for " + AUTH_MS_CHAP_V2);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"chapPassword\" which hides the field declared at line 430.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+RadiusAttribute chapPassword = getAttribute(CHAP_PASSWORD);
+red_line===
+chapPassword
+start_offset===
+18
+end_offset===
+30
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"chapChallenge\" which hides the field declared at line 435.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+RadiusAttribute chapChallenge = getAttribute(CHAP_CHALLENGE);
+red_line===
+chapChallenge
+start_offset===
+18
+end_offset===
+31
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Move the array designators [] to the type.
+scn.ruleId===
+1197
+scn.suspCodeStr===
+byte bn[] = md5.digest();
+red_line===
+[]
+start_offset===
+10
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"chapPassword\" which hides the field declared at line 430.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+byte[] chapPassword = new byte[17];
+red_line===
+chapPassword
+start_offset===
+9
+end_offset===
+21
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("multiple attributes of requested type " + type);
+red_line===
+RuntimeException
+start_offset===
+13
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List attrs = getAttributes(USER_NAME);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Integer\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+enumeration.put(new Integer(num), name);
+red_line===
+Integer
+start_offset===
+22
+end_offset===
+29
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this use of \"Integer\"; it is deprecated.
+scn.ruleId===
+1874
+scn.suspCodeStr===
+Integer typeCode = new Integer(attributeType.getTypeCode());
+red_line===
+Integer
+start_offset===
+25
+end_offset===
+32
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Received Access-Request:\n" + accessRequest);
+red_line===
+System.out
+start_offset===
+4
+end_offset===
+14
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+scn.ruleId===
+4719
+scn.suspCodeStr===
+return str.getBytes("UTF-8");
+red_line===
+"UTF-8"
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.err.println(bigValue);
+red_line===
+System.err
+start_offset===
+2
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+String state = new String(proxyState.getAttributeData());
+red_line===
+String
+start_offset===
+21
+end_offset===
+27
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+vendorAttributes = new HashMap();
+red_line===
+HashMap
+start_offset===
+26
+end_offset===
+33
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Map attributesByName = new HashMap();
+red_line===
+Map
+start_offset===
+9
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Map attributesByCode = new HashMap();
+red_line===
+Map
+start_offset===
+9
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Map vendorsByCode = new HashMap();
+red_line===
+Map
+start_offset===
+9
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"Integer\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+return (AttributeType) vendorAttributes.get(new Integer(typeCode));
+red_line===
+Integer
+start_offset===
+50
+end_offset===
+57
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+List attrs = getAttributes(type);
+red_line===
+List
+start_offset===
+2
+end_offset===
+6
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"proxySocket\" which hides the field declared at line 267.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+DatagramSocket proxySocket = getProxySocket();
+red_line===
+proxySocket
+start_offset===
+17
+end_offset===
+28
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+Map.Entry e = (Map.Entry) i.next();
+red_line===
+Entry
+start_offset===
+7
+end_offset===
+12
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Provide the parametrized type for this generic.
+scn.ruleId===
+3740
+scn.suspCodeStr===
+private Class attributeClass;
+red_line===
+Class
+start_offset===
+9
+end_offset===
+14
+Python OUTPUT===
+
+isFixed===
+true
+==================

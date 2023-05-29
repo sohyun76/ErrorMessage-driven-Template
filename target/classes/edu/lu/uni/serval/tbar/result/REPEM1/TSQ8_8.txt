@@ -1,0 +1,2354 @@
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+setMojoParameter("targetFile", new File("/root/target"));
+red_line===
+"/root/target"
+start_offset===
+44
+end_offset===
+58
+Python OUTPUT===
+ setMojoParameter("targetFile", new File("/root/target")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+setMojoParameter("targetFile", new File("/root/target"));
+red_line===
+"/root/target"
+start_offset===
+44
+end_offset===
+58
+Python OUTPUT===
+ setMojoParameter("targetFile", new File("/root/target")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+setMojoParameter("userDir", new File("/root/nested"));
+red_line===
+"/root/nested"
+start_offset===
+41
+end_offset===
+55
+Python OUTPUT===
+ setMojoParameter("userDir", new File("/root/nested")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+setMojoParameter("targetFile", new File("/root/target"));
+red_line===
+"/root/target"
+start_offset===
+44
+end_offset===
+58
+Python OUTPUT===
+ setMojoParameter("targetFile", new File("/root/target")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility update should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.setAccessible(true);
+red_line===
+field.setAccessible(true)
+start_offset===
+4
+end_offset===
+29
+Python OUTPUT===
+ field.setAccessible(true); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+This accessibility bypass should be removed.
+scn.ruleId===
+3011
+scn.suspCodeStr===
+field.set(mojo, value);
+red_line===
+field.set(mojo, value)
+start_offset===
+4
+end_offset===
+26
+Python OUTPUT===
+ field.set(mojo, value); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"sourceFile\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(mojoTestSupport.getParameterField("sourceFile").getType(), equalTo(String.class));
+red_line===
+"sourceFile"
+start_offset===
+49
+end_offset===
+61
+Python OUTPUT===
+ assertThat(mojoTestSupport.getParameterField("sourceFile").getType(), equalTo(String.class)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"required\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(mojoTestSupport.getParameterAnnotation("sourceFile").get("required"), is(true));
+red_line===
+"required"
+start_offset===
+72
+end_offset===
+82
+Python OUTPUT===
+ assertThat(mojoTestSupport.getParameterAnnotation("sourceFile").get("required"), is(true)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"targetFile\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(mojoTestSupport.getParameterField("targetFile").getType(), equalTo(File.class));
+red_line===
+"targetFile"
+start_offset===
+49
+end_offset===
+61
+Python OUTPUT===
+ assertThat(mojoTestSupport.getParameterField("targetFile").getType(), equalTo(File.class)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"userDir\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(mojoTestSupport.getParameterField("userDir").getType(), equalTo(File.class));
+red_line===
+"userDir"
+start_offset===
+49
+end_offset===
+58
+Python OUTPUT===
+ assertThat(mojoTestSupport.getParameterField("userDir").getType(), equalTo(File.class)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e.toString());
+red_line===
+RuntimeException
+start_offset===
+18
+end_offset===
+34
+Python OUTPUT===
+ throw new RuntimeException(e.toString()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException("No enum constant " + value + " in " + enumClass);
+red_line===
+RuntimeException
+start_offset===
+16
+end_offset===
+32
+Python OUTPUT===
+ throw new RuntimeException("No enum constant " + value + " in " + enumClass); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+return "L" + aaClass.getName().replaceAll(DOT, "/") + ';';
+red_line===
+replaceAll
+start_offset===
+35
+end_offset===
+45
+Python OUTPUT===
+return " L " + aaClass.getName ( ).replaceAll ( DOT , " / " ) + ' ; ' ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this call to \"replaceAll()\" by a call to the \"replace()\" method.
+scn.ruleId===
+5361
+scn.suspCodeStr===
+String className = desc.substring(1, desc.length() - 1).replaceAll("/", DOT);
+red_line===
+replaceAll
+start_offset===
+64
+end_offset===
+74
+Python OUTPUT===
+String className = desc.substring ( 1 , desc.length ( ) - 1 ).replaceAll ( " / " , DOT ) ;
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Return an empty map instead of null.
+scn.ruleId===
+1168
+scn.suspCodeStr===
+if (isNullOrEmptyString(jsonResponse)) return null;
+red_line===
+null
+start_offset===
+54
+end_offset===
+58
+Python OUTPUT===
+ if (isNullOrEmptyString(jsonResponse)) return null; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String[] TRUE_VALUES = {"true", "t", "yes", "on", "y"};
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final String [ ] TRUE_VALUES = { " true " , " t " , " yes " , " on " , " y " } ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String[] FALSE_VALUES = {"false", "f", "no", "off", "n"};
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final String [ ] FALSE_VALUES = { " false " , " f " , " no " , " off " , " n " } ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"url\" to prevent any misunderstanding/clash with field \"URL\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private final String url;
+red_line===
+url
+start_offset===
+25
+end_offset===
+28
+Python OUTPUT===
+ private final String url; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"type\" to prevent any misunderstanding/clash with field \"TYPE\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private String type;
+red_line===
+type
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ private String type; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"prefix\" to prevent any misunderstanding/clash with field \"PREFIX\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private String prefix;
+red_line===
+prefix
+start_offset===
+19
+end_offset===
+25
+Python OUTPUT===
+ private String prefix; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"key\" to prevent any misunderstanding/clash with field \"KEY\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private String key;
+red_line===
+key
+start_offset===
+19
+end_offset===
+22
+Python OUTPUT===
+ private String key; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"values\" to prevent any misunderstanding/clash with field \"VALUES\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private String[] values = null;
+red_line===
+values
+start_offset===
+21
+end_offset===
+27
+Python OUTPUT===
+ private String[] values = null; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Iterate over the \"entrySet\" instead of the \"keySet\".
+scn.ruleId===
+2864
+scn.suspCodeStr===
+for (String selectorName : nestedSelectors.keySet())
+            spec.addChild(selectorName, nestedSelectors.get(selectorName).toQuerySpec());
+red_line===
+for
+start_offset===
+8
+end_offset===
+11
+Python OUTPUT===
+ for (String selectorName : nestedSelectors.keySet()) spec.addChild(selectorName, nestedSelectors.get(selectorName).toQuerySpec()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"key\" which hides the field declared at line 36.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+for (String key : nestedSelectors.keySet())
+            if (other.nestedSelectors.containsKey(key) && !mayMergeCorrespondingChildren(key, other)) return false;
+red_line===
+key
+start_offset===
+20
+end_offset===
+23
+Python OUTPUT===
+ for (String key : nkeyedSelectors.keySet()) if (other.nestedSelectors.containsKey(key) && !mayMergeCorrespondingChildren(key, other)) return false; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027PREFIX\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+appendScalar(sb, indent, "prefix", prefix);
+red_line===
+"prefix"
+start_offset===
+33
+end_offset===
+41
+Python OUTPUT===
+ appendScalar(sb, indent, "prefix", prefix); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027VALUES\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+appendScalar(sb, indent, "values", values[0]);
+red_line===
+"values"
+start_offset===
+37
+end_offset===
+45
+Python OUTPUT===
+ appendScalar(sb, indent, "values", values[0]); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027KEY_NAME\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+appendScalar(sb, indent, "keyName", keyName);
+red_line===
+"keyName"
+start_offset===
+33
+end_offset===
+42
+Python OUTPUT===
+ appendScalar(sb, indent, "keyName", keyName); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+public void processMetrics(Map<String, Object> metrics, Consumer<Map<String, String>> process) {}
+red_line===
+processMetrics
+start_offset===
+16
+end_offset===
+30
+Python OUTPUT===
+ public void processMetrics(Map<String, Object> metrics, Consumer<Map<String, String>> process) {} 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"queries\" to prevent any misunderstanding/clash with field \"QUERIES\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private MBeanSelector[] queries = {};
+red_line===
+queries
+start_offset===
+28
+end_offset===
+35
+Python OUTPUT===
+ private MBeanSelector[] queries = {}; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"host\" to prevent any misunderstanding/clash with field \"HOST\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private String host = DEFAULT_HOST;
+red_line===
+host
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ private String host = DEFAULT_HOST; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"port\" to prevent any misunderstanding/clash with field \"PORT\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private int port = DEFAULT_PORT;
+red_line===
+port
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+ private int port = DEFAULT_PORT; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"request\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private final WebRequest request;
+red_line===
+request
+start_offset===
+29
+end_offset===
+36
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Extract the assignment out of this expression.
+scn.ruleId===
+1121
+scn.suspCodeStr===
+return lastCandidate = ports.peek();
+red_line===
+=
+start_offset===
+25
+end_offset===
+26
+Python OUTPUT===
+ return lastCandidate = ports.peek(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+End this switch case with an unconditional break, return or throw statement.
+scn.ruleId===
+128
+scn.suspCodeStr===
+case SC_OK:
+red_line===
+case SC_OK:
+start_offset===
+12
+end_offset===
+23
+Python OUTPUT===
+ case SC_OK: 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"setCookieHeader\" which hides the field declared at line 33.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+String setCookieHeader = extractSessionSetCookieHeader(response);
+red_line===
+setCookieHeader
+start_offset===
+23
+end_offset===
+38
+Python OUTPUT===
+ String setCookieHeadersetCookieHeaderonSetCookieHeader(response); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+@Override
+        public void shareConfiguration(String configuration) {}
+red_line===
+shareConfiguration
+start_offset===
+20
+end_offset===
+38
+Python OUTPUT===
+ @Override public void shareConfiguration(String configuration) {} 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+scn.ruleId===
+1186
+scn.suspCodeStr===
+private static final Pattern SESSION_COOKIE_PATTERN = Pattern.compile(SESSION_COOKIE_REGEX);
+red_line===
+inal Pattern SESSI
+start_offset===
+20
+end_offset===
+38
+Python OUTPUT===
+ private static final Pattern SESSION_COOKIE_PATTERN = Pattern.compile(SESSION_COOKIE_REGEX); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"uploadedConfig\" which hides the field declared at line 104.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+ExporterConfig uploadedConfig = this.uploadedConfig;
+red_line===
+uploadedConfig
+start_offset===
+27
+end_offset===
+41
+Python OUTPUT===
+ ExporterConfig uploadedConuploadedConfigoadedConfig; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the \"contentType\" field and declare it as a local variable in the relevant methods.
+scn.ruleId===
+1450
+scn.suspCodeStr===
+private String contentType;
+red_line===
+contentType
+start_offset===
+19
+end_offset===
+30
+Python OUTPUT===
+ private String con
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this unused \"contentType\" private field.
+scn.ruleId===
+1068
+scn.suspCodeStr===
+private String contentType;
+red_line===
+contentType
+start_offset===
+19
+end_offset===
+30
+Python OUTPUT===
+ 
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.
+scn.ruleId===
+2095
+scn.suspCodeStr===
+new BufferedReader(new InputStreamReader(request.getInputStream())).lines().forEach(parser::process);
+red_line===
+new BufferedReader(new InputStreamReader(request.getInputStream()))
+start_offset===
+6
+end_offset===
+73
+Python OUTPUT===
+ new BufferedReader(new InputStreamReader(request.getInputStream())).lines().forEach(parser::process); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+%n should be used in place of \\n to produce the platform-specific line separator.
+scn.ruleId===
+3457
+scn.suspCodeStr===
+printf( "%s %d\n", getCountName(), scrapeCount);
+red_line===
+printf( "%s %d\n", getCountName(), scrapeCount)
+start_offset===
+8
+end_offset===
+55
+Python OUTPUT===
+ printf( "%s %d\n", getCountName(), scrapeCount); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+%n should be used in place of \\n to produce the platform-specific line separator.
+scn.ruleId===
+3457
+scn.suspCodeStr===
+printf(Locale.US, "%s %.2f\n", getDurationName(), toSeconds(getElapsedTime()));
+red_line===
+printf(Locale.US, "%s %.2f\n", getDurationName(), toSeconds(getElapsedTime()))
+start_offset===
+8
+end_offset===
+86
+Python OUTPUT===
+ printf(Locale.US, "%s %.2f\n", getDurationName(), toSeconds(getElapsedTime())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+%n should be used in place of \\n to produce the platform-specific line separator.
+scn.ruleId===
+3457
+scn.suspCodeStr===
+printf(Locale.US, "%s %.2f\n", getCpuUsageName(), toSeconds(getCpuUsed()));
+red_line===
+printf(Locale.US, "%s %.2f\n", getCpuUsageName(), toSeconds(getCpuUsed()))
+start_offset===
+8
+end_offset===
+82
+Python OUTPUT===
+ printf(Locale.US, "%s %.2f\n", getCpuUsageName(), toSeconds(getCpuUsed())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"invocationId\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private final Map<String,Object> leafMap = new HashMap<>(ImmutableMap.of(MBeanSelector.KEY, "servletName",
+            MBeanSelector.PREFIX, "servlet_", MBeanSelector.VALUES, new String[]{"invocationTotalCount","invocationId"}));
+red_line===
+"invocationId"
+start_offset===
+104
+end_offset===
+118
+Python OUTPUT===
+ private final Map<String,Object> leafMap = new HashMap<>(ImmutableMap.of(MBeanSelector.KEY, "servletName", MBeanSelector.PREFIX, "servlet_", MBeanSelector.VALUES, new String[]{"invocationTotalCount","invocationId"})); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"component_deploymentState{application\u003d\\\"weblogic\\\",component\u003d\\\"ejb30_weblogic\\\"}\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(metrics, hasMetric("component_deploymentState{application=\"weblogic\",component=\"ejb30_weblogic\"}", 2));
+red_line===
+"component_deploymentState{application=\"weblogic\",component=\"ejb30_weblogic\"}"
+start_offset===
+38
+end_offset===
+120
+Python OUTPUT===
+ assertThat(metrics, hasMetric("component_deploymentState{application=\"weblogic\",component=\"ejb30_weblogic\"}", 2)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"componentRuntimes\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private final Map<String,Object> twoLevelMap = ImmutableMap.of("componentRuntimes", componentMap);
+red_line===
+"componentRuntimes"
+start_offset===
+67
+end_offset===
+86
+Python OUTPUT===
+ private final Map<String,Object> twoLevelMap = ImmutableMap.of("componentRuntimes", componentMap); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"domain1\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+metrics.put("name", "domain1");
+red_line===
+"domain1"
+start_offset===
+28
+end_offset===
+37
+Python OUTPUT===
+ metrics.put("name", "domain1"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \" at path \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+description.appendValue(expectedValues).appendText(" at path ").appendValue(jsonPath);
+red_line===
+" at path "
+start_offset===
+63
+end_offset===
+74
+Python OUTPUT===
+ description.appendValue(expectedValues).appendText(" at path ").appendValue(jsonPath); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this lambda with method reference \u0027String.class::isInstance\u0027. (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1612
+scn.suspCodeStr===
+assertThat(getMetrics(exporterConfig).values().stream().anyMatch(v -> v instanceof String), is(false));
+red_line===
+->
+start_offset===
+75
+end_offset===
+77
+Python OUTPUT===
+ assertThat(getMetrics(exporterConfig).values().stream().anyMatch(v -> v instanceof String), is(false)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"myhost\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(queries[0].getUrl(Protocol.HTTP, "myhost", 1234),
+                equalTo(String.format(QueryType.RUNTIME_URL_PATTERN, "http", "myhost", 1234)));
+red_line===
+"myhost"
+start_offset===
+52
+end_offset===
+60
+Python OUTPUT===
+ assertThat(queries[0].getUrl(Protocol.HTTP, "myhost", 1234), equalTo(String.format(QueryType.RUNTIME_URL_PATTERN, "http", "myhost", 1234))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"componentRuntimes\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(config, hasQueryFor("applicationRuntimes", "componentRuntimes"));
+red_line===
+"componentRuntimes"
+start_offset===
+62
+end_offset===
+81
+Python OUTPUT===
+ assertThat(config, hasQueryFor("applicationRuntimes", "componentRuntimes")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"workManagerRuntimes\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(config, hasQueryFor("applicationRuntimes", "workManagerRuntimes"));
+red_line===
+"workManagerRuntimes"
+start_offset===
+62
+end_offset===
+83
+Python OUTPUT===
+ assertThat(config, hasQueryFor("applicationRuntimes", "workManagerRuntimes")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"servlets\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(config, hasQueryFor("applicationRuntimes", "componentRuntimes", "servlets"));
+red_line===
+"servlets"
+start_offset===
+83
+end_offset===
+93
+Python OUTPUT===
+ assertThat(config, hasQueryFor("applicationRuntimes", "componentRuntimes", "servlets")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"myhost\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(selector.getUrl(Protocol.HTTP, "myhost", 1234),
+                   equalTo(String.format(QueryType.RUNTIME_URL_PATTERN, "http", "myhost", 1234)));
+red_line===
+"myhost"
+start_offset===
+50
+end_offset===
+58
+Python OUTPUT===
+ assertThat(selector.getUrl(Protocol.HTTP, "myhost", 1234), equalTo(String.format(QueryType.RUNTIME_URL_PATTERN, "http", "myhost", 1234))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"second\" 22 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private static final String[] EXPECTED_VALUES = {"first", "second", "third"};
+red_line===
+"second"
+start_offset===
+62
+end_offset===
+70
+Python OUTPUT===
+ private static final String[] EXPECTED_VALUES = {"first", "second", "third"}; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"key:name\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+MBeanSelector selector1 = createLeaf("type:Type1", "prefix:#_", "key:name", "keyName:numbers", "first", "second");
+red_line===
+"key:name"
+start_offset===
+72
+end_offset===
+82
+Python OUTPUT===
+ MBeanSelector selector1 = createLeaf("type:Type1", "prefix:#_", "key:name", "keyName:numbers", "first", "second"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"oneKey\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+MBeanSelector selector1 = MBeanSelector.create(ImmutableMap.of("servlets",
+                ImmutableMap.of(MBeanSelector.KEY, "oneKey", MBeanSelector.VALUES, new String[] {"first", "second"})));
+red_line===
+"oneKey"
+start_offset===
+51
+end_offset===
+59
+Python OUTPUT===
+ MBeanSelector selector1 = MBeanSelector.create(ImmutableMap.of("servlets", ImmutableMap.of(MBeanSelector.KEY, "oneKey", MBeanSelector.VALUES, new String[] {"first", "second"}))); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"$.fields\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(querySpec(selector), hasJsonPath("$.fields").withValues(EXPECTED_COMPONENT_VALUES));
+red_line===
+"$.fields"
+start_offset===
+52
+end_offset===
+62
+Python OUTPUT===
+ assertThat(querySpec(selector), hasJsonPath("$.fields").withValues(EXPECTED_COMPONENT_VALUES)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"differentKey\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+MBeanSelector selector2 = MBeanSelector.create(ImmutableMap.of("kidlets",
+                ImmutableMap.of(MBeanSelector.KEY, "differentKey", MBeanSelector.VALUES, new String[] {"first", "second"})));
+red_line===
+"differentKey"
+start_offset===
+51
+end_offset===
+65
+Python OUTPUT===
+ MBeanSelector selector2 = MBeanSelector.create(ImmutableMap.of("kidlets", ImmutableMap.of(MBeanSelector.KEY, "differentKey", MBeanSelector.VALUES, new String[] {"first", "second"}))); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"servlets\" 13 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+MBeanSelector selector = MBeanSelector.create(ImmutableMap.of("servlets",
+                getServletMap()));
+red_line===
+"servlets"
+start_offset===
+70
+end_offset===
+80
+Python OUTPUT===
+ MBeanSelector selector = MBeanSelector.create(ImmutableMap.of("servlets", getServletMap())); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"values\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+Map<String,Object> map = ImmutableMap.of("values", STRING_ARRAY);
+red_line===
+"values"
+start_offset===
+49
+end_offset===
+57
+Python OUTPUT===
+ Map<String,Object> map = ImmutableMap.of("values", STRING_ARRAY); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"simple\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(SnakeCaseUtil.convert("simple"), equalTo("simple"));
+red_line===
+"simple"
+start_offset===
+41
+end_offset===
+49
+Python OUTPUT===
+ assertThat(SnakeCaseUtil.convert("simple"), equalTo("simple")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use isEmpty() to check whether the collection is empty or not.
+scn.ruleId===
+1155
+scn.suspCodeStr===
+if (groups.size() == 0) return null;
+red_line===
+groups.size() == 0
+start_offset===
+12
+end_offset===
+30
+Python OUTPUT===
+ if (groups.size() == 0) return null; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"ORDERED_LIST\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String[] ORDERED_LIST =
+            {"metric1 1", "metric2{name='red'} 23", "metric2{name='blue'} 34"};
+red_line===
+ORDERED_LIST
+start_offset===
+27
+end_offset===
+39
+Python OUTPUT===
+ private final String[] ORDORDERED_LIST{"metric1 1", "metric2{name='red'} 23", "metric2{name='blue'} 34"}; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"MISORDERED_LIST\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String[] MISORDERED_LIST =
+            {"metric2{name='red'} 23", "metric1 1", "metric2{name='blue'} 34"};
+red_line===
+MISORDERED_LIST
+start_offset===
+27
+end_offset===
+42
+Python OUTPUT===
+ private final String[] MISMISORDERED_LIST{"metric2{name='red'} 23", "metric1 1", "metric2{name='blue'} 34"}; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"TEXT_LIST\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String[] TEXT_LIST =
+            {"metric1 1", "metric2{name='red'} 23", "metric2{name='blue'} some-color"};
+red_line===
+TEXT_LIST
+start_offset===
+27
+end_offset===
+36
+Python OUTPUT===
+ private final String[] TEXTEXT_LIST{"metric1 1", "metric2{name='red'} 23", "metric2{name='blue'} some-color"}; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove the parentheses around the \"s\" parameter (sonar.java.source not set. Assuming 8 or greater.)
+scn.ruleId===
+1611
+scn.suspCodeStr===
+return Arrays.stream(metrics).map((s) -> s.replace('\'', '"')).collect(joining("\n"));
+red_line===
+(
+start_offset===
+42
+end_offset===
+43
+Python OUTPUT===
+ return Arrays.stream(metrics).map((s) ->.replace('\'','"')).collect(joining("\n"));
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"metric2{name\u003d\u0027red\u0027} 23\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private final String[] ORDERED_LIST =
+            {"metric1 1", "metric2{name='red'} 23", "metric2{name='blue'} 34"};
+red_line===
+"metric2{name='red'} 23"
+start_offset===
+26
+end_offset===
+50
+Python OUTPUT===
+ private final String[] ORDERED_LIST = {"metric1 1", "metric2{name='red'} 23", "metric2{name='blue'} 34"}; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("The following configuration:\n" + yamlString);
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("The following configuration:\n" + yamlString); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("Generates the query:");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("Generates the query:"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(selector.getPrintableRequest());
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(selector.getPrintableRequest()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println();
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println("The response\n" + response + "\nwill be transformed into the following metrics:");
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println("The response\n" + response + "\nwill be transformed into the following metrics:"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+exporterConfig.scrapeMetrics(selector, getJsonResponse(response)).
+                forEach((name, value) -> System.out.printf("  %s %s%n", name, value));
+red_line===
+System.out
+start_offset===
+41
+end_offset===
+51
+Python OUTPUT===
+ exporterConfig.scrapeMetrics(selector, getJsonResponse(response)). forEach((name, value) -> System.out.printf(" %s %s%n", name, value)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"host\" to prevent any misunderstanding/clash with field \"HOST\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private String host = HOST;
+red_line===
+host
+start_offset===
+19
+end_offset===
+23
+Python OUTPUT===
+ private String host = HOST; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"port\" to prevent any misunderstanding/clash with field \"PORT\".
+scn.ruleId===
+1845
+scn.suspCodeStr===
+private int port = PORT;
+red_line===
+port
+start_offset===
+16
+end_offset===
+20
+Python OUTPUT===
+ private int port = PORT; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+final static String HOST = "myhost";
+red_line===
+static
+start_offset===
+10
+end_offset===
+16
+Python OUTPUT===
+static final String HOST = " myhost " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+final static int PORT = 7654;
+red_line===
+static
+start_offset===
+10
+end_offset===
+16
+Python OUTPUT===
+static final int PORT = 7654 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+final static int LOCAL_PORT = 7631;
+red_line===
+static
+start_offset===
+10
+end_offset===
+16
+Python OUTPUT===
+static final int LOCAL_PORT = 7631 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String DEFAULT_CONTENT_TYPE = "application/x-www-form-urlencoded";
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final String DEFAULT_CONTENT_TYPE = " application/x-www-form-urlencoded " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Unable to reach server\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+factory.throwWebClientException(new WebClientException("Unable to reach server"));
+red_line===
+"Unable to reach server"
+start_offset===
+63
+end_offset===
+87
+Python OUTPUT===
+ factory.throwWebClientException(new WebClientException("Unable to reach server")); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Replace this use of System.out or System.err by a logger.
+scn.ruleId===
+106
+scn.suspCodeStr===
+System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(
+                ImmutableMap.of("name", "ejb30flexadmin", "applicationRuntimes", items0)));
+red_line===
+System.out
+start_offset===
+8
+end_offset===
+18
+Python OUTPUT===
+ System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson( ImmutableMap.of("name", "ejb30flexadmin", "applicationRuntimes", items0))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"queries:\n\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+ConfigurationUpdaterStub.newConfiguration(1, "queries:\n");
+red_line===
+"queries:\n"
+start_offset===
+53
+end_offset===
+65
+Python OUTPUT===
+ ConfigurationUpdaterStub.newConfiguration(1, "queries:\n"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int REST_PORT = 7651;
+red_line===
+static
+start_offset===
+18
+end_offset===
+24
+Python OUTPUT===
+private static final int REST_PORT = 7651 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"request\" which hides the field declared at line 41.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+HttpServletRequestStub request = createUploadRequest(createEncodedForm("replace", CONFIGURATION));
+red_line===
+request
+start_offset===
+31
+end_offset===
+38
+Python OUTPUT===
+ HttpServletRequestStub requestrequestteUploadRequest(createEncodedForm("replace", CONFIGURATION)); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"replace\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+request = createUploadRequest(createEncodedForm("replace", CONFIGURATION));
+red_line===
+"replace"
+start_offset===
+56
+end_offset===
+65
+Python OUTPUT===
+ request = createUploadRequest(createEncodedForm("replace", CONFIGURATION)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"append\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+servlet.doPost(createUploadRequest(createEncodedForm("append", ADDED_CONFIGURATION)), createServletResponse());
+red_line===
+"append"
+start_offset===
+61
+end_offset===
+69
+Python OUTPUT===
+ servlet.doPost(createUploadRequest(createEncodedForm("append", ADDED_CONFIGURATION)), createServletResponse()); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+sentInfo = null;
+red_line===
+sentInfo
+start_offset===
+8
+end_offset===
+16
+Python OUTPUT===
+final sentInfo = null ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+sentInfo = new String(getBody());
+red_line===
+sentInfo
+start_offset===
+16
+end_offset===
+24
+Python OUTPUT===
+final sentInfo = new String ( getBody ( ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+sentInfo = new String(getBody());
+red_line===
+String
+start_offset===
+31
+end_offset===
+37
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make the enclosing method \"static\" or remove this set.
+scn.ruleId===
+2696
+scn.suspCodeStr===
+sentInfo = new String(getBody());
+red_line===
+sentInfo
+start_offset===
+16
+end_offset===
+24
+Python OUTPUT===
+final sentInfo = new String ( getBody ( ) ) ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Remove this \"String\" constructor
+scn.ruleId===
+2129
+scn.suspCodeStr===
+sentInfo = new String(getBody());
+red_line===
+String
+start_offset===
+31
+end_offset===
+37
+Python OUTPUT===
+
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"SET_COOKIE_VALUE\" which hides the field declared at line 55.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final String SET_COOKIE_VALUE = ExporterSession.SESSION_COOKIE_PREFIX + "12345; Domain=localhost";
+red_line===
+SET_COOKIE_VALUE
+start_offset===
+21
+end_offset===
+37
+Python OUTPUT===
+ final String SET_COOSET_COOKIE_VALUErterSession.SESSION_COOKIE_PREFIX + "12345; Domain=localhost"; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"COOKIE\" which hides the field declared at line 54.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final String COOKIE = ExporterSession.SESSION_COOKIE_PREFIX + "12345";
+red_line===
+COOKIE
+start_offset===
+21
+end_offset===
+27
+Python OUTPUT===
+ final String COOKIE COOKIErterSession.SESSION_COOKIE_PREFIX + "12345"; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"SET_COOKIE_VALUE\" which hides the field declared at line 55.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final String SET_COOKIE_VALUE = COOKIE + "; path=localhost";
+red_line===
+SET_COOKIE_VALUE
+start_offset===
+21
+end_offset===
+37
+Python OUTPUT===
+ final String SET_COOSET_COOKIE_VALUEIE + "; path=localhost"; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename \"COOKIE\" which hides the field declared at line 54.
+scn.ruleId===
+1117
+scn.suspCodeStr===
+final String COOKIE = "JSESSIONID=12345";
+red_line===
+COOKIE
+start_offset===
+21
+end_offset===
+27
+Python OUTPUT===
+ final String COOKIE COOKIESSIONID=12345"; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"abced\" 26 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+client.doPostRequest("abced");
+red_line===
+"abced"
+start_offset===
+29
+end_offset===
+36
+Python OUTPUT===
+ client.doPostRequest("abced"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/session\" 6 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+WebClient webClient = factory.get().withUrl(getHostPath() + "/session");
+red_line===
+"/session"
+start_offset===
+68
+end_offset===
+78
+Python OUTPUT===
+ WebClient webClient = factory.get().withUrl(getHostPath() + "/session"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"auth-value\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+webClient.setAuthentication("auth-value");
+red_line===
+"auth-value"
+start_offset===
+36
+end_offset===
+48
+Python OUTPUT===
+ webClient.setAuthentication("auth-value"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Set-Cookie: \" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+webResource.addHeader("Set-Cookie: " + SET_COOKIE_VALUE);
+red_line===
+"Set-Cookie: "
+start_offset===
+38
+end_offset===
+52
+Python OUTPUT===
+ webResource.addHeader("Set-Cookie: " + SET_COOKIE_VALUE); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"/headers\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+WebClient webClient = factory.get().withUrl(getHostPath() + "/headers");
+red_line===
+"/headers"
+start_offset===
+68
+end_offset===
+78
+Python OUTPUT===
+ WebClient webClient = factory.get().withUrl(getHostPath() + "/headers"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"authentication\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+webClient.setAuthentication("authentication");
+red_line===
+"authentication"
+start_offset===
+36
+end_offset===
+52
+Python OUTPUT===
+ webClient.setAuthentication("authentication"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"text/plain\" 24 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+return new WebResource(RESPONSE, "text/plain");
+red_line===
+"text/plain"
+start_offset===
+49
+end_offset===
+61
+Python OUTPUT===
+ return new WebResource(RESPONSE, "text/plain"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Use already-defined constant \u0027COOKIE\u0027 instead of duplicating its value here.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+final String COOKIE = "JSESSIONID=12345";
+red_line===
+"JSESSIONID=12345"
+start_offset===
+30
+end_offset===
+48
+Python OUTPUT===
+ final String COOKIE = "JSESSIONID=12345"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String BOUNDARY = "C3n5NKoslNBKj4wBHR8kCX6OtVYEqeFYNjorlBP";
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final String BOUNDARY = " C3n5NKoslNBKj4wBHR8kCX6OtVYEqeFYNjorlBP " ;
+isFixed===
+true
+==================
+RuleType===
+BUG
+scn.errorMessage===
+Check the return value of the \"read\" call to see how many bytes were read.
+scn.ruleId===
+2674
+scn.suspCodeStr===
+inputStream.read(result);
+red_line===
+read
+start_offset===
+18
+end_offset===
+22
+Python OUTPUT===
+ inputStream.read(result); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+scn.ruleId===
+112
+scn.suspCodeStr===
+throw new RuntimeException(e);
+red_line===
+RuntimeException
+start_offset===
+20
+end_offset===
+36
+Python OUTPUT===
+ throw new RuntimeException(e); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"Content-Disposition: form-data; name\u003d\\\"text\\\"\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+parser.process("Content-Disposition: form-data; name=\"text\"");
+red_line===
+"Content-Disposition: form-data; name=\"text\""
+start_offset===
+19
+end_offset===
+66
+Python OUTPUT===
+ parser.process("Content-Disposition: form-data; name=\"text\""); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"value\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+parser.process("value");
+red_line===
+"value"
+start_offset===
+19
+end_offset===
+26
+Python OUTPUT===
+ parser.process("value"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"file2\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(getItem("file2").isFormField(), is(false));
+red_line===
+"file2"
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+ assertThat(getItem("file2").isFormField(), is(false)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"file1\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(getItem("file1").isFormField(), is(false));
+red_line===
+"file1"
+start_offset===
+23
+end_offset===
+30
+Python OUTPUT===
+ assertThat(getItem("file1").isFormField(), is(false)); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename this field \"WLS_SEARCH_PATH\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.
+scn.ruleId===
+116
+scn.suspCodeStr===
+private final String WLS_SEARCH_PATH = "/management/weblogic/latest/serverRuntime/search";
+red_line===
+WLS_SEARCH_PATH
+start_offset===
+29
+end_offset===
+44
+Python OUTPUT===
+ private final String WLS_SEAWLS_SEARCH_PATHnagement/weblogic/latest/serverRuntime/search"; 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Make this final field static too.
+scn.ruleId===
+1170
+scn.suspCodeStr===
+private final String WLS_SEARCH_PATH = "/management/weblogic/latest/serverRuntime/search";
+red_line===
+WLS_SEARCH_PATH
+start_offset===
+29
+end_offset===
+44
+Python OUTPUT===
+private static final String WLS_SEARCH_PATH = " /management/weblogic/latest/serverRuntime/search " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Refactor your code to get this URI from a customizable parameter.
+scn.ruleId===
+1075
+scn.suspCodeStr===
+private final String WLS_SEARCH_PATH = "/management/weblogic/latest/serverRuntime/search";
+red_line===
+"/management/weblogic/latest/serverRuntime/search"
+start_offset===
+47
+end_offset===
+97
+Python OUTPUT===
+ private final String WLS_SEARCH_PATH = "/management/weblogic/latest/serverRuntime/search"; 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"No URL specified\" 3 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+if (url == null) throw new NullPointerException("No URL specified");
+red_line===
+"No URL specified"
+start_offset===
+60
+end_offset===
+78
+Python OUTPUT===
+ if (url == null) throw new NullPointerException("No URL specified"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Rename field \"jsonResponse\"
+scn.ruleId===
+1700
+scn.suspCodeStr===
+String jsonResponse;
+red_line===
+jsonResponse
+start_offset===
+15
+end_offset===
+27
+Python OUTPUT===
+ String jsonResjsonResponse
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static String URL_PATTERN = "%s://%s:%d/path";
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final String URL_PATTERN = " %s://%s:%d/path " ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Reorder the modifiers to comply with the Java Language Specification.
+scn.ruleId===
+1124
+scn.suspCodeStr===
+private final static int REST_PORT = 7010;
+red_line===
+static
+start_offset===
+16
+end_offset===
+22
+Python OUTPUT===
+private static final int REST_PORT = 7010 ;
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"localhost\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(builder.createUrl(URL_PATTERN), equalTo(String.format(URL_PATTERN, "http", "localhost", LOCAL_PORT)));
+red_line===
+"localhost"
+start_offset===
+90
+end_offset===
+101
+Python OUTPUT===
+ assertThat(builder.createUrl(URL_PATTERN), equalTo(String.format(URL_PATTERN, "http", "localhost", LOCAL_PORT))); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"testSample1\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+assertThat(factory.getSentQuery(),
+                   hasJsonPath("$.children.groups.fields").withValues("name", "testSample1"));
+red_line===
+"testSample1"
+start_offset===
+78
+end_offset===
+91
+Python OUTPUT===
+ assertThat(factory.getSentQuery(), hasJsonPath("$.children.groups.fields").withValues("name", "testSample1")); 
+isFixed===
+true
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"auth-credentials\" 5 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+request.setHeader(AUTHENTICATION_HEADER, "auth-credentials");
+red_line===
+"auth-credentials"
+start_offset===
+49
+end_offset===
+67
+Python OUTPUT===
+ request.setHeader(AUTHENTICATION_HEADER, "auth-credentials"); 
+isFixed===
+false
+==================
+RuleType===
+CODE_SMELL
+scn.errorMessage===
+Define a constant instead of duplicating this literal \"queries:\" 4 times.
+scn.ruleId===
+1192
+scn.suspCodeStr===
+private static final String TWO_VALUE_CONFIG = "queries:" +
+            "\n- groups:\n    prefix: groupValue_\n    key: name\n    values: [testSample1,testSample2]";
+red_line===
+"queries:"
+start_offset===
+51
+end_offset===
+61
+Python OUTPUT===
+ private static final String TWO_VALUE_CONFIG = "queries:" + "\n- groups:\n prefix: groupValue_\n key: name\n values: [testSample1,testSample2]"; 
+isFixed===
+false
+==================
