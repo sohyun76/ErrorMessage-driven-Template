@@ -22,14 +22,15 @@ import edu.lu.uni.serval.tbar.utils.DBUtils;
 
 public class ShellUtils {
     // selab: start
-    
+   
+    ///* 
     private static String snqbToken = "token";
     private static String snqbIp = "localhost";
     private static String snqbPort = "port";
     private static String snqbUrl = "http://" + snqbIp + ":" + snqbPort;
     private static String SnScanner = "sonar-scanner";
-   
-
+    //*/
+    
     public static String shellCreateProject(String buggyProject) {
         String cmd = "curl -u " + snqbToken + ": -X POST " +
                     snqbUrl + "/api/projects/create" +

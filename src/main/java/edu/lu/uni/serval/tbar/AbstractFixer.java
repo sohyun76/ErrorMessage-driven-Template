@@ -207,7 +207,7 @@ public abstract class AbstractFixer implements IFixer {
 		//String filePath = dp.srcPath + suspiciousJavaFile;
 		String filePath = dp.srcPath + suspiciousJavaFile;
 		//log.debug("===fullpath-> "+ this.fullBuggyProjectPath);
-		//log.debug("====fillePath->"+filePath);
+		log.debug("====fillePath->"+filePath);
 		//log.debug("====dp.srcPath->"+dp.srcPath);
 		//log.debug("====suspiciousJavaFile->"+suspiciousJavaFile);
 		if (!new File(filePath).exists()) {return null;}

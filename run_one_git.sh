@@ -1,1 +1,0 @@
-./compile.sh run ./D4J/projects/EMA_project/fastjson2_1

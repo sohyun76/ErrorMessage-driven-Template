@@ -30,6 +30,7 @@ def preprocessing_message(cErrorMessage):
 def main(exampleOutput):
  
     exampleOutput = ' '.join(exampleOutput)
+
     scnInformation = exampleOutput.split('!=!=!=!=!=!=')
     contents = Content()
     contents.cErrorMessage = preprocessing_message(scnInformation[1].strip())

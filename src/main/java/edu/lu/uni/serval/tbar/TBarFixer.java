@@ -74,50 +74,15 @@ public class TBarFixer extends AbstractFixer {
   public List<Integer> issueIndexes = new ArrayList<>();
   public List<String> initialIssueIDs = new ArrayList<>();
   public List<String> initialRuleIDs = new ArrayList<>();
-
-
-  public List<Integer> scnIndexes_1 = new ArrayList<>();
-  public List<Integer> issueIndexes_1 = new ArrayList<>();
-  public List<String> initialIssueIDs_1 = new ArrayList<>();
-  public List<String> initialRuleIDs_1 = new ArrayList<>();
-  // selab: end
+// selab: end
 
 //sso : start
-public List<String> setIssue = new ArrayList<>();
-public static SuspCodeNode scn_1;
-public static boolean scn_check = true;
-public static String patch_string;
-
-
-public static File file_1;
-public static FileWriter fw_1;
-public static BufferedWriter writer_1;
-
-public static File file_2;
-public static FileWriter fw_2;
-public static BufferedWriter writer_2;
-
-public static File file_1_1;
-public static FileWriter fw_1_1;
-public static BufferedWriter writer_1_1;
-
-
-public static File file_2_1;
-public static FileWriter fw_2_1;
-public static BufferedWriter writer_2_1;
-
-
-public static String scn_ast_result = "";
-public static String can_ast_result = "";
 
 
 public static List<Integer> scn_id = new ArrayList();
 public static List<String> scns = new ArrayList();
-public static List<String> candidates = new ArrayList();
+//public static List<String> candidates = new ArrayList();
 
-public static int single_pattern = 1;
-
-public int count = 0;
 
 public static String Candidate = "";
 public static String ContextToAdd = "";
@@ -128,13 +93,6 @@ public static String scn_component = "";
 
 public static int start_offset = 0;
 public static int end_offset = 0;
-
-public boolean isFixed_1;
-public boolean isFixed;
-public int before_patch = 0;
-public int after_patch = 0;
-
-//public static List<String> initialIssueIDs_1 = new ArrayList<>();
 
 //sso : end
 
@@ -314,8 +272,6 @@ public int after_patch = 0;
 
 					List<String> multi_hunk = new ArrayList<>();
 					while(matcher.find()){
-						//System.out.println("===============================================");
-						//System.out.println(matcher.start()+" -> "+ matcher.group());
 						multi_hunk.add(matcher.group());
 						
 					}
@@ -332,7 +288,7 @@ public int after_patch = 0;
 				
 				
 				if(isSingleHunk){
-					System.out.println(shell_string);
+					//System.out.println(shell_string);
 
 				if(shell_string.contains("\"startOffset\":")){
 					String[] start_a = shell_string.split("\"startOffset\":");
@@ -410,7 +366,7 @@ public int after_patch = 0;
 				scn.redLine = scn_redline;
 
 				String abcdef = "python   /mnt/sda1/sohyun/ErrorMessage-driven-Template/EM_Template/FindGroup.py !=!=!=!=!=!="+scn.errorMessage+"!=!=!=!=!=!="+file_scn+"!=!=!=!=!=!= "+scn_redline+" !=!=!=!=!=!= "+start_offset+" !=!=!=!=!=!= "+end_offset+" !=!=!=!=!=!= "+scn.targetJavaFile+" !=!=!=!=!=!= "+scn.buggyLine;
-				System.out.println(abcdef);
+				
 				Candidate = "";
 				ContextToAdd = "";
 				int count_to = 0;
@@ -448,10 +404,14 @@ public int after_patch = 0;
 				scnIndexes.add(this.currentIssueIndexes);
 				issueIndexes.add(this.currentIssueIndexes);			
 				candidatePatches.add(patch);
+				
+				if(!patch.getFixedContextStr().equals("")){
+					System.out.println(abcdef);
+					log.debug("suspicious code === "+ scn.suspCodeStr);
+					log.debug("Template ==="+patch.getFixedContextStr());
+					log.debug("Patch ==="+patch.getFixedCodeStr1());
+				}
 
-				log.debug("suspicious code === "+ scn.suspCodeStr);
-				log.debug("Template ==="+patch.getFixedContextStr());
-				log.debug("Patch ==="+patch.getFixedCodeStr1());
 
 			}
 			}
