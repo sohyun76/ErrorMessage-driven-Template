@@ -15,17 +15,20 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import edu.lu.uni.serval.tbar.config.Configuration;
 // selab: Add import
 import edu.lu.uni.serval.tbar.utils.DBUtils;
 // selab: end
 
 public class ShellUtils {
     // selab: start
+    
     private static String snqbToken = "token";
     private static String snqbIp = "localhost";
     private static String snqbPort = "port";
     private static String snqbUrl = "http://" + snqbIp + ":" + snqbPort;
     private static String SnScanner = "sonar-scanner";
+   
 
     public static String shellCreateProject(String buggyProject) {
         String cmd = "curl -u " + snqbToken + ": -X POST " +

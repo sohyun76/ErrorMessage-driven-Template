@@ -274,7 +274,6 @@ public int after_patch = 0;
 		String scn_errorMessage_1 = "";
 
 		if (scns == null) {
-		System.out.println("THISI IS SCNS IS NULL");
 		continue;
 			}
 		
@@ -286,7 +285,7 @@ public int after_patch = 0;
 			triedSuspNode.add(scn);
 
 			shell_string = ShellUtils.shellGetRuleID(initialIssueIDs.get(scIndex));
-
+			
 			if(shell_string.contains("\"type\":\"")){
 				String[] ruleType_1 = shell_string.split("\"type\":\"");
 				String ruleType_2 = ruleType_1[1];
@@ -315,8 +314,8 @@ public int after_patch = 0;
 
 					List<String> multi_hunk = new ArrayList<>();
 					while(matcher.find()){
-						System.out.println("===============================================");
-						System.out.println(matcher.start()+" -> "+ matcher.group());
+						//System.out.println("===============================================");
+						//System.out.println(matcher.start()+" -> "+ matcher.group());
 						multi_hunk.add(matcher.group());
 						
 					}
@@ -333,6 +332,8 @@ public int after_patch = 0;
 				
 				
 				if(isSingleHunk){
+					System.out.println(shell_string);
+
 				if(shell_string.contains("\"startOffset\":")){
 					String[] start_a = shell_string.split("\"startOffset\":");
 					String start_b = start_a[1];
@@ -408,7 +409,8 @@ public int after_patch = 0;
 				scn.ruleId = scn_ruleId;
 				scn.redLine = scn_redline;
 
-				String abcdef = "python   /mnt/sda1/sohyun/ErrorMessage_driven_Template/Template/FindGroup.py !=!=!=!=!=!="+scn.errorMessage+"!=!=!=!=!=!="+file_scn+"!=!=!=!=!=!= "+scn_redline+" !=!=!=!=!=!= "+start_offset+" !=!=!=!=!=!= "+end_offset+" !=!=!=!=!=!= "+scn.targetJavaFile+" !=!=!=!=!=!= "+scn.buggyLine;
+				String abcdef = "python   /mnt/sda1/sohyun/ErrorMessage-driven-Template/EM_Template/FindGroup.py !=!=!=!=!=!="+scn.errorMessage+"!=!=!=!=!=!="+file_scn+"!=!=!=!=!=!= "+scn_redline+" !=!=!=!=!=!= "+start_offset+" !=!=!=!=!=!= "+end_offset+" !=!=!=!=!=!= "+scn.targetJavaFile+" !=!=!=!=!=!= "+scn.buggyLine;
+				System.out.println(abcdef);
 				Candidate = "";
 				ContextToAdd = "";
 				int count_to = 0;

@@ -104,6 +104,7 @@ public class MainPerfectFL {
     // FL-3. Get suspicious statements from the results of the project on SonarQube DB
     // FL-4. Load the suspicious statements list
     List<SuspiciousPosition> suspiciousCodeList = fixer.localizeDefects();
+	System.out.println("fl size~~~:" + suspiciousCodeList.size());
 
 
     // * Patch Generation for each suspicious statement

@@ -196,7 +196,7 @@ public abstract class AbstractFixer implements IFixer {
 		String suspiciousClassName = suspiciousCode.classPath;
 		int buggyLine = suspiciousCode.lineNumber;
 		
-		log.debug(suspiciousClassName + " ===" + buggyLine);
+		//log.debug(suspiciousClassName + " ===" + buggyLine);
 		if (suspiciousClassName.contains("$")) {
 			suspiciousClassName = suspiciousClassName.substring(0, suspiciousClassName.indexOf("$"));
 		}
@@ -206,16 +206,16 @@ public abstract class AbstractFixer implements IFixer {
 		
 		//String filePath = dp.srcPath + suspiciousJavaFile;
 		String filePath = dp.srcPath + suspiciousJavaFile;
-		log.debug("===fullpath-> "+ this.fullBuggyProjectPath);
-		log.debug("====fillePath->"+filePath);
-		log.debug("====dp.srcPath->"+dp.srcPath);
-		log.debug("====suspiciousJavaFile->"+suspiciousJavaFile);
-		if (!new File(filePath).exists()) {log.debug("====212 line"); return null;}
+		//log.debug("===fullpath-> "+ this.fullBuggyProjectPath);
+		//log.debug("====fillePath->"+filePath);
+		//log.debug("====dp.srcPath->"+dp.srcPath);
+		//log.debug("====suspiciousJavaFile->"+suspiciousJavaFile);
+		if (!new File(filePath).exists()) {return null;}
 		
 		
 		File suspCodeFile = new File(filePath);
 		
-		if (!suspCodeFile.exists())  {log.debug("====217 line"); return null;}
+		if (!suspCodeFile.exists())  {return null;}
 		SuspiciousCodeParser scp = new SuspiciousCodeParser();
 		scp.parseSuspiciousCode(new File(filePath), buggyLine);
 		
@@ -254,12 +254,12 @@ public abstract class AbstractFixer implements IFixer {
 		}
     	*/
 		// selab: modified code
-		System.out.println("suspiciousClassName" + suspiciousClassName);
+		//System.out.println("suspiciousClassName" + suspiciousClassName);
 		
 		File targetJavaFile = new File(FileUtils.getFileAddressOfJava(dp.srcPath, suspiciousClassName));
 		File javaBackup = new File(FileUtils.tempJavaPath(suspiciousClassName,  this.dataType + "/" + this.buggyProject));
-		System.out.println("targetJavaFile: " + targetJavaFile.toPath());
-		System.out.println("javaBackup: " + javaBackup.toPath());
+		//System.out.println("targetJavaFile: " + targetJavaFile.toPath());
+		//System.out.println("javaBackup: " + javaBackup.toPath());
 		
 		try {
 			if (javaBackup.exists()) javaBackup.delete();
@@ -273,7 +273,7 @@ public abstract class AbstractFixer implements IFixer {
 		for (Pair<ITree, String> suspCodePair : suspiciousCodePairs) {
 			ITree suspCodeAstNode = suspCodePair.getFirst(); //scp.getSuspiciousCodeAstNode();
 			String suspCodeStr = suspCodePair.getSecond(); //scp.getSuspiciousCodeStr();
-			log.debug("Suspicious Code: \n" + suspCodeStr);
+			//log.debug("Suspicious Code: \n" + suspCodeStr);
 
 			int startPos = suspCodeAstNode.getPos();
 			int endPos = startPos + suspCodeAstNode.getLength();
