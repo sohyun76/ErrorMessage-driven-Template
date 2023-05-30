@@ -10,7 +10,7 @@ I. Requirement
 - SonarScanner 4.6.2.2472
 - Apache Maven 3.6.3
 
-II.. Quick Start
+II. Quick Start
 --------------
 ```
 $ git clone https://github.com/sohyun76/ErrorMessage-driven-Template.git 
