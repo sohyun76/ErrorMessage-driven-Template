@@ -48,6 +48,9 @@ import edu.lu.uni.serval.tbar.utils.SuspiciousPosition;
 
 import org.eclipse.jdt.core.dom.*;
 import java.nio.charset.StandardCharsets;
+//import org.apache.commons.text.StringEscapeUtils;
+import org.apache.commons.text.StringEscapeUtils;
+
 /**
  * 
  * @author kui.liu
@@ -214,6 +217,11 @@ public static int end_offset = 0;
 
  public List<Patch> generatePatch_singleHunk(List<SuspiciousPosition> suspiciousCodeList) {
 
+	String file_name = "/mnt/sda1/sohyun/ErrorMessage-driven-Template/Results/"+this.buggyProject".txt";
+
+	File file_final = new File(file_name);
+	FileWriter fw_final = null;
+	BufferedWriter writer_final = null;
 
 	String ruleType = "";
 	String shell_string = "";
@@ -406,15 +414,35 @@ public static int end_offset = 0;
 				candidatePatches.add(patch);
 				
 				if(!patch.getFixedContextStr().equals("")){
-					System.out.println(abcdef);
-					log.debug("suspicious code === "+ scn.suspCodeStr);
-					log.debug("Template ==="+patch.getFixedContextStr());
-					log.debug("Patch ==="+patch.getFixedCodeStr1());
+					//System.out.println(abcdef);
+					System.out.println("suspicious code === "+ scn.suspCodeStr);
+					System.out.println("Template ==="+patch.getFixedContextStr());
+					System.out.println("Patch ==="+patch.getFixedCodeStr1());
 				}
 
 
+				//write text
+				fw_final = new FileWriter(file_final, true);
+				writer_final = new BufferedWriter(fw_final);
+				writer_final.write("\n================\n");
+				writer_final.write("\nErrorMessage===\n");
+				//String decodedMessage = StringEscapeUtils.unescapeJava(scn.errorMessage);
+				writer_final.write(scn.errorMessage);
+				writer_final.write("\nScn===\n");
+				writer_final.write(file_scn);
+				writer_final.write("\nPattern===\n");
+				writer_final.write(patch.getFixedContextStr());
+				//writer_final.write("\nPatch===\n");
+				//writer_final.write(patch.getFixedCodeStr1());
+
+	
+				writer_final.flush();	
+
 			}
 			}
+
+
+
 
 			} catch (Exception e) {
 			e.printStackTrace();

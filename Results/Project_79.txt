@@ -1,0 +1,3741 @@
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'StaticInitializerInterceptor::matchesCall'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> matchesCall(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'owner::startsWith'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> owner.startsWith(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'MutationTestBuilder.this.mutationSource::createMutations'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> MutationTestBuilder.this.mutationSource.createMutations(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Use the built-in formatting to construct this argument.
+Scn===
+    LOG.info("Incremental analysis reduced number of mutations by " + numberOfReducedMutations );
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'File::new'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> new File(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'DirectorySourceLocator::new'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    final Function<File, SourceLocator> fileToSourceLocator = a -> new DirectorySourceLocator(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Do something with the "boolean" value returned by "delete".
+Scn===
+      f.delete();
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      ls.add(new SpinnerListener(System.out));
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    final PrintStream ps = System.out;
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.
+Scn===
+    LOG.info("Completed in " + timeSpan(t0));
+Pattern===
+
+================
+
+ErrorMessage===
+Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.
+Scn===
+    LOG.info("Sending " + this.testClasses.size() + " test classes to minion");
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+          System.out.printf("%s", this.spinner[this.i % this.spinner.length]);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Use the built-in formatting to construct this argument.
+Scn===
+      LOG.info("Calculated coverage in " + time + " seconds.");
+Pattern===
+
+================
+
+ErrorMessage===
+Use the built-in formatting to construct this argument.
+Scn===
+    return a -> LOG.info("MINION : " + a);
+Pattern===
+
+================
+
+ErrorMessage===
+Use the built-in formatting to construct this argument.
+Scn===
+    return a -> LOG.fine("MINION : " + a);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+  private Consumer<String> stdErr     = printTo(String.class, System.err);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Rename "process" which hides the field declared at line 25.
+Scn===
+    final Process process = processBuilder.start();
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to not throw exceptions in finally blocks.
+Scn===
+        throw Unchecked.translateCheckedException(e);
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+      throw new RuntimeException("Couldn't create direectory for " + clazz, e);
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+      throw new RuntimeException("Error exporting mutants for report", ex);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("NOT static code");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("static code");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("static code");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("NOT guaranteed to be static code");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("NOT static code");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("NOT static code");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println(aField);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(s);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(s);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("dont mutate me");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(each);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(each);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(each);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(each);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(each);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(each);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+    throw new RuntimeException("No samples found for any compiler for " + sample);
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "source" which hides the field declared at line 38.
+Scn===
+    final ClassloaderByteArraySource source = ClassloaderByteArraySource.fromContext();
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "source" which hides the field declared at line 38.
+Scn===
+    final ClassloaderByteArraySource source = ClassloaderByteArraySource.fromContext();
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "clazz".
+Scn===
+    final String clazz = MessageFormat.format(this.path, sample, compiler);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+    return i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Format specifiers or lambda should be used instead of string concatenation.
+Scn===
+    LOGGER.log(Level.INFO, "lot " + " of " + "string " + "conact " + i);
+Pattern===
+
+================
+
+ErrorMessage===
+Update this logger to use "LogsAndDoesNot.class".
+Scn===
+  private static final Logger LOGGER = Logger.getLogger(Logs.class.getName());
+Pattern===
+
+================
+
+ErrorMessage===
+Format specifiers or lambda should be used instead of string concatenation.
+Scn===
+    LOGGER.log(Level.INFO, "lot " + " of " + "string " + "conact " + i);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+    return i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+    return i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Format specifiers or lambda should be used instead of string concatenation.
+Scn===
+    LOGGER.log(Level.INFO, "lot " + " of " + "string " + "conact " + i);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println(each);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println(s);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println(it);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println(each);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Rename "verifier" which hides the field declared at line 20.
+Scn===
+    final FilterTester verifier = new FilterTester(PATH, this.testee, Mutator.all());
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "verifier" which hides the field declared at line 20.
+Scn===
+    final FilterTester verifier = new FilterTester(PATH, this.testee, Mutator.all());
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Loop free");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+      i = i ++;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Loop free");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("" + j);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this redundant jump.
+Scn===
+        continue;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("7 " + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + a);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + size);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "j".
+Scn===
+    return j++;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "j".
+Scn===
+    return j++;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+Scn===
+      i = i + 4;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor the code in order to not assign to this loop counter from within the loop body.
+Scn===
+        i = i + 4;
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "source" which hides the field declared at line 27.
+Scn===
+    final ResourceFolderByteArraySource source = new ResourceFolderByteArraySource();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this empty class, write its code or make it an "interface".
+Scn===
+class Widget{}
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 42;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0l;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0f;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0d;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return "";
+Pattern===
+
+================
+
+ErrorMessage===
+Rename this field "_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.
+Scn===
+  public final A _1;
+Pattern===
+Template 1
+================
+
+ErrorMessage===
+Rename this field "_2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.
+Scn===
+  public final B _2;
+Pattern===
+Template 1
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("don't mutate me");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("mutate me");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "actual".
+Scn===
+    final Collection<MutationDetails> actual = this.testee.intercept(input, this.mutator);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "mutationConfig" field and declare it as a local variable in the relevant methods.
+Scn===
+  private MutationConfig        mutationConfig;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "config" field and declare it as a local variable in the relevant methods.
+Scn===
+  private MutationConfig       config;
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "mutations".
+Scn===
+    final List<MutationDetails> mutations = Arrays.asList(makeMutation(method));
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Use the built-in formatting to construct this argument.
+Scn===
+      log.info("foo " + i);
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "ss".
+Scn===
+    final String[] ss = actual.split(StringUtil.newLine());
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "ss".
+Scn===
+    final String[] ss = actual.split(StringUtil.newLine());
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor your code to get this URI from a customizable parameter.
+Scn===
+    final File testFile = new File("/foo/bar");
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor your code to get this URI from a customizable parameter.
+Scn===
+    final ClassPathRoot root = new DirectoryClassPathRoot(new File("/foo/bar/"));
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "testee" field and declare it as a local variable in the relevant methods.
+Scn===
+  private MutationCoverage              testee;
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "am".
+Scn===
+      final String am = a.getValue(key);
+Pattern===
+
+================
+
+ErrorMessage===
+Call "actual.isPresent()" before accessing the value.
+Scn===
+    final File f = new File(actual.get());
+Pattern===
+
+================
+
+ErrorMessage===
+Call "actual.isPresent()" before accessing the value.
+Scn===
+    assertTrue(actual.get().startsWith(tempDirLocation));
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 2;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 3;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this instantiation of "OneMutationOnly".
+Scn===
+      new OneMutationOnly();
+Pattern===
+
+================
+
+ErrorMessage===
+Do something with the "boolean" value returned by "delete".
+Scn===
+      new File(location).delete();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 42;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'Optional::empty'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return () -> Optional.empty();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "repository" field and declare it as a local variable in the relevant methods.
+Scn===
+  private Repository           repository;
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "foo" which hides the field declared at line 63.
+Scn===
+    final ClassName foo = ClassName.fromString("Foo");
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'coveredClasses::add'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    final Consumer<CoverageResult> handler = a -> coveredClasses.add(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+          System.out.println(a);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove the "handler" field and declare it as a local variable in the relevant methods.
+Scn===
+  private Consumer<CoverageResult> handler;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("Sleeping");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("Exiting");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("" + (i * y));
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+    throw new RuntimeException();
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("foo");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+    throw new RuntimeException();
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+    throw new RuntimeException();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+    return i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Make f a static final constant or non-public and provide accessors if needed.
+Scn===
+  public int f;
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+      throw new RuntimeException();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this array creation and simply pass the elements.
+Scn===
+    return Arrays.asList(new Object[][] { { 1 }, { 2 }, { 3 } });
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("don't optimise me away");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("don't mutate");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("don't mutate");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("mutate me");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("mutate me");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("mutate me");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("don't mutate");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("don't mutate");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("foo");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.err.println("Mutation found in bar");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.err.println("Mutation found in foo");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "j".
+Scn===
+    j = j + i;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the boxing to "Integer".
+Scn===
+    final int a = Integer.valueOf(100);
+Pattern===
+
+================
+
+ErrorMessage===
+Make i a static final constant or non-public and provide accessors if needed.
+Scn===
+  public static int i;
+Pattern===
+
+================
+
+ErrorMessage===
+Make j a static final constant or non-public and provide accessors if needed.
+Scn===
+  public static int j;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "bl".
+Scn===
+    final BlockLocation bl = new BlockLocation(l, block, 0, 1);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static int value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.i;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static float value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.f;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static long value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.l;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static double value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.d;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static byte value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.b;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static short value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.s;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+        return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static int value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.i;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static float value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.f;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static long value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.l;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static double value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.d;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static byte value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.b;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static short value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.s;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+        return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+        return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static int value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.i;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static float value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.f;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static long value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.l;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static double value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.d;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static byte value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.b;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static short value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.s;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static int value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.i;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static float value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.f;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static long value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.l;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static double value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.d;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static byte value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.b;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static short value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.s;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static int value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.i;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static float value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.f;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static long value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.l;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static double value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.d;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static byte value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.b;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "value" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static short value;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      value = this.s;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+        return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+        return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "member" field and declare it as a local variable in the relevant methods.
+Scn===
+    private Object member;
+Pattern===
+
+================
+
+ErrorMessage===
+Make this final field static too.
+Scn===
+    public final int member2 = 42;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "member" field and declare it as a local variable in the relevant methods.
+Scn===
+    private int member = 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "member" field and declare it as a local variable in the relevant methods.
+Scn===
+    private long member = 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Extract the assignment out of this expression.
+Scn===
+      final int i = 100 + (this.member = 2);
+Pattern===
+
+================
+
+ErrorMessage===
+Extract the assignment out of this expression.
+Scn===
+      final long i = 100 + (this.member = 2);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this use of "newInstance"; it is deprecated.
+Scn===
+    return this.mutantCallableClass.newInstance();
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+    TestMutee.muteeCreated = false;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this array creation and simply pass the elements.
+Scn===
+      return Arrays.asList(new String[] { "foo", "bar" });
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 101;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 101;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 42;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 10;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 9123475.3d;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 5;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 'g';
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 23;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 23;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 23;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "i" field and declare it as a local variable in the relevant methods.
+Scn===
+    private static int i = 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+      i = newVal;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this "Integer" constructor
+Scn===
+      final Integer i = new Integer(12);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "list" field and declare it as a local variable in the relevant methods.
+Scn===
+    private List<String> list;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++; // prevent source formating from making final
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment; "d2" already holds the assigned value along all execution paths.
+Scn===
+      d2 = preventSourceFormatingMakingFinal(d2);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment; "f2" already holds the assigned value along all execution paths.
+Scn===
+      f2 = preventSourceFormatingMakingFinal(f2);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment; "f" already holds the assigned value along all execution paths.
+Scn===
+      f = preventSourceFormatingMakingFinal(f);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment; "i" already holds the assigned value along all execution paths.
+Scn===
+      i = preventSourceFormatingMakingFinal(i);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment; "d" already holds the assigned value along all execution paths.
+Scn===
+      d = preventSourceFormatingMakingFinal(d);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment; "s" already holds the assigned value along all execution paths.
+Scn===
+      s = preventSourceFormatingMakingFinal(s);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment; "b" already holds the assigned value along all execution paths.
+Scn===
+      b = preventSourceFormatingMakingFinal(b);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 42;
+Pattern===
+
+================
+
+ErrorMessage===
+Correct one of the identical sub-expressions on both sides of operator ">>"
+Scn===
+    assertMutantCallableReturns(new ShiftLeft(1, 1), mutant, String.valueOf(1 >> 1));
+Pattern===
+
+================
+
+ErrorMessage===
+Correct one of the identical sub-expressions on both sides of operator ">>"
+Scn===
+    assertMutantCallableReturns(new ShiftLeftLambda(1, 1), mutant, String.valueOf(1 >> 1));
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::add;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::subtract;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::divide;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::multiply;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::and;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::or;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::xor;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::andNot;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::max;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::min;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'UnaryOperator<BigInteger>'
+Scn===
+      Function<BigInteger, BigInteger> function = BigInteger::negate;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'UnaryOperator<BigInteger>'
+Scn===
+      Function<BigInteger, BigInteger> function = BigInteger::abs;
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<BigInteger>'
+Scn===
+      BiFunction<BigInteger, BigInteger, BigInteger> function = BigInteger::mod;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 42;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this assert with a proper check.
+Scn===
+      assert ((i + 20) > 10);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this assert with a proper check.
+Scn===
+      assert ((i + 20) > 10);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+      i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+      i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+      i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++;
+Pattern===
+
+================
+
+ErrorMessage===
+End this switch case with an unconditional break, return or throw statement.
+Scn===
+      case 0:
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+        i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("foo");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("foo");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("bar");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+      return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println(i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Make state a static final constant or non-public and provide accessors if needed.
+Scn===
+    public int state;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "testee" field and declare it as a local variable in the relevant methods.
+Scn===
+  private GregorMutationEngine testee;
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+    throw new RuntimeException("Method " + name + " not found in " + clazz);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "args" field and declare it as a local variable in the relevant methods.
+Scn===
+  private MinionArguments              args;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "tests" field and declare it as a local variable in the relevant methods.
+Scn===
+  private Collection<ClassName>       tests;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "testee" field and declare it as a local variable in the relevant methods.
+Scn===
+  private PercentAndConstantTimeoutStrategy testee;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this "String" constructor
+Scn===
+    return new String(StreamUtil.streamToByteArray(is));
+Pattern===
+
+================
+
+ErrorMessage===
+This accessibility update should be removed.
+Scn===
+        m2.setAccessible(true);
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+      throw new RuntimeException();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this array creation and simply pass the elements.
+Scn===
+      return Arrays.asList(new Object[][] { { 1 }, { 2 } });
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this array creation and simply pass the elements.
+Scn===
+      return Arrays.asList(new Object[][] { { 1 }, { 2 }, { 3 }, { 4 } });
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this "Integer" constructor
+Scn===
+      new Integer(1);
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "onByDefault" which hides the field declared at line 18.
+Scn===
+    final ProvidesFooByDefault onByDefault = new ProvidesFooByDefault();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "repository" field and declare it as a local variable in the relevant methods.
+Scn===
+  private Repository           repository;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'Optional::empty'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return () -> Optional.empty();
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'actual::add'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    final Consumer<Integer> e = a -> actual.add(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to use the more specialised Functional Interface 'BinaryOperator<Integer>'
+Scn===
+    final BiFunction<Integer, Integer, Integer> f = (a, b) -> a + b;
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "is" which hides the field declared at line 32.
+Scn===
+    final Collection<Collection<Integer>> is = new ArrayList<>();
+Pattern===
+
+================
+
+ErrorMessage===
+Make this final field static too.
+Scn===
+  private final Context<Integer> unused = null;
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "foo" which hides the field declared at line 30.
+Scn===
+    final ClassInfo foo = makeClassInfo("Foo");
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "bar" which hides the field declared at line 32.
+Scn===
+    final ClassInfo bar = makeClassInfo("Bar");
+Pattern===
+
+================
+
+ErrorMessage===
+Move the array designators [] to the type.
+Scn===
+    final byte b[] = new byte[100];
+Pattern===
+
+================
+
+ErrorMessage===
+Check the return value of the "read" call to see how many bytes were read.
+Scn===
+      actual.read(b);
+Pattern===
+
+================
+
+ErrorMessage===
+Methods with an "Optional" return type should never return null.
+Scn===
+    return null;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("
+DUMPING MEMORY INFO
+");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("
+Name: " + gcmbean.getName());
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Collection count: " + gcmbean.getCollectionCount());
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Collection time: " + gcmbean.getCollectionTime());
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Memory Pools: ");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+          System.out.println("	" + memoryPoolName);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("Memory Pools Info");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("
+Name: " + mempoolmbean.getName());
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Usage: " + mempoolmbean.getUsage());
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Peak Usage: " + mempoolmbean.getPeakUsage());
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Type: " + mempoolmbean.getType());
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("Memory Manager Names: ");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+          System.out.println("	" + memManagerName);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.out.println("
+");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "expected".
+Scn===
+    final byte[] expected = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0xA };
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "testee" field and declare it as a local variable in the relevant methods.
+Scn===
+  private Description testee;
+Pattern===
+
+================
+
+ErrorMessage===
+Make first a static final constant or non-public and provide accessors if needed.
+Scn===
+    public int first;
+Pattern===
+
+================
+
+ErrorMessage===
+Make second a static final constant or non-public and provide accessors if needed.
+Scn===
+    public int        second;
+Pattern===
+
+================
+
+ErrorMessage===
+Make third a static final constant or non-public and provide accessors if needed.
+Scn===
+    public static int third;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this array creation and simply pass the elements.
+Scn===
+    return Arrays.asList(new Object[][] { { uncontainerFactory() } });
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'UnContainer::new'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return (ContainerFactory) () -> new UnContainer();
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+        count++;
+Pattern===
+
+================
+
+ErrorMessage===
+Make the enclosing method "static" or remove this set.
+Scn===
+        count = count + 10;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this array creation and simply pass the elements.
+Scn===
+      return Arrays.asList(new Object[][] { { 1 }, { 2 }, { 3 } });
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println(this.i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("> " + this.i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println(actual);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Make count a static final constant or non-public and provide accessors if needed.
+Scn===
+      public static int count = 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Make this "public static i" field final
+Scn===
+      public static int i = 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+      i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "i".
+Scn===
+    i++;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("foo");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println("foo");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("foo");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+    throw new RuntimeException("oops");
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "result".
+Scn===
+    final boolean result = stream != null; // store result to nudge compiler
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Make this "public static i" field final
+Scn===
+  public static Integer i = 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.
+Scn===
+    LOG.fine("Running " + testUnits.size() + " units");
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this redundant jump.
+Scn===
+                    return;
+Pattern===
+
+================
+
+ErrorMessage===
+Make this final field static too.
+Scn===
+    private final String expectedOwner = "java/math/BigInteger";
+Pattern===
+
+================
+
+ErrorMessage===
+Call "bytes.isPresent()" before accessing the value.
+Scn===
+    final ClassReader reader = new ClassReader(bytes.get());
+Pattern===
+
+================
+
+ErrorMessage===
+Return an empty array instead of null.
+Scn===
+      return null;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println(sb);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      ex.printStackTrace(System.out);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      ex.printStackTrace(System.out);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Single quote "'" must be escaped.
+Scn===
+        LOG.log(Level.WARNING, "Couldn't close socket", e);
+Pattern===
+
+================
+
+ErrorMessage===
+Use the built-in formatting to construct this argument.
+Scn===
+    LOG.warning("Unknown notification: " + notification);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println(msg + " at " + this.position + " for " + this.sequence.get(this.position));
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+        System.err.println("RuntimeException while transforming  " + className);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Return an empty array instead of null.
+Scn===
+      return null;
+Pattern===
+
+================
+
+ErrorMessage===
+Return an empty array instead of null.
+Scn===
+      return null;
+Pattern===
+
+================
+
+ErrorMessage===
+Return an empty array instead of null.
+Scn===
+      return null;
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "bs".
+Scn===
+      final byte[] bs = StreamUtil.streamToByteArray(is);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      ex.printStackTrace(System.out);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'TestInfo::getName'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> a.getName();
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "testPlugin".
+Scn===
+    final Configuration testPlugin = factory.getTestFrameworkPlugin(paramsFromParent.getPitConfig(), ClassloaderByteArraySource.fromContext());
+Pattern===
+
+================
+
+ErrorMessage===
+Use the built-in formatting to construct this argument.
+Scn===
+    LOG.fine("Expecting " + count + " tests classes from parent");
+Pattern===
+
+================
+
+ErrorMessage===
+Refactor this code to not throw exceptions in finally blocks.
+Scn===
+        throw translateCheckedException(e);
+Pattern===
+
+================
+
+ErrorMessage===
+Return an empty array instead of null.
+Scn===
+        return null;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this redundant jump.
+Scn===
+        return;
+Pattern===
+
+================
+
+ErrorMessage===
+Lambda should be used to defer string concatenation.
+Scn===
+      LOG.log(Level.SEVERE, "Error while creating runner for " + clazz, ex);
+Pattern===
+
+================
+
+ErrorMessage===
+Use try-with-resources or close this "ReadableByteChannel" in a "finally" clause.
+Scn===
+    final ReadableByteChannel src = Channels.newChannel(input);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'TestInfo::isATest'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return clazz -> isATest(clazz);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'Class::getName'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> a.getName();
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'this::descriptionToTest'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> descriptionToTest(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+      throw new RuntimeException("Could not read classpath jar manifest", ex);
+Pattern===
+
+================
+
+ErrorMessage===
+Use try-with-resources or close this "WritableByteChannel" in a "finally" clause.
+Scn===
+    final WritableByteChannel dest = Channels.newChannel(output);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+Scn===
+      return new String(readBytes(), "UTF-8");
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'Glob::new'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return glob -> new Glob(glob);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'ClassName::fromString'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return clazz -> ClassName.fromString(clazz);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'Class::getName'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return clazz -> clazz.getName();
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'ClassInfo::isAbstract'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> a.isAbstract();
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'ClassInfo::getName'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> a.getName();
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'ClassInfo::getHierarchicalId'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> a.getHierarchicalId();
+Pattern===
+
+================
+
+ErrorMessage===
+Call "Optional#isPresent()" before accessing the value.
+Scn===
+    return getSuperClass().get().descendsFrom(clazz);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+Scn===
+      final byte[] data = str.getBytes("UTF-8");
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("Installing PIT agent");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Use the built-in formatting to construct this argument.
+Scn===
+      LOG.warning("No bytes found for " + clazz);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'collection::add'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> collection.add(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    return printTo(System.out);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'stream::print'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> stream.print(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    return a -> System.out.print(t + " : " + a);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'Collections::singletonList'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> Collections.singletonList(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+    throw new RuntimeException("Could not parse " + a + " should start with + or -");
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "params" which hides the field declared at line 13.
+Scn===
+    final List<FeatureParameter> params = new ArrayList<>();
+Pattern===
+
+================
+
+ErrorMessage===
+Rename "active" which hides the field declared at line 15.
+Scn===
+    final List<T> active = FCollection.filter(factories, isOnByDefault());
+Pattern===
+
+================
+
+ErrorMessage===
+A "List<T>" cannot contain a "T".
+Scn===
+        active.removeAll(providers);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("static method called");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+    System.out.println("static method called");
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.
+Scn===
+      @Override protected void initWidget(Widget widget) {}
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+       System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA " + i);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this assert with a proper check.
+Scn===
+        assert actual == expected : "actual value is " + actual;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this unused "aNumber" private field.
+Scn===
+  private int aNumber = 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this unused "aNumber" private field.
+Scn===
+  private int aNumber = 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this unused "aNumber" private field.
+Scn===
+  private int aNumber = 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+          throw new RuntimeException(e);
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+      throw new RuntimeException(e);
+Pattern===
+
+================
+
+ErrorMessage===
+Rename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.
+Scn===
+  private static Logger  LOGGER     = LoggerFactory.getLogger(PitMojoIT.class);
+Pattern===
+Template 1
+================
+
+ErrorMessage===
+Rename this field "VERSION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.
+Scn===
+  private static String  VERSION    = getVersion();
+Pattern===
+Template 1
+================
+
+ErrorMessage===
+Refactor your code to get this URI from a customizable parameter.
+Scn===
+    String path = "/version.prop";
+Pattern===
+
+================
+
+ErrorMessage===
+Do something with the "boolean" value returned by "setLastModified".
+Scn===
+      f.setLastModified(0L);
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+        throw new RuntimeException("Cannot convert to mutator: " + a.getDetails().getMutator(), e);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this use of "Integer"; it is deprecated.
+Scn===
+    final MutationIdentifier id = new MutationIdentifier(location, Arrays.asList(new Integer((String) map.get(INDEX))), (String) map.get(MUTATOR));
+Pattern===
+
+================
+
+ErrorMessage===
+Define and throw a dedicated exception instead of using a generic one.
+Scn===
+        throw new RuntimeException("Unable to load Mutator for class: " + className, e);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+        return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+        return 2;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+        return 3;
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      System.out.println(">>>> " + pr.getErrorMessage().get());
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Replace this use of System.out or System.err by a logger.
+Scn===
+      this.parser.printHelpOn(System.out);
+Pattern===
+Template 2
+================
+
+ErrorMessage===
+Refactor this code to not throw exceptions in finally blocks.
+Scn===
+        throw new ReportAggregationException(CANNOT_CLOSE_ERR, e);
+Pattern===
+
+================
+
+ErrorMessage===
+Disable access to external entities in XML parsing.
+Scn===
+      docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+Pattern===
+
+================
+
+ErrorMessage===
+Replace this lambda with method reference 'File::new'. (sonar.java.source not set. Assuming 8 or greater.)
+Scn===
+    return a -> new File(a);
+Pattern===
+
+================
+
+ErrorMessage===
+Return an empty collection instead of null.
+Scn===
+      return null;
+Pattern===
+
+================
+
+ErrorMessage===
+This accessibility update should be removed.
+Scn===
+    f.setAccessible(true);
+Pattern===
+
+================
+
+ErrorMessage===
+Replace charset name argument with StandardCharsets.UTF_8
+Scn===
+    InputStream stream = new ByteArrayInputStream(xml.getBytes("UTF-8"));
+Pattern===
+
+================
+
+ErrorMessage===
+This accessibility bypass should be removed.
+Scn===
+    f.set(this.fixture, value);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "testee" field and declare it as a local variable in the relevant methods.
+Scn===
+  private MojoToReportOptionsConverter testee;
+Pattern===
+
+================
+
+ErrorMessage===
+Do something with the "boolean" value returned by "createNewFile".
+Scn===
+    new File(sourceFolder, "file0.txt").createNewFile();
+Pattern===
+
+================
+
+ErrorMessage===
+Do something with the "boolean" value returned by "createNewFile".
+Scn===
+    new File(sourceFolder, "file1.txt").createNewFile();
+Pattern===
+
+================
+
+ErrorMessage===
+Do something with the "boolean" value returned by "createNewFile".
+Scn===
+    new File(sourceFolder, "file0.txt").createNewFile();
+Pattern===
+
+================
+
+ErrorMessage===
+Do something with the "boolean" value returned by "createNewFile".
+Scn===
+    new File(sourceFolder, "file1.txt").createNewFile();
+Pattern===
+
+================
+
+ErrorMessage===
+Do something with the "boolean" value returned by "createNewFile".
+Scn===
+    new File(sourceFolder, "0123456789").createNewFile();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove the "reportGenerationStrategyList" field and declare it as a local variable in the relevant methods.
+Scn===
+  private List<ReportGenerationStrategy> reportGenerationStrategyList;
+Pattern===
+
+================
+
+ErrorMessage===
+Immediately return this expression instead of assigning it to the temporary variable "actual".
+Scn===
+      final ReportOptions actual = this.testee.convert();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this unused "x" local variable.
+Scn===
+    int x = 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this unused "y" local variable.
+Scn===
+    int y = 0;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "ret".
+Scn===
+    int ret = HasTernaryTestee.mutable(10);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "y".
+Scn===
+    y++;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this unused "y" local variable.
+Scn===
+    int y  =x.length();
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this useless assignment to local variable "in".
+Scn===
+    return (in > 0 ? in++ : in--);
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 1;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 2;
+Pattern===
+
+================
+
+ErrorMessage===
+Remove this method and declare a constant for this value.
+Scn===
+    return 3;
+Pattern===

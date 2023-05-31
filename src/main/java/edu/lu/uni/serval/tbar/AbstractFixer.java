@@ -207,7 +207,7 @@ public abstract class AbstractFixer implements IFixer {
 		//String filePath = dp.srcPath + suspiciousJavaFile;
 		String filePath = dp.srcPath + suspiciousJavaFile;
 		//log.debug("===fullpath-> "+ this.fullBuggyProjectPath);
-		log.debug("====fillePath->"+filePath);
+		//log.debug("====fillePath->"+filePath);
 		//log.debug("====dp.srcPath->"+dp.srcPath);
 		//log.debug("====suspiciousJavaFile->"+suspiciousJavaFile);
 		if (!new File(filePath).exists()) {return null;}
@@ -221,7 +221,7 @@ public abstract class AbstractFixer implements IFixer {
 		
 		List<Pair<ITree, String>> suspiciousCodePairs = scp.getSuspiciousCode();
 		if (suspiciousCodePairs.isEmpty()) {
-			log.debug("Failed to identify the buggy statement in: " + suspiciousClassName + " --- " + buggyLine);
+			//log.debug("Failed to identify the buggy statement in: " + suspiciousClassName + " --- " + buggyLine);
 			return null;
 		}
 		// selab: origin

@@ -65,7 +65,7 @@ def main(exampleOutput):
     Message_Structure = sso_pos_tag(pos_tags)
     
     module_name = Message_Structure[:-2]
-    os.chdir("/mnt/sda1/sohyun/ErrorMessage_driven_Template/EM_Template/")
+    os.chdir("/mnt/sda1/sohyun/ErrorMessage-driven-Template/EM_Template/")
     #print("pwd --> ", os.getcwd())
     folder_name = "Template"
     file_list = os.listdir(folder_name)
@@ -93,7 +93,7 @@ def main(exampleOutput):
         #return 'NOTHING'
 
 if __name__=="__main__":
-
+    #os.chdir("/mnt/sda1/sohyun/")
     exampleOutput = sys.argv
     main(exampleOutput)
 

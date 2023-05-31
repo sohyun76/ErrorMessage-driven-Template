@@ -1,6 +1,0 @@
-projectKey=TSQ_10
-serverUrl=http://115.145.178.160:8990
-serverVersion=9.1.0.47736
-dashboardUrl=http://115.145.178.160:8990/dashboard?id=TSQ_10
-ceTaskId=AYhqWwbVfh6_RqvR_xun
-ceTaskUrl=http://115.145.178.160:8990/api/ce/task?id=AYhqWwbVfh6_RqvR_xun

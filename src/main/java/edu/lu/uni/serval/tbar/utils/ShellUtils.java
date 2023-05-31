@@ -30,6 +30,7 @@ public class ShellUtils {
     private static String snqbUrl = "http://" + snqbIp + ":" + snqbPort;
     private static String SnScanner = "sonar-scanner";
     //*/
+
     
     public static String shellCreateProject(String buggyProject) {
         String cmd = "curl -u " + snqbToken + ": -X POST " +
@@ -65,21 +66,7 @@ public class ShellUtils {
                     " -Dsonar.java.binaries=.";
         return shellRunCustom(cmd, buggyProjectDir);
     }
-    public static String shellRunSonarQube_1(String buggyProjectDir, String projectPath,String buggyProject) {
-       //String exclusionStrings = "file:"+buggyProjectDir + "/**/*";
-        //System.out.println("SHELL RUN SONARQUBE_1 => "+exclusionStrings);
-        //System.out.println("SHELL RUN SONARQUBE_1 => "+projectPath);
-        //log.debug("SHELL RUN SONARQUBE_1 => "+exclusionStrings);
-        String newProject = "Thur_555";
-        String cmd = SnScanner +
-                    " -Dsonar.projectKey=" + newProject +
-                    " -Dsonar.inclusions=" + projectPath +
-                    " -Dsonar.host.url=" + snqbUrl +
-                    " -Dsonar.login=" + snqbToken +
-                    " -Dsonar.java.binaries=.";
-        return shellRunCustom(cmd, buggyProjectDir);
-    }
- 
+
 //    public static String shellRunSonarQube_1(String buggyProjectDir, String projectPath,String buggyProject) {
 //        String exclusionStrings = "file:"+buggyProjectDir + "/**/*";
 //        System.out.println("SHELL RUN SONARQUBE_1 => "+exclusionStrings);
