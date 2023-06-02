@@ -8,8 +8,23 @@ I. Requirement
 - Ubuntu 20.04.3 LTS (Focal Fossa)
 - Java 11
 - PostgreSQL 13+
+    - `ErrorMessage-driven-Template/src/main/java/edu/lu/uni/serval/tbar/utils/DBUtils.java`
+    ```
+        private static String url = "jdbc:postgresql://localhost:xxxx/";
+        private static String user = "sonar";
+        private static String password = "password";
+        private static String dbSonarqube = "sonarqube";
+        private static String dbResults = "validation_results";
+        private static String tableResults = "validation_result";
+    ```
 - SonarQube 9.1
     - Community Edition Version 9.1 (build 47736)
+    - `ErrorMessage-driven-Template/src/main/java/edu/lu/uni/serval/tbar/utils/ShellUtils.java`
+    ```
+        private static String snqbToken = "sonarqube_token";
+        private static String snqbIp = "xxx.xxx.xxx.xxx";
+        private static String snqbPort = "xxxx";
+    ```
 - SonarScanner 4.6.2.2472
 - Apache Maven 3.6.3
 
