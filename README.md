@@ -9,6 +9,7 @@ I. Requirement
 - Java 11
 - PostgreSQL 13+
     - `ErrorMessage-driven-Template/src/main/java/edu/lu/uni/serval/tbar/utils/DBUtils.java`
+    
     ```
         private static String url = "jdbc:postgresql://localhost:xxxx/";
         private static String user = "sonar";
@@ -20,6 +21,7 @@ I. Requirement
 - SonarQube 9.1
     - Community Edition Version 9.1 (build 47736)
     - `ErrorMessage-driven-Template/src/main/java/edu/lu/uni/serval/tbar/utils/ShellUtils.java`
+    
     ```
         private static String snqbToken = "sonarqube_token";
         private static String snqbIp = "xxx.xxx.xxx.xxx";
