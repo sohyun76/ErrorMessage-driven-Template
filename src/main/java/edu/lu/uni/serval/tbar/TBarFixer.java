@@ -217,7 +217,7 @@ public static int end_offset = 0;
 
  public List<Patch> generatePatch_singleHunk(List<SuspiciousPosition> suspiciousCodeList) {
 
-	String file_name = "/mnt/sda1/sohyun/ErrorMessage-driven-Template/Results/"+this.buggyProject".txt";
+	String file_name = "/mnt/sda1/sohyun/ErrorMessage-driven-Template/Results/"+this.buggyProject+".txt";
 
 	File file_final = new File(file_name);
 	FileWriter fw_final = null;

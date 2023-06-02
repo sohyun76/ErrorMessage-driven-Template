@@ -10,7 +10,7 @@
  *
  * http://www.eclipse.org/org/documents/edl-v10.php.
  */
-package test.jts.perf.index;
+package org.locationtech.jts.index.quadtree;
 
 import java.util.ArrayList;
 import java.util.Iterator;

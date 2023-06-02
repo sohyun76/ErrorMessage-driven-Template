@@ -12,15 +12,14 @@ import java.sql.PreparedStatement;
 
 public class DBUtils {
     ///* 
-    private static String url = "url";
-	private static String user = "sonar";
-	private static String password = "password";
+    private static String url = "jdbc:postgresql://localhost:xxxx/";
+    private static String user = "sonar";
+    private static String password = "password";
     private static String dbSonarqube = "sonarqube";
     private static String dbResults = "validation_results";
     private static String tableResults = "validation_result";
     //*/
-
-
+    
     public static String getFisrtAnalysisID(String projectID) {
 		String query = "select ca.analysis_uuid " +
                         "from public.ce_activity ca " +
